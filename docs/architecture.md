@@ -28,12 +28,13 @@ GuideAtlas is prepared for programmatic SEO by generating a bounded set of landi
 Page types:
 - City pages: `/{city}-tours` (example: `/lisbon-tours`)
 - Tour type pages: `/{tourType}-tours` (example: `/food-tours`)
-- City + tour type pages: `/{tourType}-tours-{city}` (examples: `/food-tours-lisbon`, `/walking-tours-rome`)
+- City + tour type pages: `/{tourType}-tours-{city}` (examples: `/food-tours-lisbon`, `/night-tours-rome`, `/private-tours-barcelona`)
 
 Implementation notes:
 - Source datasets live in `apps/web/data/cities.ts` and `apps/web/data/tourTypes.ts`.
 - Next.js App Router uses static generation (`generateStaticParams`) to pre-render only supported combinations.
-- Future expansions can pull from the tour database and use revalidation to scale safely.
+- The SEO route is effectively a whitelist (unknown slugs 404), which prevents collisions and keeps the app ready for adding new top-level routes later.
+- Future expansions can pull from the tour database and use revalidation + sitemaps to scale safely.
 
 ## Future Integrations
 - Stripe payments
