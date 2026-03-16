@@ -1,5 +1,11 @@
 # Architecture
 
+## Monorepo Layout
+
+- `site/`: Next.js frontend, deployed independently to Netlify.
+- `agents/`: scheduled autonomous jobs, executed independently in Jules.
+- `shared/`: reusable schema/types/helpers imported by both systems.
+
 ## Stack
 
 ### Frontend
@@ -31,7 +37,7 @@ Page types:
 - City + tour type pages: `/{tourType}-tours-{city}` (examples: `/food-tours-lisbon`, `/night-tours-rome`, `/private-tours-barcelona`)
 
 Implementation notes:
-- Source datasets live in `apps/web/data/cities.ts` and `apps/web/data/tourTypes.ts`.
+- Source datasets live in `site/data/cities.ts` and `site/data/tourTypes.ts`.
 - Next.js App Router uses static generation (`generateStaticParams`) to pre-render only supported combinations.
 - The SEO route is effectively a whitelist (unknown slugs 404), which prevents collisions and keeps the app ready for adding new top-level routes later.
 - Future expansions can pull from the tour database and use revalidation + sitemaps to scale safely.
@@ -55,6 +61,20 @@ Flow:
 
 Configuration:
 - `UNSPLASH_ACCESS_KEY` (agent environment variable)
+
+## Deployment
+
+### Site (Netlify)
+- Build base: `site`
+- Build command: `npm run build`
+- Publish dir: `.next`
+
+### Agents (Jules)
+- Executed from `agents/` with independent job entrypoints:
+  - `city-generator/job.ts`
+  - `image-fetcher/job.ts`
+  - `discovery-agent/job.ts`
+- Jobs should keep idempotent behavior and structured logging.
 
 ## Future Integrations
 - Stripe payments

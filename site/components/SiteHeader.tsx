@@ -6,16 +6,14 @@ export default function SiteHeader() {
     <header className="siteHeader" aria-label="Main navigation">
       <div className="siteHeaderInner">
         <Link href="/" className="siteLogo" aria-label="GuideAtlas home">
-          <span className="siteLogoMark" aria-hidden="true">
-            <Image
-              src="/logo-icon.png"
-              alt="GuideAtlas logo"
-              width={40}
-              height={40}
-              className="siteLogoImage"
-              priority
-            />
-          </span>
+          <Image
+            src="/logo-icon.png"
+            alt="GuideAtlas logo"
+            width={40}
+            height={40}
+            className="siteLogoImage"
+            priority
+          />
           <span className="siteLogoText">GuideAtlas</span>
         </Link>
 

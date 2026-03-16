@@ -7,7 +7,7 @@ from pathlib import Path
 from PIL import Image
 
 ROOT = Path(__file__).resolve().parents[1]
-WEB_PUBLIC = ROOT / "apps" / "web" / "public"
+WEB_PUBLIC = ROOT / "site" / "public"
 INPUT_LOGO = ROOT / "logo.png"
 
 
@@ -27,6 +27,20 @@ def non_white_bbox(img: Image.Image, threshold: int = 245):
     if right == -1:
         return (0, 0, w, h)
     return (left, top, right + 1, bottom + 1)
+
+
+def remove_near_white(img: Image.Image, threshold: int = 245) -> Image.Image:
+    rgba = img.convert("RGBA")
+    pix = rgba.load()
+    w, h = rgba.size
+    for y in range(h):
+        for x in range(w):
+            r, g, b, a = pix[x, y]
+            if r >= threshold and g >= threshold and b >= threshold:
+                pix[x, y] = (r, g, b, 0)
+            else:
+                pix[x, y] = (r, g, b, a)
+    return rgba
 
 
 def make_square_icon(icon: Image.Image, size: int = 1024) -> Image.Image:
@@ -55,6 +69,7 @@ def main() -> None:
 
     w, h = logo_img.size
     rough_icon = logo_img.crop((int(w * 0.18), 0, int(w * 0.82), int(h * 0.63)))
+    rough_icon = remove_near_white(rough_icon, threshold=244)
     tight = rough_icon.crop(non_white_bbox(rough_icon))
     logo_icon = make_square_icon(tight, 1024)
 

@@ -1,0 +1,10 @@
+{
+  "name": "guideatlas-ai-discovery-agent",
+  "private": true,
+  "version": "0.1.0",
+  "scripts": {
+    "start": "node agent.js",
+    "run-once": "node agent.js --once"
+  }
+}
+

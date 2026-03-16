@@ -1,7 +1,7 @@
 #!/usr/bin/env sh
 set -eu
 
-LOG_FILE="/workspace/agent/agent.log"
+LOG_FILE="/workspace/agents/discovery-agent/agent.log"
 mkdir -p "$(dirname "$LOG_FILE")"
 
 {

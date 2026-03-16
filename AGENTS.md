@@ -1,24 +1,34 @@
-# AGENTS Operating Guide
+# GuideAtlas Repository Structure
 
-## Project Mission
-GuideAtlas is a global platform connecting travelers with authentic experiences led by independent local guides.
+GuideAtlas is organized as a monorepo with isolated systems.
 
-## How AI Agents Should Operate
-- Always read documentation in `docs/` before modifying code.
-- Keep changes scoped to the current roadmap phase.
-- Prefer adding new modules over modifying core logic whenever possible.
-- Update related documentation whenever behavior, data contracts, or responsibilities change.
+## `site/`
 
-## Planned Agents
+Contains the GuideAtlas website frontend.
 
-### Guide Discovery Agent
-Finds local guides online and invites them to the platform.
+- Scope: UI, routes, pages, forms, SEO pages.
+- Deployment target: Netlify.
+- Rule: changes here must not include automation/runtime agent logic.
 
-### AI Tour Generator Agent
-Creates curated tours for cities.
+## `agents/`
 
-### SEO City Page Generator
-Creates SEO pages like `/lisbon-tours`.
+Contains autonomous background jobs.
 
-### Social Media Agent
-Publishes curated tours to social networks.
+- Scope: destination discovery, image enrichment, scheduled automation.
+- Runtime target: Jules scheduler (or Docker/NAS runners).
+- Rule: jobs must be idempotent and log all execution outcomes.
+
+## `shared/`
+
+Contains shared code used by both systems.
+
+- Scope: schema contracts, domain types, reusable helpers.
+- Rule: keep framework-agnostic and side-effect free.
+
+## Agent Rules
+
+- Always read relevant docs in `docs/` before making changes.
+- UI changes -> modify only `site/`.
+- Automation/runtime changes -> modify only `agents/`.
+- Shared model/type updates -> modify only `shared/`.
+- Never mix responsibilities in a single module.

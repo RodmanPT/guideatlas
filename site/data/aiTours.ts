@@ -409,8 +409,6 @@ export const aiTours: CityToursMap = {
       description: "A curated route through signature areas and hidden gems in Milan.",
     },
   ],
-}
-
   "venice": [
     {
       title: "Venice Private Discovery Route",
@@ -482,6 +480,8 @@ export const aiTours: CityToursMap = {
       description: "Discover local flavors and market culture in Palermo with curated tasting stops.",
     },
   ],
+};
+
 export function getAiToursByCity(citySlug: string): CuratedTour[] {
   return aiTours[citySlug] ?? [];
 }

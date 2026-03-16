@@ -1,0 +1,19 @@
+{
+  "name": "guideatlas",
+  "private": true,
+  "workspaces": [
+    "site",
+    "agents"
+  ],
+  "scripts": {
+    "site:dev": "npm --workspace site run dev",
+    "site:build": "npm --workspace site run build",
+    "agents:city-generator": "npm --workspace agents run city-generator",
+    "agents:discovery-agent": "npm --workspace agents run discovery-agent",
+    "test:playwright": "node tests/playwright/inspect.js",
+    "playwright:install": "playwright install chromium"
+  },
+  "devDependencies": {
+    "playwright": "^1.55.0"
+  }
+}

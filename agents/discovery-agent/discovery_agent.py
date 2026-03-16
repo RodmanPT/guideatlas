@@ -125,6 +125,20 @@ def build_tours(city_name: str, city_slug: str) -> List[Dict[str, str]]:
 def insert_before_anchor(content: str, anchor: str, snippet: str) -> str:
     idx = content.find(anchor)
     if idx == -1:
+        fn_match = re.search(r"export function [A-Za-z0-9_]+", anchor)
+        if fn_match:
+            fn_idx = content.find(fn_match.group(0))
+            if fn_idx != -1:
+                close_idx = content.rfind("};", 0, fn_idx)
+                if close_idx != -1:
+                    idx = close_idx
+                else:
+                    close_idx = content.rfind("}", 0, fn_idx)
+                    if close_idx != -1:
+                        idx = close_idx
+                    else:
+                        idx = fn_idx
+    if idx == -1:
         raise RuntimeError(f"Could not find anchor '{anchor}'")
     return content[:idx] + snippet + "\n" + content[idx:]
 
@@ -336,10 +350,20 @@ def parse_positive_int_env(name: str, default: int) -> int:
 
 def resolve_repo_root() -> Path:
     configured = os.getenv("REPO_ROOT", "").strip()
+    script_dir = Path(__file__).resolve().parent
     candidates = []
     if configured:
         candidates.append(Path(configured))
-    candidates.extend([Path("/workspace"), Path("/workspace/guideatlas")])
+    candidates.extend(
+        [
+            Path.cwd(),
+            script_dir,
+            script_dir.parent,
+            script_dir.parent.parent,
+            Path("/workspace"),
+            Path("/workspace/guideatlas"),
+        ]
+    )
 
     seen = set()
     for candidate in candidates:
@@ -348,8 +372,8 @@ def resolve_repo_root() -> Path:
             continue
         seen.add(normalized)
 
-        cities_path = candidate / "apps" / "web" / "data" / "cities.ts"
-        ai_tours_path = candidate / "apps" / "web" / "data" / "aiTours.ts"
+        cities_path = candidate / "site" / "data" / "cities.ts"
+        ai_tours_path = candidate / "site" / "data" / "aiTours.ts"
         git_dir = candidate / ".git"
         if cities_path.exists() and ai_tours_path.exists() and git_dir.exists():
             return candidate
@@ -403,16 +427,16 @@ def main() -> int:
     repo_root = resolve_repo_root().resolve()
     script_dir = Path(__file__).resolve().parent
 
-    cities_path = repo_root / "apps" / "web" / "data" / "cities.ts"
-    ai_tours_path = repo_root / "apps" / "web" / "data" / "aiTours.ts"
-    city_images_path = repo_root / "apps" / "web" / "data" / "cityImages.ts"
-    seo_intro_path = repo_root / "apps" / "web" / "data" / "citySeoIntros.ts"
-    candidates_path = repo_root / "agent" / "cities.json"
+    cities_path = repo_root / "site" / "data" / "cities.ts"
+    ai_tours_path = repo_root / "site" / "data" / "aiTours.ts"
+    city_images_path = repo_root / "site" / "data" / "cityImages.ts"
+    seo_intro_path = repo_root / "site" / "data" / "citySeoIntros.ts"
+    candidates_path = repo_root / "agents" / "discovery-agent" / "cities.json"
     if not candidates_path.exists():
         candidates_path = script_dir / "cities.json"
 
     if not cities_path.exists() or not ai_tours_path.exists() or not candidates_path.exists():
-        raise RuntimeError("Expected project files not found. Ensure repository is mounted at /workspace.")
+        raise RuntimeError("Expected project files not found. Ensure repository path is configured correctly.")
 
     min_new = parse_positive_int_env("MIN_NEW_CITIES_PER_RUN", 1)
     max_new = parse_positive_int_env("MAX_NEW_CITIES_PER_RUN", 1)
