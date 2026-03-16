@@ -23,7 +23,3 @@ export function getCityBySlug(slug: string): City | undefined {
   const normalized = slug.trim().toLowerCase();
   return CITIES.find((c) => c.slug === normalized);
 }
-
-export function cityToursPath(citySlug: string): string {
-  return `/${citySlug.trim().toLowerCase()}-tours`;
-}

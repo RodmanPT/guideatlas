@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 
-import { CITIES, cityToursPath } from "../../data/cities";
+import { CITIES } from "../../data/cities";
+import { getCityToursUrl } from "../../lib/url";
 
 export const metadata: Metadata = {
   title: "Browse Tours by City | GuideAtlas",
@@ -23,7 +24,7 @@ export default function ToursByCityPage() {
 
       <section className="grid" aria-label="Cities">
         {CITIES.map((city) => (
-          <Link key={city.slug} className="card cardLink" href={cityToursPath(city.slug)}>
+          <Link key={city.slug} className="card cardLink" href={getCityToursUrl(city.slug)}>
             <h2>{city.name}</h2>
             <p>{city.country}</p>
           </Link>
@@ -37,4 +38,3 @@ export default function ToursByCityPage() {
     </main>
   );
 }
-

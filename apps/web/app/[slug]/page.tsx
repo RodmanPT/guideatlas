@@ -2,7 +2,8 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 
-import { CITIES, cityToursPath, getCityBySlug } from "../../data/cities";
+import { CITIES, getCityBySlug } from "../../data/cities";
+import { getCityToursUrl } from "../../lib/url";
 import { TOUR_TYPES, getTourTypeBySlug, tourTypeCityPath, tourTypePath } from "../../data/tourTypes";
 
 type PageProps = {
@@ -71,7 +72,7 @@ export function generateMetadata({ params }: PageProps): Metadata {
     const city = getCityBySlug(context.citySlug)!;
     const title = `Discover the Best Tours in ${city.name} | GuideAtlas`;
     const description = `Discover authentic tours in ${city.name} led by independent local guides.`;
-    const canonical = cityToursPath(city.slug);
+    const canonical = getCityToursUrl(city.slug);
 
     return {
       title,
