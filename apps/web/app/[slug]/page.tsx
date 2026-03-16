@@ -131,6 +131,7 @@ export default function CityToursPage({ params }: PageProps) {
 
   const city = context.kind !== "tourType" ? getCityBySlug(context.citySlug)! : null;
   const tourType = context.kind !== "city" ? getTourTypeBySlug(context.tourTypeSlug)! : null;
+  const baseUrl = getBaseUrl();
 
   const isCityToursPage = context.kind === "city";
   const cityToursBreadcrumbJsonLd =
@@ -143,21 +144,35 @@ export default function CityToursPage({ params }: PageProps) {
               "@type": "ListItem",
               position: 1,
               name: "Home",
-              item: new URL("/", getBaseUrl()).toString(),
+              item: new URL("/", baseUrl).toString(),
             },
             {
               "@type": "ListItem",
               position: 2,
               name: "Tours",
-              item: new URL("/tours", getBaseUrl()).toString(),
+              item: new URL("/tours", baseUrl).toString(),
             },
             {
               "@type": "ListItem",
               position: 3,
               name: `${city.name} Tours`,
-              item: new URL(getCityToursUrl(city.slug), getBaseUrl()).toString(),
+              item: new URL(getCityToursUrl(city.slug), baseUrl).toString(),
             },
           ],
+        }
+      : null;
+  const cityTouristDestinationJsonLd =
+    isCityToursPage && city
+      ? {
+          "@context": "https://schema.org",
+          "@type": "TouristDestination",
+          name: city.name,
+          description: `Discover authentic tours in ${city.name} led by independent local guides.`,
+          url: new URL(getCityToursUrl(city.slug), baseUrl).toString(),
+          address: {
+            "@type": "PostalAddress",
+            addressCountry: city.country,
+          },
         }
       : null;
 
@@ -189,6 +204,13 @@ export default function CityToursPage({ params }: PageProps) {
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(cityToursBreadcrumbJsonLd) }}
+        />
+      ) : null}
+
+      {cityTouristDestinationJsonLd ? (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(cityTouristDestinationJsonLd) }}
         />
       ) : null}
 
