@@ -44,6 +44,16 @@ function getSpreadsheetId(): string {
   return getEnvOrThrow("GOOGLE_SHEET_ID");
 }
 
+function getSheetTabName(): string {
+  return (process.env.GOOGLE_SHEET_TAB || "guides_waitlist").trim() || "guides_waitlist";
+}
+
+function sheetTabA1(): string {
+  // Always quote to safely handle spaces/special characters.
+  const escaped = getSheetTabName().replace(/'/g, "''");
+  return `'${escaped}'`;
+}
+
 function sheetRange(rangeA1: string): string {
   return encodeURIComponent(rangeA1);
 }
@@ -82,7 +92,7 @@ export async function isEmailOnWaitlist(email: string): Promise<boolean> {
   const spreadsheetId = getSpreadsheetId();
   const accessToken = await getAccessToken();
 
-  const range = sheetRange("guides_waitlist!B:B");
+  const range = sheetRange(`${sheetTabA1()}!B:B`);
   const data = await sheetsRequest<{ values?: string[][] }>(
     `spreadsheets/${spreadsheetId}/values/${range}`,
     { method: "GET" },
@@ -102,7 +112,7 @@ export async function appendGuideWaitlistRow(row: GuideWaitlistRow): Promise<voi
   const spreadsheetId = getSpreadsheetId();
   const accessToken = await getAccessToken();
 
-  const range = sheetRange("guides_waitlist!A:F");
+  const range = sheetRange(`${sheetTabA1()}!A:F`);
   await sheetsRequest(
     `spreadsheets/${spreadsheetId}/values/${range}:append?valueInputOption=USER_ENTERED&insertDataOption=INSERT_ROWS`,
     {
