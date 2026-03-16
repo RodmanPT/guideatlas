@@ -36,6 +36,9 @@ export default function BecomeGuidePage({ searchParams }: PageProps) {
           <Link className="cta ctaGhost ctaGhostDark" href="/tours/new">
             Publish a Tour
           </Link>
+          <Link className="cta ctaGhost ctaGhostDark" href="/guides/maria-santos">
+            See an example guide profile
+          </Link>
         </div>
       </section>
 

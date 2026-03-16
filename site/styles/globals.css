@@ -298,6 +298,108 @@ a {
   max-width: 70ch;
 }
 
+.demoBanner {
+  margin: 0 0 1rem;
+  border: 1px solid #d9d4ca;
+  border-left: 4px solid var(--brand);
+  border-radius: 0.8rem;
+  background: #f7f5ee;
+  color: #304050;
+  padding: 0.75rem 0.9rem;
+  font-weight: 600;
+}
+
+.guideProfileHeader {
+  display: grid;
+  grid-template-columns: 220px minmax(0, 1fr);
+  gap: 1.2rem;
+  align-items: center;
+}
+
+.guideProfilePhotoWrap {
+  width: 220px;
+  height: 220px;
+  border-radius: 1rem;
+  overflow: hidden;
+  border: 1px solid var(--line);
+}
+
+.guideProfilePhoto {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.guideProfileMeta h1 {
+  margin: 0;
+  font-size: clamp(2rem, 4vw, 2.6rem);
+}
+
+.guideProfileTitle {
+  margin: 0.55rem 0 0;
+  font-size: 1.06rem;
+  color: var(--muted);
+  font-weight: 600;
+}
+
+.guideProfileStats {
+  margin-top: 0.9rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.guideProfileStats span {
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--surface-soft);
+  padding: 0.3rem 0.65rem;
+  font-weight: 700;
+  color: #314455;
+}
+
+.guideProfileBadges {
+  margin-top: 0.8rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+}
+
+.guidePill {
+  border-radius: 999px;
+  border: 1px solid rgba(13, 106, 106, 0.22);
+  background: rgba(13, 106, 106, 0.09);
+  color: var(--brand-strong);
+  font-weight: 700;
+  padding: 0.32rem 0.68rem;
+}
+
+.guideAboutText p {
+  margin: 0.7rem 0 0;
+  color: var(--muted);
+}
+
+.guideToursGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.95rem;
+}
+
+.guideTourCard h3 {
+  margin: 0.55rem 0 0.4rem;
+}
+
+.guideTourMeta {
+  margin: 0;
+  color: #314455;
+  font-weight: 700;
+}
+
+.guideTourSubtitle {
+  margin: 0.5rem 0 0;
+  color: var(--muted);
+}
+
 .stepsGrid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -982,7 +1084,8 @@ a {
   .destinationGrid,
   .tourGrid,
   .aiTourGrid,
-  .stepsGrid {
+  .stepsGrid,
+  .guideToursGrid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
@@ -1044,8 +1147,18 @@ a {
   .aiTourGrid,
   .stepsGrid,
   .trustGrid,
-  .siteFooterInner {
+  .siteFooterInner,
+  .guideToursGrid {
     grid-template-columns: 1fr;
+  }
+
+  .guideProfileHeader {
+    grid-template-columns: 1fr;
+  }
+
+  .guideProfilePhotoWrap {
+    width: 160px;
+    height: 160px;
   }
 
   .cookieBanner {
