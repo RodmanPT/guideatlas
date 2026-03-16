@@ -108,18 +108,7 @@ function parseSeoSlug(slug: unknown): SeoContext | null {
   return null;
 }
 
-export const dynamicParams = false;
-export const revalidate = 600;
-
-export function generateStaticParams() {
-  const cityPages = CITIES.map((city) => ({ slug: `${city.slug}${TOURS_SUFFIX}` }));
-  const tourTypePages = TOUR_TYPES.map((tourType) => ({ slug: `${tourType.slug}${TOURS_SUFFIX}` }));
-  const cityTourTypePages = TOUR_TYPES.flatMap((tourType) =>
-    CITIES.map((city) => ({ slug: `${tourType.slug}${TOURS_SUFFIX}-${city.slug}` })),
-  );
-
-  return [...cityPages, ...tourTypePages, ...cityTourTypePages];
-}
+export const dynamic = "force-dynamic";
 
 export function generateMetadata({ params }: PageProps): Metadata {
   const context = parseSeoSlug(params.slug);
