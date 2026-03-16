@@ -1,4 +1,5 @@
 import GuideSignupForm from "../components/GuideSignupForm";
+import Link from "next/link";
 
 export default function HomePage() {
   const featuredTours = [
@@ -61,6 +62,11 @@ export default function HomePage() {
           <button type="submit">Subscribe</button>
         </form>
       </section>
+
+      <footer className="footer" aria-label="Footer">
+        <Link href="/tours">Browse Tours by City</Link>
+        <span className="footerNote">GuideAtlas</span>
+      </footer>
     </main>
   );
 }

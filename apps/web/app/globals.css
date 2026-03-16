@@ -177,3 +177,48 @@ main {
 .signupMessage.error {
   color: #8a1c1c;
 }
+
+.ctaPanel {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 1rem;
+  padding: 1.25rem;
+  margin: 1.5rem 0;
+}
+
+.ctaPanel h2 {
+  margin-top: 0;
+}
+
+.cardLink {
+  display: block;
+  transition: transform 120ms ease, border-color 120ms ease;
+}
+
+.cardLink:hover {
+  transform: translateY(-2px);
+  border-color: #cbbfa9;
+}
+
+.footer {
+  margin: 2rem 0 1rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--border);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--muted);
+}
+
+.footer a {
+  color: var(--accent-strong);
+  font-weight: 700;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.footerNote {
+  font-weight: 700;
+}
