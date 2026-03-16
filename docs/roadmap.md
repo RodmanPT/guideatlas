@@ -57,3 +57,31 @@ Technical notes (future):
 - Social media publishing agent
 - Automated lead outreach agent
 - Travel itinerary generator
+
+### Viral Growth (Phase 4)
+
+#### AI Trip Map (Future)
+GuideAtlas will allow travelers to generate visual trip itineraries.
+
+Inputs:
+- City
+- Trip duration
+- Trip theme
+
+Outputs:
+- Interactive map with recommended locations
+- Suggested experiences
+- Available tours from local guides
+
+User experience example:
+- "3 Days in Lisbon"
+- Page includes: interactive map, daily itinerary, recommended tours
+
+Markers:
+- Blue: AI suggested places
+- Green: Real guide tours
+
+Value:
+- Helps travelers plan trips faster
+- Encourages sharing of itineraries
+- Creates viral, SEO-friendly itinerary pages
