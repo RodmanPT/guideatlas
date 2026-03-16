@@ -14,12 +14,33 @@ function getEnvOrThrow(name: string): string {
   if (!value) {
     throw new Error(`Missing environment variable: ${name}`);
   }
-  return value;
+  return value.trim();
+}
+
+function stripWrappingQuotes(value: string): string {
+  const trimmed = value.trim();
+  if (
+    (trimmed.startsWith("\"") && trimmed.endsWith("\"")) ||
+    (trimmed.startsWith("'") && trimmed.endsWith("'"))
+  ) {
+    return trimmed.slice(1, -1);
+  }
+  return trimmed;
 }
 
 function getGooglePrivateKey(): string {
   // On platforms like Netlify, multiline env vars are often stored with literal "\n".
-  return getEnvOrThrow("GOOGLE_PRIVATE_KEY").replace(/\\n/g, "\n");
+  return stripWrappingQuotes(getEnvOrThrow("GOOGLE_PRIVATE_KEY"))
+    // Some dotenv parsers turn "\\n" into "\\\n" (a stray backslash before a real newline).
+    .replace(/\\\r\n/g, "\n")
+    .replace(/\\\n/g, "\n")
+    // If a trailing "\n" was trimmed away, remove the leftover backslash.
+    .replace(/\\$/g, "")
+    // Handle both "\n" and "\\n" variants (different shells/UIs escape differently).
+    .replace(/\\\\r\\\\n/g, "\n")
+    .replace(/\\\\n/g, "\n")
+    .replace(/\\r\\n/g, "\n")
+    .replace(/\\n/g, "\n");
 }
 
 async function getAccessToken(): Promise<string> {
