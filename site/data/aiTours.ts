@@ -428,6 +428,60 @@ export const aiTours: CityToursMap = {
       description: "Walk through key landmarks and historical moments that shaped Venice.",
     },
   ],
+  "naples": [
+    {
+      title: "Hidden Corners of Naples",
+      duration: "2.5 hours",
+      description: "Explore lesser-known neighborhoods and stories that show the local side of Naples.",
+    },
+    {
+      title: "Naples Food and Markets Walk",
+      duration: "3 hours",
+      description: "Discover local flavors and market culture in Naples with curated tasting stops.",
+    },
+    {
+      title: "Naples Private Discovery Route",
+      duration: "3 hours",
+      description: "A curated route through signature areas and hidden gems in Naples.",
+    },
+    {
+      title: "Naples History Highlights",
+      duration: "2 hours",
+      description: "Walk through key landmarks and historical moments that shaped Naples.",
+    },
+    {
+      title: "Naples Culture and Street Life",
+      duration: "3.5 hours",
+      description: "Experience neighborhood rhythms, architecture, and local culture in Naples.",
+    },
+  ],
+  "palermo": [
+    {
+      title: "Palermo Sunset Viewpoints",
+      duration: "2 hours",
+      description: "Visit scenic viewpoints and photogenic routes around Palermo at golden hour.",
+    },
+    {
+      title: "Palermo Culture and Street Life",
+      duration: "3.5 hours",
+      description: "Experience neighborhood rhythms, architecture, and local culture in Palermo.",
+    },
+    {
+      title: "Hidden Corners of Palermo",
+      duration: "2.5 hours",
+      description: "Explore lesser-known neighborhoods and stories that show the local side of Palermo.",
+    },
+    {
+      title: "Palermo History Highlights",
+      duration: "2 hours",
+      description: "Walk through key landmarks and historical moments that shaped Palermo.",
+    },
+    {
+      title: "Palermo Food and Markets Walk",
+      duration: "3 hours",
+      description: "Discover local flavors and market culture in Palermo with curated tasting stops.",
+    },
+  ],
 export function getAiToursByCity(citySlug: string): CuratedTour[] {
   return aiTours[citySlug] ?? [];
 }
