@@ -2,6 +2,7 @@
   color-scheme: light;
   --bg: #f7f4ee;
   --surface: #fffef9;
+  --surface-soft: #f1f6f3;
   --text: #1c1a18;
   --accent: #0f766e;
   --accent-strong: #115e59;
@@ -15,7 +16,7 @@
 
 body {
   margin: 0;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Trebuchet MS", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   background: radial-gradient(circle at top right, #e8efe8 0%, var(--bg) 45%);
   color: var(--text);
 }
@@ -29,6 +30,10 @@ main {
   max-width: 1080px;
   margin: 0 auto;
   padding: 1.5rem;
+}
+
+.homeMain {
+  padding-top: 2rem;
 }
 
 .breadcrumbs {
@@ -68,15 +73,44 @@ main {
   margin-top: 1rem;
 }
 
+.homeHero {
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 95% 10%, #d9ebe6 0%, rgba(217, 235, 230, 0) 38%),
+    linear-gradient(180deg, #fffef9 0%, #fbf7ef 100%);
+}
+
+.homeHero::after {
+  content: "";
+  position: absolute;
+  inset: auto -80px -120px auto;
+  width: 280px;
+  height: 280px;
+  border-radius: 999px;
+  background: rgba(15, 118, 110, 0.08);
+}
+
+.homeEyebrow {
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--accent-strong);
+  margin: 0 0 0.9rem;
+}
+
 .hero h1 {
-  font-size: clamp(2rem, 4vw, 3rem);
+  font-size: clamp(2.1rem, 4vw, 3.25rem);
   margin: 0 0 0.75rem;
+  line-height: 1.08;
 }
 
 .hero p {
   margin: 0;
   max-width: 44rem;
   color: var(--muted);
+  font-size: 1.05rem;
 }
 
 .cta {
@@ -91,6 +125,44 @@ main {
 
 .cta:hover {
   background: var(--accent-strong);
+}
+
+.homeCtaRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+}
+
+.ctaGhost {
+  background: transparent;
+  color: var(--accent-strong);
+  border: 1px solid var(--accent-strong);
+}
+
+.ctaGhost:hover {
+  background: rgba(15, 118, 110, 0.09);
+}
+
+.homeSection {
+  margin-top: 2.75rem;
+}
+
+.sectionAlt {
+  background: var(--surface-soft);
+  border: 1px solid #d5e5df;
+  border-radius: 1rem;
+  padding: 1.25rem;
+}
+
+.homeSectionTitle {
+  font-size: clamp(1.45rem, 2.6vw, 2rem);
+  margin: 0 0 0.55rem;
+}
+
+.homeSectionLead {
+  color: var(--muted);
+  margin: 0;
+  max-width: 50rem;
 }
 
 .grid {
@@ -112,9 +184,51 @@ main {
   font-size: 1.1rem;
 }
 
+.card h3 {
+  margin-top: 0;
+  margin-bottom: 0.45rem;
+  font-size: 1.1rem;
+}
+
 .card p {
   color: var(--muted);
   margin-bottom: 0;
+}
+
+.homeCardMeta {
+  margin: 0 0 0.45rem;
+  color: var(--accent-strong);
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.homeTourCard {
+  border-color: #d9cfbd;
+}
+
+.homeStepsGrid {
+  margin-top: 1rem;
+}
+
+.homeStepCard {
+  background: #ffffff;
+}
+
+.homeStepNumber {
+  margin: 0 0 0.4rem;
+  color: var(--accent);
+  font-weight: 700;
+  font-size: 0.86rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.homeTrustCard {
+  display: flex;
+  align-items: center;
+  min-height: 92px;
 }
 
 .newsletter {
@@ -250,4 +364,50 @@ main {
 
 .footerNote {
   font-weight: 700;
+}
+
+.homeFooter {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1rem;
+  align-items: start;
+}
+
+.homeFooter h3 {
+  margin: 0 0 0.55rem;
+  font-size: 0.95rem;
+  color: var(--text);
+}
+
+.homeFooter a {
+  display: inline-block;
+}
+
+.homeFooter .footerNote {
+  margin: 0;
+  color: var(--muted);
+  font-weight: 500;
+}
+
+@media (max-width: 760px) {
+  .homeMain {
+    padding-top: 1rem;
+  }
+
+  .hero {
+    padding: 2.2rem 1.2rem;
+  }
+
+  .sectionAlt {
+    padding: 1rem;
+  }
+
+  .homeCtaRow .cta {
+    margin-top: 1rem;
+  }
+
+  .homeFooter {
+    grid-template-columns: 1fr 1fr;
+    gap: 1.25rem 0.85rem;
+  }
 }

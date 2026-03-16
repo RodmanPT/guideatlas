@@ -3,53 +3,109 @@ import Link from "next/link";
 
 export default function HomePage() {
   const featuredTours = [
-    "Sunrise Food Walk",
-    "Hidden Neighborhood Stories",
-    "Local Markets and Traditions",
+    {
+      city: "Lisbon",
+      title: "Lisbon Food Tour",
+      description: "Taste local classics in neighborhood taverns and family-run markets.",
+    },
+    {
+      city: "Rome",
+      title: "Hidden Gems of Rome",
+      description: "Walk through quieter streets, artisan corners, and local stories beyond the crowds.",
+    },
+    {
+      city: "Tokyo",
+      title: "Tokyo Night Walk",
+      description: "Discover neon districts, late-night food spots, and cultural rituals after sunset.",
+    },
+    {
+      city: "Barcelona",
+      title: "Barcelona Bike Tour",
+      description: "Ride across iconic neighborhoods, seafront paths, and architecture-filled avenues.",
+    },
+  ];
+
+  const howItWorks = [
+    {
+      title: "Discover a city",
+      description: "Choose a destination and explore experiences designed by people who live there.",
+    },
+    {
+      title: "Choose a tour",
+      description: "Compare formats, themes, and durations to find the right tour for your trip style.",
+    },
+    {
+      title: "Explore with a local guide",
+      description: "Meet your guide and experience the city through culture, stories, and local perspective.",
+    },
+  ];
+
+  const trustPoints = [
+    "Authentic local experiences",
+    "Independent guides",
+    "Small group tours",
+    "Unique city discoveries",
   ];
 
   return (
-    <main>
-      <section className="hero">
-        <h1>Discover authentic tours by local experts</h1>
+    <main className="homeMain">
+      <section className="hero homeHero">
+        <p className="homeEyebrow">GuideAtlas for Travelers</p>
+        <h1>Discover authentic tours led by local guides</h1>
         <p>
-          GuideAtlas helps travelers connect with independent local guides for
-          meaningful, one-of-a-kind experiences.
+          Explore cities through unique experiences created by independent local guides.
         </p>
-        <a className="cta" href="#join-guide">
-          Become a Guide
-        </a>
+        <div className="homeCtaRow">
+          <Link className="cta" href="/tours">
+            Explore Tours
+          </Link>
+          <a className="cta ctaGhost" href="#join-guide">
+            Become a Guide
+          </a>
+        </div>
       </section>
 
-      <section className="grid" aria-label="How GuideAtlas works">
-        <article className="card">
-          <h2>How it works</h2>
-          <p>
-            Explore cities, compare local guides, and choose tours that match
-            your interests.
-          </p>
-        </article>
-        <article className="card" aria-label="Featured tours placeholder">
-          <h2>Featured tours</h2>
-          <p>Coming soon: hand-picked local experiences from top guides.</p>
-          <ul>
-            {featuredTours.map((tour) => (
-              <li key={tour}>{tour}</li>
-            ))}
-          </ul>
-        </article>
-        <article className="card">
-          <h2>Join as a guide</h2>
-          <p>
-            Share your local expertise, publish your tours, and grow your
-            independent business.
-          </p>
-        </article>
+      <section className="homeSection" aria-label="Featured tours">
+        <h2 className="homeSectionTitle">Featured Tours</h2>
+        <p className="homeSectionLead">Preview the kind of memorable experiences travelers can book.</p>
+        <div className="grid">
+          {featuredTours.map((tour) => (
+            <article key={tour.title} className="card homeTourCard">
+              <p className="homeCardMeta">{tour.city}</p>
+              <h3>{tour.title}</h3>
+              <p>{tour.description}</p>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <section className="homeSection sectionAlt" aria-label="How it works">
+        <h2 className="homeSectionTitle">How It Works</h2>
+        <div className="grid homeStepsGrid">
+          {howItWorks.map((step, index) => (
+            <article key={step.title} className="card homeStepCard">
+              <p className="homeStepNumber">Step {index + 1}</p>
+              <h3>{step.title}</h3>
+              <p>{step.description}</p>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <section className="homeSection" aria-label="Why GuideAtlas">
+        <h2 className="homeSectionTitle">Why GuideAtlas?</h2>
+        <div className="grid">
+          {trustPoints.map((point) => (
+            <article key={point} className="card homeTrustCard">
+              <h3>{point}</h3>
+            </article>
+          ))}
+        </div>
       </section>
 
       <GuideSignupForm />
 
-      <section className="newsletter" aria-label="Newsletter signup">
+      <section className="newsletter homeSection" aria-label="Newsletter signup">
         <h2>Newsletter signup</h2>
         <p>Get early destination drops and platform updates.</p>
         <form>
@@ -63,9 +119,23 @@ export default function HomePage() {
         </form>
       </section>
 
-      <footer className="footer" aria-label="Footer">
-        <Link href="/tours">Browse Tours by City</Link>
-        <span className="footerNote">GuideAtlas</span>
+      <footer className="footer homeFooter" aria-label="Footer">
+        <div>
+          <h3>Explore Tours</h3>
+          <Link href="/tours">Browse Tours by City</Link>
+        </div>
+        <div>
+          <h3>Cities</h3>
+          <Link href="/lisbon-tours">Lisbon</Link>
+        </div>
+        <div>
+          <h3>Become a Guide</h3>
+          <a href="#join-guide">Join the Waitlist</a>
+        </div>
+        <div>
+          <h3>About GuideAtlas</h3>
+          <p className="footerNote">Connecting travelers with authentic local experiences.</p>
+        </div>
       </footer>
     </main>
   );
