@@ -13,7 +13,12 @@ guideatlas-d5ad5f3b437a.json
 *.service-account.json
 *.gcp.json
 
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
 # OS files
 .DS_Store
 Thumbs.db
-
