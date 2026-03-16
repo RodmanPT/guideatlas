@@ -456,6 +456,7 @@ export default function CityToursPage({ params }: PageProps) {
               <DestinationCard
                 key={relatedCity.slug}
                 href={getCityToursUrl(relatedCity.slug)}
+                citySlug={relatedCity.slug}
                 cityName={relatedCity.name}
                 country={relatedCity.country}
               />

@@ -29,6 +29,7 @@ export default function ToursByCityPage() {
             <DestinationCard
               key={city.slug}
               href={getCityToursUrl(city.slug)}
+              citySlug={city.slug}
               cityName={city.name}
               country={city.country}
             />
@@ -38,4 +39,3 @@ export default function ToursByCityPage() {
     </main>
   );
 }
-
