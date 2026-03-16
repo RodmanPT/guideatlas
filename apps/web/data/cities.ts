@@ -22,6 +22,11 @@ export const CITIES: City[] = [
   { slug: "vienna", name: "Vienna", country: "Austria", latitude: 48.2082, longitude: 16.3738 },
   { slug: "prague", name: "Prague", country: "Czech Republic", latitude: 50.0755, longitude: 14.4378 },
   { slug: "istanbul", name: "Istanbul", country: "Turkey", latitude: 41.0082, longitude: 28.9784 },
+  { slug: "dubai", name: "Dubai", country: "United Arab Emirates", latitude: 25.2048, longitude: 55.2708 },
+  { slug: "mexico-city", name: "Mexico City", country: "Mexico", latitude: 19.4326, longitude: -99.1332 },
+  { slug: "sydney", name: "Sydney", country: "Australia", latitude: -33.8688, longitude: 151.2093 },
+  { slug: "seoul", name: "Seoul", country: "South Korea", latitude: 37.5665, longitude: 126.978 },
+  { slug: "athens", name: "Athens", country: "Greece", latitude: 37.9838, longitude: 23.7275 },
 ];
 
 export function getCityBySlug(slug: string): City | undefined {
