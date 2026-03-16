@@ -175,6 +175,42 @@ export default function CityToursPage({ params }: PageProps) {
           },
         }
       : null;
+  const cityFaqs =
+    isCityToursPage && city
+      ? [
+          {
+            question: `What types of tours are available in ${city.name}?`,
+            answer: `${city.name} usually offers walking tours, food tours, historical tours, and private experiences led by local guides.`,
+          },
+          {
+            question: `Do I need to book tours in advance in ${city.name}?`,
+            answer: `Booking in advance is recommended, especially during weekends and peak travel months, so you can secure your preferred time and guide.`,
+          },
+          {
+            question: `Are private tours available in ${city.name}?`,
+            answer: `Yes. Many guides offer private tours with flexible itineraries, which are ideal for couples, families, or small groups.`,
+          },
+        ]
+      : null;
+  const cityFaqJsonLd =
+    isCityToursPage && cityFaqs
+      ? {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: cityFaqs.map((item) => ({
+            "@type": "Question",
+            name: item.question,
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: item.answer,
+            },
+          })),
+        }
+      : null;
+  const cityIntro =
+    isCityToursPage && city
+      ? `Discover ${city.name} through local culture, neighborhood stories, and guided experiences created by independent experts who know the city beyond the usual tourist route.`
+      : null;
 
   return (
     <main>
@@ -214,6 +250,10 @@ export default function CityToursPage({ params }: PageProps) {
         />
       ) : null}
 
+      {cityFaqJsonLd ? (
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(cityFaqJsonLd) }} />
+      ) : null}
+
       <section className="hero">
         {context.kind === "city" ? <h1>Discover the Best Tours in {city!.name}</h1> : null}
         {context.kind === "tourType" ? <h1>Discover the Best {tourType!.name}</h1> : null}
@@ -223,12 +263,7 @@ export default function CityToursPage({ params }: PageProps) {
           </h1>
         ) : null}
         <p>
-          {context.kind === "city" ? (
-            <>
-              Explore {city!.name} with independent local guides. Find experiences tailored to your pace and
-              interests.
-            </>
-          ) : null}
+          {context.kind === "city" ? <>Explore {city!.name} with independent local guides.</> : null}
           {context.kind === "tourType" ? (
             <>
               Explore {tourType!.name.toLowerCase()} with independent local guides in top destinations around
@@ -243,6 +278,13 @@ export default function CityToursPage({ params }: PageProps) {
           ) : null}
         </p>
       </section>
+
+      {cityIntro ? (
+        <section className="card" aria-label={`Introduction to tours in ${city!.name}`}>
+          <h2>Why explore {city!.name} with a local guide?</h2>
+          <p>{cityIntro}</p>
+        </section>
+      ) : null}
 
       {context.kind === "tourType" ? (
         <section className="grid" aria-label={`Cities offering ${tourType!.name.toLowerCase()}`}>
@@ -278,6 +320,18 @@ export default function CityToursPage({ params }: PageProps) {
           })}
         </section>
       )}
+
+      {isCityToursPage && cityFaqs ? (
+        <section className="ctaPanel" aria-label={`Frequently asked questions about tours in ${city!.name}`}>
+          <h2>Frequently Asked Questions</h2>
+          {cityFaqs.map((item) => (
+            <article key={item.question} className="card">
+              <h3>{item.question}</h3>
+              <p>{item.answer}</p>
+            </article>
+          ))}
+        </section>
+      ) : null}
 
       {context.kind !== "tourType" ? (
         <section className="ctaPanel" aria-label={`Traveler call to action for ${city!.name}`}>
