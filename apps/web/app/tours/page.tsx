@@ -5,11 +5,11 @@ import { CITIES } from "../../data/cities";
 import { getCityToursUrl } from "../../lib/url";
 
 export const metadata: Metadata = {
-  title: "Browse Tours by City | GuideAtlas",
-  description: "Discover authentic tours led by independent local guides.",
+  title: "Explore Tours by City | GuideAtlas",
+  description: "Explore tours around the world with independent local guides.",
   openGraph: {
-    title: "Browse Tours by City | GuideAtlas",
-    description: "Discover authentic tours led by independent local guides.",
+    title: "Explore Tours by City | GuideAtlas",
+    description: "Explore tours around the world with independent local guides.",
     type: "website",
   },
 };
@@ -18,8 +18,8 @@ export default function ToursByCityPage() {
   return (
     <main>
       <section className="hero">
-        <h1>Browse Tours by City</h1>
-        <p>Pick a destination and explore authentic experiences with independent local guides.</p>
+        <h1>Explore Tours by City</h1>
+        <p>Travelers can discover authentic tours around the world with trusted independent local guides.</p>
       </section>
 
       <section className="grid" aria-label="Cities">
