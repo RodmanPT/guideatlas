@@ -17,6 +17,7 @@ export const CITIES: City[] = [
   { slug: "tokyo", name: "Tokyo", country: "Japan", latitude: 35.6762, longitude: 139.6503 },
   { slug: "bangkok", name: "Bangkok", country: "Thailand", latitude: 13.7563, longitude: 100.5018 },
   { slug: "new-york", name: "New York", country: "United States", latitude: 40.7128, longitude: -74.006 },
+  { slug: "berlin", name: "Berlin", country: "Germany", latitude: 52.52, longitude: 13.405 },
 ];
 
 export function getCityBySlug(slug: string): City | undefined {
