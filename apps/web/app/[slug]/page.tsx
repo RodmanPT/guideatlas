@@ -18,6 +18,19 @@ type SeoContext =
   | { kind: "tourType"; tourTypeSlug: string }
   | { kind: "cityTourType"; citySlug: string; tourTypeSlug: string };
 
+function getBaseUrl(): string {
+  const raw =
+    process.env.NEXT_PUBLIC_SITE_URL ||
+    process.env.SITE_URL ||
+    process.env.DEPLOY_PRIME_URL ||
+    process.env.URL ||
+    "http://localhost:3000";
+
+  const trimmed = raw.trim().replace(/\/$/, "");
+  if (!/^https?:\/\//i.test(trimmed)) return `https://${trimmed}`;
+  return trimmed;
+}
+
 function parseSeoSlug(slug: unknown): SeoContext | null {
   if (typeof slug !== "string") return null;
   const normalized = slug.trim().toLowerCase();
@@ -119,8 +132,66 @@ export default function CityToursPage({ params }: PageProps) {
   const city = context.kind !== "tourType" ? getCityBySlug(context.citySlug)! : null;
   const tourType = context.kind !== "city" ? getTourTypeBySlug(context.tourTypeSlug)! : null;
 
+  const isCityToursPage = context.kind === "city";
+  const cityToursBreadcrumbJsonLd =
+    isCityToursPage && city
+      ? {
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          itemListElement: [
+            {
+              "@type": "ListItem",
+              position: 1,
+              name: "Home",
+              item: new URL("/", getBaseUrl()).toString(),
+            },
+            {
+              "@type": "ListItem",
+              position: 2,
+              name: "Tours",
+              item: new URL("/tours", getBaseUrl()).toString(),
+            },
+            {
+              "@type": "ListItem",
+              position: 3,
+              name: `${city.name} Tours`,
+              item: new URL(getCityToursUrl(city.slug), getBaseUrl()).toString(),
+            },
+          ],
+        }
+      : null;
+
   return (
     <main>
+      {isCityToursPage && city ? (
+        <nav className="breadcrumbs" aria-label="Breadcrumb">
+          <ol>
+            <li>
+              <Link href="/">Home</Link>
+            </li>
+            <li className="sep" aria-hidden="true">
+              →
+            </li>
+            <li>
+              <Link href="/tours">Tours</Link>
+            </li>
+            <li className="sep" aria-hidden="true">
+              →
+            </li>
+            <li aria-current="page">
+              <span>{city.name} Tours</span>
+            </li>
+          </ol>
+        </nav>
+      ) : null}
+
+      {cityToursBreadcrumbJsonLd ? (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(cityToursBreadcrumbJsonLd) }}
+        />
+      ) : null}
+
       <section className="hero">
         {context.kind === "city" ? <h1>Discover the Best Tours in {city!.name}</h1> : null}
         {context.kind === "tourType" ? <h1>Discover the Best {tourType!.name}</h1> : null}
