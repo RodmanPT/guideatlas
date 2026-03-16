@@ -1,10 +1,4 @@
-export type City = {
-  slug: string;
-  name: string;
-  country: string;
-  latitude: number;
-  longitude: number;
-};
+import type { City } from "../../shared/types/city";
 
 export const CITIES: City[] = [
   { slug: "lisbon", name: "Lisbon", country: "Portugal", latitude: 38.7223, longitude: -9.1393 },
@@ -28,6 +22,8 @@ export const CITIES: City[] = [
   { slug: "seoul", name: "Seoul", country: "South Korea", latitude: 37.5665, longitude: 126.978 },
   { slug: "athens", name: "Athens", country: "Greece", latitude: 37.9838, longitude: 23.7275 },
   { slug: "milan", name: "Milan", country: "Italy", latitude: 45.4642, longitude: 9.19 },
+  { slug: "florence", name: "Florence", country: "Italy", latitude: 43.7696, longitude: 11.2558 },
+  { slug: "venice", name: "Venice", country: "Italy", latitude: 45.4408, longitude: 12.3155 },
 ];
 
 export function getCityBySlug(slug: string): City | undefined {

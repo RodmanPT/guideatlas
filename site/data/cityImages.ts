@@ -73,6 +73,11 @@ export const CITY_IMAGE_MAP: Record<string, CityImageRecord> = {
     image_source: "legacy",
   },
   milan: { image_source: "placeholder" },
+  "venice": {
+    city_image_url: "https://images.unsplash.com/photo-1754397397187-60b016139e30?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4OTczNTh8MHwxfHNlYXJjaHwxfHxWZW5pY2UlMjBza3lsaW5lfGVufDB8MHx8fDE3NzM2ODE5NzR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+    image_author: "Ola Noland",
+    image_source: "unsplash",
+  },
 };
 
 export function getCityImage(citySlug: string): CityImageRecord | undefined {

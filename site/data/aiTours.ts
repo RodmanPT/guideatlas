@@ -411,6 +411,23 @@ export const aiTours: CityToursMap = {
   ],
 }
 
+  "venice": [
+    {
+      title: "Venice Private Discovery Route",
+      duration: "3 hours",
+      description: "A curated route through signature areas and hidden gems in Venice.",
+    },
+    {
+      title: "Venice Culture and Street Life",
+      duration: "3.5 hours",
+      description: "Experience neighborhood rhythms, architecture, and local culture in Venice.",
+    },
+    {
+      title: "Venice History Highlights",
+      duration: "2 hours",
+      description: "Walk through key landmarks and historical moments that shaped Venice.",
+    },
+  ],
 export function getAiToursByCity(citySlug: string): CuratedTour[] {
   return aiTours[citySlug] ?? [];
 }
