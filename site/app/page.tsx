@@ -38,6 +38,33 @@ const TRUST_POINTS = [
   "Unique city discoveries",
 ];
 
+const PLATFORM_DIFF_POINTS = [
+  "Guides keep full control of bookings and payments",
+  "Zero commission on tours",
+  "Travelers discover people, not commodity listings",
+  "AI-assisted matching based on intent and style",
+];
+
+const COMPARE_MARKETPLACE = [
+  "Optimized for transaction volume",
+  "Price pressure between similar listings",
+  "High commissions compress guide margins",
+  "Traveler choices feel crowded and repetitive",
+];
+
+const COMPARE_ATLAS = [
+  "A global discovery layer for independent guides",
+  "Profiles that highlight expertise, style, and personality",
+  "Bring your own booking flow: website, WhatsApp, Calendly, or preferred tools",
+  "Access to local specialists often invisible on major marketplaces",
+];
+
+const AI_DISCOVERY_PROMPTS = [
+  "Find me a food tour in Lisbon with a local chef.",
+  "Show me a photography guide in Tokyo.",
+  "Who can take me to hidden places in Rome?",
+];
+
 export default function HomePage() {
   const featuredCities = CITIES.slice(0, 9);
 
@@ -143,6 +170,79 @@ export default function HomePage() {
             <li key={point}>{point}</li>
           ))}
         </ul>
+      </section>
+
+      <section className="section positioningSection">
+        <div className="sectionHeader">
+          <p className="sectionEyebrow">Positioning</p>
+          <h2>Not Another Booking Marketplace</h2>
+          <p>
+            GuideAtlas is not trying to outscale Viator, GetYourGuide, or Airbnb Experiences. We are
+            building the opposite: a premium discovery platform where independent guides can stand out.
+          </p>
+        </div>
+        <ul className="positioningPoints">
+          {PLATFORM_DIFF_POINTS.map((point) => (
+            <li key={point}>{point}</li>
+          ))}
+        </ul>
+      </section>
+
+      <section className="section compareSection">
+        <div className="sectionHeader">
+          <h2>How We Compete With Big Brands</h2>
+          <p>We do not compete on inventory size. We compete on relevance, authenticity, and guide freedom.</p>
+        </div>
+        <div className="compareGrid">
+          <article className="compareCard">
+            <h3>Traditional Marketplaces</h3>
+            <ul>
+              {COMPARE_MARKETPLACE.map((point) => (
+                <li key={point}>{point}</li>
+              ))}
+            </ul>
+          </article>
+          <article className="compareCard compareCardAtlas">
+            <h3>GuideAtlas</h3>
+            <ul>
+              {COMPARE_ATLAS.map((point) => (
+                <li key={point}>{point}</li>
+              ))}
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section className="section sectionSoft audienceSection">
+        <div className="sectionHeader">
+          <h2>Value For Both Sides</h2>
+        </div>
+        <div className="audienceGrid">
+          <article className="audienceCard">
+            <p className="audienceLabel">For Travelers</p>
+            <h3>Discover guides worth choosing</h3>
+            <p>
+              Explore authentic profiles with niche expertise and unique local experiences beyond standardized
+              tour catalogs.
+            </p>
+          </article>
+          <article className="audienceCard">
+            <p className="audienceLabel">For Guides</p>
+            <h3>Grow without giving up control</h3>
+            <p>
+              Build a premium profile and be discovered globally while keeping your own booking and payment
+              stack.
+            </p>
+          </article>
+        </div>
+        <div className="aiDiscoveryBlock">
+          <p className="aiDiscoveryLabel">AI-assisted discovery</p>
+          <ul>
+            {AI_DISCOVERY_PROMPTS.map((prompt) => (
+              <li key={prompt}>&ldquo;{prompt}&rdquo;</li>
+            ))}
+          </ul>
+        </div>
       </section>
 
       <section className="section sectionSoft guideCtaBlock">

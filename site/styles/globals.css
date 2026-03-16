@@ -660,6 +660,144 @@ a {
   color: var(--muted);
 }
 
+.sectionEyebrow {
+  margin: 0 0 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.78rem;
+  color: var(--brand-strong);
+  font-weight: 700;
+}
+
+.positioningSection {
+  border: 1px solid rgba(13, 106, 106, 0.22);
+  border-radius: 1.1rem;
+  padding: 1.4rem;
+  background:
+    radial-gradient(circle at 95% 0%, rgba(13, 106, 106, 0.16), transparent 38%),
+    linear-gradient(155deg, #f9f6ef 0%, #f2ecdf 100%);
+}
+
+.positioningPoints {
+  list-style: none;
+  margin: 1.1rem 0 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.75rem;
+}
+
+.positioningPoints li {
+  background: rgba(255, 255, 255, 0.65);
+  border: 1px solid rgba(13, 106, 106, 0.22);
+  border-radius: 0.85rem;
+  padding: 0.85rem 0.9rem;
+  font-weight: 600;
+}
+
+.compareSection {
+  padding-top: 0.3rem;
+}
+
+.compareGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.9rem;
+}
+
+.compareCard {
+  border: 1px solid var(--line);
+  border-radius: 1rem;
+  background: var(--surface);
+  padding: 1.05rem;
+}
+
+.compareCard h3 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.compareCard ul {
+  margin: 0.75rem 0 0;
+  padding-left: 1.05rem;
+  display: grid;
+  gap: 0.45rem;
+  color: #364452;
+}
+
+.compareCardAtlas {
+  border-color: rgba(13, 106, 106, 0.35);
+  background:
+    radial-gradient(circle at 90% 5%, rgba(13, 106, 106, 0.14), transparent 45%),
+    #f5f8f7;
+}
+
+.audienceSection {
+  padding: 1.35rem;
+}
+
+.audienceGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.85rem;
+}
+
+.audienceCard {
+  border: 1px solid var(--line);
+  border-radius: 0.95rem;
+  background: rgba(255, 255, 255, 0.76);
+  padding: 1rem;
+}
+
+.audienceLabel {
+  margin: 0;
+  color: var(--brand-strong);
+  font-weight: 700;
+  font-size: 0.84rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.audienceCard h3 {
+  margin: 0.45rem 0 0;
+}
+
+.audienceCard p:not(.audienceLabel) {
+  margin: 0.45rem 0 0;
+  color: var(--muted);
+}
+
+.aiDiscoveryBlock {
+  margin-top: 1rem;
+  border: 1px dashed rgba(13, 106, 106, 0.35);
+  border-radius: 0.95rem;
+  padding: 0.9rem;
+  background: rgba(13, 106, 106, 0.05);
+}
+
+.aiDiscoveryLabel {
+  margin: 0;
+  font-size: 0.82rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--brand-strong);
+  font-weight: 700;
+}
+
+.aiDiscoveryBlock ul {
+  margin: 0.65rem 0 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 0.5rem;
+}
+
+.aiDiscoveryBlock li {
+  margin: 0;
+  font-family: var(--font-heading), Georgia, serif;
+  color: #283744;
+}
+
 .signup {
   margin-top: clamp(3.8rem, 7vw, 5.8rem);
   border: 1px solid var(--line);
@@ -1125,6 +1263,12 @@ a {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .positioningPoints,
+  .compareGrid,
+  .audienceGrid {
+    grid-template-columns: 1fr;
+  }
+
   .siteFooterInner {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -1205,6 +1349,9 @@ a {
   .tourGrid,
   .aiTourGrid,
   .stepsGrid,
+  .positioningPoints,
+  .compareGrid,
+  .audienceGrid,
   .trustGrid,
   .siteFooterInner,
   .guideToursGrid {
