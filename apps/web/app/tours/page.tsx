@@ -33,7 +33,9 @@ export default function ToursByCityPage() {
 
       <footer className="footer" aria-label="Footer">
         <Link href="/#join-guide">Become a Guide</Link>
-        <span className="footerNote">GuideAtlas</span>
+        <Link href="/privacy-policy">Privacy</Link>
+        <Link href="/terms-of-service">Terms</Link>
+        <Link href="/cookie-policy">Cookies</Link>
       </footer>
     </main>
   );

@@ -433,7 +433,9 @@ export default function CityToursPage({ params }: PageProps) {
 
       <footer className="footer" aria-label="Footer">
         <Link href="/tours">Browse Tours by City</Link>
-        <span className="footerNote">GuideAtlas</span>
+        <Link href="/privacy-policy">Privacy</Link>
+        <Link href="/terms-of-service">Terms</Link>
+        <Link href="/cookie-policy">Cookies</Link>
       </footer>
     </main>
   );
