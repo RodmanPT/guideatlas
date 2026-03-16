@@ -56,6 +56,21 @@ function getBaseUrl(): string {
   return trimmed;
 }
 
+function getCountryFlagEmoji(country: string): string | null {
+  const flagsByCountry: Record<string, string> = {
+    Portugal: "🇵🇹",
+    Spain: "🇪🇸",
+    Italy: "🇮🇹",
+    France: "🇫🇷",
+    "United Kingdom": "🇬🇧",
+    Japan: "🇯🇵",
+    Thailand: "🇹🇭",
+    "United States": "🇺🇸",
+  };
+
+  return flagsByCountry[country] ?? null;
+}
+
 function parseSeoSlug(slug: unknown): SeoContext | null {
   if (typeof slug !== "string") return null;
   const normalized = slug.trim().toLowerCase();
@@ -108,8 +123,11 @@ export function generateMetadata({ params }: PageProps): Metadata {
 
   if (context.kind === "city") {
     const city = getCityBySlug(context.citySlug)!;
-    const title = `Discover the Best Tours in ${city.name} | GuideAtlas`;
-    const description = `Discover authentic tours in ${city.name} led by independent local guides.`;
+    const countryFlag = getCountryFlagEmoji(city.country);
+    const title = countryFlag
+      ? `Best Tours in ${city.name} ${countryFlag} | GuideAtlas`
+      : `Best Tours in ${city.name} | GuideAtlas`;
+    const description = `Explore the best tours in ${city.name} with independent local guides. Walking tours, food tours and private experiences.`;
     const canonical = getCityToursUrl(city.slug);
 
     return {
