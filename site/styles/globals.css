@@ -389,8 +389,32 @@ a {
   margin: 0.55rem 0 0.4rem;
 }
 
-.guideTourMeta {
+.guideTourCard {
+  padding: 0;
+  overflow: hidden;
+}
+
+.guideTourImageWrap {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  background: #d8dde2;
+}
+
+.guideTourImage {
+  object-fit: cover;
+}
+
+.guideTourBody {
+  padding: 1rem;
+}
+
+.guideTourBody .tourCardBadge {
   margin: 0;
+}
+
+.guideTourMeta {
+  margin: 0.45rem 0 0;
   color: #314455;
   font-weight: 700;
 }

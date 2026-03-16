@@ -3,6 +3,7 @@ export type DemoGuideTour = {
   title: string;
   duration: string;
   subtitle: string;
+  imageUrl: string;
 };
 
 export type DemoGuideProfile = {
@@ -43,19 +44,24 @@ export const DEMO_GUIDE_PROFILE: DemoGuideProfile = {
       title: "Lisbon Hidden Viewpoints Walk",
       duration: "3h",
       subtitle: "Small group experience",
+      imageUrl:
+        "https://images.unsplash.com/photo-1513735492246-483525079686?auto=format&fit=crop&w=1200&q=80",
     },
     {
       id: "demo-lisbon-food",
       title: "Lisbon Street Food Tour",
       duration: "2.5h",
       subtitle: "Includes food tastings",
+      imageUrl:
+        "https://images.unsplash.com/photo-1556761223-4c4282c73f77?auto=format&fit=crop&w=1200&q=80",
     },
     {
       id: "demo-alfama-history",
       title: "Alfama History Walking Tour",
       duration: "2h",
       subtitle: "Explore Lisbon's oldest district",
+      imageUrl:
+        "https://images.unsplash.com/photo-1585208798174-6cedd86e019a?auto=format&fit=crop&w=1200&q=80",
     },
   ],
 };
-

@@ -14,10 +14,15 @@ export default function GuideToursGrid({ tours }: Props) {
       </div>
       <div className="guideToursGrid">
         {tours.map((tour) => (
-          <GuideTourCard key={tour.id} title={tour.title} duration={tour.duration} subtitle={tour.subtitle} />
+          <GuideTourCard
+            key={tour.id}
+            title={tour.title}
+            duration={tour.duration}
+            subtitle={tour.subtitle}
+            imageUrl={tour.imageUrl}
+          />
         ))}
       </div>
     </section>
   );
 }
-
