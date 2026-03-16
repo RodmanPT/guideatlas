@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 
+import DestinationCard from "../../components/DestinationCard";
 import { CITIES } from "../../data/cities";
 import { getCityToursUrl } from "../../lib/url";
 
@@ -16,27 +16,26 @@ export const metadata: Metadata = {
 
 export default function ToursByCityPage() {
   return (
-    <main>
-      <section className="hero">
+    <main className="pageMain">
+      <section className="hero heroCompact">
+        <p className="heroKicker">Destinations</p>
         <h1>Explore Tours by City</h1>
-        <p>Travelers can discover authentic tours around the world with trusted independent local guides.</p>
+        <p>Find local experiences around the world and discover where GuideAtlas is launching first.</p>
       </section>
 
-      <section className="grid" aria-label="Cities">
-        {CITIES.map((city) => (
-          <Link key={city.slug} className="card cardLink" href={getCityToursUrl(city.slug)}>
-            <h2>{city.name}</h2>
-            <p>{city.country}</p>
-          </Link>
-        ))}
+      <section className="section">
+        <div className="destinationGrid">
+          {CITIES.map((city) => (
+            <DestinationCard
+              key={city.slug}
+              href={getCityToursUrl(city.slug)}
+              cityName={city.name}
+              country={city.country}
+            />
+          ))}
+        </div>
       </section>
-
-      <footer className="footer" aria-label="Footer">
-        <Link href="/#join-guide">Become a Guide</Link>
-        <Link href="/privacy-policy">Privacy</Link>
-        <Link href="/terms-of-service">Terms</Link>
-        <Link href="/cookie-policy">Cookies</Link>
-      </footer>
     </main>
   );
 }
+

@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Terms of Service | GuideAtlas",
@@ -17,8 +16,8 @@ export const metadata: Metadata = {
 
 export default function TermsOfServicePage() {
   return (
-    <main>
-      <section className="hero">
+    <main className="pageMain">
+      <section className="hero heroCompact">
         <h1>Terms of Service</h1>
         <p>
           GuideAtlas is a platform that connects travelers with independent local guides offering tours and
@@ -26,7 +25,7 @@ export default function TermsOfServicePage() {
         </p>
       </section>
 
-      <section className="card" aria-label="Terms of service content">
+      <section className="card section" aria-label="Terms of service content">
         <h2>Platform Role</h2>
         <p>
           GuideAtlas provides discovery and communication tools. Guides are independent providers. Unless
@@ -80,12 +79,6 @@ export default function TermsOfServicePage() {
         </p>
       </section>
 
-      <footer className="footer" aria-label="Footer">
-        <Link href="/">Home</Link>
-        <Link href="/privacy-policy">Privacy</Link>
-        <Link href="/cookie-policy">Cookies</Link>
-      </footer>
     </main>
   );
 }
-

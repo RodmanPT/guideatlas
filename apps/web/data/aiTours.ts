@@ -6,33 +6,185 @@ export type CuratedTour = {
 
 export type CityToursMap = Record<string, CuratedTour[]>;
 
-export const aiTours: CityToursMap = {  "berlin": [
+export const aiTours: CityToursMap = {
+  "lisbon": [
+
+    {
+      title: "Lisbon Food and Wine Walk",
+      duration: "3 hours",
+      description: "Discover Lisbon traditional flavors in Alfama and Baixa with curated tasting stops.",
+    },
+    {
+      title: "Hidden Lisbon Viewpoints",
+      duration: "2 hours",
+      description: "Explore secret miradouros and backstreets with panoramic views over the city.",
+    },
+    {
+      title: "Belem History Walk",
+      duration: "2.5 hours",
+      description: "Discover Portugal maritime heritage in Belem through monuments and riverside stories.",
+    },
+  ],
+  "rome": [
+
+    {
+      title: "Roman Classics Walk",
+      duration: "3 hours",
+      description: "See iconic landmarks while understanding the daily life of ancient and modern Rome.",
+    },
+    {
+      title: "Trastevere Food Journey",
+      duration: "2.5 hours",
+      description: "Taste local favorites in Trastevere and learn the neighborhood culinary traditions.",
+    },
+    {
+      title: "Sunset Piazza Route",
+      duration: "2 hours",
+      description: "Walk through Rome most beautiful piazzas at golden hour with local context.",
+    },
+  ],
+  "barcelona": [
+
+    {
+      title: "Gothic Quarter Stories",
+      duration: "2.5 hours",
+      description: "Explore medieval streets and legends in Barcelona old town with curated stops.",
+    },
+    {
+      title: "Gaudi and Modernism Tour",
+      duration: "3 hours",
+      description: "Follow the modernist route through architecture, history, and city identity.",
+    },
+    {
+      title: "Barcelona Tapas and Markets",
+      duration: "2 hours",
+      description: "Sample local bites in neighborhood bars and traditional market stalls.",
+    },
+  ],
+  "tokyo": [
+
+    {
+      title: "Tokyo Night Districts",
+      duration: "3 hours",
+      description: "Discover Tokyo evening culture through neon streets, food alleys, and local rituals.",
+    },
+    {
+      title: "Asakusa and Old Tokyo",
+      duration: "2.5 hours",
+      description: "Experience temple traditions and historic neighborhoods in old Tokyo.",
+    },
+    {
+      title: "Shibuya to Harajuku Walk",
+      duration: "2 hours",
+      description: "Move between iconic areas to explore youth culture, design, and street life.",
+    },
+  ],
+  "paris": [
+
+    {
+      title: "Paris Left Bank Walk",
+      duration: "2.5 hours",
+      description: "Discover literary and artistic Paris through classic Left Bank streets.",
+    },
+    {
+      title: "Montmartre Hidden Corners",
+      duration: "2 hours",
+      description: "Explore village style streets, viewpoints, and stories of old Montmartre.",
+    },
+    {
+      title: "Paris Pastry Route",
+      duration: "2 hours",
+      description: "Taste signature pastries while learning neighborhood food traditions.",
+    },
+  ],
+  "london": [
+
+    {
+      title: "Historic London Highlights",
+      duration: "3 hours",
+      description: "Connect royal landmarks, river history, and local stories in central London.",
+    },
+    {
+      title: "East London Street Culture",
+      duration: "2.5 hours",
+      description: "Explore creative districts, street art, and independent food spots.",
+    },
+    {
+      title: "London Pub and Stories Walk",
+      duration: "2 hours",
+      description: "Visit classic pubs and discover how neighborhoods shaped city life.",
+    },
+  ],
+  "bangkok": [
+
+    {
+      title: "Bangkok Street Food Trail",
+      duration: "3 hours",
+      description: "Taste iconic dishes in local markets and neighborhood food streets.",
+    },
+    {
+      title: "Temple and Canal Route",
+      duration: "2.5 hours",
+      description: "Discover Bangkok heritage through temples, canals, and local communities.",
+    },
+    {
+      title: "Bangkok Night Markets",
+      duration: "2 hours",
+      description: "Explore lively night markets with curated shopping and tasting stops.",
+    },
+  ],
+  "new-york": [
+
+    {
+      title: "New York Neighborhood Sampler",
+      duration: "3 hours",
+      description: "Walk through distinct neighborhoods and discover each area local character.",
+    },
+    {
+      title: "Brooklyn Waterfront Route",
+      duration: "2.5 hours",
+      description: "Experience skyline views, local history, and creative spots in Brooklyn.",
+    },
+    {
+      title: "New York Food Classics",
+      duration: "2 hours",
+      description: "Taste city staples while learning the stories behind iconic local flavors.",
+    },
+  ],
+  "berlin": [
+
+    {
+      title: "Berlin Culture and Street Life",
+      duration: "3.5 hours",
+      description: "Experience neighborhood rhythms, architecture, and local culture in Berlin.",
+    },
     {
       title: "Berlin Private Discovery Route",
       duration: "3 hours",
       description: "A curated route through signature areas and hidden gems in Berlin.",
     },
     {
+      title: "Berlin Food and Markets Walk",
+      duration: "3 hours",
+      description: "Discover local flavors and market culture in Berlin with curated tasting stops.",
+    },
+    {
+      title: "Hidden Corners of Berlin",
+      duration: "2.5 hours",
+      description: "Explore lesser-known neighborhoods and stories that show the local side of Berlin.",
+    },
+    {
       title: "Berlin History Highlights",
       duration: "2 hours",
       description: "Walk through key landmarks and historical moments that shaped Berlin.",
     },
-    {
-      title: "Berlin Culture and Street Life",
-      duration: "3.5 hours",
-      description: "Experience neighborhood rhythms, architecture, and local culture in Berlin.",
-    },
   ],
   "amsterdam": [
+
     {
-      title: "Amsterdam Food and Markets Walk",
-      duration: "3 hours",
-      description: "Discover local flavors and market culture in Amsterdam with curated tasting stops.",
-    },
-    {
-      title: "Amsterdam History Highlights",
-      duration: "2 hours",
-      description: "Walk through key landmarks and historical moments that shaped Amsterdam.",
+      title: "Amsterdam Culture and Street Life",
+      duration: "3.5 hours",
+      description: "Experience neighborhood rhythms, architecture, and local culture in Amsterdam.",
     },
     {
       title: "Amsterdam Private Discovery Route",
@@ -40,12 +192,23 @@ export const aiTours: CityToursMap = {  "berlin": [
       description: "A curated route through signature areas and hidden gems in Amsterdam.",
     },
     {
+      title: "Amsterdam Food and Markets Walk",
+      duration: "3 hours",
+      description: "Discover local flavors and market culture in Amsterdam with curated tasting stops.",
+    },
+    {
       title: "Hidden Corners of Amsterdam",
       duration: "2.5 hours",
       description: "Explore lesser-known neighborhoods and stories that show the local side of Amsterdam.",
     },
+    {
+      title: "Amsterdam History Highlights",
+      duration: "2 hours",
+      description: "Walk through key landmarks and historical moments that shaped Amsterdam.",
+    },
   ],
   "vienna": [
+
     {
       title: "Vienna Sunset Viewpoints",
       duration: "2 hours",
@@ -68,6 +231,7 @@ export const aiTours: CityToursMap = {  "berlin": [
     },
   ],
   "prague": [
+
     {
       title: "Prague Culture and Street Life",
       duration: "3.5 hours",
@@ -90,6 +254,7 @@ export const aiTours: CityToursMap = {  "berlin": [
     },
   ],
   "istanbul": [
+
     {
       title: "Istanbul History Highlights",
       duration: "2 hours",
@@ -107,6 +272,7 @@ export const aiTours: CityToursMap = {  "berlin": [
     },
   ],
   "dubai": [
+
     {
       title: "Dubai History Highlights",
       duration: "2 hours",
@@ -129,6 +295,7 @@ export const aiTours: CityToursMap = {  "berlin": [
     },
   ],
   "mexico-city": [
+
     {
       title: "Mexico City Private Discovery Route",
       duration: "3 hours",
@@ -146,6 +313,7 @@ export const aiTours: CityToursMap = {  "berlin": [
     },
   ],
   "sydney": [
+
     {
       title: "Hidden Corners of Sydney",
       duration: "2.5 hours",
@@ -168,6 +336,7 @@ export const aiTours: CityToursMap = {  "berlin": [
     },
   ],
   "seoul": [
+
     {
       title: "Hidden Corners of Seoul",
       duration: "2.5 hours",
@@ -185,6 +354,7 @@ export const aiTours: CityToursMap = {  "berlin": [
     },
   ],
   "athens": [
+
     {
       title: "Hidden Corners of Athens",
       duration: "2.5 hours",
@@ -212,6 +382,7 @@ export const aiTours: CityToursMap = {  "berlin": [
     },
   ],
   "milan": [
+
     {
       title: "Milan Culture and Street Life",
       duration: "3.5 hours",
@@ -238,7 +409,7 @@ export const aiTours: CityToursMap = {  "berlin": [
       description: "A curated route through signature areas and hidden gems in Milan.",
     },
   ],
-};
+}
 
 export function getAiToursByCity(citySlug: string): CuratedTour[] {
   return aiTours[citySlug] ?? [];

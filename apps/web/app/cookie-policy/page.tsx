@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Cookie Policy | GuideAtlas",
@@ -17,13 +16,13 @@ export const metadata: Metadata = {
 
 export default function CookiePolicyPage() {
   return (
-    <main>
-      <section className="hero">
+    <main className="pageMain">
+      <section className="hero heroCompact">
         <h1>Cookie Policy</h1>
         <p>This page explains how GuideAtlas uses cookies and similar technologies.</p>
       </section>
 
-      <section className="card" aria-label="Cookie policy content">
+      <section className="card section" aria-label="Cookie policy content">
         <h2>Essential Cookies</h2>
         <p>
           Essential cookies may be used to enable core functionality and security. For example, they can
@@ -49,12 +48,6 @@ export default function CookiePolicyPage() {
         </p>
       </section>
 
-      <footer className="footer" aria-label="Footer">
-        <Link href="/">Home</Link>
-        <Link href="/privacy-policy">Privacy</Link>
-        <Link href="/terms-of-service">Terms</Link>
-      </footer>
     </main>
   );
 }
-

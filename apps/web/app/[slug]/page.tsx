@@ -2,8 +2,13 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 
+import DestinationCard from "../../components/DestinationCard";
+import EmptyState from "../../components/EmptyState";
+import TourCard from "../../components/TourCard";
 import { CITIES, getCityBySlug } from "../../data/cities";
 import { getCityToursUrl } from "../../lib/url";
+import { getAiToursByCity } from "../../data/aiTours";
+import { getCitySeoIntro } from "../../data/citySeoIntros";
 import { TOUR_TYPES, getTourTypeBySlug, tourTypeCityPath, tourTypePath } from "../../data/tourTypes";
 
 type PageProps = {
@@ -252,12 +257,13 @@ export default function CityToursPage({ params }: PageProps) {
       : null;
   const cityIntro =
     isCityToursPage && city
-      ? `Discover ${city.name} through local culture, neighborhood stories, and guided experiences created by independent experts who know the city beyond the usual tourist route.`
+      ? getCitySeoIntro(city.slug, city.name)
       : null;
+  const aiSuggestedTours = isCityToursPage && city ? getAiToursByCity(city.slug) : [];
   const relatedCities = isCityToursPage && city ? getRandomCityLinks(city.slug) : [];
 
   return (
-    <main>
+    <main className="pageMain">
       {isCityToursPage && city ? (
         <nav className="breadcrumbs" aria-label="Breadcrumb">
           <ol>
@@ -298,7 +304,7 @@ export default function CityToursPage({ params }: PageProps) {
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(cityFaqJsonLd) }} />
       ) : null}
 
-      <section className="hero">
+      <section className="hero heroCompact">
         {context.kind === "city" ? <h1>Discover the Best Tours in {city!.name}</h1> : null}
         {context.kind === "tourType" ? <h1>Discover the Best {tourType!.name}</h1> : null}
         {context.kind === "cityTourType" ? (
@@ -324,14 +330,43 @@ export default function CityToursPage({ params }: PageProps) {
       </section>
 
       {cityIntro ? (
-        <section className="card" aria-label={`Introduction to tours in ${city!.name}`}>
+        <section className="card section" aria-label={`Introduction to tours in ${city!.name}`}>
           <h2>Why explore {city!.name} with a local guide?</h2>
           <p>{cityIntro}</p>
         </section>
       ) : null}
 
+      {isCityToursPage && aiSuggestedTours.length > 0 ? (
+        <section className="section" aria-label={`Suggested tours in ${city!.name}`}>
+          <h2>Suggested Tours in {city!.name}</h2>
+          <div className="aiTourGrid">
+            {aiSuggestedTours.map((tour) => (
+              <TourCard
+                key={tour.title}
+                badge="AI Curated"
+                title={tour.title}
+                duration={tour.duration}
+                guideLabel="Local Guide"
+                description={tour.description}
+                href={`/become-guide?city=${encodeURIComponent(city!.name)}&tour=${encodeURIComponent(tour.title)}`}
+                actionLabel="Claim this tour"
+              />
+            ))}
+          </div>
+        </section>
+      ) : null}
+
+      {isCityToursPage && aiSuggestedTours.length === 0 ? (
+        <EmptyState
+          title="No tours yet in this city"
+          text="We're inviting local guides to publish their first experiences here."
+          actionHref={`/become-guide?city=${encodeURIComponent(city!.name)}`}
+          actionLabel="Become the first guide"
+        />
+      ) : null}
+
       {context.kind === "tourType" ? (
-        <section className="grid" aria-label={`Cities offering ${tourType!.name.toLowerCase()}`}>
+        <section className="grid section" aria-label={`Cities offering ${tourType!.name.toLowerCase()}`}>
           {CITIES.map((c) => (
             <Link key={c.slug} className="card cardLink" href={tourTypeCityPath(tourType!.slug, c.slug)}>
               <h2>{tourType!.name} in {c.name}</h2>
@@ -340,7 +375,7 @@ export default function CityToursPage({ params }: PageProps) {
           ))}
         </section>
       ) : (
-        <section className="grid" id="types" aria-label={`Tour types in ${city!.name}`}>
+        <section className="grid section" id="types" aria-label={`Tour types in ${city!.name}`}>
           {TOUR_TYPES.map((t) => {
             const href =
               context.kind === "cityTourType" && t.slug === tourType!.slug
@@ -366,7 +401,7 @@ export default function CityToursPage({ params }: PageProps) {
       )}
 
       {isCityToursPage && cityFaqs ? (
-        <section className="ctaPanel" aria-label={`Frequently asked questions about tours in ${city!.name}`}>
+        <section className="ctaPanel section" aria-label={`Frequently asked questions about tours in ${city!.name}`}>
           <h2>Frequently Asked Questions</h2>
           {cityFaqs.map((item) => (
             <article key={item.question} className="card">
@@ -378,7 +413,7 @@ export default function CityToursPage({ params }: PageProps) {
       ) : null}
 
       {context.kind !== "tourType" ? (
-        <section className="ctaPanel" aria-label={`Traveler call to action for ${city!.name}`}>
+        <section className="ctaPanel section" aria-label={`Traveler call to action for ${city!.name}`}>
           <h2>Looking for a local guide in {city!.name}?</h2>
           <p>We are building the best way to discover authentic experiences led by independent guides.</p>
           <a className="cta" href="#types">
@@ -386,7 +421,7 @@ export default function CityToursPage({ params }: PageProps) {
           </a>
         </section>
       ) : (
-        <section className="ctaPanel" aria-label="Traveler call to action">
+        <section className="ctaPanel section" aria-label="Traveler call to action">
           <h2>Looking for a local guide?</h2>
           <p>Browse destinations and discover authentic experiences led by independent local experts.</p>
           <Link className="cta" href="/tours">
@@ -396,7 +431,7 @@ export default function CityToursPage({ params }: PageProps) {
       )}
 
       {context.kind !== "tourType" ? (
-        <section className="ctaPanel" aria-label={`Guide call to action for ${city!.name}`}>
+        <section className="ctaPanel section" aria-label={`Guide call to action for ${city!.name}`}>
           <h2>Are you a guide in {city!.name}?</h2>
           <p>Join the founding guide network and get early onboarding support.</p>
           <a className="cta" href="/#join-guide">
@@ -404,7 +439,7 @@ export default function CityToursPage({ params }: PageProps) {
           </a>
         </section>
       ) : (
-        <section className="ctaPanel" aria-label="Guide call to action">
+        <section className="ctaPanel section" aria-label="Guide call to action">
           <h2>Are you a guide?</h2>
           <p>Join the founding guide network and get early onboarding support.</p>
           <a className="cta" href="/#join-guide">
@@ -414,29 +449,20 @@ export default function CityToursPage({ params }: PageProps) {
       )}
 
       {isCityToursPage && relatedCities.length > 0 ? (
-        <section className="ctaPanel" aria-label={`Explore tours in other cities from ${city!.name}`}>
+        <section className="section" aria-label={`Explore tours in other cities from ${city!.name}`}>
           <h2>Explore tours in other cities</h2>
-          <div className="grid">
+          <div className="destinationGrid">
             {relatedCities.map((relatedCity) => (
-              <Link
+              <DestinationCard
                 key={relatedCity.slug}
-                className="card cardLink"
                 href={getCityToursUrl(relatedCity.slug)}
-              >
-                <h3>{relatedCity.name}</h3>
-                <p>{relatedCity.country}</p>
-              </Link>
+                cityName={relatedCity.name}
+                country={relatedCity.country}
+              />
             ))}
           </div>
         </section>
       ) : null}
-
-      <footer className="footer" aria-label="Footer">
-        <Link href="/tours">Browse Tours by City</Link>
-        <Link href="/privacy-policy">Privacy</Link>
-        <Link href="/terms-of-service">Terms</Link>
-        <Link href="/cookie-policy">Cookies</Link>
-      </footer>
     </main>
   );
 }

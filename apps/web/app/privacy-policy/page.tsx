@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Privacy Policy | GuideAtlas",
@@ -17,8 +16,8 @@ export const metadata: Metadata = {
 
 export default function PrivacyPolicyPage() {
   return (
-    <main>
-      <section className="hero">
+    <main className="pageMain">
+      <section className="hero heroCompact">
         <h1>Privacy Policy</h1>
         <p>
           GuideAtlas is building a marketplace that connects travelers with independent local guides. This
@@ -26,7 +25,7 @@ export default function PrivacyPolicyPage() {
         </p>
       </section>
 
-      <section className="card" aria-label="Privacy policy content">
+      <section className="card section" aria-label="Privacy policy content">
         <h2>What We Collect</h2>
         <p>
           When you join the guide waitlist, we may collect: your name, email address, city, country, and the
@@ -77,12 +76,6 @@ export default function PrivacyPolicyPage() {
         </p>
       </section>
 
-      <footer className="footer" aria-label="Footer">
-        <Link href="/">Home</Link>
-        <Link href="/terms-of-service">Terms</Link>
-        <Link href="/cookie-policy">Cookies</Link>
-      </footer>
     </main>
   );
 }
-
