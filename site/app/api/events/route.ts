@@ -62,7 +62,8 @@ export async function POST(request: Request) {
 
     return NextResponse.json({ ok: true }, { status: 201 });
   } catch (error) {
-    console.error(error);
-    return NextResponse.json({ error: "Failed to track event." }, { status: 500 });
+    // Tracking must never break UX; keep a soft-fail in MVP.
+    console.warn("Event tracking skipped.", error);
+    return NextResponse.json({ ok: true, skipped: true }, { status: 202 });
   }
 }
