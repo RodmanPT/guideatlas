@@ -6,6 +6,7 @@
   "scripts": {
     "city-generator": "tsx city-generator/job.ts",
     "image-fetcher": "tsx image-fetcher/job.ts",
+    "image-backfill": "tsx image-fetcher/backfill-city-images.ts",
     "discovery-agent": "tsx discovery-agent/job.ts"
   },
   "dependencies": {

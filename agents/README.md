@@ -21,6 +21,7 @@ npm install
 npm run city-generator
 npm run discovery-agent
 npm run image-fetcher
+npm run image-backfill
 ```
 
 ## Environment
