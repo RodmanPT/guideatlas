@@ -18,6 +18,31 @@ type SeoContext =
   | { kind: "tourType"; tourTypeSlug: string }
   | { kind: "cityTourType"; citySlug: string; tourTypeSlug: string };
 
+function hashString(input: string): number {
+  let hash = 0;
+  for (let i = 0; i < input.length; i += 1) {
+    hash = (hash << 5) - hash + input.charCodeAt(i);
+    hash |= 0;
+  }
+  return Math.abs(hash);
+}
+
+function getRandomCityLinks(currentCitySlug: string, min = 4, max = 6) {
+  const candidates = CITIES.filter((city) => city.slug !== currentCitySlug);
+  if (candidates.length === 0) return [];
+
+  const seed = hashString(currentCitySlug);
+  const count = Math.min(candidates.length, min + (seed % (max - min + 1)));
+
+  const sorted = [...candidates].sort((a, b) => {
+    const aWeight = hashString(`${currentCitySlug}-${a.slug}`);
+    const bWeight = hashString(`${currentCitySlug}-${b.slug}`);
+    return aWeight - bWeight;
+  });
+
+  return sorted.slice(0, count);
+}
+
 function getBaseUrl(): string {
   const raw =
     process.env.NEXT_PUBLIC_SITE_URL ||
@@ -211,6 +236,7 @@ export default function CityToursPage({ params }: PageProps) {
     isCityToursPage && city
       ? `Discover ${city.name} through local culture, neighborhood stories, and guided experiences created by independent experts who know the city beyond the usual tourist route.`
       : null;
+  const relatedCities = isCityToursPage && city ? getRandomCityLinks(city.slug) : [];
 
   return (
     <main>
@@ -368,6 +394,24 @@ export default function CityToursPage({ params }: PageProps) {
           </a>
         </section>
       )}
+
+      {isCityToursPage && relatedCities.length > 0 ? (
+        <section className="ctaPanel" aria-label={`Explore tours in other cities from ${city!.name}`}>
+          <h2>Explore tours in other cities</h2>
+          <div className="grid">
+            {relatedCities.map((relatedCity) => (
+              <Link
+                key={relatedCity.slug}
+                className="card cardLink"
+                href={getCityToursUrl(relatedCity.slug)}
+              >
+                <h3>{relatedCity.name}</h3>
+                <p>{relatedCity.country}</p>
+              </Link>
+            ))}
+          </div>
+        </section>
+      ) : null}
 
       <footer className="footer" aria-label="Footer">
         <Link href="/tours">Browse Tours by City</Link>
