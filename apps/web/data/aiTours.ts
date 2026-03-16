@@ -67,6 +67,28 @@ export const aiTours: CityToursMap = {  "berlin": [
       description: "A curated route through signature areas and hidden gems in Vienna.",
     },
   ],
+  "prague": [
+    {
+      title: "Prague Culture and Street Life",
+      duration: "3.5 hours",
+      description: "Experience neighborhood rhythms, architecture, and local culture in Prague.",
+    },
+    {
+      title: "Hidden Corners of Prague",
+      duration: "2.5 hours",
+      description: "Explore lesser-known neighborhoods and stories that show the local side of Prague.",
+    },
+    {
+      title: "Prague Private Discovery Route",
+      duration: "3 hours",
+      description: "A curated route through signature areas and hidden gems in Prague.",
+    },
+    {
+      title: "Prague Food and Markets Walk",
+      duration: "3 hours",
+      description: "Discover local flavors and market culture in Prague with curated tasting stops.",
+    },
+  ],
 };
 
 export function getAiToursByCity(citySlug: string): CuratedTour[] {
