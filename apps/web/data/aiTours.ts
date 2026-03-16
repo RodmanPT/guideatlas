@@ -89,6 +89,23 @@ export const aiTours: CityToursMap = {  "berlin": [
       description: "Discover local flavors and market culture in Prague with curated tasting stops.",
     },
   ],
+  "istanbul": [
+    {
+      title: "Istanbul History Highlights",
+      duration: "2 hours",
+      description: "Walk through key landmarks and historical moments that shaped Istanbul.",
+    },
+    {
+      title: "Istanbul Culture and Street Life",
+      duration: "3.5 hours",
+      description: "Experience neighborhood rhythms, architecture, and local culture in Istanbul.",
+    },
+    {
+      title: "Istanbul Sunset Viewpoints",
+      duration: "2 hours",
+      description: "Visit scenic viewpoints and photogenic routes around Istanbul at golden hour.",
+    },
+  ],
 };
 
 export function getAiToursByCity(citySlug: string): CuratedTour[] {
