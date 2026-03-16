@@ -45,7 +45,7 @@ export const DEMO_GUIDE_PROFILE: DemoGuideProfile = {
       duration: "3h",
       subtitle: "Small group experience",
       imageUrl:
-        "https://images.unsplash.com/photo-1513735492246-483525079686?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1645976442485-82a2d110fc07?auto=format&fit=crop&w=1200&q=80",
     },
     {
       id: "demo-lisbon-food",
