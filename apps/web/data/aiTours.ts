@@ -45,6 +45,28 @@ export const aiTours: CityToursMap = {  "berlin": [
       description: "Explore lesser-known neighborhoods and stories that show the local side of Amsterdam.",
     },
   ],
+  "vienna": [
+    {
+      title: "Vienna Sunset Viewpoints",
+      duration: "2 hours",
+      description: "Visit scenic viewpoints and photogenic routes around Vienna at golden hour.",
+    },
+    {
+      title: "Vienna History Highlights",
+      duration: "2 hours",
+      description: "Walk through key landmarks and historical moments that shaped Vienna.",
+    },
+    {
+      title: "Hidden Corners of Vienna",
+      duration: "2.5 hours",
+      description: "Explore lesser-known neighborhoods and stories that show the local side of Vienna.",
+    },
+    {
+      title: "Vienna Private Discovery Route",
+      duration: "3 hours",
+      description: "A curated route through signature areas and hidden gems in Vienna.",
+    },
+  ],
 };
 
 export function getAiToursByCity(citySlug: string): CuratedTour[] {
