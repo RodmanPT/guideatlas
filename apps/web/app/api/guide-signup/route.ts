@@ -5,10 +5,8 @@ import { appendGuideWaitlistRow, isEmailOnWaitlist } from "../../../lib/googleSh
 export const runtime = "nodejs";
 
 type SignupPayload = {
-  name?: unknown;
   email?: unknown;
   city?: unknown;
-  country?: unknown;
   tour_type?: unknown;
 };
 
@@ -28,14 +26,12 @@ export async function POST(request: Request) {
     return NextResponse.json({ error: "Invalid JSON body." }, { status: 400 });
   }
 
-  const name = asCleanString(payload.name);
   const email = asCleanString(payload.email).toLowerCase();
   const city = asCleanString(payload.city);
-  const country = asCleanString(payload.country);
   const tourType = asCleanString(payload.tour_type);
 
-  if (!name || !email || !city || !country || !tourType) {
-    return NextResponse.json({ error: "All fields are required." }, { status: 400 });
+  if (!email || !city) {
+    return NextResponse.json({ error: "Email and city are required." }, { status: 400 });
   }
 
   if (!isValidEmail(email)) {
@@ -44,7 +40,7 @@ export async function POST(request: Request) {
 
   // Basic sanity limits to keep the sheet clean.
   const maxLen = 200;
-  if ([name, email, city, country, tourType].some((v) => v.length > maxLen)) {
+  if ([email, city, tourType].some((v) => v.length > maxLen)) {
     return NextResponse.json({ error: "Field too long." }, { status: 400 });
   }
 
@@ -55,10 +51,10 @@ export async function POST(request: Request) {
     }
 
     await appendGuideWaitlistRow({
-      name,
+      name: "",
       email,
       city,
-      country,
+      country: "",
       tour_type: tourType,
       created_at: new Date().toISOString(),
     });
@@ -69,4 +65,3 @@ export async function POST(request: Request) {
     return NextResponse.json({ error: "Failed to save signup." }, { status: 500 });
   }
 }
-

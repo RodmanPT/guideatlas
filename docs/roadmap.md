@@ -85,3 +85,47 @@ Value:
 - Helps travelers plan trips faster
 - Encourages sharing of itineraries
 - Creates viral, SEO-friendly itinerary pages
+
+#### Collaborative Travel Planning (Future)
+
+Vision:
+- GuideAtlas should evolve from a tour marketplace into a travel discovery and planning platform.
+- Users should be able to discover tours, invite friends, and collaboratively plan travel experiences.
+
+Problem:
+- Travel planning is fragmented across WhatsApp groups, Google Docs, shared links, and spreadsheets.
+- GuideAtlas can centralize travel exploration and group decision making in one place.
+
+Future user flow:
+1. User discovers a city on GuideAtlas.
+2. User creates a trip plan (example: "Trip to Lisbon - May 2027").
+3. User invites friends via link.
+4. Friends vote on tours, activities, neighborhoods, and restaurants.
+5. The group builds a shared travel itinerary.
+
+Core features (future):
+- Trip boards:
+Users can create boards such as Lisbon Weekend, Tokyo Food Trip, and Barcelona Friends Trip.
+- Saved tours:
+Users can save tours to a board.
+- Voting:
+Participants can vote on preferred experiences.
+- AI suggestions:
+The system suggests additional tours, neighborhoods, and hidden experiences.
+- Guide integration:
+Local guides can offer private tours to groups planning a trip.
+
+Product benefits:
+- Transforms GuideAtlas from "a tour listing site" into "a travel planning platform".
+- Increases longer session times, repeat visits, network effects, and viral sharing.
+
+Relationship with existing features:
+- AI Curated Tours
+- City pages
+- Guide profiles
+
+Implementation phases (future):
+- Phase 1: Trip board creation and saved tours
+- Phase 2: Collaborative voting
+- Phase 3: AI itinerary generation
+- Phase 4: Guide booking integration

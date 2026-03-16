@@ -42,7 +42,14 @@ export default function HomePage() {
   return (
     <main className="pageMain">
       <section className="heroVideo">
-        <video className="heroVideoMedia" autoPlay muted loop playsInline>
+        <video
+          className="heroVideoMedia"
+          autoPlay
+          muted
+          loop
+          playsInline
+          poster="/images/city-placeholder.svg"
+        >
           <source src="/videos/guideatlas-hero.mp4" type="video/mp4" />
         </video>
         <div className="heroVideoOverlay" />
@@ -92,6 +99,7 @@ export default function HomePage() {
             <DestinationCard
               key={city.slug}
               href={getCityToursUrl(city.slug)}
+              citySlug={city.slug}
               cityName={city.name}
               country={city.country}
             />
@@ -152,4 +160,3 @@ export default function HomePage() {
     </main>
   );
 }
-

@@ -3,19 +3,13 @@
 import { FormEvent, useState } from "react";
 
 type FormState = {
-  name: string;
   email: string;
   city: string;
-  country: string;
-  tourType: string;
 };
 
 const initialState: FormState = {
-  name: "",
   email: "",
   city: "",
-  country: "",
-  tourType: "",
 };
 
 export default function GuideSignupForm() {
@@ -30,14 +24,11 @@ export default function GuideSignupForm() {
     setIsError(false);
 
     const cleaned = {
-      name: form.name.trim(),
       email: form.email.trim().toLowerCase(),
       city: form.city.trim(),
-      country: form.country.trim(),
-      tourType: form.tourType.trim(),
     };
 
-    if (!cleaned.name || !cleaned.email || !cleaned.city || !cleaned.country || !cleaned.tourType) {
+    if (!cleaned.email || !cleaned.city) {
       setIsError(true);
       setMessage("Please fill in all fields.");
       return;
@@ -57,11 +48,8 @@ export default function GuideSignupForm() {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-          name: cleaned.name,
           email: cleaned.email,
           city: cleaned.city,
-          country: cleaned.country,
-          tour_type: cleaned.tourType,
         }),
       });
 
@@ -92,19 +80,9 @@ export default function GuideSignupForm() {
   return (
     <section className="signup" id="join-guide" aria-label="Become a founding guide">
       <h2>Become a founding guide</h2>
-      <p>Join the early GuideAtlas network and get priority onboarding support.</p>
+      <p>Tell us your city and we'll invite you when GuideAtlas launches there.</p>
 
       <form className="signupForm" onSubmit={onSubmit}>
-        <label>
-          Name
-          <input
-            type="text"
-            value={form.name}
-            onChange={(event) => setForm((prev) => ({ ...prev, name: event.target.value }))}
-            required
-          />
-        </label>
-
         <label>
           Email
           <input
@@ -121,27 +99,6 @@ export default function GuideSignupForm() {
             type="text"
             value={form.city}
             onChange={(event) => setForm((prev) => ({ ...prev, city: event.target.value }))}
-            required
-          />
-        </label>
-
-        <label>
-          Country
-          <input
-            type="text"
-            value={form.country}
-            onChange={(event) => setForm((prev) => ({ ...prev, country: event.target.value }))}
-            required
-          />
-        </label>
-
-        <label>
-          Type of tours
-          <input
-            type="text"
-            value={form.tourType}
-            onChange={(event) => setForm((prev) => ({ ...prev, tourType: event.target.value }))}
-            placeholder="Walking tours, food tours, private tours..."
             required
           />
         </label>
