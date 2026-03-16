@@ -103,23 +103,12 @@ a {
   line-height: 1;
 }
 
-.siteLogoMark {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 44px;
-  height: 44px;
-  border-radius: 0.9rem;
-  background: #ffffff;
-  border: 1px solid #ddd7cc;
-  box-shadow: 0 8px 16px rgba(14, 22, 30, 0.08);
-}
-
 .siteLogoImage {
   width: 36px;
   height: 36px;
   object-fit: contain;
   flex-shrink: 0;
+  filter: drop-shadow(0 3px 6px rgba(18, 31, 44, 0.15));
 }
 
 .siteLogoText {
@@ -382,6 +371,14 @@ a {
   font-weight: 700;
   font-size: 0.9rem;
   letter-spacing: 0.01em;
+}
+
+.destinationCardFallback span {
+  margin-top: 0.55rem;
+  color: rgba(255, 255, 255, 0.86);
+  font-size: 0.82rem;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
 }
 
 .destinationCard:hover .destinationCardImage {
@@ -986,12 +983,6 @@ a {
   .siteLogoImage {
     width: 30px;
     height: 30px;
-  }
-
-  .siteLogoMark {
-    width: 36px;
-    height: 36px;
-    border-radius: 0.72rem;
   }
 
   .siteLogoText {

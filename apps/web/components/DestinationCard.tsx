@@ -1,6 +1,9 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
 import type { CSSProperties } from "react";
+import { useState } from "react";
 import { getCityImageUrl } from "../data/cityImages";
 
 type DestinationCardProps = {
@@ -18,6 +21,7 @@ export default function DestinationCard({
   country,
   subtitle,
 }: DestinationCardProps) {
+  const [hasImageError, setHasImageError] = useState(false);
   const imageUrl = getCityImageUrl(citySlug);
   const accent = Math.abs(
     citySlug.split("").reduce((total, ch) => total + ch.charCodeAt(0), 0) % 360,
@@ -26,13 +30,14 @@ export default function DestinationCard({
   return (
     <Link className="destinationCard" href={href}>
       <div className="destinationCardMedia" aria-hidden="true">
-        {imageUrl ? (
+        {imageUrl && !hasImageError ? (
           <Image
             src={imageUrl}
             alt=""
             fill
             sizes="(max-width: 760px) 100vw, (max-width: 1200px) 50vw, 33vw"
             className="destinationCardImage"
+            onError={() => setHasImageError(true)}
           />
         ) : (
           <div
@@ -44,6 +49,7 @@ export default function DestinationCard({
             }
           >
             <p>{cityName}</p>
+            <span>{country}</span>
           </div>
         )}
       </div>
