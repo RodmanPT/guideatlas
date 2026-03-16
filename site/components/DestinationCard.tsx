@@ -5,6 +5,7 @@ import Link from "next/link";
 import type { CSSProperties } from "react";
 import { useState } from "react";
 import { getCityImageUrl } from "../data/cityImages";
+import { trackEvent } from "../lib/analytics";
 
 type DestinationCardProps = {
   href: string;
@@ -28,7 +29,16 @@ export default function DestinationCard({
   );
 
   return (
-    <Link className="destinationCard" href={href}>
+    <Link
+      className="destinationCard"
+      href={href}
+      onClick={() => {
+        void trackEvent("browse_tours_click", {
+          city: citySlug,
+          metadata: { source: "destination-card", href },
+        });
+      }}
+    >
       <div className="destinationCardMedia" aria-hidden="true">
         {imageUrl && !hasImageError ? (
           <Image

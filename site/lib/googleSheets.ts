@@ -1,4 +1,7 @@
 import { JWT } from "google-auth-library";
+import type { Guide } from "../../shared/types/guide";
+import type { Tour } from "../../shared/types/tour";
+import { toSlug } from "../../shared/utils/helpers";
 
 type GuideWaitlistRow = {
   name: string;
@@ -6,6 +9,42 @@ type GuideWaitlistRow = {
   city: string;
   country: string;
   tour_type: string;
+  created_at: string;
+};
+
+type GuideProfileRow = {
+  id: string;
+  slug: string;
+  name: string;
+  email: string;
+  city: string;
+  country: string;
+  languages: string[];
+  bio: string;
+  rating?: number;
+  created_at: string;
+};
+
+type TourRow = {
+  id: string;
+  guide_slug: string;
+  guide_name: string;
+  title: string;
+  city: string;
+  duration: string;
+  price: string;
+  description: string;
+  meeting_point: string;
+  created_at: string;
+};
+
+type ProductEventRow = {
+  event_name: string;
+  path: string;
+  city?: string;
+  guide_slug?: string;
+  tour_id?: string;
+  metadata?: string;
   created_at: string;
 };
 
@@ -69,9 +108,29 @@ function getSheetTabName(): string {
   return (process.env.GOOGLE_SHEET_TAB || "guides_waitlist").trim() || "guides_waitlist";
 }
 
-function sheetTabA1(): string {
+function hasGoogleSheetsConfig(): boolean {
+  return Boolean(
+    process.env.GOOGLE_CLIENT_EMAIL?.trim() &&
+      process.env.GOOGLE_PRIVATE_KEY?.trim() &&
+      process.env.GOOGLE_SHEET_ID?.trim(),
+  );
+}
+
+function getGuidesTabName(): string {
+  return (process.env.GOOGLE_SHEET_GUIDES_TAB || "guides_profiles").trim() || "guides_profiles";
+}
+
+function getToursTabName(): string {
+  return (process.env.GOOGLE_SHEET_TOURS_TAB || "tours").trim() || "tours";
+}
+
+function getEventsTabName(): string {
+  return (process.env.GOOGLE_SHEET_EVENTS_TAB || "product_events").trim() || "product_events";
+}
+
+function sheetTabA1(tabName: string): string {
   // Always quote to safely handle spaces/special characters.
-  const escaped = getSheetTabName().replace(/'/g, "''");
+  const escaped = tabName.replace(/'/g, "''");
   return `'${escaped}'`;
 }
 
@@ -113,7 +172,7 @@ export async function isEmailOnWaitlist(email: string): Promise<boolean> {
   const spreadsheetId = getSpreadsheetId();
   const accessToken = await getAccessToken();
 
-  const range = sheetRange(`${sheetTabA1()}!B:B`);
+  const range = sheetRange(`${sheetTabA1(getSheetTabName())}!B:B`);
   const data = await sheetsRequest<{ values?: string[][] }>(
     `spreadsheets/${spreadsheetId}/values/${range}`,
     { method: "GET" },
@@ -133,7 +192,7 @@ export async function appendGuideWaitlistRow(row: GuideWaitlistRow): Promise<voi
   const spreadsheetId = getSpreadsheetId();
   const accessToken = await getAccessToken();
 
-  const range = sheetRange(`${sheetTabA1()}!A:F`);
+  const range = sheetRange(`${sheetTabA1(getSheetTabName())}!A:F`);
   await sheetsRequest(
     `spreadsheets/${spreadsheetId}/values/${range}:append?valueInputOption=USER_ENTERED&insertDataOption=INSERT_ROWS`,
     {
@@ -153,4 +212,147 @@ export async function appendGuideWaitlistRow(row: GuideWaitlistRow): Promise<voi
     },
     accessToken,
   );
+}
+
+async function readSheetValues(tabName: string, range = "A:Z"): Promise<string[][]> {
+  const spreadsheetId = getSpreadsheetId();
+  const accessToken = await getAccessToken();
+  const encodedRange = sheetRange(`${sheetTabA1(tabName)}!${range}`);
+
+  const data = await sheetsRequest<{ values?: string[][] }>(
+    `spreadsheets/${spreadsheetId}/values/${encodedRange}`,
+    { method: "GET" },
+    accessToken,
+  );
+
+  return data.values ?? [];
+}
+
+async function appendSheetRow(tabName: string, range: string, values: Array<string | number>): Promise<void> {
+  const spreadsheetId = getSpreadsheetId();
+  const accessToken = await getAccessToken();
+  const encodedRange = sheetRange(`${sheetTabA1(tabName)}!${range}`);
+
+  await sheetsRequest(
+    `spreadsheets/${spreadsheetId}/values/${encodedRange}:append?valueInputOption=USER_ENTERED&insertDataOption=INSERT_ROWS`,
+    {
+      method: "POST",
+      body: JSON.stringify({ values: [values] }),
+    },
+    accessToken,
+  );
+}
+
+function dropLikelyHeader(values: string[][], firstCell: string): string[][] {
+  if (!values.length) return values;
+  const cell = (values[0][0] ?? "").trim().toLowerCase();
+  if (cell === firstCell.trim().toLowerCase()) {
+    return values.slice(1);
+  }
+  return values;
+}
+
+export async function appendGuideProfileRow(row: GuideProfileRow): Promise<void> {
+  await appendSheetRow(getGuidesTabName(), "A:J", [
+    row.id,
+    row.slug,
+    row.name,
+    row.email,
+    row.city,
+    row.country,
+    row.languages.join(", "),
+    row.bio,
+    row.rating ?? "",
+    row.created_at,
+  ]);
+}
+
+export async function listGuideProfiles(): Promise<Guide[]> {
+  if (!hasGoogleSheetsConfig()) return [];
+
+  const values = dropLikelyHeader(await readSheetValues(getGuidesTabName(), "A:J"), "id");
+  return values
+    .map((row) => {
+      const ratingRaw = (row[8] ?? "").trim();
+      const rating = ratingRaw ? Number.parseFloat(ratingRaw) : undefined;
+
+      return {
+        id: (row[0] ?? "").trim(),
+        slug: (row[1] ?? "").trim(),
+        name: (row[2] ?? "").trim(),
+        email: (row[3] ?? "").trim().toLowerCase(),
+        city: (row[4] ?? "").trim(),
+        country: (row[5] ?? "").trim(),
+        languages: (row[6] ?? "")
+          .split(",")
+          .map((item) => item.trim())
+          .filter(Boolean),
+        bio: (row[7] ?? "").trim(),
+        rating: Number.isFinite(rating) ? rating : undefined,
+        created_at: (row[9] ?? "").trim(),
+      };
+    })
+    .filter((guide) => guide.id && guide.slug && guide.name && guide.city);
+}
+
+export async function findGuideBySlug(slug: string): Promise<Guide | null> {
+  const normalized = slug.trim().toLowerCase();
+  if (!normalized) return null;
+
+  const guides = await listGuideProfiles();
+  return guides.find((guide) => guide.slug.toLowerCase() === normalized) ?? null;
+}
+
+export async function appendTourRow(row: TourRow): Promise<void> {
+  await appendSheetRow(getToursTabName(), "A:J", [
+    row.id,
+    row.guide_slug,
+    row.guide_name,
+    row.title,
+    row.city,
+    row.duration,
+    row.price,
+    row.description,
+    row.meeting_point,
+    row.created_at,
+  ]);
+}
+
+export async function listToursByCity(citySlug?: string): Promise<Tour[]> {
+  if (!hasGoogleSheetsConfig()) return [];
+
+  const values = dropLikelyHeader(await readSheetValues(getToursTabName(), "A:J"), "id");
+  const normalizedCity = (citySlug ?? "").trim().toLowerCase();
+
+  return values
+    .map((row) => ({
+      id: (row[0] ?? "").trim(),
+      guide_slug: (row[1] ?? "").trim(),
+      guide_name: (row[2] ?? "").trim(),
+      title: (row[3] ?? "").trim(),
+      city: (row[4] ?? "").trim(),
+      duration: (row[5] ?? "").trim(),
+      price: (row[6] ?? "").trim(),
+      description: (row[7] ?? "").trim(),
+      meeting_point: (row[8] ?? "").trim(),
+      created_at: (row[9] ?? "").trim(),
+    }))
+    .filter((tour) => tour.id && tour.title && tour.city)
+    .filter((tour) =>
+      normalizedCity ? toSlug(tour.city) === normalizedCity : true,
+    );
+}
+
+export async function appendProductEventRow(row: ProductEventRow): Promise<void> {
+  if (!hasGoogleSheetsConfig()) return;
+
+  await appendSheetRow(getEventsTabName(), "A:G", [
+    row.event_name,
+    row.path,
+    row.city ?? "",
+    row.guide_slug ?? "",
+    row.tour_id ?? "",
+    row.metadata ?? "",
+    row.created_at,
+  ]);
 }

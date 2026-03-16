@@ -16,6 +16,9 @@ Rule: Only MVP features should be implemented before market validation.
 - City landing pages
 - SEO content generation
 - Guide onboarding automation
+- Automation operationalization (after market validation):
+  - Run `discovery-agent` daily (controlled rollout).
+  - Run `image-backfill` weekly to keep destination images complete and avoid stale/placeholder coverage as new cities are added.
 
 ### Programmatic SEO Expansion (Phase 3 — Growth)
 Generate hundreds (and later thousands) of SEO pages by combining cities and tour types.

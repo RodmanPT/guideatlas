@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server";
 
-import { appendGuideWaitlistRow, isEmailOnWaitlist } from "../../../lib/googleSheets";
+import { appendGuideWaitlistRow, appendProductEventRow, isEmailOnWaitlist } from "../../../lib/googleSheets";
+import { toSlug } from "../../../../shared/utils/helpers";
 
 export const runtime = "nodejs";
 
@@ -56,6 +57,14 @@ export async function POST(request: Request) {
       city,
       country: "",
       tour_type: tourType,
+      created_at: new Date().toISOString(),
+    });
+
+    await appendProductEventRow({
+      event_name: "guide_signup_submitted",
+      path: "/api/guide-signup",
+      city: toSlug(city),
+      metadata: JSON.stringify({ source: "waitlist-form" }),
       created_at: new Date().toISOString(),
     });
 

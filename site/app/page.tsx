@@ -3,6 +3,7 @@ import Link from "next/link";
 import DestinationCard from "../components/DestinationCard";
 import GuideSignupForm from "../components/GuideSignupForm";
 import HeroCitySearch from "../components/HeroCitySearch";
+import TrackEventLink from "../components/TrackEventLink";
 import TourCard from "../components/TourCard";
 import { CITIES } from "../data/cities";
 import { getCityImageUrl } from "../data/cityImages";
@@ -63,9 +64,14 @@ export default function HomePage() {
             <HeroCitySearch />
           </div>
           <div className="heroActions">
-            <Link className="cta" href="/tours">
+            <TrackEventLink
+              className="cta"
+              href="/tours"
+              eventName="browse_tours_click"
+              eventPayload={{ metadata: { source: "home-hero-explore" } }}
+            >
               Explore Tours
-            </Link>
+            </TrackEventLink>
             <a className="cta ctaGhost" href="#join-guide">
               Become a Guide
             </a>
@@ -144,9 +150,14 @@ export default function HomePage() {
           <h2>Are you a local guide?</h2>
           <p>Create tours and share your city with travelers from around the world.</p>
         </div>
-        <a className="cta" href="#join-guide">
-          Become a Guide
-        </a>
+        <div className="heroActions">
+          <Link className="cta" href="/guides/new">
+            Create Profile
+          </Link>
+          <a className="cta ctaGhost ctaGhostDark" href="#join-guide">
+            Join Waitlist
+          </a>
+        </div>
       </section>
 
       <GuideSignupForm />

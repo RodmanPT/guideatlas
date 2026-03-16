@@ -15,14 +15,28 @@ Next.js
 Netlify
 
 ### Backend
-MVP: Next.js API routes + Google Sheets API (waitlist)
+MVP: Next.js API routes + Google Sheets API
 
 Future: Supabase
 
 ### Database
-MVP: Google Sheets (guides_waitlist)
+MVP: Google Sheets tabs:
+- `guides_waitlist`
+- `guides_profiles`
+- `tours`
+- `product_events`
 
 Future: PostgreSQL (via Supabase)
+
+## MVP API Contracts
+
+- `POST /api/guide-signup`: capture guide waitlist lead.
+- `POST /api/guides`: create guide public profile.
+- `POST /api/tours`: create tour.
+- `GET /api/tours?city={slug}`: list tours for city pages.
+
+Frontend rendering rule:
+- City page listing priority is `real guide tours > AI curated fallback`.
 
 ### Maps
 Google Maps API

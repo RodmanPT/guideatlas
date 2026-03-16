@@ -2,14 +2,19 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 
+import CityPageTracker from "../../components/CityPageTracker";
 import DestinationCard from "../../components/DestinationCard";
 import EmptyState from "../../components/EmptyState";
+import TrackEventLink from "../../components/TrackEventLink";
 import TourCard from "../../components/TourCard";
 import { CITIES, getCityBySlug } from "../../data/cities";
+import { getCityImageUrl } from "../../data/cityImages";
 import { getCityToursUrl } from "../../lib/url";
 import { getAiToursByCity } from "../../data/aiTours";
 import { getCitySeoIntro } from "../../data/citySeoIntros";
 import { TOUR_TYPES, getTourTypeBySlug, tourTypeCityPath, tourTypePath } from "../../data/tourTypes";
+import { listGuideProfiles, listToursByCity } from "../../lib/googleSheets";
+import { toSlug } from "../../../shared/utils/helpers";
 
 type PageProps = {
   params: { slug?: string };
@@ -104,6 +109,7 @@ function parseSeoSlug(slug: unknown): SeoContext | null {
 }
 
 export const dynamicParams = false;
+export const revalidate = 600;
 
 export function generateStaticParams() {
   const cityPages = CITIES.map((city) => ({ slug: `${city.slug}${TOURS_SUFFIX}` }));
@@ -171,7 +177,7 @@ export function generateMetadata({ params }: PageProps): Metadata {
   };
 }
 
-export default function CityToursPage({ params }: PageProps) {
+export default async function CityToursPage({ params }: PageProps) {
   const context = parseSeoSlug(params.slug);
   if (!context) {
     notFound();
@@ -259,11 +265,23 @@ export default function CityToursPage({ params }: PageProps) {
     isCityToursPage && city
       ? getCitySeoIntro(city.slug, city.name)
       : null;
-  const aiSuggestedTours = isCityToursPage && city ? getAiToursByCity(city.slug) : [];
+  const realCityTours =
+    isCityToursPage && city
+      ? (await listToursByCity(city.slug)).sort((a, b) => b.created_at.localeCompare(a.created_at))
+      : [];
+  const cityGuides =
+    isCityToursPage && city
+      ? (await listGuideProfiles())
+          .filter((guide) => toSlug(guide.city) === city.slug)
+          .sort((a, b) => b.created_at.localeCompare(a.created_at))
+      : [];
+  const aiSuggestedTours = isCityToursPage && city && realCityTours.length === 0 ? getAiToursByCity(city.slug) : [];
   const relatedCities = isCityToursPage && city ? getRandomCityLinks(city.slug) : [];
 
   return (
     <main className="pageMain">
+      {isCityToursPage && city ? <CityPageTracker citySlug={city.slug} /> : null}
+
       {isCityToursPage && city ? (
         <nav className="breadcrumbs" aria-label="Breadcrumb">
           <ol>
@@ -336,9 +354,62 @@ export default function CityToursPage({ params }: PageProps) {
         </section>
       ) : null}
 
-      {isCityToursPage && aiSuggestedTours.length > 0 ? (
+      {isCityToursPage && realCityTours.length > 0 ? (
+        <section className="section" aria-label={`Tours in ${city!.name}`}>
+          <div className="sectionHeader">
+            <h2>Tours in {city!.name}</h2>
+            <p>Published by independent local guides.</p>
+          </div>
+          <div className="tourGrid">
+            {realCityTours.map((tour) => (
+              <TourCard
+                key={tour.id}
+                badge="Guide Tour"
+                title={tour.title}
+                duration={tour.duration}
+                guideLabel={tour.guide_name}
+                groupLabel={tour.price}
+                description={`${tour.description} Meeting point: ${tour.meeting_point}.`}
+                href={`/guides/${tour.guide_slug}`}
+                actionLabel="View guide profile"
+                imageSrc={getCityImageUrl(city!.slug)}
+              />
+            ))}
+          </div>
+        </section>
+      ) : null}
+
+      {isCityToursPage && cityGuides.length > 0 ? (
+        <section className="section" aria-label={`Local guides in ${city!.name}`}>
+          <div className="sectionHeader">
+            <h2>Local Guides in {city!.name}</h2>
+            <p>Meet guides currently publishing or preparing tours in this city.</p>
+          </div>
+          <div className="guideGrid">
+            {cityGuides.map((guide) => (
+              <article className="card" key={guide.id}>
+                <h3>{guide.name}</h3>
+                <p>
+                  {guide.city}
+                  {guide.country ? `, ${guide.country}` : ""}
+                </p>
+                {guide.languages.length ? <p>Languages: {guide.languages.join(", ")}</p> : null}
+                <p>{guide.bio}</p>
+                <Link className="tourCardAction" href={`/guides/${guide.slug}`}>
+                  View profile
+                </Link>
+              </article>
+            ))}
+          </div>
+        </section>
+      ) : null}
+
+      {isCityToursPage && realCityTours.length === 0 && aiSuggestedTours.length > 0 ? (
         <section className="section" aria-label={`Suggested tours in ${city!.name}`}>
-          <h2>Suggested Tours in {city!.name}</h2>
+          <div className="sectionHeader">
+            <h2>Suggested Tours in {city!.name}</h2>
+            <p>AI curated itineraries shown while local guide tours are still launching.</p>
+          </div>
           <div className="aiTourGrid">
             {aiSuggestedTours.map((tour) => (
               <TourCard
@@ -350,17 +421,18 @@ export default function CityToursPage({ params }: PageProps) {
                 description={tour.description}
                 href={`/become-guide?city=${encodeURIComponent(city!.name)}&tour=${encodeURIComponent(tour.title)}`}
                 actionLabel="Claim this tour"
+                imageSrc={getCityImageUrl(city!.slug)}
               />
             ))}
           </div>
         </section>
       ) : null}
 
-      {isCityToursPage && aiSuggestedTours.length === 0 ? (
+      {isCityToursPage && realCityTours.length === 0 && aiSuggestedTours.length === 0 ? (
         <EmptyState
           title="No tours yet in this city"
           text="We're inviting local guides to publish their first experiences here."
-          actionHref={`/become-guide?city=${encodeURIComponent(city!.name)}`}
+          actionHref={`/guides/new?city=${encodeURIComponent(city!.name)}`}
           actionLabel="Become the first guide"
         />
       ) : null}
@@ -416,35 +488,45 @@ export default function CityToursPage({ params }: PageProps) {
         <section className="ctaPanel section" aria-label={`Traveler call to action for ${city!.name}`}>
           <h2>Looking for a local guide in {city!.name}?</h2>
           <p>We are building the best way to discover authentic experiences led by independent guides.</p>
-          <a className="cta" href="#types">
+          <TrackEventLink
+            className="cta"
+            href="#types"
+            eventName="browse_tours_click"
+            eventPayload={{ city: city!.slug, metadata: { source: "city-traveler-cta" } }}
+          >
             Browse Tours
-          </a>
+          </TrackEventLink>
         </section>
       ) : (
         <section className="ctaPanel section" aria-label="Traveler call to action">
           <h2>Looking for a local guide?</h2>
           <p>Browse destinations and discover authentic experiences led by independent local experts.</p>
-          <Link className="cta" href="/tours">
+          <TrackEventLink
+            className="cta"
+            href="/tours"
+            eventName="browse_tours_click"
+            eventPayload={{ metadata: { source: "tour-type-traveler-cta" } }}
+          >
             Browse Tours
-          </Link>
+          </TrackEventLink>
         </section>
       )}
 
       {context.kind !== "tourType" ? (
         <section className="ctaPanel section" aria-label={`Guide call to action for ${city!.name}`}>
           <h2>Are you a guide in {city!.name}?</h2>
-          <p>Join the founding guide network and get early onboarding support.</p>
-          <a className="cta" href="/#join-guide">
-            Become a Guide
-          </a>
+          <p>Publish your guide profile and start adding tours for this city.</p>
+          <Link className="cta" href={`/guides/new?city=${encodeURIComponent(city!.name)}`}>
+            Create Guide Profile
+          </Link>
         </section>
       ) : (
         <section className="ctaPanel section" aria-label="Guide call to action">
           <h2>Are you a guide?</h2>
-          <p>Join the founding guide network and get early onboarding support.</p>
-          <a className="cta" href="/#join-guide">
-            Become a Guide
-          </a>
+          <p>Create your public profile and publish your first tour.</p>
+          <Link className="cta" href="/guides/new">
+            Create Guide Profile
+          </Link>
         </section>
       )}
 
