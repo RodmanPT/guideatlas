@@ -9,7 +9,9 @@ import { getCityToursUrl } from "../../../lib/url";
 import { toSlug } from "../../../../shared/utils/helpers";
 
 type PageProps = {
-  params: {
+  params: Promise<{
+    slug?: string;
+  }> | {
     slug?: string;
   };
 };
@@ -19,7 +21,8 @@ function cleanSlug(value: string | undefined): string {
 }
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
-  const slug = cleanSlug(params.slug);
+  const resolvedParams = await params;
+  const slug = cleanSlug(resolvedParams.slug);
   if (!slug) {
     return {
       title: "Guide Profile | GuideAtlas",
@@ -52,7 +55,8 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 }
 
 export default async function GuideProfilePage({ params }: PageProps) {
-  const slug = cleanSlug(params.slug);
+  const resolvedParams = await params;
+  const slug = cleanSlug(resolvedParams.slug);
   if (!slug) notFound();
 
   const guide = await findGuideBySlug(slug);
@@ -137,4 +141,3 @@ export default async function GuideProfilePage({ params }: PageProps) {
     </main>
   );
 }
-

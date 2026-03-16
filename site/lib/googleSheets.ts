@@ -270,29 +270,34 @@ export async function appendGuideProfileRow(row: GuideProfileRow): Promise<void>
 export async function listGuideProfiles(): Promise<Guide[]> {
   if (!hasGoogleSheetsConfig()) return [];
 
-  const values = dropLikelyHeader(await readSheetValues(getGuidesTabName(), "A:J"), "id");
-  return values
-    .map((row) => {
-      const ratingRaw = (row[8] ?? "").trim();
-      const rating = ratingRaw ? Number.parseFloat(ratingRaw) : undefined;
+  try {
+    const values = dropLikelyHeader(await readSheetValues(getGuidesTabName(), "A:J"), "id");
+    return values
+      .map((row) => {
+        const ratingRaw = (row[8] ?? "").trim();
+        const rating = ratingRaw ? Number.parseFloat(ratingRaw) : undefined;
 
-      return {
-        id: (row[0] ?? "").trim(),
-        slug: (row[1] ?? "").trim(),
-        name: (row[2] ?? "").trim(),
-        email: (row[3] ?? "").trim().toLowerCase(),
-        city: (row[4] ?? "").trim(),
-        country: (row[5] ?? "").trim(),
-        languages: (row[6] ?? "")
-          .split(",")
-          .map((item) => item.trim())
-          .filter(Boolean),
-        bio: (row[7] ?? "").trim(),
-        rating: Number.isFinite(rating) ? rating : undefined,
-        created_at: (row[9] ?? "").trim(),
-      };
-    })
-    .filter((guide) => guide.id && guide.slug && guide.name && guide.city);
+        return {
+          id: (row[0] ?? "").trim(),
+          slug: (row[1] ?? "").trim(),
+          name: (row[2] ?? "").trim(),
+          email: (row[3] ?? "").trim().toLowerCase(),
+          city: (row[4] ?? "").trim(),
+          country: (row[5] ?? "").trim(),
+          languages: (row[6] ?? "")
+            .split(",")
+            .map((item) => item.trim())
+            .filter(Boolean),
+          bio: (row[7] ?? "").trim(),
+          rating: Number.isFinite(rating) ? rating : undefined,
+          created_at: (row[9] ?? "").trim(),
+        };
+      })
+      .filter((guide) => guide.id && guide.slug && guide.name && guide.city);
+  } catch (error) {
+    console.warn("listGuideProfiles fallback: returning empty list.", error);
+    return [];
+  }
 }
 
 export async function findGuideBySlug(slug: string): Promise<Guide | null> {
@@ -321,26 +326,29 @@ export async function appendTourRow(row: TourRow): Promise<void> {
 export async function listToursByCity(citySlug?: string): Promise<Tour[]> {
   if (!hasGoogleSheetsConfig()) return [];
 
-  const values = dropLikelyHeader(await readSheetValues(getToursTabName(), "A:J"), "id");
-  const normalizedCity = (citySlug ?? "").trim().toLowerCase();
+  try {
+    const values = dropLikelyHeader(await readSheetValues(getToursTabName(), "A:J"), "id");
+    const normalizedCity = (citySlug ?? "").trim().toLowerCase();
 
-  return values
-    .map((row) => ({
-      id: (row[0] ?? "").trim(),
-      guide_slug: (row[1] ?? "").trim(),
-      guide_name: (row[2] ?? "").trim(),
-      title: (row[3] ?? "").trim(),
-      city: (row[4] ?? "").trim(),
-      duration: (row[5] ?? "").trim(),
-      price: (row[6] ?? "").trim(),
-      description: (row[7] ?? "").trim(),
-      meeting_point: (row[8] ?? "").trim(),
-      created_at: (row[9] ?? "").trim(),
-    }))
-    .filter((tour) => tour.id && tour.title && tour.city)
-    .filter((tour) =>
-      normalizedCity ? toSlug(tour.city) === normalizedCity : true,
-    );
+    return values
+      .map((row) => ({
+        id: (row[0] ?? "").trim(),
+        guide_slug: (row[1] ?? "").trim(),
+        guide_name: (row[2] ?? "").trim(),
+        title: (row[3] ?? "").trim(),
+        city: (row[4] ?? "").trim(),
+        duration: (row[5] ?? "").trim(),
+        price: (row[6] ?? "").trim(),
+        description: (row[7] ?? "").trim(),
+        meeting_point: (row[8] ?? "").trim(),
+        created_at: (row[9] ?? "").trim(),
+      }))
+      .filter((tour) => tour.id && tour.title && tour.city)
+      .filter((tour) => (normalizedCity ? toSlug(tour.city) === normalizedCity : true));
+  } catch (error) {
+    console.warn("listToursByCity fallback: returning empty list.", error);
+    return [];
+  }
 }
 
 export async function appendProductEventRow(row: ProductEventRow): Promise<void> {

@@ -17,7 +17,7 @@ import { listGuideProfiles, listToursByCity } from "../../lib/googleSheets";
 import { toSlug } from "../../../shared/utils/helpers";
 
 type PageProps = {
-  params: { slug?: string };
+  params: Promise<{ slug?: string }> | { slug?: string };
 };
 
 const TOURS_SUFFIX = "-tours";
@@ -121,8 +121,9 @@ export function generateStaticParams() {
   return [...cityPages, ...tourTypePages, ...cityTourTypePages];
 }
 
-export function generateMetadata({ params }: PageProps): Metadata {
-  const context = parseSeoSlug(params.slug);
+export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
+  const resolvedParams = await params;
+  const context = parseSeoSlug(resolvedParams.slug);
 
   if (!context) {
     return {
@@ -178,7 +179,8 @@ export function generateMetadata({ params }: PageProps): Metadata {
 }
 
 export default async function CityToursPage({ params }: PageProps) {
-  const context = parseSeoSlug(params.slug);
+  const resolvedParams = await params;
+  const context = parseSeoSlug(resolvedParams.slug);
   if (!context) {
     notFound();
   }
