@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 export default function SiteHeader() {
@@ -5,7 +6,15 @@ export default function SiteHeader() {
     <header className="siteHeader" aria-label="Main navigation">
       <div className="siteHeaderInner">
         <Link href="/" className="siteLogo" aria-label="GuideAtlas home">
-          GuideAtlas
+          <Image
+            src="/logo-icon.png"
+            alt="GuideAtlas logo"
+            width={40}
+            height={40}
+            className="siteLogoImage"
+            priority
+          />
+          <span className="siteLogoText">GuideAtlas</span>
         </Link>
 
         <nav className="siteNav" aria-label="Primary">
@@ -20,4 +29,3 @@ export default function SiteHeader() {
     </header>
   );
 }
-
