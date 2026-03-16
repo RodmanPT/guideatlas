@@ -37,10 +37,6 @@ const CITY_IMAGE_MAP: Record<string, string> = {
     "https://images.unsplash.com/photo-1512236076010-1f2a0f4dbd1c?auto=format&fit=crop&w=1400&q=80",
 };
 
-export function getCityImageUrl(citySlug: string, cityName: string): string {
-  const mapped = CITY_IMAGE_MAP[citySlug];
-  if (mapped) return mapped;
-
-  const cityQuery = encodeURIComponent(`${cityName} cityscape travel`);
-  return `https://source.unsplash.com/1600x1000/?${cityQuery}`;
+export function getCityImageUrl(citySlug: string): string | undefined {
+  return CITY_IMAGE_MAP[citySlug];
 }
