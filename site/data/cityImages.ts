@@ -22,8 +22,9 @@ export const CITY_IMAGE_MAP: Record<string, CityImageRecord> = {
     image_source: "legacy",
   },
   "barcelona": {
-    city_image_url: "https://images.unsplash.com/photo-1509803874385-db7c23652552?auto=format&fit=crop&w=1400&q=80",
-    image_source: "legacy",
+    city_image_url: "https://images.unsplash.com/photo-1592303985550-82e3f38f1a25?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4OTczNTh8MHwxfHNlYXJjaHwxfHxCYXJjZWxvbmElMjBza3lsaW5lfGVufDB8MHx8fDE3NzM2ODM3MTV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+    image_author: "Ansar Naib",
+    image_source: "unsplash",
   },
   "rome": {
     city_image_url: "https://images.unsplash.com/photo-1676296469349-228ba6cdb4e3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4OTczNTh8MHwxfHNlYXJjaHwxfHxSb21lJTIwc2t5bGluZXxlbnwwfDB8fHwxNzczNjgzNTI1fDA&ixlib=rb-4.1.0&q=80&w=1080",

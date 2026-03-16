@@ -5,13 +5,14 @@ import GuideSignupForm from "../components/GuideSignupForm";
 import HeroCitySearch from "../components/HeroCitySearch";
 import TourCard from "../components/TourCard";
 import { CITIES } from "../data/cities";
+import { getCityImageUrl } from "../data/cityImages";
 import { getCityToursUrl } from "../lib/url";
 
 const FEATURED_TOURS = [
-  { city: "Lisbon", title: "Lisbon Food Tour", duration: "3h" },
-  { city: "Rome", title: "Hidden Gems of Rome", duration: "2.5h" },
-  { city: "Tokyo", title: "Tokyo Night Walk", duration: "3h" },
-  { city: "Barcelona", title: "Barcelona Bike Tour", duration: "2h" },
+  { city: "Lisbon", citySlug: "lisbon", title: "Lisbon Food Tour", duration: "3h" },
+  { city: "Rome", citySlug: "rome", title: "Hidden Gems of Rome", duration: "2.5h" },
+  { city: "Tokyo", citySlug: "tokyo", title: "Tokyo Night Walk", duration: "3h" },
+  { city: "Barcelona", citySlug: "barcelona", title: "Barcelona Bike Tour", duration: "2h" },
 ];
 
 const HOW_IT_WORKS = [
@@ -121,6 +122,7 @@ export default function HomePage() {
               guideLabel="Local Guide"
               groupLabel="Small group"
               description={`${tour.city} · Editorial preview card`}
+              imageSrc={getCityImageUrl(tour.citySlug)}
             />
           ))}
         </div>

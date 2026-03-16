@@ -10,6 +10,7 @@ type TourCardProps = {
   description?: string;
   href?: string;
   actionLabel?: string;
+  imageSrc?: string;
 };
 
 export default function TourCard({
@@ -21,12 +22,13 @@ export default function TourCard({
   description,
   href,
   actionLabel,
+  imageSrc,
 }: TourCardProps) {
   return (
     <article className="tourCard">
       <div className="tourCardMedia" aria-hidden="true">
         <Image
-          src="/images/tour-placeholder.svg"
+          src={imageSrc ?? "/images/tour-placeholder.svg"}
           alt=""
           fill
           sizes="(max-width: 760px) 100vw, (max-width: 1200px) 50vw, 33vw"
@@ -51,4 +53,3 @@ export default function TourCard({
     </article>
   );
 }
-
