@@ -35,6 +35,9 @@ export default function BecomeGuidePage({ searchParams }: PageProps) {
           <Link className="cta ctaGhostDark" href="/guide-dashboard-demo">
             Preview Guide Dashboard Demo
           </Link>
+          <Link className="cta ctaGhostDark" href="/guides/maria-santos">
+            Preview Public Guide Profile
+          </Link>
         </div>
       </section>
 

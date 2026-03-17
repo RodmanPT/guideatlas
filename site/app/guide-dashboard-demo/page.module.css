@@ -84,6 +84,42 @@
   gap: 0.85rem;
 }
 
+.dualViewSection {
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.9rem;
+}
+
+.perspectiveCard {
+  border: 1px solid rgba(24, 39, 58, 0.16);
+  border-radius: 1rem;
+  padding: 1rem;
+  background: linear-gradient(145deg, #ffffff, #f4fafc);
+}
+
+.perspectiveTag {
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.73rem;
+  font-weight: 800;
+  color: #0a5a68;
+}
+
+.perspectiveCard h2 {
+  margin: 0.5rem 0 0;
+  font-size: clamp(1.25rem, 2vw, 1.7rem);
+}
+
+.perspectiveList {
+  margin: 0.7rem 0 0.95rem;
+  padding-left: 1.05rem;
+  color: #324b61;
+  display: grid;
+  gap: 0.38rem;
+}
+
 .metricCard {
   border: 1px solid rgba(24, 39, 58, 0.16);
   border-radius: 1rem;
@@ -153,6 +189,115 @@
 .panelHeader p {
   margin: 0.45rem 0 0.75rem;
   color: #445c73;
+}
+
+.monthCard {
+  border: 1px solid rgba(18, 42, 64, 0.15);
+  border-radius: 0.9rem;
+  background: linear-gradient(145deg, #f6fbfd, #ffffff);
+  padding: 0.8rem;
+  margin-bottom: 0.8rem;
+}
+
+.monthHeader {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.55rem;
+  margin-bottom: 0.52rem;
+}
+
+.monthHeader h3 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.monthHeader p {
+  margin: 0;
+  color: #5e7489;
+  font-size: 0.8rem;
+}
+
+.monthGrid {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  gap: 0.25rem;
+}
+
+.monthWeekday {
+  text-align: center;
+  color: #60758b;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  padding: 0.2rem 0 0.1rem;
+}
+
+.monthCell,
+.monthCellEmpty {
+  min-height: 30px;
+  border-radius: 0.5rem;
+  display: grid;
+  place-items: center;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.monthCellEmpty {
+  background: transparent;
+}
+
+.monthCellBusy {
+  border: 1px solid rgba(166, 68, 68, 0.38);
+  background: rgba(166, 68, 68, 0.16);
+  color: #6f1f1f;
+}
+
+.monthCellPartial {
+  border: 1px solid rgba(185, 118, 22, 0.38);
+  background: rgba(247, 191, 87, 0.2);
+  color: #7b4b00;
+}
+
+.monthCellFree {
+  border: 1px solid rgba(17, 118, 97, 0.28);
+  background: rgba(17, 118, 97, 0.12);
+  color: #0a6350;
+}
+
+.monthLegend {
+  margin-top: 0.58rem;
+  display: flex;
+  gap: 0.55rem;
+  flex-wrap: wrap;
+}
+
+.monthLegend span {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.28rem;
+  color: #4b6075;
+  font-size: 0.77rem;
+  font-weight: 700;
+}
+
+.legendDot {
+  width: 10px;
+  height: 10px;
+  border-radius: 999px;
+}
+
+.legendBusy {
+  background: #a24f4f;
+}
+
+.legendPartial {
+  background: #d08e2f;
+}
+
+.legendFree {
+  background: #0d856d;
 }
 
 .list {
@@ -290,7 +435,8 @@
   }
 
   .mainGrid,
-  .secondaryGrid {
+  .secondaryGrid,
+  .dualViewSection {
     grid-template-columns: 1fr;
   }
 }
