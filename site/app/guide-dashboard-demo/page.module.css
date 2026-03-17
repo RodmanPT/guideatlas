@@ -1,0 +1,320 @@
+.page {
+  width: min(1220px, 100% - 2rem);
+  margin: 0 auto;
+  padding: 2rem 0 5rem;
+  color: #122236;
+}
+
+.hero {
+  position: relative;
+  overflow: hidden;
+  border-radius: 1.25rem;
+  border: 1px solid rgba(24, 39, 58, 0.18);
+  padding: clamp(1.4rem, 4.5vw, 2.7rem);
+  background:
+    radial-gradient(circle at 6% 8%, rgba(255, 189, 122, 0.24), transparent 32%),
+    radial-gradient(circle at 90% 0%, rgba(14, 110, 126, 0.27), transparent 44%),
+    linear-gradient(145deg, #f8efe3 0%, #edf4f6 58%, #e4eef3 100%);
+}
+
+.kicker {
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 0.75rem;
+  font-weight: 800;
+  color: #0a5a68;
+}
+
+.hero h1 {
+  margin: 0.65rem 0 0;
+  font-size: clamp(2rem, 5vw, 3.4rem);
+  max-width: 18ch;
+}
+
+.hero > p {
+  margin: 0.8rem 0 0;
+  max-width: 65ch;
+  color: #33485f;
+  font-size: 1.02rem;
+}
+
+.heroActions {
+  margin-top: 1.25rem;
+  display: flex;
+  gap: 0.7rem;
+  flex-wrap: wrap;
+}
+
+.primaryCta,
+.ghostCta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.76rem;
+  min-height: 44px;
+  padding: 0.72rem 1rem;
+  font-weight: 700;
+}
+
+.primaryCta {
+  border: 1px solid transparent;
+  color: #fff;
+  background: #0c6e7f;
+}
+
+.primaryCta:hover {
+  background: #085b69;
+}
+
+.ghostCta {
+  border: 1px solid rgba(12, 110, 127, 0.32);
+  color: #0a5a68;
+  background: rgba(255, 255, 255, 0.72);
+}
+
+.ghostCta:hover {
+  background: #ffffff;
+}
+
+.metricsGrid {
+  margin-top: 1.2rem;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0.85rem;
+}
+
+.metricCard {
+  border: 1px solid rgba(24, 39, 58, 0.16);
+  border-radius: 1rem;
+  background: linear-gradient(155deg, #ffffff, #f5fafb);
+  padding: 0.95rem;
+}
+
+.metricCard p {
+  margin: 0;
+  color: #4a5f74;
+  font-size: 0.9rem;
+}
+
+.metricCard strong {
+  display: block;
+  margin-top: 0.35rem;
+  font-size: 1.72rem;
+  font-weight: 800;
+  color: #122236;
+}
+
+.metricCard span {
+  display: inline-block;
+  margin-top: 0.35rem;
+  border-radius: 999px;
+  border: 1px solid rgba(13, 118, 92, 0.28);
+  background: rgba(13, 118, 92, 0.12);
+  color: #0b6c53;
+  padding: 0.22rem 0.58rem;
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+
+.mainGrid {
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 0.9rem;
+}
+
+.secondaryGrid {
+  margin-top: 0.9rem;
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  gap: 0.9rem;
+}
+
+.panel {
+  border: 1px solid rgba(24, 39, 58, 0.14);
+  border-radius: 1.05rem;
+  background: #fefcf8;
+  padding: 1rem;
+  box-shadow: 0 14px 30px rgba(15, 28, 40, 0.07);
+}
+
+.panelAccent {
+  background:
+    radial-gradient(circle at 100% 0%, rgba(20, 115, 132, 0.18), transparent 42%),
+    #f3f9fb;
+}
+
+.panelHeader h2 {
+  margin: 0;
+  font-size: clamp(1.35rem, 2.2vw, 1.8rem);
+}
+
+.panelHeader p {
+  margin: 0.45rem 0 0.75rem;
+  color: #445c73;
+}
+
+.list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 0.62rem;
+}
+
+.list li {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 0.8rem;
+  border: 1px solid rgba(22, 39, 57, 0.16);
+  border-radius: 0.8rem;
+  background: rgba(255, 255, 255, 0.88);
+  padding: 0.7rem;
+}
+
+.list li span {
+  border-radius: 0.5rem;
+  border: 1px solid rgba(12, 110, 127, 0.28);
+  background: rgba(12, 110, 127, 0.11);
+  color: #0a5a68;
+  font-size: 0.78rem;
+  font-weight: 700;
+  padding: 0.3rem 0.5rem;
+}
+
+.list li strong {
+  display: block;
+}
+
+.list li p {
+  margin: 0.2rem 0 0;
+  color: #4d6072;
+  font-size: 0.9rem;
+}
+
+.list li em {
+  font-style: normal;
+  color: #1d334a;
+  font-size: 0.84rem;
+  font-weight: 700;
+}
+
+.leadStack {
+  display: grid;
+  gap: 0.68rem;
+}
+
+.leadCard {
+  border: 1px solid rgba(24, 39, 58, 0.14);
+  border-radius: 0.9rem;
+  background: #fff;
+  padding: 0.82rem;
+}
+
+.leadName {
+  margin: 0;
+  font-weight: 800;
+  color: #10263d;
+}
+
+.leadRequest {
+  margin: 0.38rem 0 0;
+  color: #425b73;
+  font-size: 0.92rem;
+}
+
+.leadActions {
+  margin-top: 0.62rem;
+  display: flex;
+  gap: 0.42rem;
+  flex-wrap: wrap;
+}
+
+.leadActions button {
+  border: 1px solid rgba(17, 39, 59, 0.2);
+  border-radius: 0.62rem;
+  background: #f7fbfd;
+  color: #16314a;
+  padding: 0.5rem 0.64rem;
+  font: inherit;
+  font-size: 0.83rem;
+  font-weight: 700;
+}
+
+.leadActions button:hover {
+  background: #e7f2f6;
+}
+
+.leadCard > span {
+  display: inline-block;
+  margin-top: 0.52rem;
+  color: #63778d;
+  font-size: 0.78rem;
+}
+
+.integrationCard {
+  border: 1px solid rgba(24, 39, 58, 0.14);
+  border-radius: 0.9rem;
+  background: #ffffff;
+  padding: 0.85rem;
+}
+
+.integrationCard + .integrationCard {
+  margin-top: 0.68rem;
+}
+
+.integrationCard h3 {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.integrationCard p {
+  margin: 0.35rem 0 0.55rem;
+  color: #425a71;
+  font-size: 0.92rem;
+}
+
+.integrationCard ul {
+  margin: 0;
+  padding-left: 1rem;
+  color: #314a62;
+  display: grid;
+  gap: 0.3rem;
+}
+
+@media (max-width: 1024px) {
+  .metricsGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .mainGrid,
+  .secondaryGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 760px) {
+  .page {
+    width: min(1220px, 100% - 1rem);
+    padding-top: 1rem;
+  }
+
+  .heroActions {
+    width: 100%;
+  }
+
+  .heroActions a {
+    width: 100%;
+  }
+
+  .metricsGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .list li {
+    grid-template-columns: 1fr;
+    gap: 0.45rem;
+  }
+}
