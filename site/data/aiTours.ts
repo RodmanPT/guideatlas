@@ -529,6 +529,55 @@ export const aiTours: CityToursMap = {
       description: "A curated route through signature areas and hidden gems in Seville.",
     },
   ],
+  "malaga": [
+    {
+      title: "Malaga Culture and Street Life",
+      duration: "3.5 hours",
+      description: "Experience neighborhood rhythms, architecture, and local culture in Malaga.",
+    },
+    {
+      title: "Malaga Food and Markets Walk",
+      duration: "3 hours",
+      description: "Discover local flavors and market culture in Malaga with curated tasting stops.",
+    },
+    {
+      title: "Malaga Sunset Viewpoints",
+      duration: "2 hours",
+      description: "Visit scenic viewpoints and photogenic routes around Malaga at golden hour.",
+    },
+    {
+      title: "Malaga Private Discovery Route",
+      duration: "3 hours",
+      description: "A curated route through signature areas and hidden gems in Malaga.",
+    },
+    {
+      title: "Hidden Corners of Malaga",
+      duration: "2.5 hours",
+      description: "Explore lesser-known neighborhoods and stories that show the local side of Malaga.",
+    },
+  ],
+  "granada": [
+    {
+      title: "Granada History Highlights",
+      duration: "2 hours",
+      description: "Walk through key landmarks and historical moments that shaped Granada.",
+    },
+    {
+      title: "Granada Food and Markets Walk",
+      duration: "3 hours",
+      description: "Discover local flavors and market culture in Granada with curated tasting stops.",
+    },
+    {
+      title: "Granada Culture and Street Life",
+      duration: "3.5 hours",
+      description: "Experience neighborhood rhythms, architecture, and local culture in Granada.",
+    },
+    {
+      title: "Granada Sunset Viewpoints",
+      duration: "2 hours",
+      description: "Visit scenic viewpoints and photogenic routes around Granada at golden hour.",
+    },
+  ],
 };
 
 export function getAiToursByCity(citySlug: string): CuratedTour[] {
