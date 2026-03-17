@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 
 import BecomeGuideForm from "../../components/BecomeGuideForm";
 
@@ -30,18 +29,7 @@ export default function BecomeGuidePage({ searchParams }: PageProps) {
     <main className="pageMain">
       <section className="hero heroCompact">
         <h1>Are you a local guide?</h1>
-        <p>Create tours and share your city with travelers from around the world.</p>
-        <div className="heroActions">
-          <Link className="cta" href={`/guides/new${initialCity ? `?city=${encodeURIComponent(initialCity)}` : ""}`}>
-            Create Guide Profile
-          </Link>
-          <Link className="cta ctaGhost ctaGhostDark" href="/tours/new">
-            Publish a Tour
-          </Link>
-          <Link className="cta ctaGhost ctaGhostDark" href="/guides/maria-santos">
-            See an example guide profile
-          </Link>
-        </div>
+        <p>Join the waitlist to be invited as one of the first guides in your city.</p>
       </section>
 
       <BecomeGuideForm initialCity={initialCity} initialCountry={initialCountry} initialTour={initialTour} />

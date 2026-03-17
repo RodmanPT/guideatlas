@@ -19,8 +19,6 @@ export default function SiteFooter() {
 
         <div>
           <h3>Become a Guide</h3>
-          <Link href="/guides/new">Create Profile</Link>
-          <Link href="/tours/new">Publish Tour</Link>
           <Link href="/become-guide">Join as Guide</Link>
           <Link href="/#join-guide">Guide Waitlist</Link>
         </div>

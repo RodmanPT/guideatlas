@@ -1,5 +1,3 @@
-import Link from "next/link";
-
 import DestinationCard from "../components/DestinationCard";
 import GuideSignupForm from "../components/GuideSignupForm";
 import HeroCitySearch from "../components/HeroCitySearch";
@@ -248,12 +246,9 @@ export default function HomePage() {
       <section className="section sectionSoft guideCtaBlock">
         <div>
           <h2>Are you a local guide?</h2>
-          <p>Create tours and share your city with travelers from around the world.</p>
+          <p>Join the waitlist and be invited when GuideAtlas launches in your city.</p>
         </div>
         <div className="heroActions">
-          <Link className="cta" href="/guides/new">
-            Create Profile
-          </Link>
           <a className="cta ctaGhost ctaGhostDark" href="#join-guide">
             Join Waitlist
           </a>
