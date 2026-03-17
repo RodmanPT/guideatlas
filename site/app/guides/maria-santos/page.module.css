@@ -1,0 +1,83 @@
+.socialPresenceSection {
+  padding: 1.35rem;
+}
+
+.socialHeader h2 {
+  margin: 0;
+}
+
+.socialHeader p {
+  margin: 0.4rem 0 0;
+  color: #4b5560;
+}
+
+.platformChips {
+  margin-top: 0.9rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+}
+
+.platformChip {
+  border: 1px solid rgba(11, 95, 110, 0.28);
+  border-radius: 999px;
+  background: rgba(11, 95, 110, 0.1);
+  color: #0b5f6e;
+  font-size: 0.8rem;
+  font-weight: 700;
+  padding: 0.28rem 0.62rem;
+}
+
+.socialGrid {
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0.75rem;
+}
+
+.socialCard {
+  border: 1px solid #d7d1c7;
+  border-radius: 0.95rem;
+  background: #fffdf7;
+  padding: 0.85rem;
+  transition: transform 150ms ease, border-color 150ms ease, box-shadow 150ms ease;
+}
+
+.socialCard:hover {
+  transform: translateY(-2px);
+  border-color: rgba(11, 95, 110, 0.38);
+  box-shadow: 0 10px 20px rgba(12, 18, 28, 0.08);
+}
+
+.socialPlatform {
+  margin: 0;
+  font-size: 0.82rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #0b5f6e;
+  font-weight: 700;
+}
+
+.socialHandle {
+  margin: 0.35rem 0 0;
+  font-weight: 700;
+  color: #1d2a36;
+}
+
+.socialSignal {
+  margin: 0.4rem 0 0;
+  font-size: 0.92rem;
+  color: #5a646f;
+}
+
+@media (max-width: 900px) {
+  .socialGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 560px) {
+  .socialGrid {
+    grid-template-columns: 1fr;
+  }
+}

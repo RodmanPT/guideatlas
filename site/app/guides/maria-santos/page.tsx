@@ -5,6 +5,7 @@ import GuideAboutSection from "../../../components/GuideAboutSection";
 import GuideProfileHeader from "../../../components/GuideProfileHeader";
 import GuideToursGrid from "../../../components/GuideToursGrid";
 import { DEMO_GUIDE_PROFILE } from "../../../data/demoGuideProfile";
+import styles from "./page.module.css";
 
 export const metadata: Metadata = {
   title: "Maria Santos | Demo Guide Profile | GuideAtlas",
@@ -33,6 +34,40 @@ export default function DemoGuideProfilePage() {
 
       <GuideAboutSection paragraphs={DEMO_GUIDE_PROFILE.about} />
 
+      <section className={`sectionSoft section ${styles.socialPresenceSection}`} aria-label="Guide social integrations">
+        <header className={styles.socialHeader}>
+          <h2>Social presence across platforms</h2>
+          <p>
+            Travelers can discover and validate your work through the channels where you already publish content.
+          </p>
+        </header>
+
+        <div className={styles.platformChips} aria-label="Connected social platforms">
+          {DEMO_GUIDE_PROFILE.connectedPlatforms.map((platform) => (
+            <span key={platform} className={styles.platformChip}>
+              {platform}
+            </span>
+          ))}
+        </div>
+
+        <div className={styles.socialGrid}>
+          {DEMO_GUIDE_PROFILE.socialProfiles.map((profile) => (
+            <a
+              key={profile.platform}
+              className={styles.socialCard}
+              href={profile.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={`Open ${profile.platform} profile: ${profile.handle}`}
+            >
+              <p className={styles.socialPlatform}>{profile.platform}</p>
+              <p className={styles.socialHandle}>{profile.handle}</p>
+              <p className={styles.socialSignal}>{profile.signal}</p>
+            </a>
+          ))}
+        </div>
+      </section>
+
       <GuideToursGrid tours={DEMO_GUIDE_PROFILE.tours} />
 
       <section className="ctaPanel section" aria-label="Create guide profile call to action">
@@ -45,4 +80,3 @@ export default function DemoGuideProfilePage() {
     </main>
   );
 }
-

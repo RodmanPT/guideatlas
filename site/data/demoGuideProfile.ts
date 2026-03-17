@@ -6,6 +6,13 @@ export type DemoGuideTour = {
   imageUrl: string;
 };
 
+export type DemoGuideSocialProfile = {
+  platform: string;
+  handle: string;
+  url: string;
+  signal: string;
+};
+
 export type DemoGuideProfile = {
   slug: string;
   name: string;
@@ -19,6 +26,8 @@ export type DemoGuideProfile = {
   yearsGuiding: number;
   about: string[];
   tours: DemoGuideTour[];
+  connectedPlatforms: string[];
+  socialProfiles: DemoGuideSocialProfile[];
 };
 
 export const DEMO_GUIDE_PROFILE: DemoGuideProfile = {
@@ -62,6 +71,33 @@ export const DEMO_GUIDE_PROFILE: DemoGuideProfile = {
       subtitle: "Explore Lisbon's oldest district",
       imageUrl:
         "https://images.unsplash.com/photo-1585208798174-6cedd86e019a?auto=format&fit=crop&w=1200&q=80",
+    },
+  ],
+  connectedPlatforms: ["Instagram", "TikTok", "YouTube", "Facebook", "Google Business", "Tripadvisor"],
+  socialProfiles: [
+    {
+      platform: "Instagram",
+      handle: "@maria.lisbon.walks",
+      url: "https://www.instagram.com/",
+      signal: "Recent reels and guest stories",
+    },
+    {
+      platform: "TikTok",
+      handle: "@lisbonwithmaria",
+      url: "https://www.tiktok.com/",
+      signal: "Short city tips and hidden corners",
+    },
+    {
+      platform: "YouTube",
+      handle: "Maria Santos Tours",
+      url: "https://www.youtube.com/",
+      signal: "Long-form route previews",
+    },
+    {
+      platform: "Tripadvisor",
+      handle: "Maria Lisbon Tours",
+      url: "https://www.tripadvisor.com/",
+      signal: "Public reviews and traveler trust",
     },
   ],
 };

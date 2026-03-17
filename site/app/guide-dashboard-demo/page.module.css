@@ -421,6 +421,23 @@
   font-size: 0.92rem;
 }
 
+.platformChips {
+  margin: 0.5rem 0 0.65rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.38rem;
+}
+
+.platformChip {
+  border: 1px solid rgba(11, 95, 110, 0.28);
+  border-radius: 999px;
+  background: rgba(11, 95, 110, 0.1);
+  color: #0b5f6e;
+  font-size: 0.76rem;
+  font-weight: 700;
+  padding: 0.24rem 0.56rem;
+}
+
 .integrationCard ul {
   margin: 0;
   padding-left: 1rem;

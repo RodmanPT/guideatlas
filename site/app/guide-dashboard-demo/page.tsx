@@ -49,6 +49,15 @@ const LEADS = [
   },
 ];
 
+const SOCIAL_PLATFORMS = [
+  "Instagram",
+  "TikTok",
+  "YouTube",
+  "Facebook",
+  "Google Business",
+  "Tripadvisor",
+];
+
 const PUBLIC_PROFILE_POINTS = [
   "How travelers see your story, style, and expertise",
   "Showcase tours, photos, trust signals, and social proof",
@@ -73,8 +82,8 @@ export default function GuideDashboardDemoPage() {
         <p className={styles.kicker}>Guide Workspace Demo</p>
         <h1>Your command center as an independent guide</h1>
         <p>
-          This mockup shows how GuideAtlas can help you manage availability, group leads, direct messaging, and
-          social presence from one polished workspace.
+          See how GuideAtlas can help you manage availability, group leads, direct messaging, and social presence
+          from one polished workspace.
         </p>
         <div className={styles.heroActions}>
           <a className={styles.primaryCta} href="/#join-guide">
@@ -247,12 +256,21 @@ export default function GuideDashboardDemoPage() {
             <p>Connect external channels to boost credibility and close leads faster.</p>
           </header>
           <div className={styles.integrationCard}>
-            <h3>Instagram integration</h3>
-            <p>Sync latest reels and testimonials directly on your guide profile.</p>
+            <h3>Social platform integrations</h3>
+            <p>
+              Connect your guide profile to the channels where travelers already discover you.
+            </p>
+            <div className={styles.platformChips} aria-label="Supported social platforms">
+              {SOCIAL_PLATFORMS.map((platform) => (
+                <span key={platform} className={styles.platformChip}>
+                  {platform}
+                </span>
+              ))}
+            </div>
             <ul>
-              <li>Latest posts preview inside profile</li>
-              <li>Auto-tag tours by city and category</li>
-              <li>One-click share for new availability slots</li>
+              <li>Show your latest posts and videos directly in your guide page</li>
+              <li>Keep your profile active with fresh social proof from multiple channels</li>
+              <li>Publish tour openings to your connected platforms in one flow</li>
             </ul>
           </div>
           <div className={styles.integrationCard}>
