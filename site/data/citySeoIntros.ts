@@ -26,6 +26,8 @@ export const citySeoIntros: CitySeoIntros = {
   "venice": "Discover the best tours in Venice, from food walks to historical explorations led by local guides.",
   "naples": "Discover the best tours in Naples, from food walks to historical explorations led by local guides.",
   "palermo": "Discover the best tours in Palermo, from food walks to historical explorations led by local guides.",
+  "valencia": "Discover the best tours in Valencia, from food walks to historical explorations led by local guides.",
+  "seville": "Discover the best tours in Seville, from food walks to historical explorations led by local guides.",
 };
 
 export function getCitySeoIntro(citySlug: string, cityName: string): string {
