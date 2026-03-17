@@ -75,7 +75,7 @@ export default function TermsOfServicePage() {
         <h2>Contact</h2>
         <p>
           Questions about these terms can be sent to{" "}
-          <a href="mailto:support@guideatlas.com">support@guideatlas.com</a>.
+          <a href="mailto:support@guideatlas.app">support@guideatlas.app</a>.
         </p>
       </section>
 

@@ -23,7 +23,7 @@ This agent is intended for manual runs and stops automatically when it reaches t
 ## Optional environment variables
 
 - `REDDIT_USER_AGENT` (default: `GuideAtlasGuideInviter/0.1 by u/guideatlas-bot`)
-- `GUIDE_SIGNUP_URL` (default: `https://guideatlas.co/become-a-guide`)
+- `GUIDE_SIGNUP_URL` (default: `https://guideatlas.app/become-a-guide`)
 - `INVITE_SUBJECT_TEMPLATE` (supports `{username}`, `{city}`, `{country}`, `{profile_url}`, `{signup_url}`)
 - `INVITE_MESSAGE_TEMPLATE` (same placeholders)
 - `REDDIT_DAILY_INVITE_LIMIT` (default: `50`)

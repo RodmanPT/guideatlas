@@ -29,7 +29,7 @@ export default function SiteFooter() {
           <Link href="/lisbon-tours">Lisbon</Link>
           <Link href="/rome-tours">Rome</Link>
           <Link href="/tokyo-tours">Tokyo</Link>
-          <a href="mailto:hello@guideatlas.com">Contact</a>
+          <a href="mailto:hello@guideatlas.app">Contact</a>
         </div>
       </div>
     </footer>

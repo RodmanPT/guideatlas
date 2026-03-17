@@ -54,7 +54,7 @@ export default function CookiePolicyPage() {
         <h2>Contact</h2>
         <p>
           For questions about cookies, contact{" "}
-          <a href="mailto:privacy@guideatlas.com">privacy@guideatlas.com</a>.
+          <a href="mailto:privacy@guideatlas.app">privacy@guideatlas.app</a>.
         </p>
       </section>
 

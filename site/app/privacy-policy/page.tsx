@@ -80,7 +80,7 @@ export default function PrivacyPolicyPage() {
         <h2>Contact</h2>
         <p>
           To request access, correction, or deletion of your data, contact us at{" "}
-          <a href="mailto:privacy@guideatlas.com">privacy@guideatlas.com</a>.
+          <a href="mailto:privacy@guideatlas.app">privacy@guideatlas.app</a>.
         </p>
       </section>
 

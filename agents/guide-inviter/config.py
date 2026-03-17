@@ -75,7 +75,7 @@ class Settings:
             "- GuideAtlas team"
         ),
     )
-    signup_url: str = os.getenv("GUIDE_SIGNUP_URL", "https://guideatlas.co/become-a-guide").strip()
+    signup_url: str = os.getenv("GUIDE_SIGNUP_URL", "https://guideatlas.app/become-a-guide").strip()
 
     reddit_daily_invite_limit: int = _env_int("REDDIT_DAILY_INVITE_LIMIT", 50, minimum=1)
     daily_usage_ratio: float = _env_float("DAILY_USAGE_RATIO", 0.90, minimum=0.1, maximum=1.0)
