@@ -7,6 +7,7 @@ This folder contains autonomous jobs executed independently from the website.
 - `city-generator/`: adds new destinations and AI-curated tours.
 - `image-fetcher/`: Unsplash integration utility for city images.
 - `discovery-agent/`: production discovery runner (Python engine + `job.ts` wrapper).
+- `guide-inviter/`: Reddit outreach runner to invite discovered guides with daily budget guardrails.
 
 ## Install
 
@@ -22,6 +23,7 @@ npm run city-generator
 npm run discovery-agent
 npm run image-fetcher
 npm run image-backfill
+npm run guide-inviter
 ```
 
 ## Environment
@@ -48,3 +50,4 @@ Supported variables:
   - `npm run city-generator`
   - `npm run discovery-agent`
 - Keep `MIN_NEW_CITIES_PER_RUN` / `MAX_NEW_CITIES_PER_RUN` conservative for idempotent daily runs.
+- Run `guide-inviter` manually when needed. It automatically stops at the configured safe daily budget (default 90%).

@@ -10,6 +10,7 @@
     "site:build": "npm --workspace site run build",
     "agents:city-generator": "npm --workspace agents run city-generator",
     "agents:discovery-agent": "npm --workspace agents run discovery-agent",
+    "agents:guide-inviter": "npm --workspace agents run guide-inviter",
     "test:playwright": "node tests/playwright/inspect.js",
     "playwright:install": "playwright install chromium"
   },
