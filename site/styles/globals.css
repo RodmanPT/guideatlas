@@ -833,6 +833,14 @@ a {
   font: inherit;
 }
 
+.signupForm select {
+  border: 1px solid var(--line);
+  border-radius: 0.68rem;
+  background: #fff;
+  padding: 0.72rem 0.84rem;
+  font: inherit;
+}
+
 .signupForm textarea {
   border: 1px solid var(--line);
   border-radius: 0.68rem;

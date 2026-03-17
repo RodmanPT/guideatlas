@@ -168,24 +168,35 @@ async function sheetsRequest<T>(
   return json as T;
 }
 
-export async function isEmailOnWaitlist(email: string): Promise<boolean> {
+export async function isWaitlistSignupDuplicate(email: string, city: string, country: string): Promise<boolean> {
   const spreadsheetId = getSpreadsheetId();
   const accessToken = await getAccessToken();
 
-  const range = sheetRange(`${sheetTabA1(getSheetTabName())}!B:B`);
+  const range = sheetRange(`${sheetTabA1(getSheetTabName())}!B:D`);
   const data = await sheetsRequest<{ values?: string[][] }>(
     `spreadsheets/${spreadsheetId}/values/${range}`,
     { method: "GET" },
     accessToken,
   );
 
-  const emails = (data.values ?? [])
-    .flat()
-    .map((v) => (v ?? "").trim().toLowerCase())
-    .filter((v) => v && v !== "email");
+  const normalizedEmail = email.trim().toLowerCase();
+  const normalizedCity = toSlug(city);
+  const normalizedCountry = toSlug(country);
 
-  // If a header row exists, it will typically be the first value: "email".
-  return emails.includes(email.trim().toLowerCase());
+  const entries = (data.values ?? [])
+    .map((row) => ({
+      email: (row[0] ?? "").trim().toLowerCase(),
+      city: toSlug((row[1] ?? "").trim()),
+      country: toSlug((row[2] ?? "").trim()),
+    }))
+    .filter((row) => row.email && row.email !== "email" && row.city && row.country);
+
+  return entries.some(
+    (entry) =>
+      entry.email === normalizedEmail &&
+      entry.city === normalizedCity &&
+      entry.country === normalizedCountry,
+  );
 }
 
 export async function appendGuideWaitlistRow(row: GuideWaitlistRow): Promise<void> {

@@ -1,13 +1,15 @@
 import { NextResponse } from "next/server";
 
-import { appendGuideWaitlistRow, appendProductEventRow, isEmailOnWaitlist } from "../../../lib/googleSheets";
+import { appendGuideWaitlistRow, appendProductEventRow, isWaitlistSignupDuplicate } from "../../../lib/googleSheets";
 import { toSlug } from "../../../../shared/utils/helpers";
 
 export const runtime = "nodejs";
 
 type SignupPayload = {
+  name?: unknown;
   email?: unknown;
   city?: unknown;
+  country?: unknown;
   tour_type?: unknown;
 };
 
@@ -27,12 +29,14 @@ export async function POST(request: Request) {
     return NextResponse.json({ error: "Invalid JSON body." }, { status: 400 });
   }
 
+  const name = asCleanString(payload.name);
   const email = asCleanString(payload.email).toLowerCase();
   const city = asCleanString(payload.city);
+  const country = asCleanString(payload.country);
   const tourType = asCleanString(payload.tour_type);
 
-  if (!email || !city) {
-    return NextResponse.json({ error: "Email and city are required." }, { status: 400 });
+  if (!name || !email || !city || !country || !tourType) {
+    return NextResponse.json({ error: "Name, email, city, country and tour type are required." }, { status: 400 });
   }
 
   if (!isValidEmail(email)) {
@@ -41,21 +45,21 @@ export async function POST(request: Request) {
 
   // Basic sanity limits to keep the sheet clean.
   const maxLen = 200;
-  if ([email, city, tourType].some((v) => v.length > maxLen)) {
+  if ([name, email, city, country, tourType].some((v) => v.length > maxLen)) {
     return NextResponse.json({ error: "Field too long." }, { status: 400 });
   }
 
   try {
-    const isDuplicate = await isEmailOnWaitlist(email);
+    const isDuplicate = await isWaitlistSignupDuplicate(email, city, country);
     if (isDuplicate) {
       return NextResponse.json({ error: "duplicate" }, { status: 409 });
     }
 
     await appendGuideWaitlistRow({
-      name: "",
+      name,
       email,
       city,
-      country: "",
+      country,
       tour_type: tourType,
       created_at: new Date().toISOString(),
     });

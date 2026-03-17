@@ -16,12 +16,14 @@ export const metadata: Metadata = {
 type PageProps = {
   searchParams?: {
     city?: string;
+    country?: string;
     tour?: string;
   };
 };
 
 export default function BecomeGuidePage({ searchParams }: PageProps) {
   const initialCity = (searchParams?.city ?? "").trim();
+  const initialCountry = (searchParams?.country ?? "").trim();
   const initialTour = (searchParams?.tour ?? "").trim();
 
   return (
@@ -42,7 +44,7 @@ export default function BecomeGuidePage({ searchParams }: PageProps) {
         </div>
       </section>
 
-      <BecomeGuideForm initialCity={initialCity} initialTour={initialTour} />
+      <BecomeGuideForm initialCity={initialCity} initialCountry={initialCountry} initialTour={initialTour} />
     </main>
   );
 }
