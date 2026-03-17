@@ -2,32 +2,7 @@
 
 import { useEffect, useMemo, useState } from "react";
 
-type CookieConsent = {
-  // accepted = "Accept" button. custom = user saved preferences.
-  status: "accepted" | "custom";
-  analytics: boolean;
-  timestamp: string;
-};
-
-const STORAGE_KEY = "guideatlas.cookieConsent.v1";
-
-function readConsent(): CookieConsent | null {
-  try {
-    const raw = window.localStorage.getItem(STORAGE_KEY);
-    if (!raw) return null;
-    const parsed = JSON.parse(raw) as CookieConsent;
-    if (!parsed || (parsed.status !== "accepted" && parsed.status !== "custom")) return null;
-    if (typeof parsed.analytics !== "boolean") return null;
-    if (typeof parsed.timestamp !== "string") return null;
-    return parsed;
-  } catch {
-    return null;
-  }
-}
-
-function writeConsent(consent: CookieConsent) {
-  window.localStorage.setItem(STORAGE_KEY, JSON.stringify(consent));
-}
+import { readCookieConsent, writeCookieConsent } from "../lib/cookieConsent";
 
 export default function CookieConsentBanner() {
   const [visible, setVisible] = useState(false);
@@ -37,15 +12,18 @@ export default function CookieConsentBanner() {
   const nowIso = useMemo(() => new Date().toISOString(), []);
 
   useEffect(() => {
-    const existing = readConsent();
-    if (existing) return;
+    const existing = readCookieConsent();
+    if (existing) {
+      setAnalytics(existing.analytics);
+      return;
+    }
     setVisible(true);
   }, []);
 
   if (!visible) return null;
 
   function acceptAll() {
-    writeConsent({ status: "accepted", analytics: true, timestamp: nowIso });
+    writeCookieConsent({ status: "accepted", analytics: true, timestamp: nowIso });
     setVisible(false);
   }
 
@@ -58,17 +36,19 @@ export default function CookieConsentBanner() {
   }
 
   function savePreferences() {
-    writeConsent({ status: "custom", analytics, timestamp: nowIso });
+    writeCookieConsent({ status: "custom", analytics, timestamp: nowIso });
     setVisible(false);
   }
 
   return (
     <>
       <div className="cookieBanner" role="dialog" aria-live="polite" aria-label="Cookie consent">
-        <p className="cookieBannerText">This website uses cookies to improve your experience.</p>
+        <p className="cookieBannerText">
+          GuideAtlas uses essential storage and optional analytics cookies.
+        </p>
         <div className="cookieBannerActions">
           <button className="cookieBtn cookieBtnPrimary" type="button" onClick={acceptAll}>
-            Accept
+            Accept all
           </button>
           <button className="cookieBtn cookieBtnGhost" type="button" onClick={openManage}>
             Manage preferences
@@ -95,13 +75,13 @@ export default function CookieConsentBanner() {
             <div className="cookieModalBody">
               <p>
                 GuideAtlas uses essential cookies for basic functionality. Analytics cookies help us
-                understand usage and improve the experience (future).
+                understand traffic and improve the experience.
               </p>
 
               <div className="cookiePref">
                 <div>
                   <h3>Essential</h3>
-                  <p>Required for the website to function.</p>
+                  <p>Required for the website to function and remember your cookie choice.</p>
                 </div>
                 <div className="cookiePill" aria-label="Essential cookies are always on">
                   Always on
@@ -110,8 +90,8 @@ export default function CookieConsentBanner() {
 
               <label className="cookiePref cookiePrefToggle">
                 <div>
-                  <h3>Analytics (future)</h3>
-                  <p>Helps us understand traffic and improve the product.</p>
+                  <h3>Analytics</h3>
+                  <p>Google Analytics helps us understand usage and improve the product.</p>
                 </div>
                 <span className="cookieToggleWrap">
                   <input
@@ -146,4 +126,3 @@ export default function CookieConsentBanner() {
     </>
   );
 }
-

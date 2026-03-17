@@ -21,7 +21,8 @@ export default function PrivacyPolicyPage() {
         <h1>Privacy Policy</h1>
         <p>
           GuideAtlas is building a marketplace that connects travelers with independent local guides. This
-          policy explains how we handle personal data, including guide waitlist signups.
+          policy explains how we handle personal data, including guide waitlist signups and website
+          analytics.
         </p>
       </section>
 
@@ -38,6 +39,13 @@ export default function PrivacyPolicyPage() {
           onboarding, and share product updates relevant to your signup.
         </p>
 
+        <h2>Website Analytics</h2>
+        <p>
+          If you consent to analytics cookies, GuideAtlas uses Google Analytics 4 (measurement ID{" "}
+          <code>G-GGT7XHR7QK</code>) to understand aggregated site usage, such as page views, device type,
+          and traffic sources. We use this information to improve product decisions and user experience.
+        </p>
+
         <h2>How Data Is Stored</h2>
         <p>
           For the MVP, waitlist submissions are stored in a private Google Sheet accessible only to
@@ -47,9 +55,9 @@ export default function PrivacyPolicyPage() {
 
         <h2>GDPR Legal Basis</h2>
         <p>
-          We generally rely on your consent and/or our legitimate interest in responding to your inquiry and
-          building the GuideAtlas platform. If the legal basis changes as the product evolves, we will
-          update this policy.
+          We rely on your consent for optional analytics cookies, and on legitimate interest and/or
+          pre-contractual steps for handling guide waitlist and onboarding requests. If the legal basis
+          changes as the product evolves, we will update this policy.
         </p>
 
         <h2>Your Rights (GDPR)</h2>
