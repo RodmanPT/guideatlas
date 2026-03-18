@@ -387,7 +387,6 @@ def resolve_repo_root() -> Path:
 def git_commit_and_push(repo_root: Path, changed_files: List[Path], city_names: List[str]) -> None:
     github_token = ensure_required_env("GITHUB_TOKEN")
     github_repo = ensure_required_env("GITHUB_REPO")
-    github_branch = ensure_required_env("GITHUB_BRANCH")
 
     git_name = os.getenv("GIT_AUTHOR_NAME", "GuideAtlas AI Agent")
     git_email = os.getenv("GIT_AUTHOR_EMAIL", "bot@guideatlas.local")
@@ -420,6 +419,10 @@ def git_commit_and_push(repo_root: Path, changed_files: List[Path], city_names: 
 
     safe_token = quote(github_token, safe="")
     remote_url = f"https://x-access-token:{safe_token}@github.com/{github_repo}.git"
+    
+    branch_result = run_cmd(["git", "-C", str(repo_root), "rev-parse", "--abbrev-ref", "HEAD"], cwd=repo_root)
+    github_branch = branch_result.stdout.strip()
+    
     run_cmd(["git", "-C", str(repo_root), "push", remote_url, f"HEAD:{github_branch}"], cwd=repo_root)
 
 
