@@ -480,6 +480,55 @@ export const aiTours: CityToursMap = {
       description: "Discover local flavors and market culture in Palermo with curated tasting stops.",
     },
   ],
+  "valencia": [
+    {
+      title: "Valencia Sunset Viewpoints",
+      duration: "2 hours",
+      description: "Visit scenic viewpoints and photogenic routes around Valencia at golden hour.",
+    },
+    {
+      title: "Valencia Culture and Street Life",
+      duration: "3.5 hours",
+      description: "Experience neighborhood rhythms, architecture, and local culture in Valencia.",
+    },
+    {
+      title: "Valencia Food and Markets Walk",
+      duration: "3 hours",
+      description: "Discover local flavors and market culture in Valencia with curated tasting stops.",
+    },
+    {
+      title: "Valencia History Highlights",
+      duration: "2 hours",
+      description: "Walk through key landmarks and historical moments that shaped Valencia.",
+    },
+    {
+      title: "Hidden Corners of Valencia",
+      duration: "2.5 hours",
+      description: "Explore lesser-known neighborhoods and stories that show the local side of Valencia.",
+    },
+  ],
+  "seville": [
+    {
+      title: "Hidden Corners of Seville",
+      duration: "2.5 hours",
+      description: "Explore lesser-known neighborhoods and stories that show the local side of Seville.",
+    },
+    {
+      title: "Seville Food and Markets Walk",
+      duration: "3 hours",
+      description: "Discover local flavors and market culture in Seville with curated tasting stops.",
+    },
+    {
+      title: "Seville Sunset Viewpoints",
+      duration: "2 hours",
+      description: "Visit scenic viewpoints and photogenic routes around Seville at golden hour.",
+    },
+    {
+      title: "Seville Private Discovery Route",
+      duration: "3 hours",
+      description: "A curated route through signature areas and hidden gems in Seville.",
+    },
+  ],
 };
 
 export function getAiToursByCity(citySlug: string): CuratedTour[] {

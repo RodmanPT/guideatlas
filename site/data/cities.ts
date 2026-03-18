@@ -26,6 +26,8 @@ export const CITIES: City[] = [
   { slug: "venice", name: "Venice", country: "Italy", latitude: 45.4408, longitude: 12.3155 },
   { slug: "naples", name: "Naples", country: "Italy", latitude: 40.8518, longitude: 14.2681 },
   { slug: "palermo", name: "Palermo", country: "Italy", latitude: 38.1157, longitude: 13.3615 },
+  { slug: "valencia", name: "Valencia", country: "Spain", latitude: 39.4699, longitude: -0.3763 },
+  { slug: "seville", name: "Seville", country: "Spain", latitude: 37.3891, longitude: -5.9845 },
 ];
 
 export function getCityBySlug(slug: string): City | undefined {
