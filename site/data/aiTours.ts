@@ -632,6 +632,45 @@ export const aiTours: CityToursMap = {
       description: "Experience neighborhood rhythms, architecture, and local culture in Marbella.",
     },
   ],
+  "nice": [
+    {
+      title: "Nice Sunset Viewpoints",
+      duration: "2 hours",
+      description: "Visit scenic viewpoints and photogenic routes around Nice at golden hour.",
+    },
+    {
+      title: "Nice Culture and Street Life",
+      duration: "3.5 hours",
+      description: "Experience neighborhood rhythms, architecture, and local culture in Nice.",
+    },
+    {
+      title: "Nice Food and Markets Walk",
+      duration: "3 hours",
+      description: "Discover local flavors and market culture in Nice with curated tasting stops.",
+    },
+    {
+      title: "Nice Private Discovery Route",
+      duration: "3 hours",
+      description: "A curated route through signature areas and hidden gems in Nice.",
+    },
+  ],
+  "lyon": [
+    {
+      title: "Lyon Culture and Street Life",
+      duration: "3.5 hours",
+      description: "Experience neighborhood rhythms, architecture, and local culture in Lyon.",
+    },
+    {
+      title: "Lyon History Highlights",
+      duration: "2 hours",
+      description: "Walk through key landmarks and historical moments that shaped Lyon.",
+    },
+    {
+      title: "Lyon Food and Markets Walk",
+      duration: "3 hours",
+      description: "Discover local flavors and market culture in Lyon with curated tasting stops.",
+    },
+  ],
 };
 
 export function getAiToursByCity(citySlug: string): CuratedTour[] {
