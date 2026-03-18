@@ -578,6 +578,60 @@ export const aiTours: CityToursMap = {
       description: "Visit scenic viewpoints and photogenic routes around Granada at golden hour.",
     },
   ],
+  "bilbao": [
+    {
+      title: "Bilbao Culture and Street Life",
+      duration: "3.5 hours",
+      description: "Experience neighborhood rhythms, architecture, and local culture in Bilbao.",
+    },
+    {
+      title: "Bilbao Food and Markets Walk",
+      duration: "3 hours",
+      description: "Discover local flavors and market culture in Bilbao with curated tasting stops.",
+    },
+    {
+      title: "Hidden Corners of Bilbao",
+      duration: "2.5 hours",
+      description: "Explore lesser-known neighborhoods and stories that show the local side of Bilbao.",
+    },
+    {
+      title: "Bilbao History Highlights",
+      duration: "2 hours",
+      description: "Walk through key landmarks and historical moments that shaped Bilbao.",
+    },
+    {
+      title: "Bilbao Private Discovery Route",
+      duration: "3 hours",
+      description: "A curated route through signature areas and hidden gems in Bilbao.",
+    },
+  ],
+  "marbella": [
+    {
+      title: "Hidden Corners of Marbella",
+      duration: "2.5 hours",
+      description: "Explore lesser-known neighborhoods and stories that show the local side of Marbella.",
+    },
+    {
+      title: "Marbella Food and Markets Walk",
+      duration: "3 hours",
+      description: "Discover local flavors and market culture in Marbella with curated tasting stops.",
+    },
+    {
+      title: "Marbella Sunset Viewpoints",
+      duration: "2 hours",
+      description: "Visit scenic viewpoints and photogenic routes around Marbella at golden hour.",
+    },
+    {
+      title: "Marbella History Highlights",
+      duration: "2 hours",
+      description: "Walk through key landmarks and historical moments that shaped Marbella.",
+    },
+    {
+      title: "Marbella Culture and Street Life",
+      duration: "3.5 hours",
+      description: "Experience neighborhood rhythms, architecture, and local culture in Marbella.",
+    },
+  ],
 };
 
 export function getAiToursByCity(citySlug: string): CuratedTour[] {
