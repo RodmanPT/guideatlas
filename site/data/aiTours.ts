@@ -671,6 +671,28 @@ export const aiTours: CityToursMap = {
       description: "Discover local flavors and market culture in Lyon with curated tasting stops.",
     },
   ],
+  "marseille": [
+    {
+      title: "Marseille Food and Markets Walk",
+      duration: "3 hours",
+      description: "Discover local flavors and market culture in Marseille with curated tasting stops.",
+    },
+    {
+      title: "Marseille History Highlights",
+      duration: "2 hours",
+      description: "Walk through key landmarks and historical moments that shaped Marseille.",
+    },
+    {
+      title: "Marseille Private Discovery Route",
+      duration: "3 hours",
+      description: "A curated route through signature areas and hidden gems in Marseille.",
+    },
+    {
+      title: "Hidden Corners of Marseille",
+      duration: "2.5 hours",
+      description: "Explore lesser-known neighborhoods and stories that show the local side of Marseille.",
+    },
+  ],
 };
 
 export function getAiToursByCity(citySlug: string): CuratedTour[] {

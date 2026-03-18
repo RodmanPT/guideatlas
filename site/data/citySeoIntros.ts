@@ -34,6 +34,7 @@ export const citySeoIntros: CitySeoIntros = {
   "marbella": "Discover the best tours in Marbella, from food walks to historical explorations led by local guides.",
   "nice": "Discover the best tours in Nice, from food walks to historical explorations led by local guides.",
   "lyon": "Discover the best tours in Lyon, from food walks to historical explorations led by local guides.",
+  "marseille": "Discover the best tours in Marseille, from food walks to historical explorations led by local guides.",
 };
 
 export function getCitySeoIntro(citySlug: string, cityName: string): string {
