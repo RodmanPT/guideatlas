@@ -171,6 +171,11 @@ export const CITY_IMAGE_MAP: Record<string, CityImageRecord> = {
     image_author: "Corentin Jaunault",
     image_source: "unsplash",
   },
+  "toulouse": {
+    city_image_url: "https://images.unsplash.com/photo-1475266389410-639095a9e568?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4OTczNTh8MHwxfHNlYXJjaHwxfHxUb3Vsb3VzZSUyMGNpdHlzY2FwZXxlbnwwfDB8fHwxNzczOTAxMzY3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+    image_author: "Toa Heftiba",
+    image_source: "unsplash",
+  },
 };
 
 export function getCityImage(citySlug: string): CityImageRecord | undefined {

@@ -720,6 +720,23 @@ export const aiTours: CityToursMap = {
       description: "Discover local flavors and market culture in Bordeaux with curated tasting stops.",
     },
   ],
+  "toulouse": [
+    {
+      title: "Toulouse Private Discovery Route",
+      duration: "3 hours",
+      description: "A curated route through signature areas and hidden gems in Toulouse.",
+    },
+    {
+      title: "Toulouse History Highlights",
+      duration: "2 hours",
+      description: "Walk through key landmarks and historical moments that shaped Toulouse.",
+    },
+    {
+      title: "Toulouse Sunset Viewpoints",
+      duration: "2 hours",
+      description: "Visit scenic viewpoints and photogenic routes around Toulouse at golden hour.",
+    },
+  ],
 };
 
 export function getAiToursByCity(citySlug: string): CuratedTour[] {
