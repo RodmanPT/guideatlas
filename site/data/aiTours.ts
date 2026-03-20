@@ -737,6 +737,50 @@ export const aiTours: CityToursMap = {
       description: "Visit scenic viewpoints and photogenic routes around Toulouse at golden hour.",
     },
   ],
+  "munich": [
+    {
+      title: "Munich Culture and Street Life",
+      duration: "3.5 hours",
+      description: "Experience neighborhood rhythms, architecture, and local culture in Munich.",
+    },
+    {
+      title: "Hidden Corners of Munich",
+      duration: "2.5 hours",
+      description: "Explore lesser-known neighborhoods and stories that show the local side of Munich.",
+    },
+    {
+      title: "Munich Private Discovery Route",
+      duration: "3 hours",
+      description: "A curated route through signature areas and hidden gems in Munich.",
+    },
+    {
+      title: "Munich Food and Markets Walk",
+      duration: "3 hours",
+      description: "Discover local flavors and market culture in Munich with curated tasting stops.",
+    },
+  ],
+  "hamburg": [
+    {
+      title: "Hamburg Culture and Street Life",
+      duration: "3.5 hours",
+      description: "Experience neighborhood rhythms, architecture, and local culture in Hamburg.",
+    },
+    {
+      title: "Hamburg Sunset Viewpoints",
+      duration: "2 hours",
+      description: "Visit scenic viewpoints and photogenic routes around Hamburg at golden hour.",
+    },
+    {
+      title: "Hamburg Private Discovery Route",
+      duration: "3 hours",
+      description: "A curated route through signature areas and hidden gems in Hamburg.",
+    },
+    {
+      title: "Hamburg Food and Markets Walk",
+      duration: "3 hours",
+      description: "Discover local flavors and market culture in Hamburg with curated tasting stops.",
+    },
+  ],
 };
 
 export function getAiToursByCity(citySlug: string): CuratedTour[] {
