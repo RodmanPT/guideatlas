@@ -781,6 +781,28 @@ export const aiTours: CityToursMap = {
       description: "Discover local flavors and market culture in Hamburg with curated tasting stops.",
     },
   ],
+  "frankfurt": [
+    {
+      title: "Frankfurt History Highlights",
+      duration: "2 hours",
+      description: "Walk through key landmarks and historical moments that shaped Frankfurt.",
+    },
+    {
+      title: "Frankfurt Sunset Viewpoints",
+      duration: "2 hours",
+      description: "Visit scenic viewpoints and photogenic routes around Frankfurt at golden hour.",
+    },
+    {
+      title: "Frankfurt Culture and Street Life",
+      duration: "3.5 hours",
+      description: "Experience neighborhood rhythms, architecture, and local culture in Frankfurt.",
+    },
+    {
+      title: "Frankfurt Food and Markets Walk",
+      duration: "3 hours",
+      description: "Discover local flavors and market culture in Frankfurt with curated tasting stops.",
+    },
+  ],
 };
 
 export function getAiToursByCity(citySlug: string): CuratedTour[] {

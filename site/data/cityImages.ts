@@ -186,6 +186,11 @@ export const CITY_IMAGE_MAP: Record<string, CityImageRecord> = {
     image_author: "Kirill Prikhodko",
     image_source: "unsplash",
   },
+  "frankfurt": {
+    city_image_url: "https://images.unsplash.com/photo-1607879344639-d5f8dec22a60?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4OTczNTh8MHwxfHNlYXJjaHwxfHxGcmFua2Z1cnQlMjBza3lsaW5lfGVufDB8MHx8fDE3NzM5ODgwMjB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+    image_author: "Raja Sen",
+    image_source: "unsplash",
+  },
 };
 
 export function getCityImage(citySlug: string): CityImageRecord | undefined {
