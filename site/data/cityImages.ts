@@ -176,6 +176,36 @@ export const CITY_IMAGE_MAP: Record<string, CityImageRecord> = {
     image_author: "Toa Heftiba",
     image_source: "unsplash",
   },
+  "munich": {
+    city_image_url: "https://images.unsplash.com/photo-1634150517084-d92b0e31439c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4OTczNTh8MHwxfHNlYXJjaHwxfHxNdW5pY2glMjBza3lsaW5lfGVufDB8MHx8fDE3NzM5MDE0ODR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+    image_author: "Dovlet Hojayev",
+    image_source: "unsplash",
+  },
+  "hamburg": {
+    city_image_url: "https://images.unsplash.com/photo-1724028722169-42c94f20761c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4OTczNTh8MHwxfHNlYXJjaHwxfHxIYW1idXJnJTIwc2t5bGluZXxlbnwwfDB8fHwxNzczOTg3ODkxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+    image_author: "Kirill Prikhodko",
+    image_source: "unsplash",
+  },
+  "frankfurt": {
+    city_image_url: "https://images.unsplash.com/photo-1607879344639-d5f8dec22a60?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4OTczNTh8MHwxfHNlYXJjaHwxfHxGcmFua2Z1cnQlMjBza3lsaW5lfGVufDB8MHx8fDE3NzM5ODgwMjB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+    image_author: "Raja Sen",
+    image_source: "unsplash",
+  },
+  "cologne": {
+    city_image_url: "https://images.unsplash.com/photo-1657304708590-13315349f3b2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4OTczNTh8MHwxfHNlYXJjaHwxfHxDb2xvZ25lJTIwc2t5bGluZXxlbnwwfDB8fHwxNzczOTg4MDU4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+    image_author: "Peter Herrmann",
+    image_source: "unsplash",
+  },
+  "brussels": {
+    city_image_url: "https://images.unsplash.com/photo-1690747072873-6a62628edf0b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4OTczNTh8MHwxfHNlYXJjaHwxfHxCcnVzc2VscyUyMHNreWxpbmV8ZW58MHwwfHx8MTc3Mzk4ODIwOXww&ixlib=rb-4.1.0&q=80&w=1080",
+    image_author: "Nils Erland",
+    image_source: "unsplash",
+  },
+  "bruges": {
+    city_image_url: "https://images.unsplash.com/photo-1678630604052-d5950b88c3f2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4OTczNTh8MHwxfHNlYXJjaHwxfHxCcnVnZXMlMjBza3lsaW5lfGVufDB8MHx8fDE3NzM5ODgyMDl8MA&ixlib=rb-4.1.0&q=80&w=1080",
+    image_author: "Dan V",
+    image_source: "unsplash",
+  },
 };
 
 export function getCityImage(citySlug: string): CityImageRecord | undefined {
