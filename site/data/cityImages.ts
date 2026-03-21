@@ -196,6 +196,11 @@ export const CITY_IMAGE_MAP: Record<string, CityImageRecord> = {
     image_author: "Peter Herrmann",
     image_source: "unsplash",
   },
+  "brussels": {
+    city_image_url: "https://images.unsplash.com/photo-1690747072873-6a62628edf0b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4OTczNTh8MHwxfHNlYXJjaHwxfHxCcnVzc2VscyUyMHNreWxpbmV8ZW58MHwwfHx8MTc3Mzk4ODIwOXww&ixlib=rb-4.1.0&q=80&w=1080",
+    image_author: "Nils Erland",
+    image_source: "unsplash",
+  },
 };
 
 export function getCityImage(citySlug: string): CityImageRecord | undefined {
