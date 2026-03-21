@@ -191,6 +191,11 @@ export const CITY_IMAGE_MAP: Record<string, CityImageRecord> = {
     image_author: "Raja Sen",
     image_source: "unsplash",
   },
+  "cologne": {
+    city_image_url: "https://images.unsplash.com/photo-1657304708590-13315349f3b2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4OTczNTh8MHwxfHNlYXJjaHwxfHxDb2xvZ25lJTIwc2t5bGluZXxlbnwwfDB8fHwxNzczOTg4MDU4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+    image_author: "Peter Herrmann",
+    image_source: "unsplash",
+  },
 };
 
 export function getCityImage(citySlug: string): CityImageRecord | undefined {
