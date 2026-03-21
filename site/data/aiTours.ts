@@ -857,6 +857,50 @@ export const aiTours: CityToursMap = {
       description: "Explore lesser-known neighborhoods and stories that show the local side of Brussels.",
     },
   ],
+  "bruges": [
+    {
+      title: "Bruges Private Discovery Route",
+      duration: "3 hours",
+      description: "A curated route through signature areas and hidden gems in Bruges.",
+    },
+    {
+      title: "Bruges Food and Markets Walk",
+      duration: "3 hours",
+      description: "Discover local flavors and market culture in Bruges with curated tasting stops.",
+    },
+    {
+      title: "Bruges Sunset Viewpoints",
+      duration: "2 hours",
+      description: "Visit scenic viewpoints and photogenic routes around Bruges at golden hour.",
+    },
+    {
+      title: "Bruges History Highlights",
+      duration: "2 hours",
+      description: "Walk through key landmarks and historical moments that shaped Bruges.",
+    },
+    {
+      title: "Bruges Culture and Street Life",
+      duration: "3.5 hours",
+      description: "Experience neighborhood rhythms, architecture, and local culture in Bruges.",
+    },
+  ],
+  "antwerp": [
+    {
+      title: "Antwerp Sunset Viewpoints",
+      duration: "2 hours",
+      description: "Visit scenic viewpoints and photogenic routes around Antwerp at golden hour.",
+    },
+    {
+      title: "Antwerp Private Discovery Route",
+      duration: "3 hours",
+      description: "A curated route through signature areas and hidden gems in Antwerp.",
+    },
+    {
+      title: "Antwerp History Highlights",
+      duration: "2 hours",
+      description: "Walk through key landmarks and historical moments that shaped Antwerp.",
+    },
+  ],
 };
 
 export function getAiToursByCity(citySlug: string): CuratedTour[] {

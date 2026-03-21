@@ -201,6 +201,16 @@ export const CITY_IMAGE_MAP: Record<string, CityImageRecord> = {
     image_author: "Nils Erland",
     image_source: "unsplash",
   },
+  "bruges": {
+    city_image_url: "https://images.unsplash.com/photo-1678630604052-d5950b88c3f2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4OTczNTh8MHwxfHNlYXJjaHwxfHxCcnVnZXMlMjBza3lsaW5lfGVufDB8MHx8fDE3NzM5ODgyMDl8MA&ixlib=rb-4.1.0&q=80&w=1080",
+    image_author: "Dan V",
+    image_source: "unsplash",
+  },
+  "antwerp": {
+    city_image_url: "https://images.unsplash.com/photo-1610720557151-782b70eacb2d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4OTczNTh8MHwxfHNlYXJjaHwxfHxBbnR3ZXJwJTIwc2t5bGluZXxlbnwwfDB8fHwxNzc0MDczNDIyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+    image_author: "Mick Truyts",
+    image_source: "unsplash",
+  },
 };
 
 export function getCityImage(citySlug: string): CityImageRecord | undefined {
