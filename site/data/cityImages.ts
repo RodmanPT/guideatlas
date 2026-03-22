@@ -211,6 +211,16 @@ export const CITY_IMAGE_MAP: Record<string, CityImageRecord> = {
     image_author: "Mick Truyts",
     image_source: "unsplash",
   },
+  "rotterdam": {
+    city_image_url: "https://images.unsplash.com/photo-1614521272693-73052eaefc51?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4OTczNTh8MHwxfHNlYXJjaHwxfHxSb3R0ZXJkYW0lMjBza3lsaW5lfGVufDB8MHx8fDE3NzQxNTkzNzd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+    image_author: "Dennis Möller",
+    image_source: "unsplash",
+  },
+  "utrecht": {
+    city_image_url: "https://images.unsplash.com/photo-1548368698-c656954f39c6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4OTczNTh8MHwxfHNlYXJjaHwxfHxVdHJlY2h0JTIwc2t5bGluZXxlbnwwfDB8fHwxNzc0MTU5Mzc3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+    image_author: "Friso Baaij",
+    image_source: "unsplash",
+  },
 };
 
 export function getCityImage(citySlug: string): CityImageRecord | undefined {

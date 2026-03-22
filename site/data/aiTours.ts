@@ -901,6 +901,60 @@ export const aiTours: CityToursMap = {
       description: "Walk through key landmarks and historical moments that shaped Antwerp.",
     },
   ],
+  "rotterdam": [
+    {
+      title: "Rotterdam History Highlights",
+      duration: "2 hours",
+      description: "Walk through key landmarks and historical moments that shaped Rotterdam.",
+    },
+    {
+      title: "Rotterdam Private Discovery Route",
+      duration: "3 hours",
+      description: "A curated route through signature areas and hidden gems in Rotterdam.",
+    },
+    {
+      title: "Rotterdam Culture and Street Life",
+      duration: "3.5 hours",
+      description: "Experience neighborhood rhythms, architecture, and local culture in Rotterdam.",
+    },
+    {
+      title: "Rotterdam Sunset Viewpoints",
+      duration: "2 hours",
+      description: "Visit scenic viewpoints and photogenic routes around Rotterdam at golden hour.",
+    },
+    {
+      title: "Rotterdam Food and Markets Walk",
+      duration: "3 hours",
+      description: "Discover local flavors and market culture in Rotterdam with curated tasting stops.",
+    },
+  ],
+  "utrecht": [
+    {
+      title: "Utrecht History Highlights",
+      duration: "2 hours",
+      description: "Walk through key landmarks and historical moments that shaped Utrecht.",
+    },
+    {
+      title: "Hidden Corners of Utrecht",
+      duration: "2.5 hours",
+      description: "Explore lesser-known neighborhoods and stories that show the local side of Utrecht.",
+    },
+    {
+      title: "Utrecht Culture and Street Life",
+      duration: "3.5 hours",
+      description: "Experience neighborhood rhythms, architecture, and local culture in Utrecht.",
+    },
+    {
+      title: "Utrecht Sunset Viewpoints",
+      duration: "2 hours",
+      description: "Visit scenic viewpoints and photogenic routes around Utrecht at golden hour.",
+    },
+    {
+      title: "Utrecht Private Discovery Route",
+      duration: "3 hours",
+      description: "A curated route through signature areas and hidden gems in Utrecht.",
+    },
+  ],
 };
 
 export function getAiToursByCity(citySlug: string): CuratedTour[] {

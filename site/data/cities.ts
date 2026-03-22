@@ -44,6 +44,8 @@ export const CITIES: City[] = [
   { slug: "brussels", name: "Brussels", country: "Belgium", latitude: 50.8503, longitude: 4.3517 },
   { slug: "bruges", name: "Bruges", country: "Belgium", latitude: 51.2093, longitude: 3.2247 },
   { slug: "antwerp", name: "Antwerp", country: "Belgium", latitude: 51.2194, longitude: 4.4025 },
+  { slug: "rotterdam", name: "Rotterdam", country: "Netherlands", latitude: 51.9244, longitude: 4.4777 },
+  { slug: "utrecht", name: "Utrecht", country: "Netherlands", latitude: 52.0907, longitude: 5.1214 },
 ];
 
 export function getCityBySlug(slug: string): City | undefined {
