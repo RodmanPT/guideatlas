@@ -46,6 +46,7 @@ export const citySeoIntros: CitySeoIntros = {
   "antwerp": "Discover the best tours in Antwerp, from food walks to historical explorations led by local guides.",
   "rotterdam": "Discover the best tours in Rotterdam, from food walks to historical explorations led by local guides.",
   "utrecht": "Discover the best tours in Utrecht, from food walks to historical explorations led by local guides.",
+  "the-hague": "Discover the best tours in The Hague, from food walks to historical explorations led by local guides.",
 };
 
 export function getCitySeoIntro(citySlug: string, cityName: string): string {

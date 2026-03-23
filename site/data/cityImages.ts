@@ -221,6 +221,11 @@ export const CITY_IMAGE_MAP: Record<string, CityImageRecord> = {
     image_author: "Friso Baaij",
     image_source: "unsplash",
   },
+  "the-hague": {
+    city_image_url: "https://images.unsplash.com/photo-1719732882413-167d9c493a93?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4OTczNTh8MHwxfHNlYXJjaHwxfHxUaGUlMjBIYWd1ZSUyMHNreWxpbmV8ZW58MHwwfHx8MTc3NDE1OTU5Nnww&ixlib=rb-4.1.0&q=80&w=1080",
+    image_author: "Alireza Parpaei",
+    image_source: "unsplash",
+  },
 };
 
 export function getCityImage(citySlug: string): CityImageRecord | undefined {

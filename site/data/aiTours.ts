@@ -955,6 +955,23 @@ export const aiTours: CityToursMap = {
       description: "A curated route through signature areas and hidden gems in Utrecht.",
     },
   ],
+  "the-hague": [
+    {
+      title: "The Hague Food and Markets Walk",
+      duration: "3 hours",
+      description: "Discover local flavors and market culture in The Hague with curated tasting stops.",
+    },
+    {
+      title: "The Hague History Highlights",
+      duration: "2 hours",
+      description: "Walk through key landmarks and historical moments that shaped The Hague.",
+    },
+    {
+      title: "Hidden Corners of The Hague",
+      duration: "2.5 hours",
+      description: "Explore lesser-known neighborhoods and stories that show the local side of The Hague.",
+    },
+  ],
 };
 
 export function getAiToursByCity(citySlug: string): CuratedTour[] {
