@@ -226,6 +226,16 @@ export const CITY_IMAGE_MAP: Record<string, CityImageRecord> = {
     image_author: "Alireza Parpaei",
     image_source: "unsplash",
   },
+  "copenhagen": {
+    city_image_url: "https://images.unsplash.com/photo-1548186879-9a93eed687ef?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4OTczNTh8MHwxfHNlYXJjaHwxfHxDb3BlbmhhZ2VuJTIwc2t5bGluZXxlbnwwfDB8fHwxNzc0MTU5NTk3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+    image_author: "Lindsay Martin",
+    image_source: "unsplash",
+  },
+  "stockholm": {
+    city_image_url: "https://images.unsplash.com/photo-1564924304464-8cee6c450e7a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4OTczNTh8MHwxfHNlYXJjaHwxfHxTdG9ja2hvbG0lMjBza3lsaW5lfGVufDB8MHx8fDE3NzQyNDY1NjR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+    image_author: "Johan Anblick",
+    image_source: "unsplash",
+  },
 };
 
 export function getCityImage(citySlug: string): CityImageRecord | undefined {

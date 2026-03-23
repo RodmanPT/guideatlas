@@ -972,6 +972,50 @@ export const aiTours: CityToursMap = {
       description: "Explore lesser-known neighborhoods and stories that show the local side of The Hague.",
     },
   ],
+  "copenhagen": [
+    {
+      title: "Copenhagen Sunset Viewpoints",
+      duration: "2 hours",
+      description: "Visit scenic viewpoints and photogenic routes around Copenhagen at golden hour.",
+    },
+    {
+      title: "Copenhagen Private Discovery Route",
+      duration: "3 hours",
+      description: "A curated route through signature areas and hidden gems in Copenhagen.",
+    },
+    {
+      title: "Copenhagen Food and Markets Walk",
+      duration: "3 hours",
+      description: "Discover local flavors and market culture in Copenhagen with curated tasting stops.",
+    },
+    {
+      title: "Copenhagen Culture and Street Life",
+      duration: "3.5 hours",
+      description: "Experience neighborhood rhythms, architecture, and local culture in Copenhagen.",
+    },
+  ],
+  "stockholm": [
+    {
+      title: "Stockholm Food and Markets Walk",
+      duration: "3 hours",
+      description: "Discover local flavors and market culture in Stockholm with curated tasting stops.",
+    },
+    {
+      title: "Stockholm Private Discovery Route",
+      duration: "3 hours",
+      description: "A curated route through signature areas and hidden gems in Stockholm.",
+    },
+    {
+      title: "Stockholm Sunset Viewpoints",
+      duration: "2 hours",
+      description: "Visit scenic viewpoints and photogenic routes around Stockholm at golden hour.",
+    },
+    {
+      title: "Stockholm Culture and Street Life",
+      duration: "3.5 hours",
+      description: "Experience neighborhood rhythms, architecture, and local culture in Stockholm.",
+    },
+  ],
 };
 
 export function getAiToursByCity(citySlug: string): CuratedTour[] {
