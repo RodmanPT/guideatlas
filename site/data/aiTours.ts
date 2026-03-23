@@ -1016,6 +1016,33 @@ export const aiTours: CityToursMap = {
       description: "Experience neighborhood rhythms, architecture, and local culture in Stockholm.",
     },
   ],
+  "oslo": [
+    {
+      title: "Oslo Private Discovery Route",
+      duration: "3 hours",
+      description: "A curated route through signature areas and hidden gems in Oslo.",
+    },
+    {
+      title: "Oslo History Highlights",
+      duration: "2 hours",
+      description: "Walk through key landmarks and historical moments that shaped Oslo.",
+    },
+    {
+      title: "Oslo Culture and Street Life",
+      duration: "3.5 hours",
+      description: "Experience neighborhood rhythms, architecture, and local culture in Oslo.",
+    },
+    {
+      title: "Oslo Food and Markets Walk",
+      duration: "3 hours",
+      description: "Discover local flavors and market culture in Oslo with curated tasting stops.",
+    },
+    {
+      title: "Hidden Corners of Oslo",
+      duration: "2.5 hours",
+      description: "Explore lesser-known neighborhoods and stories that show the local side of Oslo.",
+    },
+  ],
 };
 
 export function getAiToursByCity(citySlug: string): CuratedTour[] {

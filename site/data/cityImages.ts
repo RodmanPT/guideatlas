@@ -236,6 +236,11 @@ export const CITY_IMAGE_MAP: Record<string, CityImageRecord> = {
     image_author: "Johan Anblick",
     image_source: "unsplash",
   },
+  "oslo": {
+    city_image_url: "https://images.unsplash.com/photo-1433757741270-94a3bcadc2f3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4OTczNTh8MHwxfHNlYXJjaHwxfHxPc2xvJTIwc2t5bGluZXxlbnwwfDB8fHwxNzc0MjQ2NTgyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+    image_author: "Christoffer Engström",
+    image_source: "unsplash",
+  },
 };
 
 export function getCityImage(citySlug: string): CityImageRecord | undefined {
