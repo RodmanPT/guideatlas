@@ -955,6 +955,155 @@ export const aiTours: CityToursMap = {
       description: "A curated route through signature areas and hidden gems in Utrecht.",
     },
   ],
+  "the-hague": [
+    {
+      title: "The Hague Food and Markets Walk",
+      duration: "3 hours",
+      description: "Discover local flavors and market culture in The Hague with curated tasting stops.",
+    },
+    {
+      title: "The Hague History Highlights",
+      duration: "2 hours",
+      description: "Walk through key landmarks and historical moments that shaped The Hague.",
+    },
+    {
+      title: "Hidden Corners of The Hague",
+      duration: "2.5 hours",
+      description: "Explore lesser-known neighborhoods and stories that show the local side of The Hague.",
+    },
+  ],
+  "copenhagen": [
+    {
+      title: "Copenhagen Sunset Viewpoints",
+      duration: "2 hours",
+      description: "Visit scenic viewpoints and photogenic routes around Copenhagen at golden hour.",
+    },
+    {
+      title: "Copenhagen Private Discovery Route",
+      duration: "3 hours",
+      description: "A curated route through signature areas and hidden gems in Copenhagen.",
+    },
+    {
+      title: "Copenhagen Food and Markets Walk",
+      duration: "3 hours",
+      description: "Discover local flavors and market culture in Copenhagen with curated tasting stops.",
+    },
+    {
+      title: "Copenhagen Culture and Street Life",
+      duration: "3.5 hours",
+      description: "Experience neighborhood rhythms, architecture, and local culture in Copenhagen.",
+    },
+  ],
+  "stockholm": [
+    {
+      title: "Stockholm Food and Markets Walk",
+      duration: "3 hours",
+      description: "Discover local flavors and market culture in Stockholm with curated tasting stops.",
+    },
+    {
+      title: "Stockholm Private Discovery Route",
+      duration: "3 hours",
+      description: "A curated route through signature areas and hidden gems in Stockholm.",
+    },
+    {
+      title: "Stockholm Sunset Viewpoints",
+      duration: "2 hours",
+      description: "Visit scenic viewpoints and photogenic routes around Stockholm at golden hour.",
+    },
+    {
+      title: "Stockholm Culture and Street Life",
+      duration: "3.5 hours",
+      description: "Experience neighborhood rhythms, architecture, and local culture in Stockholm.",
+    },
+  ],
+  "oslo": [
+    {
+      title: "Oslo Private Discovery Route",
+      duration: "3 hours",
+      description: "A curated route through signature areas and hidden gems in Oslo.",
+    },
+    {
+      title: "Oslo History Highlights",
+      duration: "2 hours",
+      description: "Walk through key landmarks and historical moments that shaped Oslo.",
+    },
+    {
+      title: "Oslo Culture and Street Life",
+      duration: "3.5 hours",
+      description: "Experience neighborhood rhythms, architecture, and local culture in Oslo.",
+    },
+    {
+      title: "Oslo Food and Markets Walk",
+      duration: "3 hours",
+      description: "Discover local flavors and market culture in Oslo with curated tasting stops.",
+    },
+    {
+      title: "Hidden Corners of Oslo",
+      duration: "2.5 hours",
+      description: "Explore lesser-known neighborhoods and stories that show the local side of Oslo.",
+    },
+  ],
+  "helsinki": [
+    {
+      title: "Helsinki Private Discovery Route",
+      duration: "3 hours",
+      description: "A curated route through signature areas and hidden gems in Helsinki.",
+    },
+    {
+      title: "Helsinki Culture and Street Life",
+      duration: "3.5 hours",
+      description: "Experience neighborhood rhythms, architecture, and local culture in Helsinki.",
+    },
+    {
+      title: "Helsinki Sunset Viewpoints",
+      duration: "2 hours",
+      description: "Visit scenic viewpoints and photogenic routes around Helsinki at golden hour.",
+    },
+  ],
+  "dublin": [
+    {
+      title: "Dublin Food and Markets Walk",
+      duration: "3 hours",
+      description: "Discover local flavors and market culture in Dublin with curated tasting stops.",
+    },
+    {
+      title: "Dublin Private Discovery Route",
+      duration: "3 hours",
+      description: "A curated route through signature areas and hidden gems in Dublin.",
+    },
+    {
+      title: "Dublin Culture and Street Life",
+      duration: "3.5 hours",
+      description: "Experience neighborhood rhythms, architecture, and local culture in Dublin.",
+    },
+    {
+      title: "Dublin History Highlights",
+      duration: "2 hours",
+      description: "Walk through key landmarks and historical moments that shaped Dublin.",
+    },
+    {
+      title: "Dublin Sunset Viewpoints",
+      duration: "2 hours",
+      description: "Visit scenic viewpoints and photogenic routes around Dublin at golden hour.",
+    },
+  ],
+  "edinburgh": [
+    {
+      title: "Hidden Corners of Edinburgh",
+      duration: "2.5 hours",
+      description: "Explore lesser-known neighborhoods and stories that show the local side of Edinburgh.",
+    },
+    {
+      title: "Edinburgh History Highlights",
+      duration: "2 hours",
+      description: "Walk through key landmarks and historical moments that shaped Edinburgh.",
+    },
+    {
+      title: "Edinburgh Culture and Street Life",
+      duration: "3.5 hours",
+      description: "Experience neighborhood rhythms, architecture, and local culture in Edinburgh.",
+    },
+  ],
 };
 
 export function getAiToursByCity(citySlug: string): CuratedTour[] {
