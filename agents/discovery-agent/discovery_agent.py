@@ -385,9 +385,13 @@ def resolve_repo_root() -> Path:
 
 
 def git_commit_and_push(repo_root: Path, changed_files: List[Path], city_names: List[str]) -> None:
-    github_token = ensure_required_env("GITHUB_TOKEN")
-    github_repo = ensure_required_env("GITHUB_REPO")
-    github_branch = ensure_required_env("GITHUB_BRANCH")
+    github_token = os.getenv("GITHUB_TOKEN", "").strip()
+    github_repo = os.getenv("GITHUB_REPO", "").strip()
+    github_branch = os.getenv("GITHUB_BRANCH", "").strip()
+
+    if not github_token or not github_repo or not github_branch:
+        print("Skipping git commit and push because GitHub environment variables are missing.")
+        return
 
     git_name = os.getenv("GIT_AUTHOR_NAME", "GuideAtlas AI Agent")
     git_email = os.getenv("GIT_AUTHOR_EMAIL", "bot@guideatlas.local")

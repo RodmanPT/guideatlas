@@ -241,6 +241,26 @@ export const CITY_IMAGE_MAP: Record<string, CityImageRecord> = {
     image_author: "Christoffer Engström",
     image_source: "unsplash",
   },
+  "helsinki": {
+    city_image_url: "https://images.unsplash.com/photo-1683119167545-c7ba61e6c6c6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4OTczNTh8MHwxfHNlYXJjaHwxfHxIZWxzaW5raSUyMHNreWxpbmV8ZW58MHwwfHx8MTc3NDI0NjY0M3ww&ixlib=rb-4.1.0&q=80&w=1080",
+    image_author: "Martti Salmi",
+    image_source: "unsplash",
+  },
+  "dublin": {
+    city_image_url: "https://images.unsplash.com/photo-1692461939118-6610e751d608?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4OTczNTh8MHwxfHNlYXJjaHwxfHxEdWJsaW4lMjBza3lsaW5lfGVufDB8MHx8fDE3NzQyNDY3NDN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+    image_author: "Richard von Pfeil",
+    image_source: "unsplash",
+  },
+  "edinburgh": {
+    city_image_url: "https://images.unsplash.com/photo-1546617605-31567bc8c7d3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4OTczNTh8MHwxfHNlYXJjaHwxfHxFZGluYnVyZ2glMjBza3lsaW5lfGVufDB8MHx8fDE3NzQyNDY3NDN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+    image_author: "Roan Lavery",
+    image_source: "unsplash",
+  },
+  "manchester": {
+    city_image_url: "https://images.unsplash.com/photo-1724135869739-6055627ba5df?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4OTczNTh8MHwxfHNlYXJjaHwxfHxNYW5jaGVzdGVyJTIwc2t5bGluZXxlbnwwfDB8fHwxNzc0MzMzODg3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+    image_author: "Mylo Kaye",
+    image_source: "unsplash",
+  },
 };
 
 export function getCityImage(citySlug: string): CityImageRecord | undefined {
