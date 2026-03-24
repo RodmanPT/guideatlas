@@ -241,6 +241,11 @@ export const CITY_IMAGE_MAP: Record<string, CityImageRecord> = {
     image_author: "Christoffer Engström",
     image_source: "unsplash",
   },
+  "helsinki": {
+    city_image_url: "https://images.unsplash.com/photo-1683119167545-c7ba61e6c6c6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4OTczNTh8MHwxfHNlYXJjaHwxfHxIZWxzaW5raSUyMHNreWxpbmV8ZW58MHwwfHx8MTc3NDI0NjY0M3ww&ixlib=rb-4.1.0&q=80&w=1080",
+    image_author: "Martti Salmi",
+    image_source: "unsplash",
+  },
 };
 
 export function getCityImage(citySlug: string): CityImageRecord | undefined {
