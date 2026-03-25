@@ -1087,6 +1087,23 @@ export const aiTours: CityToursMap = {
       description: "Visit scenic viewpoints and photogenic routes around Dublin at golden hour.",
     },
   ],
+  "edinburgh": [
+    {
+      title: "Hidden Corners of Edinburgh",
+      duration: "2.5 hours",
+      description: "Explore lesser-known neighborhoods and stories that show the local side of Edinburgh.",
+    },
+    {
+      title: "Edinburgh History Highlights",
+      duration: "2 hours",
+      description: "Walk through key landmarks and historical moments that shaped Edinburgh.",
+    },
+    {
+      title: "Edinburgh Culture and Street Life",
+      duration: "3.5 hours",
+      description: "Experience neighborhood rhythms, architecture, and local culture in Edinburgh.",
+    },
+  ],
 };
 
 export function getAiToursByCity(citySlug: string): CuratedTour[] {
