@@ -246,6 +246,46 @@ export const CITY_IMAGE_MAP: Record<string, CityImageRecord> = {
     image_author: "Martti Salmi",
     image_source: "unsplash",
   },
+  "dublin": {
+    city_image_url: "https://images.unsplash.com/photo-1692461939118-6610e751d608?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4OTczNTh8MHwxfHNlYXJjaHwxfHxEdWJsaW4lMjBza3lsaW5lfGVufDB8MHx8fDE3NzQ0MTkyODh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+    image_author: "Richard von Pfeil",
+    image_source: "unsplash",
+  },
+  "edinburgh": {
+    city_image_url: "https://images.unsplash.com/photo-1566415435578-25e8e3c9aae9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4OTczNTh8MHwxfHNlYXJjaHwxfHxFZGluYnVyZ2glMjBza3lsaW5lfGVufDB8MHx8fDE3NzQ0MTkzOTJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+    image_author: "Lāsma Artmane",
+    image_source: "unsplash",
+  },
+  "manchester": {
+    city_image_url: "https://images.unsplash.com/photo-1724135869739-6055627ba5df?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4OTczNTh8MHwxfHNlYXJjaHwxfHxNYW5jaGVzdGVyJTIwc2t5bGluZXxlbnwwfDB8fHwxNzc0MzMzODg3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+    image_author: "Mylo Kaye",
+    image_source: "unsplash",
+  },
+  "liverpool": {
+    city_image_url: "https://images.unsplash.com/photo-1566328386592-86058b1a8938?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4OTczNTh8MHwxfHNlYXJjaHwxfHxMaXZlcnBvb2wlMjBza3lsaW5lfGVufDB8MHx8fDE3NzQ0MTk0MjB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+    image_author: "Neil Martin",
+    image_source: "unsplash",
+  },
+  "bath": {
+    city_image_url: "https://images.unsplash.com/photo-1730613774928-d4bee60d8543?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4OTczNTh8MHwxfHNlYXJjaHwxfHxCYXRoJTIwY2l0eXNjYXBlfGVufDB8MHx8fDE3NzQ0MTk1MTJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+    image_author: "Kat",
+    image_source: "unsplash",
+  },
+  "budapest": {
+    city_image_url: "https://images.unsplash.com/photo-1618148238267-fc3340c1a1ab?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4OTczNTh8MHwxfHNlYXJjaHwxfHxCdWRhcGVzdCUyMHNreWxpbmV8ZW58MHwwfHx8MTc3NDQxOTUxMnww&ixlib=rb-4.1.0&q=80&w=1080",
+    image_author: "Andres Garcia",
+    image_source: "unsplash",
+  },
+  "krakow": {
+    city_image_url: "https://images.unsplash.com/photo-1761073991372-58f6376ea3f4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4OTczNTh8MHwxfHNlYXJjaHwxfHxLcmFrb3clMjBza3lsaW5lfGVufDB8MHx8fDE3NzQ0MTk2MDh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+    image_author: "Jan Ryszka",
+    image_source: "unsplash",
+  },
+  "warsaw": {
+    city_image_url: "https://images.unsplash.com/photo-1519197924294-4ba991a11128?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4OTczNTh8MHwxfHNlYXJjaHwxfHxXYXJzYXclMjBza3lsaW5lfGVufDB8MHx8fDE3NzQ0MTk2MDh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+    image_author: "Kamil Gliwiński",
+    image_source: "unsplash",
+  },
 };
 
 export function getCityImage(citySlug: string): CityImageRecord | undefined {

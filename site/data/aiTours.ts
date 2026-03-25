@@ -1060,6 +1060,167 @@ export const aiTours: CityToursMap = {
       description: "Visit scenic viewpoints and photogenic routes around Helsinki at golden hour.",
     },
   ],
+  "dublin": [
+    {
+      title: "Dublin Food and Markets Walk",
+      duration: "3 hours",
+      description: "Discover local flavors and market culture in Dublin with curated tasting stops.",
+    },
+    {
+      title: "Dublin Private Discovery Route",
+      duration: "3 hours",
+      description: "A curated route through signature areas and hidden gems in Dublin.",
+    },
+    {
+      title: "Dublin Culture and Street Life",
+      duration: "3.5 hours",
+      description: "Experience neighborhood rhythms, architecture, and local culture in Dublin.",
+    },
+    {
+      title: "Dublin History Highlights",
+      duration: "2 hours",
+      description: "Walk through key landmarks and historical moments that shaped Dublin.",
+    },
+    {
+      title: "Dublin Sunset Viewpoints",
+      duration: "2 hours",
+      description: "Visit scenic viewpoints and photogenic routes around Dublin at golden hour.",
+    },
+  ],
+  "edinburgh": [
+    {
+      title: "Hidden Corners of Edinburgh",
+      duration: "2.5 hours",
+      description: "Explore lesser-known neighborhoods and stories that show the local side of Edinburgh.",
+    },
+    {
+      title: "Edinburgh History Highlights",
+      duration: "2 hours",
+      description: "Walk through key landmarks and historical moments that shaped Edinburgh.",
+    },
+    {
+      title: "Edinburgh Culture and Street Life",
+      duration: "3.5 hours",
+      description: "Experience neighborhood rhythms, architecture, and local culture in Edinburgh.",
+    },
+  ],
+  "manchester": [
+    {
+      title: "Manchester Food and Markets Walk",
+      duration: "3 hours",
+      description: "Discover local flavors and market culture in Manchester with curated tasting stops.",
+    },
+    {
+      title: "Hidden Corners of Manchester",
+      duration: "2.5 hours",
+      description: "Explore lesser-known neighborhoods and stories that show the local side of Manchester.",
+    },
+    {
+      title: "Manchester History Highlights",
+      duration: "2 hours",
+      description: "Walk through key landmarks and historical moments that shaped Manchester.",
+    },
+    {
+      title: "Manchester Private Discovery Route",
+      duration: "3 hours",
+      description: "A curated route through signature areas and hidden gems in Manchester.",
+    },
+  ],
+  "liverpool": [
+    {
+      title: "Hidden Corners of Liverpool",
+      duration: "2.5 hours",
+      description: "Explore lesser-known neighborhoods and stories that show the local side of Liverpool.",
+    },
+    {
+      title: "Liverpool History Highlights",
+      duration: "2 hours",
+      description: "Walk through key landmarks and historical moments that shaped Liverpool.",
+    },
+    {
+      title: "Liverpool Sunset Viewpoints",
+      duration: "2 hours",
+      description: "Visit scenic viewpoints and photogenic routes around Liverpool at golden hour.",
+    },
+    {
+      title: "Liverpool Private Discovery Route",
+      duration: "3 hours",
+      description: "A curated route through signature areas and hidden gems in Liverpool.",
+    },
+  ],
+  "bath": [
+    {
+      title: "Bath Sunset Viewpoints",
+      duration: "2 hours",
+      description: "Visit scenic viewpoints and photogenic routes around Bath at golden hour.",
+    },
+    {
+      title: "Bath Culture and Street Life",
+      duration: "3.5 hours",
+      description: "Experience neighborhood rhythms, architecture, and local culture in Bath.",
+    },
+    {
+      title: "Bath Food and Markets Walk",
+      duration: "3 hours",
+      description: "Discover local flavors and market culture in Bath with curated tasting stops.",
+    },
+    {
+      title: "Bath Private Discovery Route",
+      duration: "3 hours",
+      description: "A curated route through signature areas and hidden gems in Bath.",
+    },
+  ],
+  "budapest": [
+    {
+      title: "Budapest Private Discovery Route",
+      duration: "3 hours",
+      description: "A curated route through signature areas and hidden gems in Budapest.",
+    },
+    {
+      title: "Budapest Sunset Viewpoints",
+      duration: "2 hours",
+      description: "Visit scenic viewpoints and photogenic routes around Budapest at golden hour.",
+    },
+    {
+      title: "Budapest History Highlights",
+      duration: "2 hours",
+      description: "Walk through key landmarks and historical moments that shaped Budapest.",
+    },
+  ],
+  "krakow": [
+    {
+      title: "Krakow Private Discovery Route",
+      duration: "3 hours",
+      description: "A curated route through signature areas and hidden gems in Krakow.",
+    },
+    {
+      title: "Krakow Culture and Street Life",
+      duration: "3.5 hours",
+      description: "Experience neighborhood rhythms, architecture, and local culture in Krakow.",
+    },
+    {
+      title: "Krakow Sunset Viewpoints",
+      duration: "2 hours",
+      description: "Visit scenic viewpoints and photogenic routes around Krakow at golden hour.",
+    },
+  ],
+  "warsaw": [
+    {
+      title: "Hidden Corners of Warsaw",
+      duration: "2.5 hours",
+      description: "Explore lesser-known neighborhoods and stories that show the local side of Warsaw.",
+    },
+    {
+      title: "Warsaw Private Discovery Route",
+      duration: "3 hours",
+      description: "A curated route through signature areas and hidden gems in Warsaw.",
+    },
+    {
+      title: "Warsaw Culture and Street Life",
+      duration: "3.5 hours",
+      description: "Experience neighborhood rhythms, architecture, and local culture in Warsaw.",
+    },
+  ],
 };
 
 export function getAiToursByCity(citySlug: string): CuratedTour[] {

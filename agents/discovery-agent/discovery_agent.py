@@ -385,9 +385,9 @@ def resolve_repo_root() -> Path:
 
 
 def git_commit_and_push(repo_root: Path, changed_files: List[Path], city_names: List[str]) -> None:
-    github_token = ensure_required_env("GITHUB_TOKEN")
-    github_repo = ensure_required_env("GITHUB_REPO")
-    github_branch = ensure_required_env("GITHUB_BRANCH")
+    github_token = os.getenv("GITHUB_TOKEN", "").strip()
+    github_repo = os.getenv("GITHUB_REPO", "").strip()
+    github_branch = os.getenv("GITHUB_BRANCH", "").strip()
 
     git_name = os.getenv("GIT_AUTHOR_NAME", "GuideAtlas AI Agent")
     git_email = os.getenv("GIT_AUTHOR_EMAIL", "bot@guideatlas.local")
@@ -417,6 +417,10 @@ def git_commit_and_push(repo_root: Path, changed_files: List[Path], city_names: 
         suffix = " and others" if len(city_names) > 2 else ""
         commit_message = f"chore(ai): add curated tours for {joined}{suffix}"
     run_cmd(["git", "-C", str(repo_root), "commit", "-m", commit_message], cwd=repo_root)
+
+    if not github_token or not github_repo or not github_branch:
+        print("Skipping git push: Missing one or more of GITHUB_TOKEN, GITHUB_REPO, GITHUB_BRANCH environment variables.")
+        return
 
     safe_token = quote(github_token, safe="")
     remote_url = f"https://x-access-token:{safe_token}@github.com/{github_repo}.git"
