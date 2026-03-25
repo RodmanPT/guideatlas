@@ -1104,6 +1104,50 @@ export const aiTours: CityToursMap = {
       description: "Experience neighborhood rhythms, architecture, and local culture in Edinburgh.",
     },
   ],
+  "manchester": [
+    {
+      title: "Manchester Food and Markets Walk",
+      duration: "3 hours",
+      description: "Discover local flavors and market culture in Manchester with curated tasting stops.",
+    },
+    {
+      title: "Hidden Corners of Manchester",
+      duration: "2.5 hours",
+      description: "Explore lesser-known neighborhoods and stories that show the local side of Manchester.",
+    },
+    {
+      title: "Manchester History Highlights",
+      duration: "2 hours",
+      description: "Walk through key landmarks and historical moments that shaped Manchester.",
+    },
+    {
+      title: "Manchester Private Discovery Route",
+      duration: "3 hours",
+      description: "A curated route through signature areas and hidden gems in Manchester.",
+    },
+  ],
+  "liverpool": [
+    {
+      title: "Hidden Corners of Liverpool",
+      duration: "2.5 hours",
+      description: "Explore lesser-known neighborhoods and stories that show the local side of Liverpool.",
+    },
+    {
+      title: "Liverpool History Highlights",
+      duration: "2 hours",
+      description: "Walk through key landmarks and historical moments that shaped Liverpool.",
+    },
+    {
+      title: "Liverpool Sunset Viewpoints",
+      duration: "2 hours",
+      description: "Visit scenic viewpoints and photogenic routes around Liverpool at golden hour.",
+    },
+    {
+      title: "Liverpool Private Discovery Route",
+      duration: "3 hours",
+      description: "A curated route through signature areas and hidden gems in Liverpool.",
+    },
+  ],
 };
 
 export function getAiToursByCity(citySlug: string): CuratedTour[] {

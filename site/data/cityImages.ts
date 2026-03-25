@@ -256,6 +256,16 @@ export const CITY_IMAGE_MAP: Record<string, CityImageRecord> = {
     image_author: "Lāsma Artmane",
     image_source: "unsplash",
   },
+  "manchester": {
+    city_image_url: "https://images.unsplash.com/photo-1724135869739-6055627ba5df?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4OTczNTh8MHwxfHNlYXJjaHwxfHxNYW5jaGVzdGVyJTIwc2t5bGluZXxlbnwwfDB8fHwxNzc0MzMzODg3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+    image_author: "Mylo Kaye",
+    image_source: "unsplash",
+  },
+  "liverpool": {
+    city_image_url: "https://images.unsplash.com/photo-1566328386592-86058b1a8938?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4OTczNTh8MHwxfHNlYXJjaHwxfHxMaXZlcnBvb2wlMjBza3lsaW5lfGVufDB8MHx8fDE3NzQ0MTk0MjB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+    image_author: "Neil Martin",
+    image_source: "unsplash",
+  },
 };
 
 export function getCityImage(citySlug: string): CityImageRecord | undefined {
