@@ -246,6 +246,11 @@ export const CITY_IMAGE_MAP: Record<string, CityImageRecord> = {
     image_author: "Martti Salmi",
     image_source: "unsplash",
   },
+  "dublin": {
+    city_image_url: "https://images.unsplash.com/photo-1692461939118-6610e751d608?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4OTczNTh8MHwxfHNlYXJjaHwxfHxEdWJsaW4lMjBza3lsaW5lfGVufDB8MHx8fDE3NzQ0MTkyODh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+    image_author: "Richard von Pfeil",
+    image_source: "unsplash",
+  },
 };
 
 export function getCityImage(citySlug: string): CityImageRecord | undefined {
