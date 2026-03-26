@@ -1148,6 +1148,28 @@ export const aiTours: CityToursMap = {
       description: "A curated route through signature areas and hidden gems in Liverpool.",
     },
   ],
+  "bath": [
+    {
+      title: "Bath Sunset Viewpoints",
+      duration: "2 hours",
+      description: "Visit scenic viewpoints and photogenic routes around Bath at golden hour.",
+    },
+    {
+      title: "Bath Culture and Street Life",
+      duration: "3.5 hours",
+      description: "Experience neighborhood rhythms, architecture, and local culture in Bath.",
+    },
+    {
+      title: "Bath Food and Markets Walk",
+      duration: "3 hours",
+      description: "Discover local flavors and market culture in Bath with curated tasting stops.",
+    },
+    {
+      title: "Bath Private Discovery Route",
+      duration: "3 hours",
+      description: "A curated route through signature areas and hidden gems in Bath.",
+    },
+  ],
 };
 
 export function getAiToursByCity(citySlug: string): CuratedTour[] {
