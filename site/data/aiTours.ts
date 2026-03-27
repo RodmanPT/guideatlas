@@ -1204,6 +1204,45 @@ export const aiTours: CityToursMap = {
       description: "Visit scenic viewpoints and photogenic routes around Krakow at golden hour.",
     },
   ],
+  "warsaw": [
+    {
+      title: "Hidden Corners of Warsaw",
+      duration: "2.5 hours",
+      description: "Explore lesser-known neighborhoods and stories that show the local side of Warsaw.",
+    },
+    {
+      title: "Warsaw Private Discovery Route",
+      duration: "3 hours",
+      description: "A curated route through signature areas and hidden gems in Warsaw.",
+    },
+    {
+      title: "Warsaw Culture and Street Life",
+      duration: "3.5 hours",
+      description: "Experience neighborhood rhythms, architecture, and local culture in Warsaw.",
+    },
+  ],
+  "zagreb": [
+    {
+      title: "Zagreb Food and Markets Walk",
+      duration: "3 hours",
+      description: "Discover local flavors and market culture in Zagreb with curated tasting stops.",
+    },
+    {
+      title: "Zagreb Private Discovery Route",
+      duration: "3 hours",
+      description: "A curated route through signature areas and hidden gems in Zagreb.",
+    },
+    {
+      title: "Hidden Corners of Zagreb",
+      duration: "2.5 hours",
+      description: "Explore lesser-known neighborhoods and stories that show the local side of Zagreb.",
+    },
+    {
+      title: "Zagreb Sunset Viewpoints",
+      duration: "2 hours",
+      description: "Visit scenic viewpoints and photogenic routes around Zagreb at golden hour.",
+    },
+  ],
 };
 
 export function getAiToursByCity(citySlug: string): CuratedTour[] {
