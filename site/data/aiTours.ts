@@ -1170,6 +1170,40 @@ export const aiTours: CityToursMap = {
       description: "A curated route through signature areas and hidden gems in Bath.",
     },
   ],
+  "budapest": [
+    {
+      title: "Budapest Private Discovery Route",
+      duration: "3 hours",
+      description: "A curated route through signature areas and hidden gems in Budapest.",
+    },
+    {
+      title: "Budapest Sunset Viewpoints",
+      duration: "2 hours",
+      description: "Visit scenic viewpoints and photogenic routes around Budapest at golden hour.",
+    },
+    {
+      title: "Budapest History Highlights",
+      duration: "2 hours",
+      description: "Walk through key landmarks and historical moments that shaped Budapest.",
+    },
+  ],
+  "krakow": [
+    {
+      title: "Krakow Private Discovery Route",
+      duration: "3 hours",
+      description: "A curated route through signature areas and hidden gems in Krakow.",
+    },
+    {
+      title: "Krakow Culture and Street Life",
+      duration: "3.5 hours",
+      description: "Experience neighborhood rhythms, architecture, and local culture in Krakow.",
+    },
+    {
+      title: "Krakow Sunset Viewpoints",
+      duration: "2 hours",
+      description: "Visit scenic viewpoints and photogenic routes around Krakow at golden hour.",
+    },
+  ],
 };
 
 export function getAiToursByCity(citySlug: string): CuratedTour[] {
