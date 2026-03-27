@@ -291,6 +291,11 @@ export const CITY_IMAGE_MAP: Record<string, CityImageRecord> = {
     image_author: "Borna Bevanda",
     image_source: "unsplash",
   },
+  "split": {
+    city_image_url: "https://images.unsplash.com/photo-1766932189685-f840e6590291?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4OTczNTh8MHwxfHNlYXJjaHwxfHxTcGxpdCUyMHNreWxpbmV8ZW58MHwwfHx8MTc3NDU5MjczMHww&ixlib=rb-4.1.0&q=80&w=1080",
+    image_author: "SERGEI BEZZUBOV",
+    image_source: "unsplash",
+  },
 };
 
 export function getCityImage(citySlug: string): CityImageRecord | undefined {
