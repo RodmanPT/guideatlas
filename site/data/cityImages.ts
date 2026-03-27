@@ -271,6 +271,16 @@ export const CITY_IMAGE_MAP: Record<string, CityImageRecord> = {
     image_author: "Kat",
     image_source: "unsplash",
   },
+  "budapest": {
+    city_image_url: "https://images.unsplash.com/photo-1618148238267-fc3340c1a1ab?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4OTczNTh8MHwxfHNlYXJjaHwxfHxCdWRhcGVzdCUyMHNreWxpbmV8ZW58MHwwfHx8MTc3NDU5MjUwNXww&ixlib=rb-4.1.0&q=80&w=1080",
+    image_author: "Andres Garcia",
+    image_source: "unsplash",
+  },
+  "krakow": {
+    city_image_url: "https://images.unsplash.com/photo-1761073991372-58f6376ea3f4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4OTczNTh8MHwxfHNlYXJjaHwxfHxLcmFrb3clMjBza3lsaW5lfGVufDB8MHx8fDE3NzQ1OTI1MDV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+    image_author: "Jan Ryszka",
+    image_source: "unsplash",
+  },
 };
 
 export function getCityImage(citySlug: string): CityImageRecord | undefined {
