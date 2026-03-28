@@ -296,6 +296,21 @@ export const CITY_IMAGE_MAP: Record<string, CityImageRecord> = {
     image_author: "SERGEI BEZZUBOV",
     image_source: "unsplash",
   },
+  "dubrovnik": {
+    city_image_url: "https://images.unsplash.com/photo-1474922651267-219b23864ae8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4OTczNTh8MHwxfHNlYXJjaHwxfHxEdWJyb3ZuaWslMjBjaXR5c2NhcGV8ZW58MHwwfHx8MTc3NDU5Mjc2OHww&ixlib=rb-4.1.0&q=80&w=1080",
+    image_author: "Jonathan Smith",
+    image_source: "unsplash",
+  },
+  "ljubljana": {
+    city_image_url: "https://images.unsplash.com/photo-1631467907130-96dc813e7e57?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4OTczNTh8MHwxfHNlYXJjaHwxfHxManVibGphbmElMjBza3lsaW5lfGVufDB8MHx8fDE3NzQ1OTI3Njl8MA&ixlib=rb-4.1.0&q=80&w=1080",
+    image_author: "Jens Maes",
+    image_source: "unsplash",
+  },
+  "bucharest": {
+    city_image_url: "https://images.unsplash.com/photo-1723096111835-b3a2bc9e6b53?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4OTczNTh8MHwxfHNlYXJjaHwxfHxCdWNoYXJlc3QlMjBza3lsaW5lfGVufDB8MHx8fDE3NzQ2NzgyNTJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+    image_author: "Jakub Żerdzicki",
+    image_source: "unsplash",
+  },
 };
 
 export function getCityImage(citySlug: string): CityImageRecord | undefined {

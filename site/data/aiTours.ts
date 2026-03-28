@@ -1270,6 +1270,72 @@ export const aiTours: CityToursMap = {
       description: "Explore lesser-known neighborhoods and stories that show the local side of Split.",
     },
   ],
+  "dubrovnik": [
+    {
+      title: "Dubrovnik Food and Markets Walk",
+      duration: "3 hours",
+      description: "Discover local flavors and market culture in Dubrovnik with curated tasting stops.",
+    },
+    {
+      title: "Dubrovnik Private Discovery Route",
+      duration: "3 hours",
+      description: "A curated route through signature areas and hidden gems in Dubrovnik.",
+    },
+    {
+      title: "Dubrovnik Sunset Viewpoints",
+      duration: "2 hours",
+      description: "Visit scenic viewpoints and photogenic routes around Dubrovnik at golden hour.",
+    },
+    {
+      title: "Dubrovnik Culture and Street Life",
+      duration: "3.5 hours",
+      description: "Experience neighborhood rhythms, architecture, and local culture in Dubrovnik.",
+    },
+  ],
+  "ljubljana": [
+    {
+      title: "Hidden Corners of Ljubljana",
+      duration: "2.5 hours",
+      description: "Explore lesser-known neighborhoods and stories that show the local side of Ljubljana.",
+    },
+    {
+      title: "Ljubljana Food and Markets Walk",
+      duration: "3 hours",
+      description: "Discover local flavors and market culture in Ljubljana with curated tasting stops.",
+    },
+    {
+      title: "Ljubljana Sunset Viewpoints",
+      duration: "2 hours",
+      description: "Visit scenic viewpoints and photogenic routes around Ljubljana at golden hour.",
+    },
+  ],
+  "bucharest": [
+    {
+      title: "Bucharest Sunset Viewpoints",
+      duration: "2 hours",
+      description: "Visit scenic viewpoints and photogenic routes around Bucharest at golden hour.",
+    },
+    {
+      title: "Bucharest History Highlights",
+      duration: "2 hours",
+      description: "Walk through key landmarks and historical moments that shaped Bucharest.",
+    },
+    {
+      title: "Hidden Corners of Bucharest",
+      duration: "2.5 hours",
+      description: "Explore lesser-known neighborhoods and stories that show the local side of Bucharest.",
+    },
+    {
+      title: "Bucharest Private Discovery Route",
+      duration: "3 hours",
+      description: "A curated route through signature areas and hidden gems in Bucharest.",
+    },
+    {
+      title: "Bucharest Food and Markets Walk",
+      duration: "3 hours",
+      description: "Discover local flavors and market culture in Bucharest with curated tasting stops.",
+    },
+  ],
 };
 
 export function getAiToursByCity(citySlug: string): CuratedTour[] {
