@@ -311,6 +311,16 @@ export const CITY_IMAGE_MAP: Record<string, CityImageRecord> = {
     image_author: "Jakub Żerdzicki",
     image_source: "unsplash",
   },
+  "sofia": {
+    city_image_url: "https://images.unsplash.com/photo-1581278102531-39826e3614c8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4OTczNTh8MHwxfHNlYXJjaHwxfHxTb2ZpYSUyMHNreWxpbmV8ZW58MHwwfHx8MTc3NDY3ODMzN3ww&ixlib=rb-4.1.0&q=80&w=1080",
+    image_author: "Evgeniy Grozev",
+    image_source: "unsplash",
+  },
+  "tirana": {
+    city_image_url: "https://images.unsplash.com/photo-1528563066973-f5e4230fc89f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4OTczNTh8MHwxfHNlYXJjaHwxfHxUaXJhbmElMjBjaXR5c2NhcGV8ZW58MHwwfHx8MTc3NDY3ODMzOHww&ixlib=rb-4.1.0&q=80&w=1080",
+    image_author: "Alexandr Bormotin",
+    image_source: "unsplash",
+  },
 };
 
 export function getCityImage(citySlug: string): CityImageRecord | undefined {

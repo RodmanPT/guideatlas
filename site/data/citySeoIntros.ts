@@ -64,6 +64,8 @@ export const citySeoIntros: CitySeoIntros = {
   "dubrovnik": "Discover the best tours in Dubrovnik, from food walks to historical explorations led by local guides.",
   "ljubljana": "Discover the best tours in Ljubljana, from food walks to historical explorations led by local guides.",
   "bucharest": "Discover the best tours in Bucharest, from food walks to historical explorations led by local guides.",
+  "sofia": "Discover the best tours in Sofia, from food walks to historical explorations led by local guides.",
+  "tirana": "Discover the best tours in Tirana, from food walks to historical explorations led by local guides.",
 };
 
 export function getCitySeoIntro(citySlug: string, cityName: string): string {

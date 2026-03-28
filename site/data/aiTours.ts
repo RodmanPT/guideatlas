@@ -1336,6 +1336,55 @@ export const aiTours: CityToursMap = {
       description: "Discover local flavors and market culture in Bucharest with curated tasting stops.",
     },
   ],
+  "sofia": [
+    {
+      title: "Sofia Private Discovery Route",
+      duration: "3 hours",
+      description: "A curated route through signature areas and hidden gems in Sofia.",
+    },
+    {
+      title: "Sofia Sunset Viewpoints",
+      duration: "2 hours",
+      description: "Visit scenic viewpoints and photogenic routes around Sofia at golden hour.",
+    },
+    {
+      title: "Sofia History Highlights",
+      duration: "2 hours",
+      description: "Walk through key landmarks and historical moments that shaped Sofia.",
+    },
+    {
+      title: "Hidden Corners of Sofia",
+      duration: "2.5 hours",
+      description: "Explore lesser-known neighborhoods and stories that show the local side of Sofia.",
+    },
+  ],
+  "tirana": [
+    {
+      title: "Tirana History Highlights",
+      duration: "2 hours",
+      description: "Walk through key landmarks and historical moments that shaped Tirana.",
+    },
+    {
+      title: "Tirana Food and Markets Walk",
+      duration: "3 hours",
+      description: "Discover local flavors and market culture in Tirana with curated tasting stops.",
+    },
+    {
+      title: "Tirana Private Discovery Route",
+      duration: "3 hours",
+      description: "A curated route through signature areas and hidden gems in Tirana.",
+    },
+    {
+      title: "Hidden Corners of Tirana",
+      duration: "2.5 hours",
+      description: "Explore lesser-known neighborhoods and stories that show the local side of Tirana.",
+    },
+    {
+      title: "Tirana Sunset Viewpoints",
+      duration: "2 hours",
+      description: "Visit scenic viewpoints and photogenic routes around Tirana at golden hour.",
+    },
+  ],
 };
 
 export function getAiToursByCity(citySlug: string): CuratedTour[] {
