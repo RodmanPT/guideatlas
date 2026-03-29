@@ -1385,6 +1385,106 @@ export const aiTours: CityToursMap = {
       description: "Visit scenic viewpoints and photogenic routes around Tirana at golden hour.",
     },
   ],
+  "belgrade": [
+    {
+      title: "Belgrade Food and Markets Walk",
+      duration: "3 hours",
+      description: "Discover local flavors and market culture in Belgrade with curated tasting stops.",
+    },
+    {
+      title: "Belgrade Private Discovery Route",
+      duration: "3 hours",
+      description: "A curated route through signature areas and hidden gems in Belgrade.",
+    },
+    {
+      title: "Belgrade Culture and Street Life",
+      duration: "3.5 hours",
+      description: "Experience neighborhood rhythms, architecture, and local culture in Belgrade.",
+    },
+  ],
+  "reykjavik": [
+    {
+      title: "Reykjavik Sunset Viewpoints",
+      duration: "2 hours",
+      description: "Visit scenic viewpoints and photogenic routes around Reykjavik at golden hour.",
+    },
+    {
+      title: "Reykjavik History Highlights",
+      duration: "2 hours",
+      description: "Walk through key landmarks and historical moments that shaped Reykjavik.",
+    },
+    {
+      title: "Reykjavik Culture and Street Life",
+      duration: "3.5 hours",
+      description: "Experience neighborhood rhythms, architecture, and local culture in Reykjavik.",
+    },
+    {
+      title: "Reykjavik Food and Markets Walk",
+      duration: "3 hours",
+      description: "Discover local flavors and market culture in Reykjavik with curated tasting stops.",
+    },
+  ],
+  "zurich": [
+    {
+      title: "Hidden Corners of Zurich",
+      duration: "2.5 hours",
+      description: "Explore lesser-known neighborhoods and stories that show the local side of Zurich.",
+    },
+    {
+      title: "Zurich Private Discovery Route",
+      duration: "3 hours",
+      description: "A curated route through signature areas and hidden gems in Zurich.",
+    },
+    {
+      title: "Zurich Culture and Street Life",
+      duration: "3.5 hours",
+      description: "Experience neighborhood rhythms, architecture, and local culture in Zurich.",
+    },
+  ],
+  "geneva": [
+    {
+      title: "Geneva Sunset Viewpoints",
+      duration: "2 hours",
+      description: "Visit scenic viewpoints and photogenic routes around Geneva at golden hour.",
+    },
+    {
+      title: "Geneva Private Discovery Route",
+      duration: "3 hours",
+      description: "A curated route through signature areas and hidden gems in Geneva.",
+    },
+    {
+      title: "Geneva History Highlights",
+      duration: "2 hours",
+      description: "Walk through key landmarks and historical moments that shaped Geneva.",
+    },
+    {
+      title: "Geneva Food and Markets Walk",
+      duration: "3 hours",
+      description: "Discover local flavors and market culture in Geneva with curated tasting stops.",
+    },
+  ],
+  "lucerne": [
+    {
+      title: "Lucerne History Highlights",
+      duration: "2 hours",
+      description: "Walk through key landmarks and historical moments that shaped Lucerne.",
+    },
+    {
+      title: "Lucerne Food and Markets Walk",
+      duration: "3 hours",
+      description: "Discover local flavors and market culture in Lucerne with curated tasting stops.",
+    },
+    {
+      title: "Lucerne Private Discovery Route",
+      duration: "3 hours",
+      description: "A curated route through signature areas and hidden gems in Lucerne.",
+    },
+    {
+      title: "Lucerne Culture and Street Life",
+      duration: "3.5 hours",
+      description: "Experience neighborhood rhythms, architecture, and local culture in Lucerne.",
+    },
+  ],
 };
 
 export function getAiToursByCity(citySlug: string): CuratedTour[] {

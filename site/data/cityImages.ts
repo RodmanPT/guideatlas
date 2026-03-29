@@ -321,6 +321,31 @@ export const CITY_IMAGE_MAP: Record<string, CityImageRecord> = {
     image_author: "Alexandr Bormotin",
     image_source: "unsplash",
   },
+  "belgrade": {
+    city_image_url: "https://images.unsplash.com/photo-1589415804227-ad6e820ef000?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4OTczNTh8MHwxfHNlYXJjaHwxfHxCZWxncmFkZSUyMHNreWxpbmV8ZW58MHwwfHx8MTc3NDc2MDcxMHww&ixlib=rb-4.1.0&q=80&w=1080",
+    image_author: "Ivan Aleksic",
+    image_source: "unsplash",
+  },
+  "reykjavik": {
+    city_image_url: "https://images.unsplash.com/photo-1599885731271-3d49f55cc6f8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4OTczNTh8MHwxfHNlYXJjaHwxfHxSZXlramF2aWslMjBza3lsaW5lfGVufDB8MHx8fDE3NzQ3NjA4Mzh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+    image_author: "Kalea",
+    image_source: "unsplash",
+  },
+  "zurich": {
+    city_image_url: "https://images.unsplash.com/photo-1601840698423-4a31d1a66653?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4OTczNTh8MHwxfHNlYXJjaHwxfHxadXJpY2glMjBza3lsaW5lfGVufDB8MHx8fDE3NzQ3NjA5Nzh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+    image_author: "Thimo Pedersen",
+    image_source: "unsplash",
+  },
+  "geneva": {
+    city_image_url: "https://images.unsplash.com/photo-1771504184695-c2dfceb8e08f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4OTczNTh8MHwxfHNlYXJjaHwxfHxHZW5ldmElMjBza3lsaW5lfGVufDB8MHx8fDE3NzQ3NjExODl8MA&ixlib=rb-4.1.0&q=80&w=1080",
+    image_author: "Bohodarov Matfei",
+    image_source: "unsplash",
+  },
+  "lucerne": {
+    city_image_url: "https://images.unsplash.com/photo-1651918694282-83d6486526bd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4OTczNTh8MHwxfHNlYXJjaHwxfHxMdWNlcm5lJTIwY2l0eXNjYXBlfGVufDB8MHx8fDE3NzQ3NjExOTB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+    image_author: "Anant Chandra",
+    image_source: "unsplash",
+  },
 };
 
 export function getCityImage(citySlug: string): CityImageRecord | undefined {
