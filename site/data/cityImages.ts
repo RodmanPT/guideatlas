@@ -326,6 +326,11 @@ export const CITY_IMAGE_MAP: Record<string, CityImageRecord> = {
     image_author: "Ivan Aleksic",
     image_source: "unsplash",
   },
+  "reykjavik": {
+    city_image_url: "https://images.unsplash.com/photo-1599885731271-3d49f55cc6f8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4OTczNTh8MHwxfHNlYXJjaHwxfHxSZXlramF2aWslMjBza3lsaW5lfGVufDB8MHx8fDE3NzQ3NjA4Mzh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+    image_author: "Kalea",
+    image_source: "unsplash",
+  },
 };
 
 export function getCityImage(citySlug: string): CityImageRecord | undefined {
