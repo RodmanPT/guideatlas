@@ -1385,6 +1385,23 @@ export const aiTours: CityToursMap = {
       description: "Visit scenic viewpoints and photogenic routes around Tirana at golden hour.",
     },
   ],
+  "belgrade": [
+    {
+      title: "Belgrade Food and Markets Walk",
+      duration: "3 hours",
+      description: "Discover local flavors and market culture in Belgrade with curated tasting stops.",
+    },
+    {
+      title: "Belgrade Private Discovery Route",
+      duration: "3 hours",
+      description: "A curated route through signature areas and hidden gems in Belgrade.",
+    },
+    {
+      title: "Belgrade Culture and Street Life",
+      duration: "3.5 hours",
+      description: "Experience neighborhood rhythms, architecture, and local culture in Belgrade.",
+    },
+  ],
 };
 
 export function getAiToursByCity(citySlug: string): CuratedTour[] {
