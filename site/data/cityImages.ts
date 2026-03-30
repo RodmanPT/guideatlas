@@ -331,6 +331,16 @@ export const CITY_IMAGE_MAP: Record<string, CityImageRecord> = {
     image_author: "Kalea",
     image_source: "unsplash",
   },
+  "zurich": {
+    city_image_url: "https://images.unsplash.com/photo-1601840698423-4a31d1a66653?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4OTczNTh8MHwxfHNlYXJjaHwxfHxadXJpY2glMjBza3lsaW5lfGVufDB8MHx8fDE3NzQ3NjA5Nzh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+    image_author: "Thimo Pedersen",
+    image_source: "unsplash",
+  },
+  "geneva": {
+    city_image_url: "https://images.unsplash.com/photo-1771504184695-c2dfceb8e08f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4OTczNTh8MHwxfHNlYXJjaHwxfHxHZW5ldmElMjBza3lsaW5lfGVufDB8MHx8fDE3NzQ3NjExODl8MA&ixlib=rb-4.1.0&q=80&w=1080",
+    image_author: "Bohodarov Matfei",
+    image_source: "unsplash",
+  },
 };
 
 export function getCityImage(citySlug: string): CityImageRecord | undefined {
