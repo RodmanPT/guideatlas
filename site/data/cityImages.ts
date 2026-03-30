@@ -341,6 +341,16 @@ export const CITY_IMAGE_MAP: Record<string, CityImageRecord> = {
     image_author: "Bohodarov Matfei",
     image_source: "unsplash",
   },
+  "lucerne": {
+    city_image_url: "https://images.unsplash.com/photo-1651918694282-83d6486526bd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4OTczNTh8MHwxfHNlYXJjaHwxfHxMdWNlcm5lJTIwY2l0eXNjYXBlfGVufDB8MHx8fDE3NzQ3NjExOTB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+    image_author: "Anant Chandra",
+    image_source: "unsplash",
+  },
+  "vienna-woods": {
+    city_image_url: "https://images.unsplash.com/photo-1739706518717-1de7b305feec?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4OTczNTh8MHwxfHNlYXJjaHwxfHxWaWVubmElMjBXb29kcyUyMGNpdHlzY2FwZXxlbnwwfDB8fHwxNzc0ODQ3NjM1fDA&ixlib=rb-4.1.0&q=80&w=1080",
+    image_author: "Bernd 📷 Dittrich",
+    image_source: "unsplash",
+  },
 };
 
 export function getCityImage(citySlug: string): CityImageRecord | undefined {

@@ -1463,6 +1463,45 @@ export const aiTours: CityToursMap = {
       description: "Discover local flavors and market culture in Geneva with curated tasting stops.",
     },
   ],
+  "lucerne": [
+    {
+      title: "Lucerne History Highlights",
+      duration: "2 hours",
+      description: "Walk through key landmarks and historical moments that shaped Lucerne.",
+    },
+    {
+      title: "Lucerne Food and Markets Walk",
+      duration: "3 hours",
+      description: "Discover local flavors and market culture in Lucerne with curated tasting stops.",
+    },
+    {
+      title: "Lucerne Private Discovery Route",
+      duration: "3 hours",
+      description: "A curated route through signature areas and hidden gems in Lucerne.",
+    },
+    {
+      title: "Lucerne Culture and Street Life",
+      duration: "3.5 hours",
+      description: "Experience neighborhood rhythms, architecture, and local culture in Lucerne.",
+    },
+  ],
+  "vienna-woods": [
+    {
+      title: "Vienna Woods Private Discovery Route",
+      duration: "3 hours",
+      description: "A curated route through signature areas and hidden gems in Vienna Woods.",
+    },
+    {
+      title: "Hidden Corners of Vienna Woods",
+      duration: "2.5 hours",
+      description: "Explore lesser-known neighborhoods and stories that show the local side of Vienna Woods.",
+    },
+    {
+      title: "Vienna Woods Food and Markets Walk",
+      duration: "3 hours",
+      description: "Discover local flavors and market culture in Vienna Woods with curated tasting stops.",
+    },
+  ],
 };
 
 export function getAiToursByCity(citySlug: string): CuratedTour[] {
