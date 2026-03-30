@@ -68,6 +68,11 @@ export const CITIES: City[] = [
   { slug: "tirana", name: "Tirana", country: "Albania", latitude: 41.3275, longitude: 19.8187 },
   { slug: "belgrade", name: "Belgrade", country: "Serbia", latitude: 44.7866, longitude: 20.4489 },
   { slug: "reykjavik", name: "Reykjavik", country: "Iceland", latitude: 64.1466, longitude: -21.9426 },
+  { slug: "zurich", name: "Zurich", country: "Switzerland", latitude: 47.3769, longitude: 8.5417 },
+  { slug: "geneva", name: "Geneva", country: "Switzerland", latitude: 46.2044, longitude: 6.1432 },
+  { slug: "lucerne", name: "Lucerne", country: "Switzerland", latitude: 47.0502, longitude: 8.3093 },
+  { slug: "vienna-woods", name: "Vienna Woods", country: "Austria", latitude: 48.2191, longitude: 16.1918 },
+  { slug: "santorini", name: "Santorini", country: "Greece", latitude: 36.3932, longitude: 25.4615 },
 ];
 
 export function getCityBySlug(slug: string): City | undefined {

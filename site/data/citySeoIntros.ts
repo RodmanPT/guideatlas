@@ -68,6 +68,11 @@ export const citySeoIntros: CitySeoIntros = {
   "tirana": "Discover the best tours in Tirana, from food walks to historical explorations led by local guides.",
   "belgrade": "Discover the best tours in Belgrade, from food walks to historical explorations led by local guides.",
   "reykjavik": "Discover the best tours in Reykjavik, from food walks to historical explorations led by local guides.",
+  "zurich": "Discover the best tours in Zurich, from food walks to historical explorations led by local guides.",
+  "geneva": "Discover the best tours in Geneva, from food walks to historical explorations led by local guides.",
+  "lucerne": "Discover the best tours in Lucerne, from food walks to historical explorations led by local guides.",
+  "vienna-woods": "Discover the best tours in Vienna Woods, from food walks to historical explorations led by local guides.",
+  "santorini": "Discover the best tours in Santorini, from food walks to historical explorations led by local guides.",
 };
 
 export function getCitySeoIntro(citySlug: string, cityName: string): string {
