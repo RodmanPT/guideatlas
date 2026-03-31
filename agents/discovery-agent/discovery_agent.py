@@ -328,12 +328,6 @@ def update_city_images_ts(path: Path, destination: Dict) -> bool:
     return True
 
 
-def ensure_required_env(name: str) -> str:
-    value = os.getenv(name, "").strip()
-    if not value:
-        raise RuntimeError(f"Missing required environment variable: {name}")
-    return value
-
 
 def parse_positive_int_env(name: str, default: int) -> int:
     raw = os.getenv(name, "").strip()
@@ -385,9 +379,9 @@ def resolve_repo_root() -> Path:
 
 
 def git_commit_and_push(repo_root: Path, changed_files: List[Path], city_names: List[str]) -> None:
-    github_token = ensure_required_env("GITHUB_TOKEN")
-    github_repo = ensure_required_env("GITHUB_REPO")
-    github_branch = ensure_required_env("GITHUB_BRANCH")
+    github_token = os.getenv("GITHUB_TOKEN", "").strip()
+    github_repo = os.getenv("GITHUB_REPO", "").strip()
+    github_branch = os.getenv("GITHUB_BRANCH", "").strip()
 
     git_name = os.getenv("GIT_AUTHOR_NAME", "GuideAtlas AI Agent")
     git_email = os.getenv("GIT_AUTHOR_EMAIL", "bot@guideatlas.local")
@@ -418,9 +412,12 @@ def git_commit_and_push(repo_root: Path, changed_files: List[Path], city_names: 
         commit_message = f"chore(ai): add curated tours for {joined}{suffix}"
     run_cmd(["git", "-C", str(repo_root), "commit", "-m", commit_message], cwd=repo_root)
 
-    safe_token = quote(github_token, safe="")
-    remote_url = f"https://x-access-token:{safe_token}@github.com/{github_repo}.git"
-    run_cmd(["git", "-C", str(repo_root), "push", remote_url, f"HEAD:{github_branch}"], cwd=repo_root)
+    if github_token and github_repo and github_branch:
+        safe_token = quote(github_token, safe="")
+        remote_url = f"https://x-access-token:{safe_token}@github.com/{github_repo}.git"
+        run_cmd(["git", "-C", str(repo_root), "push", remote_url, f"HEAD:{github_branch}"], cwd=repo_root)
+    else:
+        print("Skipping push: GITHUB_TOKEN, GITHUB_REPO, or GITHUB_BRANCH is not set.")
 
 
 def main() -> int:

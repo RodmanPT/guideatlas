@@ -1502,6 +1502,121 @@ export const aiTours: CityToursMap = {
       description: "Discover local flavors and market culture in Vienna Woods with curated tasting stops.",
     },
   ],
+  "santorini": [
+    {
+      title: "Santorini Food and Markets Walk",
+      duration: "3 hours",
+      description: "Discover local flavors and market culture in Santorini with curated tasting stops.",
+    },
+    {
+      title: "Hidden Corners of Santorini",
+      duration: "2.5 hours",
+      description: "Explore lesser-known neighborhoods and stories that show the local side of Santorini.",
+    },
+    {
+      title: "Santorini History Highlights",
+      duration: "2 hours",
+      description: "Walk through key landmarks and historical moments that shaped Santorini.",
+    },
+    {
+      title: "Santorini Sunset Viewpoints",
+      duration: "2 hours",
+      description: "Visit scenic viewpoints and photogenic routes around Santorini at golden hour.",
+    },
+    {
+      title: "Santorini Private Discovery Route",
+      duration: "3 hours",
+      description: "A curated route through signature areas and hidden gems in Santorini.",
+    },
+  ],
+  "mykonos": [
+    {
+      title: "Mykonos Sunset Viewpoints",
+      duration: "2 hours",
+      description: "Visit scenic viewpoints and photogenic routes around Mykonos at golden hour.",
+    },
+    {
+      title: "Hidden Corners of Mykonos",
+      duration: "2.5 hours",
+      description: "Explore lesser-known neighborhoods and stories that show the local side of Mykonos.",
+    },
+    {
+      title: "Mykonos Private Discovery Route",
+      duration: "3 hours",
+      description: "A curated route through signature areas and hidden gems in Mykonos.",
+    },
+    {
+      title: "Mykonos History Highlights",
+      duration: "2 hours",
+      description: "Walk through key landmarks and historical moments that shaped Mykonos.",
+    },
+  ],
+  "crete": [
+    {
+      title: "Crete Food and Markets Walk",
+      duration: "3 hours",
+      description: "Discover local flavors and market culture in Crete with curated tasting stops.",
+    },
+    {
+      title: "Crete Culture and Street Life",
+      duration: "3.5 hours",
+      description: "Experience neighborhood rhythms, architecture, and local culture in Crete.",
+    },
+    {
+      title: "Crete History Highlights",
+      duration: "2 hours",
+      description: "Walk through key landmarks and historical moments that shaped Crete.",
+    },
+    {
+      title: "Crete Sunset Viewpoints",
+      duration: "2 hours",
+      description: "Visit scenic viewpoints and photogenic routes around Crete at golden hour.",
+    },
+    {
+      title: "Hidden Corners of Crete",
+      duration: "2.5 hours",
+      description: "Explore lesser-known neighborhoods and stories that show the local side of Crete.",
+    },
+  ],
+  "jerusalem": [
+    {
+      title: "Jerusalem Private Discovery Route",
+      duration: "3 hours",
+      description: "A curated route through signature areas and hidden gems in Jerusalem.",
+    },
+    {
+      title: "Hidden Corners of Jerusalem",
+      duration: "2.5 hours",
+      description: "Explore lesser-known neighborhoods and stories that show the local side of Jerusalem.",
+    },
+    {
+      title: "Jerusalem Sunset Viewpoints",
+      duration: "2 hours",
+      description: "Visit scenic viewpoints and photogenic routes around Jerusalem at golden hour.",
+    },
+  ],
+  "tel-aviv": [
+    {
+      title: "Tel Aviv Culture and Street Life",
+      duration: "3.5 hours",
+      description: "Experience neighborhood rhythms, architecture, and local culture in Tel Aviv.",
+    },
+    {
+      title: "Tel Aviv Food and Markets Walk",
+      duration: "3 hours",
+      description: "Discover local flavors and market culture in Tel Aviv with curated tasting stops.",
+    },
+    {
+      title: "Tel Aviv Private Discovery Route",
+      duration: "3 hours",
+      description: "A curated route through signature areas and hidden gems in Tel Aviv.",
+    },
+    {
+      title: "Hidden Corners of Tel Aviv",
+      duration: "2.5 hours",
+      description: "Explore lesser-known neighborhoods and stories that show the local side of Tel Aviv.",
+    },
+  ],
 };
 
 export function getAiToursByCity(citySlug: string): CuratedTour[] {

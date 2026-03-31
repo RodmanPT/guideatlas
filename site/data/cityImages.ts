@@ -351,6 +351,31 @@ export const CITY_IMAGE_MAP: Record<string, CityImageRecord> = {
     image_author: "Bernd 📷 Dittrich",
     image_source: "unsplash",
   },
+  "santorini": {
+    city_image_url: "https://images.unsplash.com/photo-1629314402955-7ba8546a9f30?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4OTczNTh8MHwxfHNlYXJjaHwxfHxTYW50b3JpbmklMjBza3lsaW5lfGVufDB8MHx8fDE3NzQ4NDc3NDB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+    image_author: "Florian Wehde",
+    image_source: "unsplash",
+  },
+  "mykonos": {
+    city_image_url: "https://images.unsplash.com/photo-1614855173752-5de77de2b961?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4OTczNTh8MHwxfHNlYXJjaHwxfHxNeWtvbm9zJTIwc2t5bGluZXxlbnwwfDB8fHwxNzc0OTM0MzM2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+    image_author: "Dan V",
+    image_source: "unsplash",
+  },
+  "crete": {
+    city_image_url: "https://images.unsplash.com/photo-1534097530100-c6d144a2bbec?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4OTczNTh8MHwxfHNlYXJjaHwxfHxDcmV0ZSUyMHNreWxpbmV8ZW58MHwwfHx8MTc3NDkzNTQ4Mnww&ixlib=rb-4.1.0&q=80&w=1080",
+    image_author: "John Mark Arnold",
+    image_source: "unsplash",
+  },
+  "jerusalem": {
+    city_image_url: "https://images.unsplash.com/photo-1763966461585-41a652f12dd3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4OTczNTh8MHwxfHNlYXJjaHwxfHxKZXJ1c2FsZW0lMjBza3lsaW5lfGVufDB8MHx8fDE3NzQ5MzU2NjV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+    image_author: "amr Sandouka",
+    image_source: "unsplash",
+  },
+  "tel-aviv": {
+    city_image_url: "https://images.unsplash.com/photo-1695910410678-6731d8577dc5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4OTczNTh8MHwxfHNlYXJjaHwxfHxUZWwlMjBBdml2JTIwc2t5bGluZXxlbnwwfDB8fHwxNzc0OTM1NjY1fDA&ixlib=rb-4.1.0&q=80&w=1080",
+    image_author: "JR Ross",
+    image_source: "unsplash",
+  },
 };
 
 export function getCityImage(citySlug: string): CityImageRecord | undefined {
