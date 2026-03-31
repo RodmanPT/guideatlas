@@ -1502,6 +1502,55 @@ export const aiTours: CityToursMap = {
       description: "Discover local flavors and market culture in Vienna Woods with curated tasting stops.",
     },
   ],
+  "santorini": [
+    {
+      title: "Santorini Food and Markets Walk",
+      duration: "3 hours",
+      description: "Discover local flavors and market culture in Santorini with curated tasting stops.",
+    },
+    {
+      title: "Hidden Corners of Santorini",
+      duration: "2.5 hours",
+      description: "Explore lesser-known neighborhoods and stories that show the local side of Santorini.",
+    },
+    {
+      title: "Santorini History Highlights",
+      duration: "2 hours",
+      description: "Walk through key landmarks and historical moments that shaped Santorini.",
+    },
+    {
+      title: "Santorini Sunset Viewpoints",
+      duration: "2 hours",
+      description: "Visit scenic viewpoints and photogenic routes around Santorini at golden hour.",
+    },
+    {
+      title: "Santorini Private Discovery Route",
+      duration: "3 hours",
+      description: "A curated route through signature areas and hidden gems in Santorini.",
+    },
+  ],
+  "mykonos": [
+    {
+      title: "Mykonos Sunset Viewpoints",
+      duration: "2 hours",
+      description: "Visit scenic viewpoints and photogenic routes around Mykonos at golden hour.",
+    },
+    {
+      title: "Hidden Corners of Mykonos",
+      duration: "2.5 hours",
+      description: "Explore lesser-known neighborhoods and stories that show the local side of Mykonos.",
+    },
+    {
+      title: "Mykonos Private Discovery Route",
+      duration: "3 hours",
+      description: "A curated route through signature areas and hidden gems in Mykonos.",
+    },
+    {
+      title: "Mykonos History Highlights",
+      duration: "2 hours",
+      description: "Walk through key landmarks and historical moments that shaped Mykonos.",
+    },
+  ],
 };
 
 export function getAiToursByCity(citySlug: string): CuratedTour[] {
