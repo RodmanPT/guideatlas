@@ -1595,6 +1595,45 @@ export const aiTours: CityToursMap = {
       description: "Visit scenic viewpoints and photogenic routes around Jerusalem at golden hour.",
     },
   ],
+  "tel-aviv": [
+    {
+      title: "Tel Aviv Culture and Street Life",
+      duration: "3.5 hours",
+      description: "Experience neighborhood rhythms, architecture, and local culture in Tel Aviv.",
+    },
+    {
+      title: "Tel Aviv Food and Markets Walk",
+      duration: "3 hours",
+      description: "Discover local flavors and market culture in Tel Aviv with curated tasting stops.",
+    },
+    {
+      title: "Tel Aviv Private Discovery Route",
+      duration: "3 hours",
+      description: "A curated route through signature areas and hidden gems in Tel Aviv.",
+    },
+    {
+      title: "Hidden Corners of Tel Aviv",
+      duration: "2.5 hours",
+      description: "Explore lesser-known neighborhoods and stories that show the local side of Tel Aviv.",
+    },
+  ],
+  "cairo": [
+    {
+      title: "Cairo Sunset Viewpoints",
+      duration: "2 hours",
+      description: "Visit scenic viewpoints and photogenic routes around Cairo at golden hour.",
+    },
+    {
+      title: "Cairo History Highlights",
+      duration: "2 hours",
+      description: "Walk through key landmarks and historical moments that shaped Cairo.",
+    },
+    {
+      title: "Cairo Culture and Street Life",
+      duration: "3.5 hours",
+      description: "Experience neighborhood rhythms, architecture, and local culture in Cairo.",
+    },
+  ],
 };
 
 export function getAiToursByCity(citySlug: string): CuratedTour[] {
