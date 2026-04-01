@@ -76,6 +76,8 @@ export const citySeoIntros: CitySeoIntros = {
   "mykonos": "Discover the best tours in Mykonos, from food walks to historical explorations led by local guides.",
   "crete": "Discover the best tours in Crete, from food walks to historical explorations led by local guides.",
   "jerusalem": "Discover the best tours in Jerusalem, from food walks to historical explorations led by local guides.",
+  "tel-aviv": "Discover the best tours in Tel Aviv, from food walks to historical explorations led by local guides.",
+  "cairo": "Discover the best tours in Cairo, from food walks to historical explorations led by local guides.",
 };
 
 export function getCitySeoIntro(citySlug: string, cityName: string): string {

@@ -371,6 +371,16 @@ export const CITY_IMAGE_MAP: Record<string, CityImageRecord> = {
     image_author: "amr Sandouka",
     image_source: "unsplash",
   },
+  "tel-aviv": {
+    city_image_url: "https://images.unsplash.com/photo-1695910410678-6731d8577dc5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4OTczNTh8MHwxfHNlYXJjaHwxfHxUZWwlMjBBdml2JTIwc2t5bGluZXxlbnwwfDB8fHwxNzc0OTM1NjY1fDA&ixlib=rb-4.1.0&q=80&w=1080",
+    image_author: "JR Ross",
+    image_source: "unsplash",
+  },
+  "cairo": {
+    city_image_url: "https://images.unsplash.com/photo-1679238211153-546821b75f98?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4OTczNTh8MHwxfHNlYXJjaHwxfHxDYWlybyUyMHNreWxpbmV8ZW58MHwwfHx8MTc3NTAyMTA4Mnww&ixlib=rb-4.1.0&q=80&w=1080",
+    image_author: "Michael Starkie",
+    image_source: "unsplash",
+  },
 };
 
 export function getCityImage(citySlug: string): CityImageRecord | undefined {
