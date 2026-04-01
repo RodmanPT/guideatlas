@@ -74,6 +74,8 @@ export const CITIES: City[] = [
   { slug: "vienna-woods", name: "Vienna Woods", country: "Austria", latitude: 48.2191, longitude: 16.1918 },
   { slug: "santorini", name: "Santorini", country: "Greece", latitude: 36.3932, longitude: 25.4615 },
   { slug: "mykonos", name: "Mykonos", country: "Greece", latitude: 37.4467, longitude: 25.3289 },
+  { slug: "crete", name: "Crete", country: "Greece", latitude: 35.2401, longitude: 24.8093 },
+  { slug: "jerusalem", name: "Jerusalem", country: "Israel", latitude: 31.7683, longitude: 35.2137 },
 ];
 
 export function getCityBySlug(slug: string): City | undefined {

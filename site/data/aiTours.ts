@@ -1551,6 +1551,50 @@ export const aiTours: CityToursMap = {
       description: "Walk through key landmarks and historical moments that shaped Mykonos.",
     },
   ],
+  "crete": [
+    {
+      title: "Crete Food and Markets Walk",
+      duration: "3 hours",
+      description: "Discover local flavors and market culture in Crete with curated tasting stops.",
+    },
+    {
+      title: "Crete Culture and Street Life",
+      duration: "3.5 hours",
+      description: "Experience neighborhood rhythms, architecture, and local culture in Crete.",
+    },
+    {
+      title: "Crete History Highlights",
+      duration: "2 hours",
+      description: "Walk through key landmarks and historical moments that shaped Crete.",
+    },
+    {
+      title: "Crete Sunset Viewpoints",
+      duration: "2 hours",
+      description: "Visit scenic viewpoints and photogenic routes around Crete at golden hour.",
+    },
+    {
+      title: "Hidden Corners of Crete",
+      duration: "2.5 hours",
+      description: "Explore lesser-known neighborhoods and stories that show the local side of Crete.",
+    },
+  ],
+  "jerusalem": [
+    {
+      title: "Jerusalem Private Discovery Route",
+      duration: "3 hours",
+      description: "A curated route through signature areas and hidden gems in Jerusalem.",
+    },
+    {
+      title: "Hidden Corners of Jerusalem",
+      duration: "2.5 hours",
+      description: "Explore lesser-known neighborhoods and stories that show the local side of Jerusalem.",
+    },
+    {
+      title: "Jerusalem Sunset Viewpoints",
+      duration: "2 hours",
+      description: "Visit scenic viewpoints and photogenic routes around Jerusalem at golden hour.",
+    },
+  ],
 };
 
 export function getAiToursByCity(citySlug: string): CuratedTour[] {

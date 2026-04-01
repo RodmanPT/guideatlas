@@ -74,6 +74,8 @@ export const citySeoIntros: CitySeoIntros = {
   "vienna-woods": "Discover the best tours in Vienna Woods, from food walks to historical explorations led by local guides.",
   "santorini": "Discover the best tours in Santorini, from food walks to historical explorations led by local guides.",
   "mykonos": "Discover the best tours in Mykonos, from food walks to historical explorations led by local guides.",
+  "crete": "Discover the best tours in Crete, from food walks to historical explorations led by local guides.",
+  "jerusalem": "Discover the best tours in Jerusalem, from food walks to historical explorations led by local guides.",
 };
 
 export function getCitySeoIntro(citySlug: string, cityName: string): string {
