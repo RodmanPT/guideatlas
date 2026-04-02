@@ -1634,6 +1634,28 @@ export const aiTours: CityToursMap = {
       description: "Experience neighborhood rhythms, architecture, and local culture in Cairo.",
     },
   ],
+  "marrakesh": [
+    {
+      title: "Marrakesh Food and Markets Walk",
+      duration: "3 hours",
+      description: "Discover local flavors and market culture in Marrakesh with curated tasting stops.",
+    },
+    {
+      title: "Marrakesh History Highlights",
+      duration: "2 hours",
+      description: "Walk through key landmarks and historical moments that shaped Marrakesh.",
+    },
+    {
+      title: "Marrakesh Private Discovery Route",
+      duration: "3 hours",
+      description: "A curated route through signature areas and hidden gems in Marrakesh.",
+    },
+    {
+      title: "Hidden Corners of Marrakesh",
+      duration: "2.5 hours",
+      description: "Explore lesser-known neighborhoods and stories that show the local side of Marrakesh.",
+    },
+  ],
 };
 
 export function getAiToursByCity(citySlug: string): CuratedTour[] {
