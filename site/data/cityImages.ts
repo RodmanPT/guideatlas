@@ -386,6 +386,11 @@ export const CITY_IMAGE_MAP: Record<string, CityImageRecord> = {
     image_author: "Peter Thomas",
     image_source: "unsplash",
   },
+  "casablanca": {
+    city_image_url: "https://images.unsplash.com/photo-1713967245835-279ac4ee83f3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4OTczNTh8MHwxfHNlYXJjaHwxfHxDYXNhYmxhbmNhJTIwc2t5bGluZXxlbnwwfDB8fHwxNzc1MDIxMjU5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+    image_author: "Imad Ghazal",
+    image_source: "unsplash",
+  },
 };
 
 export function getCityImage(citySlug: string): CityImageRecord | undefined {

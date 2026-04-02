@@ -1656,6 +1656,28 @@ export const aiTours: CityToursMap = {
       description: "Explore lesser-known neighborhoods and stories that show the local side of Marrakesh.",
     },
   ],
+  "casablanca": [
+    {
+      title: "Casablanca History Highlights",
+      duration: "2 hours",
+      description: "Walk through key landmarks and historical moments that shaped Casablanca.",
+    },
+    {
+      title: "Casablanca Culture and Street Life",
+      duration: "3.5 hours",
+      description: "Experience neighborhood rhythms, architecture, and local culture in Casablanca.",
+    },
+    {
+      title: "Casablanca Food and Markets Walk",
+      duration: "3 hours",
+      description: "Discover local flavors and market culture in Casablanca with curated tasting stops.",
+    },
+    {
+      title: "Hidden Corners of Casablanca",
+      duration: "2.5 hours",
+      description: "Explore lesser-known neighborhoods and stories that show the local side of Casablanca.",
+    },
+  ],
 };
 
 export function getAiToursByCity(citySlug: string): CuratedTour[] {
