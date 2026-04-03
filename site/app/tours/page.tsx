@@ -25,13 +25,14 @@ export default function ToursByCityPage() {
 
       <section className="section">
         <div className="destinationGrid">
-          {CITIES.map((city) => (
+          {CITIES.map((city, index) => (
             <DestinationCard
               key={city.slug}
               href={getCityToursUrl(city.slug)}
               citySlug={city.slug}
               cityName={city.name}
               country={city.country}
+              priority={index < 6}
             />
           ))}
         </div>
