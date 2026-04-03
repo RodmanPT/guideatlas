@@ -391,6 +391,16 @@ export const CITY_IMAGE_MAP: Record<string, CityImageRecord> = {
     image_author: "Imad Ghazal",
     image_source: "unsplash",
   },
+  "fez": {
+    city_image_url: "https://images.unsplash.com/photo-1549565396-99c901793c46?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4OTczNTh8MHwxfHNlYXJjaHwxfHxGZXolMjBza3lsaW5lfGVufDB8MHx8fDE3NzUxOTM0NDJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+    image_author: "Carlos Torres",
+    image_source: "unsplash",
+  },
+  "cape-town": {
+    city_image_url: "https://images.unsplash.com/photo-1679128991873-c8ae350fe8b9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4OTczNTh8MHwxfHNlYXJjaHwxfHxDYXBlJTIwVG93biUyMHNreWxpbmV8ZW58MHwwfHx8MTc3NTE5MzQ0Mnww&ixlib=rb-4.1.0&q=80&w=1080",
+    image_author: "Waldo Piater",
+    image_source: "unsplash",
+  },
 };
 
 export function getCityImage(citySlug: string): CityImageRecord | undefined {

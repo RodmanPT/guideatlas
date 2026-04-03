@@ -1678,6 +1678,60 @@ export const aiTours: CityToursMap = {
       description: "Explore lesser-known neighborhoods and stories that show the local side of Casablanca.",
     },
   ],
+  "fez": [
+    {
+      title: "Fez Private Discovery Route",
+      duration: "3 hours",
+      description: "A curated route through signature areas and hidden gems in Fez.",
+    },
+    {
+      title: "Fez Sunset Viewpoints",
+      duration: "2 hours",
+      description: "Visit scenic viewpoints and photogenic routes around Fez at golden hour.",
+    },
+    {
+      title: "Fez History Highlights",
+      duration: "2 hours",
+      description: "Walk through key landmarks and historical moments that shaped Fez.",
+    },
+    {
+      title: "Fez Food and Markets Walk",
+      duration: "3 hours",
+      description: "Discover local flavors and market culture in Fez with curated tasting stops.",
+    },
+    {
+      title: "Fez Culture and Street Life",
+      duration: "3.5 hours",
+      description: "Experience neighborhood rhythms, architecture, and local culture in Fez.",
+    },
+  ],
+  "cape-town": [
+    {
+      title: "Cape Town Private Discovery Route",
+      duration: "3 hours",
+      description: "A curated route through signature areas and hidden gems in Cape Town.",
+    },
+    {
+      title: "Hidden Corners of Cape Town",
+      duration: "2.5 hours",
+      description: "Explore lesser-known neighborhoods and stories that show the local side of Cape Town.",
+    },
+    {
+      title: "Cape Town History Highlights",
+      duration: "2 hours",
+      description: "Walk through key landmarks and historical moments that shaped Cape Town.",
+    },
+    {
+      title: "Cape Town Food and Markets Walk",
+      duration: "3 hours",
+      description: "Discover local flavors and market culture in Cape Town with curated tasting stops.",
+    },
+    {
+      title: "Cape Town Sunset Viewpoints",
+      duration: "2 hours",
+      description: "Visit scenic viewpoints and photogenic routes around Cape Town at golden hour.",
+    },
+  ],
 };
 
 export function getAiToursByCity(citySlug: string): CuratedTour[] {
