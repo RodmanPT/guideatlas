@@ -145,7 +145,7 @@ export default function HomePage() {
           <p>Reusable tour cards designed for future guide-published experiences.</p>
         </div>
         <div className="tourGrid">
-          {FEATURED_TOURS.map((tour) => (
+          {FEATURED_TOURS.map((tour, index) => (
             <TourCard
               key={tour.title}
               title={tour.title}
@@ -154,6 +154,7 @@ export default function HomePage() {
               groupLabel="Small group"
               description={`${tour.city} · Editorial preview card`}
               imageSrc={getCityImageUrl(tour.citySlug)}
+              priority={index < 4}
             />
           ))}
         </div>

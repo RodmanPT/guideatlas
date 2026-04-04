@@ -401,6 +401,16 @@ export const CITY_IMAGE_MAP: Record<string, CityImageRecord> = {
     image_author: "Waldo Piater",
     image_source: "unsplash",
   },
+  "johannesburg": {
+    city_image_url: "https://images.unsplash.com/photo-1636706519609-988babca3dd5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4OTczNTh8MHwxfHNlYXJjaHwxfHxKb2hhbm5lc2J1cmclMjBza3lsaW5lfGVufDB8MHx8fDE3NzUyNzk5MDB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+    image_author: "Simon Hurry",
+    image_source: "unsplash",
+  },
+  "nairobi": {
+    city_image_url: "https://images.unsplash.com/photo-1735837836882-559fd3ab1a8e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4OTczNTh8MHwxfHNlYXJjaHwxfHxOYWlyb2JpJTIwc2t5bGluZXxlbnwwfDB8fHwxNzc1Mjc5OTAwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+    image_author: "Sweder Breet",
+    image_source: "unsplash",
+  },
 };
 
 export function getCityImage(citySlug: string): CityImageRecord | undefined {
