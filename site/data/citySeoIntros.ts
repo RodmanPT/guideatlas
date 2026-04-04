@@ -82,6 +82,8 @@ export const citySeoIntros: CitySeoIntros = {
   "casablanca": "Discover the best tours in Casablanca, from food walks to historical explorations led by local guides.",
   "fez": "Discover the best tours in Fez, from food walks to historical explorations led by local guides.",
   "cape-town": "Discover the best tours in Cape Town, from food walks to historical explorations led by local guides.",
+  "johannesburg": "Discover the best tours in Johannesburg, from food walks to historical explorations led by local guides.",
+  "nairobi": "Discover the best tours in Nairobi, from food walks to historical explorations led by local guides.",
 };
 
 export function getCitySeoIntro(citySlug: string, cityName: string): string {

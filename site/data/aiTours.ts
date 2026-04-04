@@ -1732,6 +1732,55 @@ export const aiTours: CityToursMap = {
       description: "Visit scenic viewpoints and photogenic routes around Cape Town at golden hour.",
     },
   ],
+  "johannesburg": [
+    {
+      title: "Johannesburg Culture and Street Life",
+      duration: "3.5 hours",
+      description: "Experience neighborhood rhythms, architecture, and local culture in Johannesburg.",
+    },
+    {
+      title: "Johannesburg Sunset Viewpoints",
+      duration: "2 hours",
+      description: "Visit scenic viewpoints and photogenic routes around Johannesburg at golden hour.",
+    },
+    {
+      title: "Johannesburg History Highlights",
+      duration: "2 hours",
+      description: "Walk through key landmarks and historical moments that shaped Johannesburg.",
+    },
+    {
+      title: "Hidden Corners of Johannesburg",
+      duration: "2.5 hours",
+      description: "Explore lesser-known neighborhoods and stories that show the local side of Johannesburg.",
+    },
+  ],
+  "nairobi": [
+    {
+      title: "Nairobi Sunset Viewpoints",
+      duration: "2 hours",
+      description: "Visit scenic viewpoints and photogenic routes around Nairobi at golden hour.",
+    },
+    {
+      title: "Nairobi Culture and Street Life",
+      duration: "3.5 hours",
+      description: "Experience neighborhood rhythms, architecture, and local culture in Nairobi.",
+    },
+    {
+      title: "Nairobi Private Discovery Route",
+      duration: "3 hours",
+      description: "A curated route through signature areas and hidden gems in Nairobi.",
+    },
+    {
+      title: "Hidden Corners of Nairobi",
+      duration: "2.5 hours",
+      description: "Explore lesser-known neighborhoods and stories that show the local side of Nairobi.",
+    },
+    {
+      title: "Nairobi History Highlights",
+      duration: "2 hours",
+      description: "Walk through key landmarks and historical moments that shaped Nairobi.",
+    },
+  ],
 };
 
 export function getAiToursByCity(citySlug: string): CuratedTour[] {
