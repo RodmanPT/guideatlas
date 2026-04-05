@@ -1781,6 +1781,23 @@ export const aiTours: CityToursMap = {
       description: "Walk through key landmarks and historical moments that shaped Nairobi.",
     },
   ],
+  "zanzibar-city": [
+    {
+      title: "Zanzibar City Culture and Street Life",
+      duration: "3.5 hours",
+      description: "Experience neighborhood rhythms, architecture, and local culture in Zanzibar City.",
+    },
+    {
+      title: "Hidden Corners of Zanzibar City",
+      duration: "2.5 hours",
+      description: "Explore lesser-known neighborhoods and stories that show the local side of Zanzibar City.",
+    },
+    {
+      title: "Zanzibar City History Highlights",
+      duration: "2 hours",
+      description: "Walk through key landmarks and historical moments that shaped Zanzibar City.",
+    },
+  ],
 };
 
 export function getAiToursByCity(citySlug: string): CuratedTour[] {
