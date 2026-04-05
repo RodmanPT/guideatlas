@@ -411,6 +411,11 @@ export const CITY_IMAGE_MAP: Record<string, CityImageRecord> = {
     image_author: "Sweder Breet",
     image_source: "unsplash",
   },
+  "zanzibar-city": {
+    city_image_url: "https://images.unsplash.com/photo-1632751308842-6afb9d23d402?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4OTczNTh8MHwxfHNlYXJjaHwxfHxaYW56aWJhciUyMENpdHklMjBza3lsaW5lfGVufDB8MHx8fDE3NzUzNjY4ODB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+    image_author: "Jossuha Théophile",
+    image_source: "unsplash",
+  },
 };
 
 export function getCityImage(citySlug: string): CityImageRecord | undefined {
