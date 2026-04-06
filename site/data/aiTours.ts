@@ -1798,6 +1798,28 @@ export const aiTours: CityToursMap = {
       description: "Walk through key landmarks and historical moments that shaped Zanzibar City.",
     },
   ],
+  "doha": [
+    {
+      title: "Hidden Corners of Doha",
+      duration: "2.5 hours",
+      description: "Explore lesser-known neighborhoods and stories that show the local side of Doha.",
+    },
+    {
+      title: "Doha History Highlights",
+      duration: "2 hours",
+      description: "Walk through key landmarks and historical moments that shaped Doha.",
+    },
+    {
+      title: "Doha Sunset Viewpoints",
+      duration: "2 hours",
+      description: "Visit scenic viewpoints and photogenic routes around Doha at golden hour.",
+    },
+    {
+      title: "Doha Culture and Street Life",
+      duration: "3.5 hours",
+      description: "Experience neighborhood rhythms, architecture, and local culture in Doha.",
+    },
+  ],
 };
 
 export function getAiToursByCity(citySlug: string): CuratedTour[] {
