@@ -421,6 +421,16 @@ export const CITY_IMAGE_MAP: Record<string, CityImageRecord> = {
     image_author: "Popup Agency",
     image_source: "unsplash",
   },
+  "abu-dhabi": {
+    city_image_url: "https://images.unsplash.com/photo-1624317937315-0ced8736c9e9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4OTczNTh8MHwxfHNlYXJjaHwxfHxBYnUlMjBEaGFiaSUyMHNreWxpbmV8ZW58MHwwfHx8MTc3NTUzODU3Mnww&ixlib=rb-4.1.0&q=80&w=1080",
+    image_author: "Kevin JD",
+    image_source: "unsplash",
+  },
+  "muscat": {
+    city_image_url: "https://images.unsplash.com/photo-1763377220339-de687c3efad4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4OTczNTh8MHwxfHNlYXJjaHwxfHxNdXNjYXQlMjBza3lsaW5lfGVufDB8MHx8fDE3NzU1Mzg1NzJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+    image_author: "Andy Arbeit",
+    image_source: "unsplash",
+  },
 };
 
 export function getCityImage(citySlug: string): CityImageRecord | undefined {

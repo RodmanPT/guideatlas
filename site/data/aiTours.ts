@@ -1820,6 +1820,55 @@ export const aiTours: CityToursMap = {
       description: "Experience neighborhood rhythms, architecture, and local culture in Doha.",
     },
   ],
+  "abu-dhabi": [
+    {
+      title: "Hidden Corners of Abu Dhabi",
+      duration: "2.5 hours",
+      description: "Explore lesser-known neighborhoods and stories that show the local side of Abu Dhabi.",
+    },
+    {
+      title: "Abu Dhabi History Highlights",
+      duration: "2 hours",
+      description: "Walk through key landmarks and historical moments that shaped Abu Dhabi.",
+    },
+    {
+      title: "Abu Dhabi Private Discovery Route",
+      duration: "3 hours",
+      description: "A curated route through signature areas and hidden gems in Abu Dhabi.",
+    },
+    {
+      title: "Abu Dhabi Culture and Street Life",
+      duration: "3.5 hours",
+      description: "Experience neighborhood rhythms, architecture, and local culture in Abu Dhabi.",
+    },
+  ],
+  "muscat": [
+    {
+      title: "Muscat Food and Markets Walk",
+      duration: "3 hours",
+      description: "Discover local flavors and market culture in Muscat with curated tasting stops.",
+    },
+    {
+      title: "Muscat History Highlights",
+      duration: "2 hours",
+      description: "Walk through key landmarks and historical moments that shaped Muscat.",
+    },
+    {
+      title: "Muscat Private Discovery Route",
+      duration: "3 hours",
+      description: "A curated route through signature areas and hidden gems in Muscat.",
+    },
+    {
+      title: "Hidden Corners of Muscat",
+      duration: "2.5 hours",
+      description: "Explore lesser-known neighborhoods and stories that show the local side of Muscat.",
+    },
+    {
+      title: "Muscat Culture and Street Life",
+      duration: "3.5 hours",
+      description: "Experience neighborhood rhythms, architecture, and local culture in Muscat.",
+    },
+  ],
 };
 
 export function getAiToursByCity(citySlug: string): CuratedTour[] {
