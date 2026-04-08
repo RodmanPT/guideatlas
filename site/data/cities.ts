@@ -89,6 +89,8 @@ export const CITIES: City[] = [
   { slug: "abu-dhabi", name: "Abu Dhabi", country: "United Arab Emirates", latitude: 24.4539, longitude: 54.3773 },
   { slug: "muscat", name: "Muscat", country: "Oman", latitude: 23.588, longitude: 58.3829 },
   { slug: "riyadh", name: "Riyadh", country: "Saudi Arabia", latitude: 24.7136, longitude: 46.6753 },
+  { slug: "jeddah", name: "Jeddah", country: "Saudi Arabia", latitude: 21.4858, longitude: 39.1925 },
+  { slug: "mumbai", name: "Mumbai", country: "India", latitude: 19.076, longitude: 72.8777 },
 ];
 
 export function getCityBySlug(slug: string): City | undefined {

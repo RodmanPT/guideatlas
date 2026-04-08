@@ -89,6 +89,8 @@ export const citySeoIntros: CitySeoIntros = {
   "abu-dhabi": "Discover the best tours in Abu Dhabi, from food walks to historical explorations led by local guides.",
   "muscat": "Discover the best tours in Muscat, from food walks to historical explorations led by local guides.",
   "riyadh": "Discover the best tours in Riyadh, from food walks to historical explorations led by local guides.",
+  "jeddah": "Discover the best tours in Jeddah, from food walks to historical explorations led by local guides.",
+  "mumbai": "Discover the best tours in Mumbai, from food walks to historical explorations led by local guides.",
 };
 
 export function getCitySeoIntro(citySlug: string, cityName: string): string {

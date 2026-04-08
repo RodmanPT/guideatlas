@@ -1891,6 +1891,45 @@ export const aiTours: CityToursMap = {
       description: "A curated route through signature areas and hidden gems in Riyadh.",
     },
   ],
+  "jeddah": [
+    {
+      title: "Jeddah Food and Markets Walk",
+      duration: "3 hours",
+      description: "Discover local flavors and market culture in Jeddah with curated tasting stops.",
+    },
+    {
+      title: "Jeddah Culture and Street Life",
+      duration: "3.5 hours",
+      description: "Experience neighborhood rhythms, architecture, and local culture in Jeddah.",
+    },
+    {
+      title: "Jeddah History Highlights",
+      duration: "2 hours",
+      description: "Walk through key landmarks and historical moments that shaped Jeddah.",
+    },
+  ],
+  "mumbai": [
+    {
+      title: "Mumbai Food and Markets Walk",
+      duration: "3 hours",
+      description: "Discover local flavors and market culture in Mumbai with curated tasting stops.",
+    },
+    {
+      title: "Mumbai Private Discovery Route",
+      duration: "3 hours",
+      description: "A curated route through signature areas and hidden gems in Mumbai.",
+    },
+    {
+      title: "Hidden Corners of Mumbai",
+      duration: "2.5 hours",
+      description: "Explore lesser-known neighborhoods and stories that show the local side of Mumbai.",
+    },
+    {
+      title: "Mumbai Sunset Viewpoints",
+      duration: "2 hours",
+      description: "Visit scenic viewpoints and photogenic routes around Mumbai at golden hour.",
+    },
+  ],
 };
 
 export function getAiToursByCity(citySlug: string): CuratedTour[] {
