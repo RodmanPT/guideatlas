@@ -1869,6 +1869,28 @@ export const aiTours: CityToursMap = {
       description: "Experience neighborhood rhythms, architecture, and local culture in Muscat.",
     },
   ],
+  "riyadh": [
+    {
+      title: "Riyadh Sunset Viewpoints",
+      duration: "2 hours",
+      description: "Visit scenic viewpoints and photogenic routes around Riyadh at golden hour.",
+    },
+    {
+      title: "Riyadh History Highlights",
+      duration: "2 hours",
+      description: "Walk through key landmarks and historical moments that shaped Riyadh.",
+    },
+    {
+      title: "Hidden Corners of Riyadh",
+      duration: "2.5 hours",
+      description: "Explore lesser-known neighborhoods and stories that show the local side of Riyadh.",
+    },
+    {
+      title: "Riyadh Private Discovery Route",
+      duration: "3 hours",
+      description: "A curated route through signature areas and hidden gems in Riyadh.",
+    },
+  ],
 };
 
 export function getAiToursByCity(citySlug: string): CuratedTour[] {
