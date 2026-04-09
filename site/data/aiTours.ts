@@ -1930,6 +1930,111 @@ export const aiTours: CityToursMap = {
       description: "Visit scenic viewpoints and photogenic routes around Mumbai at golden hour.",
     },
   ],
+  "new-delhi": [
+    {
+      title: "New Delhi Sunset Viewpoints",
+      duration: "2 hours",
+      description: "Visit scenic viewpoints and photogenic routes around New Delhi at golden hour.",
+    },
+    {
+      title: "New Delhi Food and Markets Walk",
+      duration: "3 hours",
+      description: "Discover local flavors and market culture in New Delhi with curated tasting stops.",
+    },
+    {
+      title: "New Delhi Culture and Street Life",
+      duration: "3.5 hours",
+      description: "Experience neighborhood rhythms, architecture, and local culture in New Delhi.",
+    },
+    {
+      title: "New Delhi Private Discovery Route",
+      duration: "3 hours",
+      description: "A curated route through signature areas and hidden gems in New Delhi.",
+    },
+    {
+      title: "Hidden Corners of New Delhi",
+      duration: "2.5 hours",
+      description: "Explore lesser-known neighborhoods and stories that show the local side of New Delhi.",
+    },
+  ],
+  "jaipur": [
+    {
+      title: "Jaipur Private Discovery Route",
+      duration: "3 hours",
+      description: "A curated route through signature areas and hidden gems in Jaipur.",
+    },
+    {
+      title: "Jaipur History Highlights",
+      duration: "2 hours",
+      description: "Walk through key landmarks and historical moments that shaped Jaipur.",
+    },
+    {
+      title: "Jaipur Sunset Viewpoints",
+      duration: "2 hours",
+      description: "Visit scenic viewpoints and photogenic routes around Jaipur at golden hour.",
+    },
+  ],
+  "agra": [
+    {
+      title: "Agra Sunset Viewpoints",
+      duration: "2 hours",
+      description: "Visit scenic viewpoints and photogenic routes around Agra at golden hour.",
+    },
+    {
+      title: "Agra Private Discovery Route",
+      duration: "3 hours",
+      description: "A curated route through signature areas and hidden gems in Agra.",
+    },
+    {
+      title: "Agra Culture and Street Life",
+      duration: "3.5 hours",
+      description: "Experience neighborhood rhythms, architecture, and local culture in Agra.",
+    },
+  ],
+  "goa": [
+    {
+      title: "Goa Private Discovery Route",
+      duration: "3 hours",
+      description: "A curated route through signature areas and hidden gems in Goa.",
+    },
+    {
+      title: "Goa Culture and Street Life",
+      duration: "3.5 hours",
+      description: "Experience neighborhood rhythms, architecture, and local culture in Goa.",
+    },
+    {
+      title: "Hidden Corners of Goa",
+      duration: "2.5 hours",
+      description: "Explore lesser-known neighborhoods and stories that show the local side of Goa.",
+    },
+    {
+      title: "Goa Sunset Viewpoints",
+      duration: "2 hours",
+      description: "Visit scenic viewpoints and photogenic routes around Goa at golden hour.",
+    },
+  ],
+  "kathmandu": [
+    {
+      title: "Kathmandu Food and Markets Walk",
+      duration: "3 hours",
+      description: "Discover local flavors and market culture in Kathmandu with curated tasting stops.",
+    },
+    {
+      title: "Kathmandu Sunset Viewpoints",
+      duration: "2 hours",
+      description: "Visit scenic viewpoints and photogenic routes around Kathmandu at golden hour.",
+    },
+    {
+      title: "Kathmandu Culture and Street Life",
+      duration: "3.5 hours",
+      description: "Experience neighborhood rhythms, architecture, and local culture in Kathmandu.",
+    },
+    {
+      title: "Kathmandu History Highlights",
+      duration: "2 hours",
+      description: "Walk through key landmarks and historical moments that shaped Kathmandu.",
+    },
+  ],
 };
 
 export function getAiToursByCity(citySlug: string): CuratedTour[] {

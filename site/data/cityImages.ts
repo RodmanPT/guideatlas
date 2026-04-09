@@ -446,6 +446,31 @@ export const CITY_IMAGE_MAP: Record<string, CityImageRecord> = {
     image_author: "Nishith Parikh",
     image_source: "unsplash",
   },
+  "new-delhi": {
+    city_image_url: "https://images.unsplash.com/photo-1695667424131-a9680e0307ee?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4OTczNTh8MHwxfHNlYXJjaHwxfHxOZXclMjBEZWxoaSUyMHNreWxpbmV8ZW58MHwwfHx8MTc3NTcxMTU2MXww&ixlib=rb-4.1.0&q=80&w=1080",
+    image_author: "Richard Khuptong",
+    image_source: "unsplash",
+  },
+  "jaipur": {
+    city_image_url: "https://images.unsplash.com/photo-1599982133112-2723acedc13a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4OTczNTh8MHwxfHNlYXJjaHwxfHxKYWlwdXIlMjBza3lsaW5lfGVufDB8MHx8fDE3NzU3MTE1NjF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+    image_author: "Naman Pandey",
+    image_source: "unsplash",
+  },
+  "agra": {
+    city_image_url: "https://images.unsplash.com/photo-1599038442598-0bee725c0066?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4OTczNTh8MHwxfHNlYXJjaHwxfHxBZ3JhJTIwc2t5bGluZXxlbnwwfDB8fHwxNzc1NzExNjAyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+    image_author: "Naman Pandey",
+    image_source: "unsplash",
+  },
+  "goa": {
+    city_image_url: "https://images.unsplash.com/photo-1724125036694-6031ce4f3bcc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4OTczNTh8MHwxfHNlYXJjaHwxfHxHb2ElMjBkb3dudG93bnxlbnwwfDB8fHwxNzc1NzEzMDQxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+    image_author: "Roshan Kmr",
+    image_source: "unsplash",
+  },
+  "kathmandu": {
+    city_image_url: "https://images.unsplash.com/photo-1755065780597-8711c7c8e67f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4OTczNTh8MHwxfHNlYXJjaHwxfHxLYXRobWFuZHUlMjBza3lsaW5lfGVufDB8MHx8fDE3NzU3MTMwNDF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+    image_author: "Sushanta Rokka",
+    image_source: "unsplash",
+  },
 };
 
 export function getCityImage(citySlug: string): CityImageRecord | undefined {
