@@ -1974,6 +1974,23 @@ export const aiTours: CityToursMap = {
       description: "Visit scenic viewpoints and photogenic routes around Jaipur at golden hour.",
     },
   ],
+  "agra": [
+    {
+      title: "Agra Sunset Viewpoints",
+      duration: "2 hours",
+      description: "Visit scenic viewpoints and photogenic routes around Agra at golden hour.",
+    },
+    {
+      title: "Agra Private Discovery Route",
+      duration: "3 hours",
+      description: "A curated route through signature areas and hidden gems in Agra.",
+    },
+    {
+      title: "Agra Culture and Street Life",
+      duration: "3.5 hours",
+      description: "Experience neighborhood rhythms, architecture, and local culture in Agra.",
+    },
+  ],
 };
 
 export function getAiToursByCity(citySlug: string): CuratedTour[] {

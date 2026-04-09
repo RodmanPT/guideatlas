@@ -456,6 +456,11 @@ export const CITY_IMAGE_MAP: Record<string, CityImageRecord> = {
     image_author: "Naman Pandey",
     image_source: "unsplash",
   },
+  "agra": {
+    city_image_url: "https://images.unsplash.com/photo-1599038442598-0bee725c0066?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4OTczNTh8MHwxfHNlYXJjaHwxfHxBZ3JhJTIwc2t5bGluZXxlbnwwfDB8fHwxNzc1NzExNjAyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+    image_author: "Naman Pandey",
+    image_source: "unsplash",
+  },
 };
 
 export function getCityImage(citySlug: string): CityImageRecord | undefined {
