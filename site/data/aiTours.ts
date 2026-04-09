@@ -1930,6 +1930,50 @@ export const aiTours: CityToursMap = {
       description: "Visit scenic viewpoints and photogenic routes around Mumbai at golden hour.",
     },
   ],
+  "new-delhi": [
+    {
+      title: "New Delhi Sunset Viewpoints",
+      duration: "2 hours",
+      description: "Visit scenic viewpoints and photogenic routes around New Delhi at golden hour.",
+    },
+    {
+      title: "New Delhi Food and Markets Walk",
+      duration: "3 hours",
+      description: "Discover local flavors and market culture in New Delhi with curated tasting stops.",
+    },
+    {
+      title: "New Delhi Culture and Street Life",
+      duration: "3.5 hours",
+      description: "Experience neighborhood rhythms, architecture, and local culture in New Delhi.",
+    },
+    {
+      title: "New Delhi Private Discovery Route",
+      duration: "3 hours",
+      description: "A curated route through signature areas and hidden gems in New Delhi.",
+    },
+    {
+      title: "Hidden Corners of New Delhi",
+      duration: "2.5 hours",
+      description: "Explore lesser-known neighborhoods and stories that show the local side of New Delhi.",
+    },
+  ],
+  "jaipur": [
+    {
+      title: "Jaipur Private Discovery Route",
+      duration: "3 hours",
+      description: "A curated route through signature areas and hidden gems in Jaipur.",
+    },
+    {
+      title: "Jaipur History Highlights",
+      duration: "2 hours",
+      description: "Walk through key landmarks and historical moments that shaped Jaipur.",
+    },
+    {
+      title: "Jaipur Sunset Viewpoints",
+      duration: "2 hours",
+      description: "Visit scenic viewpoints and photogenic routes around Jaipur at golden hour.",
+    },
+  ],
 };
 
 export function getAiToursByCity(citySlug: string): CuratedTour[] {

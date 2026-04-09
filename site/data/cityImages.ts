@@ -446,6 +446,16 @@ export const CITY_IMAGE_MAP: Record<string, CityImageRecord> = {
     image_author: "Nishith Parikh",
     image_source: "unsplash",
   },
+  "new-delhi": {
+    city_image_url: "https://images.unsplash.com/photo-1695667424131-a9680e0307ee?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4OTczNTh8MHwxfHNlYXJjaHwxfHxOZXclMjBEZWxoaSUyMHNreWxpbmV8ZW58MHwwfHx8MTc3NTcxMTU2MXww&ixlib=rb-4.1.0&q=80&w=1080",
+    image_author: "Richard Khuptong",
+    image_source: "unsplash",
+  },
+  "jaipur": {
+    city_image_url: "https://images.unsplash.com/photo-1599982133112-2723acedc13a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4OTczNTh8MHwxfHNlYXJjaHwxfHxKYWlwdXIlMjBza3lsaW5lfGVufDB8MHx8fDE3NzU3MTE1NjF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+    image_author: "Naman Pandey",
+    image_source: "unsplash",
+  },
 };
 
 export function getCityImage(citySlug: string): CityImageRecord | undefined {
