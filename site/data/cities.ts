@@ -94,6 +94,8 @@ export const CITIES: City[] = [
   { slug: "new-delhi", name: "New Delhi", country: "India", latitude: 28.6139, longitude: 77.209 },
   { slug: "jaipur", name: "Jaipur", country: "India", latitude: 26.9124, longitude: 75.7873 },
   { slug: "agra", name: "Agra", country: "India", latitude: 27.1767, longitude: 78.0081 },
+  { slug: "goa", name: "Goa", country: "India", latitude: 15.2993, longitude: 74.124 },
+  { slug: "kathmandu", name: "Kathmandu", country: "Nepal", latitude: 27.7172, longitude: 85.324 },
 ];
 
 export function getCityBySlug(slug: string): City | undefined {

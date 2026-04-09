@@ -94,6 +94,8 @@ export const citySeoIntros: CitySeoIntros = {
   "new-delhi": "Discover the best tours in New Delhi, from food walks to historical explorations led by local guides.",
   "jaipur": "Discover the best tours in Jaipur, from food walks to historical explorations led by local guides.",
   "agra": "Discover the best tours in Agra, from food walks to historical explorations led by local guides.",
+  "goa": "Discover the best tours in Goa, from food walks to historical explorations led by local guides.",
+  "kathmandu": "Discover the best tours in Kathmandu, from food walks to historical explorations led by local guides.",
 };
 
 export function getCitySeoIntro(citySlug: string, cityName: string): string {

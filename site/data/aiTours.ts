@@ -1991,6 +1991,50 @@ export const aiTours: CityToursMap = {
       description: "Experience neighborhood rhythms, architecture, and local culture in Agra.",
     },
   ],
+  "goa": [
+    {
+      title: "Goa Private Discovery Route",
+      duration: "3 hours",
+      description: "A curated route through signature areas and hidden gems in Goa.",
+    },
+    {
+      title: "Goa Culture and Street Life",
+      duration: "3.5 hours",
+      description: "Experience neighborhood rhythms, architecture, and local culture in Goa.",
+    },
+    {
+      title: "Hidden Corners of Goa",
+      duration: "2.5 hours",
+      description: "Explore lesser-known neighborhoods and stories that show the local side of Goa.",
+    },
+    {
+      title: "Goa Sunset Viewpoints",
+      duration: "2 hours",
+      description: "Visit scenic viewpoints and photogenic routes around Goa at golden hour.",
+    },
+  ],
+  "kathmandu": [
+    {
+      title: "Kathmandu Food and Markets Walk",
+      duration: "3 hours",
+      description: "Discover local flavors and market culture in Kathmandu with curated tasting stops.",
+    },
+    {
+      title: "Kathmandu Sunset Viewpoints",
+      duration: "2 hours",
+      description: "Visit scenic viewpoints and photogenic routes around Kathmandu at golden hour.",
+    },
+    {
+      title: "Kathmandu Culture and Street Life",
+      duration: "3.5 hours",
+      description: "Experience neighborhood rhythms, architecture, and local culture in Kathmandu.",
+    },
+    {
+      title: "Kathmandu History Highlights",
+      duration: "2 hours",
+      description: "Walk through key landmarks and historical moments that shaped Kathmandu.",
+    },
+  ],
 };
 
 export function getAiToursByCity(citySlug: string): CuratedTour[] {
