@@ -2035,6 +2035,28 @@ export const aiTours: CityToursMap = {
       description: "Walk through key landmarks and historical moments that shaped Kathmandu.",
     },
   ],
+  "colombo": [
+    {
+      title: "Colombo Culture and Street Life",
+      duration: "3.5 hours",
+      description: "Experience neighborhood rhythms, architecture, and local culture in Colombo.",
+    },
+    {
+      title: "Colombo History Highlights",
+      duration: "2 hours",
+      description: "Walk through key landmarks and historical moments that shaped Colombo.",
+    },
+    {
+      title: "Hidden Corners of Colombo",
+      duration: "2.5 hours",
+      description: "Explore lesser-known neighborhoods and stories that show the local side of Colombo.",
+    },
+    {
+      title: "Colombo Sunset Viewpoints",
+      duration: "2 hours",
+      description: "Visit scenic viewpoints and photogenic routes around Colombo at golden hour.",
+    },
+  ],
 };
 
 export function getAiToursByCity(citySlug: string): CuratedTour[] {
