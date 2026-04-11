@@ -476,6 +476,11 @@ export const CITY_IMAGE_MAP: Record<string, CityImageRecord> = {
     image_author: "Dmitriy Sarychev",
     image_source: "unsplash",
   },
+  "male": {
+    city_image_url: "https://images.unsplash.com/photo-1633223831274-5b3cf2221715?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4OTczNTh8MHwxfHNlYXJjaHwxfHxNYWxlJTIwc2t5bGluZXxlbnwwfDB8fHwxNzc1ODg1Mzc2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+    image_author: "Nima Motaghian Nejad",
+    image_source: "unsplash",
+  },
 };
 
 export function getCityImage(citySlug: string): CityImageRecord | undefined {
