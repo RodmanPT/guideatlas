@@ -481,6 +481,16 @@ export const CITY_IMAGE_MAP: Record<string, CityImageRecord> = {
     image_author: "Nima Motaghian Nejad",
     image_source: "unsplash",
   },
+  "singapore": {
+    city_image_url: "https://images.unsplash.com/flagged/photo-1562503542-2a1e6f03b16b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4OTczNTh8MHwxfHNlYXJjaHwxfHxTaW5nYXBvcmUlMjBza3lsaW5lfGVufDB8MHx8fDE3NzU5NzE2OTB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+    image_author: "Swapnil Bapat",
+    image_source: "unsplash",
+  },
+  "kuala-lumpur": {
+    city_image_url: "https://images.unsplash.com/photo-1620735672554-78d140f81ee0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4OTczNTh8MHwxfHNlYXJjaHwxfHxLdWFsYSUyMEx1bXB1ciUyMHNreWxpbmV8ZW58MHwwfHx8MTc3NTk3MTY5MXww&ixlib=rb-4.1.0&q=80&w=1080",
+    image_author: "Yusdi Hassan",
+    image_source: "unsplash",
+  },
 };
 
 export function getCityImage(citySlug: string): CityImageRecord | undefined {

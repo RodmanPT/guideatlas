@@ -98,6 +98,8 @@ export const CITIES: City[] = [
   { slug: "kathmandu", name: "Kathmandu", country: "Nepal", latitude: 27.7172, longitude: 85.324 },
   { slug: "colombo", name: "Colombo", country: "Sri Lanka", latitude: 6.9271, longitude: 79.8612 },
   { slug: "male", name: "Male", country: "Maldives", latitude: 4.1755, longitude: 73.5093 },
+  { slug: "singapore", name: "Singapore", country: "Singapore", latitude: 1.3521, longitude: 103.8198 },
+  { slug: "kuala-lumpur", name: "Kuala Lumpur", country: "Malaysia", latitude: 3.139, longitude: 101.6869 },
 ];
 
 export function getCityBySlug(slug: string): City | undefined {

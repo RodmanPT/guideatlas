@@ -2079,6 +2079,50 @@ export const aiTours: CityToursMap = {
       description: "A curated route through signature areas and hidden gems in Male.",
     },
   ],
+  "singapore": [
+    {
+      title: "Singapore Private Discovery Route",
+      duration: "3 hours",
+      description: "A curated route through signature areas and hidden gems in Singapore.",
+    },
+    {
+      title: "Hidden Corners of Singapore",
+      duration: "2.5 hours",
+      description: "Explore lesser-known neighborhoods and stories that show the local side of Singapore.",
+    },
+    {
+      title: "Singapore Sunset Viewpoints",
+      duration: "2 hours",
+      description: "Visit scenic viewpoints and photogenic routes around Singapore at golden hour.",
+    },
+  ],
+  "kuala-lumpur": [
+    {
+      title: "Kuala Lumpur Food and Markets Walk",
+      duration: "3 hours",
+      description: "Discover local flavors and market culture in Kuala Lumpur with curated tasting stops.",
+    },
+    {
+      title: "Kuala Lumpur History Highlights",
+      duration: "2 hours",
+      description: "Walk through key landmarks and historical moments that shaped Kuala Lumpur.",
+    },
+    {
+      title: "Kuala Lumpur Sunset Viewpoints",
+      duration: "2 hours",
+      description: "Visit scenic viewpoints and photogenic routes around Kuala Lumpur at golden hour.",
+    },
+    {
+      title: "Hidden Corners of Kuala Lumpur",
+      duration: "2.5 hours",
+      description: "Explore lesser-known neighborhoods and stories that show the local side of Kuala Lumpur.",
+    },
+    {
+      title: "Kuala Lumpur Culture and Street Life",
+      duration: "3.5 hours",
+      description: "Experience neighborhood rhythms, architecture, and local culture in Kuala Lumpur.",
+    },
+  ],
 };
 
 export function getAiToursByCity(citySlug: string): CuratedTour[] {
