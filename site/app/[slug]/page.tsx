@@ -363,7 +363,7 @@ export default async function CityToursPage({ params }: PageProps) {
             <p>Published by independent local guides.</p>
           </div>
           <div className="tourGrid">
-            {realCityTours.map((tour) => (
+            {realCityTours.map((tour, index) => (
               <TourCard
                 key={tour.id}
                 badge="Guide Tour"
@@ -373,8 +373,9 @@ export default async function CityToursPage({ params }: PageProps) {
                 groupLabel={tour.price}
                 description={`${tour.description} Meeting point: ${tour.meeting_point}.`}
                 href={`/guides/${tour.guide_slug}`}
-                actionLabel="View guide profile"
+                actionLabel={`View ${tour.guide_name}'s Profile`}
                 imageSrc={getCityImageUrl(city!.slug)}
+                priority={index < 4}
               />
             ))}
           </div>
@@ -413,7 +414,7 @@ export default async function CityToursPage({ params }: PageProps) {
             <p>AI curated itineraries shown while local guide tours are still launching.</p>
           </div>
           <div className="aiTourGrid">
-            {aiSuggestedTours.map((tour) => (
+            {aiSuggestedTours.map((tour, index) => (
               <TourCard
                 key={tour.title}
                 badge="AI Curated"
@@ -424,6 +425,7 @@ export default async function CityToursPage({ params }: PageProps) {
                 href={`/become-guide?city=${encodeURIComponent(city!.name)}&tour=${encodeURIComponent(tour.title)}`}
                 actionLabel="Claim this tour"
                 imageSrc={getCityImageUrl(city!.slug)}
+                priority={index < 4}
               />
             ))}
           </div>
@@ -536,13 +538,14 @@ export default async function CityToursPage({ params }: PageProps) {
         <section className="section" aria-label={`Explore tours in other cities from ${city!.name}`}>
           <h2>Explore tours in other cities</h2>
           <div className="destinationGrid">
-            {relatedCities.map((relatedCity) => (
+            {relatedCities.map((relatedCity, index) => (
               <DestinationCard
                 key={relatedCity.slug}
                 href={getCityToursUrl(relatedCity.slug)}
                 citySlug={relatedCity.slug}
                 cityName={relatedCity.name}
                 country={relatedCity.country}
+                priority={index < 4}
               />
             ))}
           </div>

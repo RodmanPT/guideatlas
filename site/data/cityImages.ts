@@ -491,6 +491,21 @@ export const CITY_IMAGE_MAP: Record<string, CityImageRecord> = {
     image_author: "Yusdi Hassan",
     image_source: "unsplash",
   },
+  "penang": {
+    city_image_url: "https://images.unsplash.com/photo-1565880429899-dade69d11f68?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4OTczNTh8MHwxfHNlYXJjaHwxfHxQZW5hbmclMjBza3lsaW5lfGVufDB8MHx8fDE3NzYwNTc5Nzl8MA&ixlib=rb-4.1.0&q=80&w=1080",
+    image_author: "Roberto Reposo",
+    image_source: "unsplash",
+  },
+  "ho-chi-minh-city": {
+    city_image_url: "https://images.unsplash.com/photo-1592114631383-89cafc376ba5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4OTczNTh8MHwxfHNlYXJjaHwxfHxIbyUyMENoaSUyME1pbmglMjBDaXR5JTIwc2t5bGluZXxlbnwwfDB8fHwxNzc2MDU4MzA2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+    image_author: "CreateTravel.tv",
+    image_source: "unsplash",
+  },
+  "hanoi": {
+    city_image_url: "https://images.unsplash.com/photo-1509030450996-dd1a26dda07a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4OTczNTh8MHwxfHNlYXJjaHwxfHxIYW5vaSUyMHNreWxpbmV8ZW58MHwwfHx8MTc3NjA1ODMwNnww&ixlib=rb-4.1.0&q=80&w=1080",
+    image_author: "Minh Luu (Minhluu.com & AA+Photography)",
+    image_source: "unsplash",
+  },
 };
 
 export function getCityImage(citySlug: string): CityImageRecord | undefined {
