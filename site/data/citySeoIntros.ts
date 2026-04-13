@@ -101,6 +101,8 @@ export const citySeoIntros: CitySeoIntros = {
   "singapore": "Discover the best tours in Singapore, from food walks to historical explorations led by local guides.",
   "kuala-lumpur": "Discover the best tours in Kuala Lumpur, from food walks to historical explorations led by local guides.",
   "penang": "Discover the best tours in Penang, from food walks to historical explorations led by local guides.",
+  "ho-chi-minh-city": "Discover the best tours in Ho Chi Minh City, from food walks to historical explorations led by local guides.",
+  "hanoi": "Discover the best tours in Hanoi, from food walks to historical explorations led by local guides.",
 };
 
 export function getCitySeoIntro(citySlug: string, cityName: string): string {
