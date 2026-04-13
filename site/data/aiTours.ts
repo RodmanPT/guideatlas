@@ -2123,6 +2123,23 @@ export const aiTours: CityToursMap = {
       description: "Experience neighborhood rhythms, architecture, and local culture in Kuala Lumpur.",
     },
   ],
+  "penang": [
+    {
+      title: "Hidden Corners of Penang",
+      duration: "2.5 hours",
+      description: "Explore lesser-known neighborhoods and stories that show the local side of Penang.",
+    },
+    {
+      title: "Penang Sunset Viewpoints",
+      duration: "2 hours",
+      description: "Visit scenic viewpoints and photogenic routes around Penang at golden hour.",
+    },
+    {
+      title: "Penang Culture and Street Life",
+      duration: "3.5 hours",
+      description: "Experience neighborhood rhythms, architecture, and local culture in Penang.",
+    },
+  ],
 };
 
 export function getAiToursByCity(citySlug: string): CuratedTour[] {
