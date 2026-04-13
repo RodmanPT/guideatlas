@@ -103,7 +103,7 @@ export default async function GuideProfilePage({ params }: PageProps) {
         </div>
         {guideTours.length ? (
           <div className="tourGrid">
-            {guideTours.map((tour) => (
+            {guideTours.map((tour, index) => (
               <TourCard
                 key={tour.id}
                 badge="Guide Tour"
@@ -113,6 +113,7 @@ export default async function GuideProfilePage({ params }: PageProps) {
                 groupLabel={tour.price}
                 description={`${tour.description} Meeting point: ${tour.meeting_point}.`}
                 imageSrc={getCityImageUrl(citySlug)}
+                priority={index < 4}
               />
             ))}
           </div>
