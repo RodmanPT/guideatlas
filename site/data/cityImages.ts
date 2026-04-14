@@ -506,6 +506,11 @@ export const CITY_IMAGE_MAP: Record<string, CityImageRecord> = {
     image_author: "Minh Luu (Minhluu.com & AA+Photography)",
     image_source: "unsplash",
   },
+  "da-nang": {
+    city_image_url: "https://images.unsplash.com/photo-1737423808372-37f1f5bcc387?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4OTczNTh8MHwxfHNlYXJjaHwxfHxEYSUyME5hbmclMjBza3lsaW5lfGVufDB8MHx8fDE3NzYxNDM5MDl8MA&ixlib=rb-4.1.0&q=80&w=1080",
+    image_author: "Igor Savelev",
+    image_source: "unsplash",
+  },
 };
 
 export function getCityImage(citySlug: string): CityImageRecord | undefined {
