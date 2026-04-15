@@ -521,6 +521,16 @@ export const CITY_IMAGE_MAP: Record<string, CityImageRecord> = {
     image_author: "Siborey Sean",
     image_source: "unsplash",
   },
+  "luang-prabang": {
+    city_image_url: "https://images.unsplash.com/photo-1773643331861-96242b012c3f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4OTczNTh8MHwxfHNlYXJjaHwxfHxMdWFuZyUyMFByYWJhbmclMjBza3lsaW5lfGVufDB8MHx8fDE3NzYyMjk0OTh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+    image_author: "Onin Elijorde",
+    image_source: "unsplash",
+  },
+  "jakarta": {
+    city_image_url: "https://images.unsplash.com/photo-1679239108020-aca50acd5f00?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4OTczNTh8MHwxfHNlYXJjaHwxfHxKYWthcnRhJTIwc2t5bGluZXxlbnwwfDB8fHwxNzc2MjI5NDk4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+    image_author: "Rafli Raihan",
+    image_source: "unsplash",
+  },
 };
 
 export function getCityImage(citySlug: string): CityImageRecord | undefined {
