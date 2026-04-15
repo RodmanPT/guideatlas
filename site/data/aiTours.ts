@@ -2255,6 +2255,50 @@ export const aiTours: CityToursMap = {
       description: "Discover local flavors and market culture in Phnom Penh with curated tasting stops.",
     },
   ],
+  "luang-prabang": [
+    {
+      title: "Luang Prabang Culture and Street Life",
+      duration: "3.5 hours",
+      description: "Experience neighborhood rhythms, architecture, and local culture in Luang Prabang.",
+    },
+    {
+      title: "Luang Prabang Sunset Viewpoints",
+      duration: "2 hours",
+      description: "Visit scenic viewpoints and photogenic routes around Luang Prabang at golden hour.",
+    },
+    {
+      title: "Hidden Corners of Luang Prabang",
+      duration: "2.5 hours",
+      description: "Explore lesser-known neighborhoods and stories that show the local side of Luang Prabang.",
+    },
+  ],
+  "jakarta": [
+    {
+      title: "Hidden Corners of Jakarta",
+      duration: "2.5 hours",
+      description: "Explore lesser-known neighborhoods and stories that show the local side of Jakarta.",
+    },
+    {
+      title: "Jakarta Food and Markets Walk",
+      duration: "3 hours",
+      description: "Discover local flavors and market culture in Jakarta with curated tasting stops.",
+    },
+    {
+      title: "Jakarta Sunset Viewpoints",
+      duration: "2 hours",
+      description: "Visit scenic viewpoints and photogenic routes around Jakarta at golden hour.",
+    },
+    {
+      title: "Jakarta Culture and Street Life",
+      duration: "3.5 hours",
+      description: "Experience neighborhood rhythms, architecture, and local culture in Jakarta.",
+    },
+    {
+      title: "Jakarta Private Discovery Route",
+      duration: "3 hours",
+      description: "A curated route through signature areas and hidden gems in Jakarta.",
+    },
+  ],
 };
 
 export function getAiToursByCity(citySlug: string): CuratedTour[] {

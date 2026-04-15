@@ -106,6 +106,8 @@ export const CITIES: City[] = [
   { slug: "da-nang", name: "Da Nang", country: "Vietnam", latitude: 16.0544, longitude: 108.2022 },
   { slug: "siem-reap", name: "Siem Reap", country: "Cambodia", latitude: 13.3671, longitude: 103.8448 },
   { slug: "phnom-penh", name: "Phnom Penh", country: "Cambodia", latitude: 11.5564, longitude: 104.9282 },
+  { slug: "luang-prabang", name: "Luang Prabang", country: "Laos", latitude: 19.8856, longitude: 102.1347 },
+  { slug: "jakarta", name: "Jakarta", country: "Indonesia", latitude: -6.2088, longitude: 106.8456 },
 ];
 
 export function getCityBySlug(slug: string): City | undefined {
