@@ -13,13 +13,14 @@ export default function GuideToursGrid({ tours }: Props) {
         <p>Demo content to show how published tours can appear on a guide profile.</p>
       </div>
       <div className="guideToursGrid">
-        {tours.map((tour) => (
+        {tours.map((tour, index) => (
           <GuideTourCard
             key={tour.id}
             title={tour.title}
             duration={tour.duration}
             subtitle={tour.subtitle}
             imageUrl={tour.imageUrl}
+            priority={index < 4}
           />
         ))}
       </div>
