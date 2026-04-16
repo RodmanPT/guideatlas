@@ -2299,6 +2299,60 @@ export const aiTours: CityToursMap = {
       description: "A curated route through signature areas and hidden gems in Jakarta.",
     },
   ],
+  "bali": [
+    {
+      title: "Bali Private Discovery Route",
+      duration: "3 hours",
+      description: "A curated route through signature areas and hidden gems in Bali.",
+    },
+    {
+      title: "Bali Food and Markets Walk",
+      duration: "3 hours",
+      description: "Discover local flavors and market culture in Bali with curated tasting stops.",
+    },
+    {
+      title: "Bali Culture and Street Life",
+      duration: "3.5 hours",
+      description: "Experience neighborhood rhythms, architecture, and local culture in Bali.",
+    },
+    {
+      title: "Hidden Corners of Bali",
+      duration: "2.5 hours",
+      description: "Explore lesser-known neighborhoods and stories that show the local side of Bali.",
+    },
+    {
+      title: "Bali History Highlights",
+      duration: "2 hours",
+      description: "Walk through key landmarks and historical moments that shaped Bali.",
+    },
+  ],
+  "yogyakarta": [
+    {
+      title: "Yogyakarta History Highlights",
+      duration: "2 hours",
+      description: "Walk through key landmarks and historical moments that shaped Yogyakarta.",
+    },
+    {
+      title: "Yogyakarta Private Discovery Route",
+      duration: "3 hours",
+      description: "A curated route through signature areas and hidden gems in Yogyakarta.",
+    },
+    {
+      title: "Hidden Corners of Yogyakarta",
+      duration: "2.5 hours",
+      description: "Explore lesser-known neighborhoods and stories that show the local side of Yogyakarta.",
+    },
+    {
+      title: "Yogyakarta Culture and Street Life",
+      duration: "3.5 hours",
+      description: "Experience neighborhood rhythms, architecture, and local culture in Yogyakarta.",
+    },
+    {
+      title: "Yogyakarta Sunset Viewpoints",
+      duration: "2 hours",
+      description: "Visit scenic viewpoints and photogenic routes around Yogyakarta at golden hour.",
+    },
+  ],
 };
 
 export function getAiToursByCity(citySlug: string): CuratedTour[] {
