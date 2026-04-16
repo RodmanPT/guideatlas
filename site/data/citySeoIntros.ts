@@ -108,6 +108,8 @@ export const citySeoIntros: CitySeoIntros = {
   "phnom-penh": "Discover the best tours in Phnom Penh, from food walks to historical explorations led by local guides.",
   "luang-prabang": "Discover the best tours in Luang Prabang, from food walks to historical explorations led by local guides.",
   "jakarta": "Discover the best tours in Jakarta, from food walks to historical explorations led by local guides.",
+  "bali": "Discover the best tours in Bali, from food walks to historical explorations led by local guides.",
+  "yogyakarta": "Discover the best tours in Yogyakarta, from food walks to historical explorations led by local guides.",
 };
 
 export function getCitySeoIntro(citySlug: string, cityName: string): string {
