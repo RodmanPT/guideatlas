@@ -1,6 +1,6 @@
 # GuideAtlas
 
-GuideAtlas is the foundation of a platform connecting travelers with independent local guides offering authentic tours.
+A simple platform to discover and book local guides for authentic tours.
 
 ## Repository Structure
 
