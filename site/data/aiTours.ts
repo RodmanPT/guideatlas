@@ -2353,6 +2353,50 @@ export const aiTours: CityToursMap = {
       description: "Visit scenic viewpoints and photogenic routes around Yogyakarta at golden hour.",
     },
   ],
+  "manila": [
+    {
+      title: "Manila Culture and Street Life",
+      duration: "3.5 hours",
+      description: "Experience neighborhood rhythms, architecture, and local culture in Manila.",
+    },
+    {
+      title: "Manila Sunset Viewpoints",
+      duration: "2 hours",
+      description: "Visit scenic viewpoints and photogenic routes around Manila at golden hour.",
+    },
+    {
+      title: "Manila History Highlights",
+      duration: "2 hours",
+      description: "Walk through key landmarks and historical moments that shaped Manila.",
+    },
+    {
+      title: "Manila Private Discovery Route",
+      duration: "3 hours",
+      description: "A curated route through signature areas and hidden gems in Manila.",
+    },
+  ],
+  "cebu-city": [
+    {
+      title: "Hidden Corners of Cebu City",
+      duration: "2.5 hours",
+      description: "Explore lesser-known neighborhoods and stories that show the local side of Cebu City.",
+    },
+    {
+      title: "Cebu City Sunset Viewpoints",
+      duration: "2 hours",
+      description: "Visit scenic viewpoints and photogenic routes around Cebu City at golden hour.",
+    },
+    {
+      title: "Cebu City Culture and Street Life",
+      duration: "3.5 hours",
+      description: "Experience neighborhood rhythms, architecture, and local culture in Cebu City.",
+    },
+    {
+      title: "Cebu City Food and Markets Walk",
+      duration: "3 hours",
+      description: "Discover local flavors and market culture in Cebu City with curated tasting stops.",
+    },
+  ],
 };
 
 export function getAiToursByCity(citySlug: string): CuratedTour[] {
