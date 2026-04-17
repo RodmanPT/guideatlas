@@ -541,6 +541,16 @@ export const CITY_IMAGE_MAP: Record<string, CityImageRecord> = {
     image_author: "Anges Kei",
     image_source: "unsplash",
   },
+  "manila": {
+    city_image_url: "https://images.unsplash.com/photo-1501890664351-4ef399c1524f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4OTczNTh8MHwxfHNlYXJjaHwxfHxNYW5pbGElMjBza3lsaW5lfGVufDB8MHx8fDE3NzY0MDIzNzV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+    image_author: "Andrey Andreyev",
+    image_source: "unsplash",
+  },
+  "cebu-city": {
+    city_image_url: "https://images.unsplash.com/photo-1701705994021-b21330a838a0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4OTczNTh8MHwxfHNlYXJjaHwxfHxDZWJ1JTIwQ2l0eSUyMHNreWxpbmV8ZW58MHwwfHx8MTc3NjQwMjM3NXww&ixlib=rb-4.1.0&q=80&w=1080",
+    image_author: "Jaye Hernandez",
+    image_source: "unsplash",
+  },
 };
 
 export function getCityImage(citySlug: string): CityImageRecord | undefined {
