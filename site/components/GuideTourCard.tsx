@@ -5,9 +5,10 @@ type Props = {
   duration: string;
   subtitle: string;
   imageUrl: string;
+  priority?: boolean;
 };
 
-export default function GuideTourCard({ title, duration, subtitle, imageUrl }: Props) {
+export default function GuideTourCard({ title, duration, subtitle, imageUrl, priority }: Props) {
   return (
     <article className="guideTourCard card">
       <div className="guideTourImageWrap" aria-hidden="true">
@@ -17,6 +18,7 @@ export default function GuideTourCard({ title, duration, subtitle, imageUrl }: P
           fill
           className="guideTourImage"
           sizes="(max-width: 760px) 100vw, (max-width: 1200px) 50vw, 33vw"
+          priority={priority}
         />
       </div>
       <div className="guideTourBody">
