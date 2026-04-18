@@ -112,6 +112,7 @@ export const CITIES: City[] = [
   { slug: "yogyakarta", name: "Yogyakarta", country: "Indonesia", latitude: -7.7956, longitude: 110.3695 },
   { slug: "manila", name: "Manila", country: "Philippines", latitude: 14.5995, longitude: 120.9842 },
   { slug: "cebu-city", name: "Cebu City", country: "Philippines", latitude: 10.3157, longitude: 123.8854 },
+  { slug: "hong-kong", name: "Hong Kong", country: "China", latitude: 22.3193, longitude: 114.1694 },
 ];
 
 export function getCityBySlug(slug: string): City | undefined {
