@@ -551,6 +551,11 @@ export const CITY_IMAGE_MAP: Record<string, CityImageRecord> = {
     image_author: "Jaye Hernandez",
     image_source: "unsplash",
   },
+  "hong-kong": {
+    city_image_url: "https://images.unsplash.com/photo-1532455935509-eb76842cee50?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4OTczNTh8MHwxfHNlYXJjaHwxfHxIb25nJTIwS29uZyUyMHNreWxpbmV8ZW58MHwwfHx8MTc3NjQ5MDIwOHww&ixlib=rb-4.1.0&q=80&w=1080",
+    image_author: "bady abbas",
+    image_source: "unsplash",
+  },
 };
 
 export function getCityImage(citySlug: string): CityImageRecord | undefined {

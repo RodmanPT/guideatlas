@@ -2397,6 +2397,33 @@ export const aiTours: CityToursMap = {
       description: "Discover local flavors and market culture in Cebu City with curated tasting stops.",
     },
   ],
+  "hong-kong": [
+    {
+      title: "Hidden Corners of Hong Kong",
+      duration: "2.5 hours",
+      description: "Explore lesser-known neighborhoods and stories that show the local side of Hong Kong.",
+    },
+    {
+      title: "Hong Kong Food and Markets Walk",
+      duration: "3 hours",
+      description: "Discover local flavors and market culture in Hong Kong with curated tasting stops.",
+    },
+    {
+      title: "Hong Kong Private Discovery Route",
+      duration: "3 hours",
+      description: "A curated route through signature areas and hidden gems in Hong Kong.",
+    },
+    {
+      title: "Hong Kong Sunset Viewpoints",
+      duration: "2 hours",
+      description: "Visit scenic viewpoints and photogenic routes around Hong Kong at golden hour.",
+    },
+    {
+      title: "Hong Kong History Highlights",
+      duration: "2 hours",
+      description: "Walk through key landmarks and historical moments that shaped Hong Kong.",
+    },
+  ],
 };
 
 export function getAiToursByCity(citySlug: string): CuratedTour[] {
