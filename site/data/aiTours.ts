@@ -2424,6 +2424,50 @@ export const aiTours: CityToursMap = {
       description: "Walk through key landmarks and historical moments that shaped Hong Kong.",
     },
   ],
+  "macau": [
+    {
+      title: "Hidden Corners of Macau",
+      duration: "2.5 hours",
+      description: "Explore lesser-known neighborhoods and stories that show the local side of Macau.",
+    },
+    {
+      title: "Macau Private Discovery Route",
+      duration: "3 hours",
+      description: "A curated route through signature areas and hidden gems in Macau.",
+    },
+    {
+      title: "Macau Culture and Street Life",
+      duration: "3.5 hours",
+      description: "Experience neighborhood rhythms, architecture, and local culture in Macau.",
+    },
+    {
+      title: "Macau History Highlights",
+      duration: "2 hours",
+      description: "Walk through key landmarks and historical moments that shaped Macau.",
+    },
+    {
+      title: "Macau Food and Markets Walk",
+      duration: "3 hours",
+      description: "Discover local flavors and market culture in Macau with curated tasting stops.",
+    },
+  ],
+  "beijing": [
+    {
+      title: "Hidden Corners of Beijing",
+      duration: "2.5 hours",
+      description: "Explore lesser-known neighborhoods and stories that show the local side of Beijing.",
+    },
+    {
+      title: "Beijing Private Discovery Route",
+      duration: "3 hours",
+      description: "A curated route through signature areas and hidden gems in Beijing.",
+    },
+    {
+      title: "Beijing History Highlights",
+      duration: "2 hours",
+      description: "Walk through key landmarks and historical moments that shaped Beijing.",
+    },
+  ],
 };
 
 export function getAiToursByCity(citySlug: string): CuratedTour[] {
