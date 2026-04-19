@@ -556,6 +556,16 @@ export const CITY_IMAGE_MAP: Record<string, CityImageRecord> = {
     image_author: "bady abbas",
     image_source: "unsplash",
   },
+  "macau": {
+    city_image_url: "https://images.unsplash.com/photo-1516037551965-fadf81e1bcc3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4OTczNTh8MHwxfHNlYXJjaHwxfHxNYWNhdSUyMHNreWxpbmV8ZW58MHwwfHx8MTc3NjU3NDkwM3ww&ixlib=rb-4.1.0&q=80&w=1080",
+    image_author: "Wojciech Portnicki",
+    image_source: "unsplash",
+  },
+  "beijing": {
+    city_image_url: "https://images.unsplash.com/photo-1708660367433-01261c964b8d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4OTczNTh8MHwxfHNlYXJjaHwxfHxCZWlqaW5nJTIwc2t5bGluZXxlbnwwfDB8fHwxNzc2NTc0OTA0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+    image_author: "chen zy",
+    image_source: "unsplash",
+  },
 };
 
 export function getCityImage(citySlug: string): CityImageRecord | undefined {
