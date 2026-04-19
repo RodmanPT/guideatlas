@@ -11,6 +11,7 @@ type TourCardProps = {
   href?: string;
   actionLabel?: string;
   imageSrc?: string;
+  priority?: boolean;
 };
 
 export default function TourCard({
@@ -23,6 +24,7 @@ export default function TourCard({
   href,
   actionLabel,
   imageSrc,
+  priority,
 }: TourCardProps) {
   return (
     <article className="tourCard">
@@ -31,6 +33,7 @@ export default function TourCard({
           src={imageSrc ?? "/images/tour-placeholder.svg"}
           alt=""
           fill
+          priority={priority}
           sizes="(max-width: 760px) 100vw, (max-width: 1200px) 50vw, 33vw"
           className="tourCardImage"
         />
