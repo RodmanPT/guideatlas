@@ -115,6 +115,8 @@ export const citySeoIntros: CitySeoIntros = {
   "hong-kong": "Discover the best tours in Hong Kong, from food walks to historical explorations led by local guides.",
   "macau": "Discover the best tours in Macau, from food walks to historical explorations led by local guides.",
   "beijing": "Discover the best tours in Beijing, from food walks to historical explorations led by local guides.",
+  "shanghai": "Discover the best tours in Shanghai, from food walks to historical explorations led by local guides.",
+  "xian": "Discover the best tours in Xian, from food walks to historical explorations led by local guides.",
 };
 
 export function getCitySeoIntro(citySlug: string, cityName: string): string {

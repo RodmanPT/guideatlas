@@ -2468,6 +2468,60 @@ export const aiTours: CityToursMap = {
       description: "Walk through key landmarks and historical moments that shaped Beijing.",
     },
   ],
+  "shanghai": [
+    {
+      title: "Shanghai Sunset Viewpoints",
+      duration: "2 hours",
+      description: "Visit scenic viewpoints and photogenic routes around Shanghai at golden hour.",
+    },
+    {
+      title: "Shanghai Culture and Street Life",
+      duration: "3.5 hours",
+      description: "Experience neighborhood rhythms, architecture, and local culture in Shanghai.",
+    },
+    {
+      title: "Shanghai Food and Markets Walk",
+      duration: "3 hours",
+      description: "Discover local flavors and market culture in Shanghai with curated tasting stops.",
+    },
+    {
+      title: "Shanghai History Highlights",
+      duration: "2 hours",
+      description: "Walk through key landmarks and historical moments that shaped Shanghai.",
+    },
+    {
+      title: "Hidden Corners of Shanghai",
+      duration: "2.5 hours",
+      description: "Explore lesser-known neighborhoods and stories that show the local side of Shanghai.",
+    },
+  ],
+  "xian": [
+    {
+      title: "Xian Culture and Street Life",
+      duration: "3.5 hours",
+      description: "Experience neighborhood rhythms, architecture, and local culture in Xian.",
+    },
+    {
+      title: "Xian History Highlights",
+      duration: "2 hours",
+      description: "Walk through key landmarks and historical moments that shaped Xian.",
+    },
+    {
+      title: "Hidden Corners of Xian",
+      duration: "2.5 hours",
+      description: "Explore lesser-known neighborhoods and stories that show the local side of Xian.",
+    },
+    {
+      title: "Xian Food and Markets Walk",
+      duration: "3 hours",
+      description: "Discover local flavors and market culture in Xian with curated tasting stops.",
+    },
+    {
+      title: "Xian Sunset Viewpoints",
+      duration: "2 hours",
+      description: "Visit scenic viewpoints and photogenic routes around Xian at golden hour.",
+    },
+  ],
 };
 
 export function getAiToursByCity(citySlug: string): CuratedTour[] {
