@@ -115,6 +115,8 @@ export const CITIES: City[] = [
   { slug: "hong-kong", name: "Hong Kong", country: "China", latitude: 22.3193, longitude: 114.1694 },
   { slug: "macau", name: "Macau", country: "China", latitude: 22.1987, longitude: 113.5439 },
   { slug: "beijing", name: "Beijing", country: "China", latitude: 39.9042, longitude: 116.4074 },
+  { slug: "shanghai", name: "Shanghai", country: "China", latitude: 31.2304, longitude: 121.4737 },
+  { slug: "xian", name: "Xian", country: "China", latitude: 34.3416, longitude: 108.9398 },
 ];
 
 export function getCityBySlug(slug: string): City | undefined {
