@@ -576,6 +576,16 @@ export const CITY_IMAGE_MAP: Record<string, CityImageRecord> = {
     image_author: "HsinKai Tai",
     image_source: "unsplash",
   },
+  "guangzhou": {
+    city_image_url: "https://images.unsplash.com/photo-1583996829982-823143cc975a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4OTczNTh8MHwxfHNlYXJjaHwxfHxHdWFuZ3pob3UlMjBza3lsaW5lfGVufDB8MHx8fDE3NzY3NDc3NTB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+    image_author: "Loeng Lig",
+    image_source: "unsplash",
+  },
+  "kyoto": {
+    city_image_url: "https://images.unsplash.com/photo-1670737565773-dc88b610d523?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4OTczNTh8MHwxfHNlYXJjaHwxfHxLeW90byUyMHNreWxpbmV8ZW58MHwwfHx8MTc3Njc0Nzc1MXww&ixlib=rb-4.1.0&q=80&w=1080",
+    image_author: "Caleb Jack",
+    image_source: "unsplash",
+  },
 };
 
 export function getCityImage(citySlug: string): CityImageRecord | undefined {
