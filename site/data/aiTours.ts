@@ -2522,6 +2522,55 @@ export const aiTours: CityToursMap = {
       description: "Visit scenic viewpoints and photogenic routes around Xian at golden hour.",
     },
   ],
+  "guangzhou": [
+    {
+      title: "Hidden Corners of Guangzhou",
+      duration: "2.5 hours",
+      description: "Explore lesser-known neighborhoods and stories that show the local side of Guangzhou.",
+    },
+    {
+      title: "Guangzhou History Highlights",
+      duration: "2 hours",
+      description: "Walk through key landmarks and historical moments that shaped Guangzhou.",
+    },
+    {
+      title: "Guangzhou Culture and Street Life",
+      duration: "3.5 hours",
+      description: "Experience neighborhood rhythms, architecture, and local culture in Guangzhou.",
+    },
+    {
+      title: "Guangzhou Sunset Viewpoints",
+      duration: "2 hours",
+      description: "Visit scenic viewpoints and photogenic routes around Guangzhou at golden hour.",
+    },
+    {
+      title: "Guangzhou Food and Markets Walk",
+      duration: "3 hours",
+      description: "Discover local flavors and market culture in Guangzhou with curated tasting stops.",
+    },
+  ],
+  "kyoto": [
+    {
+      title: "Kyoto Private Discovery Route",
+      duration: "3 hours",
+      description: "A curated route through signature areas and hidden gems in Kyoto.",
+    },
+    {
+      title: "Kyoto Food and Markets Walk",
+      duration: "3 hours",
+      description: "Discover local flavors and market culture in Kyoto with curated tasting stops.",
+    },
+    {
+      title: "Kyoto Sunset Viewpoints",
+      duration: "2 hours",
+      description: "Visit scenic viewpoints and photogenic routes around Kyoto at golden hour.",
+    },
+    {
+      title: "Hidden Corners of Kyoto",
+      duration: "2.5 hours",
+      description: "Explore lesser-known neighborhoods and stories that show the local side of Kyoto.",
+    },
+  ],
 };
 
 export function getAiToursByCity(citySlug: string): CuratedTour[] {
