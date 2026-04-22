@@ -2571,6 +2571,50 @@ export const aiTours: CityToursMap = {
       description: "Explore lesser-known neighborhoods and stories that show the local side of Kyoto.",
     },
   ],
+  "osaka": [
+    {
+      title: "Osaka Sunset Viewpoints",
+      duration: "2 hours",
+      description: "Visit scenic viewpoints and photogenic routes around Osaka at golden hour.",
+    },
+    {
+      title: "Osaka Culture and Street Life",
+      duration: "3.5 hours",
+      description: "Experience neighborhood rhythms, architecture, and local culture in Osaka.",
+    },
+    {
+      title: "Osaka Food and Markets Walk",
+      duration: "3 hours",
+      description: "Discover local flavors and market culture in Osaka with curated tasting stops.",
+    },
+    {
+      title: "Osaka Private Discovery Route",
+      duration: "3 hours",
+      description: "A curated route through signature areas and hidden gems in Osaka.",
+    },
+  ],
+  "nara": [
+    {
+      title: "Nara Sunset Viewpoints",
+      duration: "2 hours",
+      description: "Visit scenic viewpoints and photogenic routes around Nara at golden hour.",
+    },
+    {
+      title: "Hidden Corners of Nara",
+      duration: "2.5 hours",
+      description: "Explore lesser-known neighborhoods and stories that show the local side of Nara.",
+    },
+    {
+      title: "Nara Culture and Street Life",
+      duration: "3.5 hours",
+      description: "Experience neighborhood rhythms, architecture, and local culture in Nara.",
+    },
+    {
+      title: "Nara Private Discovery Route",
+      duration: "3 hours",
+      description: "A curated route through signature areas and hidden gems in Nara.",
+    },
+  ],
 };
 
 export function getAiToursByCity(citySlug: string): CuratedTour[] {

@@ -586,6 +586,16 @@ export const CITY_IMAGE_MAP: Record<string, CityImageRecord> = {
     image_author: "Caleb Jack",
     image_source: "unsplash",
   },
+  "osaka": {
+    city_image_url: "https://images.unsplash.com/photo-1730621697678-eeb9db1c911d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4OTczNTh8MHwxfHNlYXJjaHwxfHxPc2FrYSUyMHNreWxpbmV8ZW58MHwwfHx8MTc3NjgzNTE3NHww&ixlib=rb-4.1.0&q=80&w=1080",
+    image_author: "Tsuyoshi Kozu",
+    image_source: "unsplash",
+  },
+  "nara": {
+    city_image_url: "https://images.unsplash.com/photo-1767519966878-6f5f9e105d65?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4OTczNTh8MHwxfHNlYXJjaHwxfHxOYXJhJTIwY2l0eXNjYXBlfGVufDB8MHx8fDE3NzY4MzUxNzR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+    image_author: "PJH",
+    image_source: "unsplash",
+  },
 };
 
 export function getCityImage(citySlug: string): CityImageRecord | undefined {
