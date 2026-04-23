@@ -121,6 +121,8 @@ export const CITIES: City[] = [
   { slug: "kyoto", name: "Kyoto", country: "Japan", latitude: 35.0116, longitude: 135.7681 },
   { slug: "osaka", name: "Osaka", country: "Japan", latitude: 34.6937, longitude: 135.5023 },
   { slug: "nara", name: "Nara", country: "Japan", latitude: 34.6851, longitude: 135.8048 },
+  { slug: "sapporo", name: "Sapporo", country: "Japan", latitude: 43.0618, longitude: 141.3545 },
+  { slug: "fukuoka", name: "Fukuoka", country: "Japan", latitude: 33.5904, longitude: 130.4017 },
 ];
 
 export function getCityBySlug(slug: string): City | undefined {

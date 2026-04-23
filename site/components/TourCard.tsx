@@ -11,6 +11,7 @@ type TourCardProps = {
   href?: string;
   actionLabel?: string;
   imageSrc?: string;
+  priority?: boolean;
 };
 
 export default function TourCard({
@@ -23,6 +24,7 @@ export default function TourCard({
   href,
   actionLabel,
   imageSrc,
+  priority = false,
 }: TourCardProps) {
   return (
     <article className="tourCard">
@@ -33,6 +35,7 @@ export default function TourCard({
           fill
           sizes="(max-width: 760px) 100vw, (max-width: 1200px) 50vw, 33vw"
           className="tourCardImage"
+          priority={priority}
         />
       </div>
 

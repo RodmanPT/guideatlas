@@ -2615,6 +2615,45 @@ export const aiTours: CityToursMap = {
       description: "A curated route through signature areas and hidden gems in Nara.",
     },
   ],
+  "sapporo": [
+    {
+      title: "Hidden Corners of Sapporo",
+      duration: "2.5 hours",
+      description: "Explore lesser-known neighborhoods and stories that show the local side of Sapporo.",
+    },
+    {
+      title: "Sapporo Private Discovery Route",
+      duration: "3 hours",
+      description: "A curated route through signature areas and hidden gems in Sapporo.",
+    },
+    {
+      title: "Sapporo Sunset Viewpoints",
+      duration: "2 hours",
+      description: "Visit scenic viewpoints and photogenic routes around Sapporo at golden hour.",
+    },
+  ],
+  "fukuoka": [
+    {
+      title: "Fukuoka Private Discovery Route",
+      duration: "3 hours",
+      description: "A curated route through signature areas and hidden gems in Fukuoka.",
+    },
+    {
+      title: "Hidden Corners of Fukuoka",
+      duration: "2.5 hours",
+      description: "Explore lesser-known neighborhoods and stories that show the local side of Fukuoka.",
+    },
+    {
+      title: "Fukuoka Sunset Viewpoints",
+      duration: "2 hours",
+      description: "Visit scenic viewpoints and photogenic routes around Fukuoka at golden hour.",
+    },
+    {
+      title: "Fukuoka History Highlights",
+      duration: "2 hours",
+      description: "Walk through key landmarks and historical moments that shaped Fukuoka.",
+    },
+  ],
 };
 
 export function getAiToursByCity(citySlug: string): CuratedTour[] {
