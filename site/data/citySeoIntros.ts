@@ -121,6 +121,8 @@ export const citySeoIntros: CitySeoIntros = {
   "kyoto": "Discover the best tours in Kyoto, from food walks to historical explorations led by local guides.",
   "osaka": "Discover the best tours in Osaka, from food walks to historical explorations led by local guides.",
   "nara": "Discover the best tours in Nara, from food walks to historical explorations led by local guides.",
+  "sapporo": "Discover the best tours in Sapporo, from food walks to historical explorations led by local guides.",
+  "fukuoka": "Discover the best tours in Fukuoka, from food walks to historical explorations led by local guides.",
 };
 
 export function getCitySeoIntro(citySlug: string, cityName: string): string {

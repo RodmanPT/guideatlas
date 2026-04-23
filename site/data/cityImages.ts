@@ -596,6 +596,16 @@ export const CITY_IMAGE_MAP: Record<string, CityImageRecord> = {
     image_author: "PJH",
     image_source: "unsplash",
   },
+  "sapporo": {
+    city_image_url: "https://images.unsplash.com/photo-1760444748935-3eee7cbbf7c8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4OTczNTh8MHwxfHNlYXJjaHwxfHxTYXBwb3JvJTIwc2t5bGluZXxlbnwwfDB8fHwxNzc2OTIwODU0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+    image_author: "Cuvii",
+    image_source: "unsplash",
+  },
+  "fukuoka": {
+    city_image_url: "https://images.unsplash.com/photo-1768749543016-f4b03e284e6e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4OTczNTh8MHwxfHNlYXJjaHwxfHxGdWt1b2thJTIwc2t5bGluZXxlbnwwfDB8fHwxNzc2OTIwODU0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+    image_author: "Yunosuke Sakai",
+    image_source: "unsplash",
+  },
 };
 
 export function getCityImage(citySlug: string): CityImageRecord | undefined {
