@@ -2654,6 +2654,45 @@ export const aiTours: CityToursMap = {
       description: "Walk through key landmarks and historical moments that shaped Fukuoka.",
     },
   ],
+  "taipei": [
+    {
+      title: "Taipei Private Discovery Route",
+      duration: "3 hours",
+      description: "A curated route through signature areas and hidden gems in Taipei.",
+    },
+    {
+      title: "Taipei History Highlights",
+      duration: "2 hours",
+      description: "Walk through key landmarks and historical moments that shaped Taipei.",
+    },
+    {
+      title: "Taipei Culture and Street Life",
+      duration: "3.5 hours",
+      description: "Experience neighborhood rhythms, architecture, and local culture in Taipei.",
+    },
+  ],
+  "kaohsiung": [
+    {
+      title: "Kaohsiung History Highlights",
+      duration: "2 hours",
+      description: "Walk through key landmarks and historical moments that shaped Kaohsiung.",
+    },
+    {
+      title: "Kaohsiung Sunset Viewpoints",
+      duration: "2 hours",
+      description: "Visit scenic viewpoints and photogenic routes around Kaohsiung at golden hour.",
+    },
+    {
+      title: "Hidden Corners of Kaohsiung",
+      duration: "2.5 hours",
+      description: "Explore lesser-known neighborhoods and stories that show the local side of Kaohsiung.",
+    },
+    {
+      title: "Kaohsiung Food and Markets Walk",
+      duration: "3 hours",
+      description: "Discover local flavors and market culture in Kaohsiung with curated tasting stops.",
+    },
+  ],
 };
 
 export function getAiToursByCity(citySlug: string): CuratedTour[] {
