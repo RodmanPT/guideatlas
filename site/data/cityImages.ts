@@ -606,6 +606,16 @@ export const CITY_IMAGE_MAP: Record<string, CityImageRecord> = {
     image_author: "Yunosuke Sakai",
     image_source: "unsplash",
   },
+  "taipei": {
+    city_image_url: "https://images.unsplash.com/photo-1707849701975-1589ec35aad4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4OTczNTh8MHwxfHNlYXJjaHwxfHxUYWlwZWklMjBza3lsaW5lfGVufDB8MHx8fDE3NzcwMDg1OTJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+    image_author: "Christie Chau",
+    image_source: "unsplash",
+  },
+  "kaohsiung": {
+    city_image_url: "https://images.unsplash.com/photo-1643719713418-3cb8bdabb04f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4OTczNTh8MHwxfHNlYXJjaHwxfHxLYW9oc2l1bmclMjBza3lsaW5lfGVufDB8MHx8fDE3NzcwMDg1OTN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+    image_author: "Johnson Hung",
+    image_source: "unsplash",
+  },
 };
 
 export function getCityImage(citySlug: string): CityImageRecord | undefined {

@@ -123,6 +123,8 @@ export const citySeoIntros: CitySeoIntros = {
   "nara": "Discover the best tours in Nara, from food walks to historical explorations led by local guides.",
   "sapporo": "Discover the best tours in Sapporo, from food walks to historical explorations led by local guides.",
   "fukuoka": "Discover the best tours in Fukuoka, from food walks to historical explorations led by local guides.",
+  "taipei": "Discover the best tours in Taipei, from food walks to historical explorations led by local guides.",
+  "kaohsiung": "Discover the best tours in Kaohsiung, from food walks to historical explorations led by local guides.",
 };
 
 export function getCitySeoIntro(citySlug: string, cityName: string): string {
