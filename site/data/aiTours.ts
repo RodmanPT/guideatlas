@@ -2693,6 +2693,33 @@ export const aiTours: CityToursMap = {
       description: "Discover local flavors and market culture in Kaohsiung with curated tasting stops.",
     },
   ],
+  "auckland": [
+    {
+      title: "Auckland Sunset Viewpoints",
+      duration: "2 hours",
+      description: "Visit scenic viewpoints and photogenic routes around Auckland at golden hour.",
+    },
+    {
+      title: "Auckland Culture and Street Life",
+      duration: "3.5 hours",
+      description: "Experience neighborhood rhythms, architecture, and local culture in Auckland.",
+    },
+    {
+      title: "Auckland Food and Markets Walk",
+      duration: "3 hours",
+      description: "Discover local flavors and market culture in Auckland with curated tasting stops.",
+    },
+    {
+      title: "Auckland History Highlights",
+      duration: "2 hours",
+      description: "Walk through key landmarks and historical moments that shaped Auckland.",
+    },
+    {
+      title: "Hidden Corners of Auckland",
+      duration: "2.5 hours",
+      description: "Explore lesser-known neighborhoods and stories that show the local side of Auckland.",
+    },
+  ],
 };
 
 export function getAiToursByCity(citySlug: string): CuratedTour[] {
