@@ -2720,6 +2720,23 @@ export const aiTours: CityToursMap = {
       description: "Explore lesser-known neighborhoods and stories that show the local side of Auckland.",
     },
   ],
+  "queenstown": [
+    {
+      title: "Queenstown Culture and Street Life",
+      duration: "3.5 hours",
+      description: "Experience neighborhood rhythms, architecture, and local culture in Queenstown.",
+    },
+    {
+      title: "Queenstown Sunset Viewpoints",
+      duration: "2 hours",
+      description: "Visit scenic viewpoints and photogenic routes around Queenstown at golden hour.",
+    },
+    {
+      title: "Queenstown History Highlights",
+      duration: "2 hours",
+      description: "Walk through key landmarks and historical moments that shaped Queenstown.",
+    },
+  ],
 };
 
 export function getAiToursByCity(citySlug: string): CuratedTour[] {
