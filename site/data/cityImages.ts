@@ -621,6 +621,11 @@ export const CITY_IMAGE_MAP: Record<string, CityImageRecord> = {
     image_author: "Sulthan Auliya",
     image_source: "unsplash",
   },
+  "queenstown": {
+    city_image_url: "https://images.unsplash.com/photo-1706795331036-77f5a7d47b91?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4OTczNTh8MHwxfHNlYXJjaHwxfHxRdWVlbnN0b3duJTIwc2t5bGluZXxlbnwwfDB8fHwxNzc3MTgxMzIwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+    image_author: "Sung Jin Cho",
+    image_source: "unsplash",
+  },
 };
 
 export function getCityImage(citySlug: string): CityImageRecord | undefined {

@@ -126,6 +126,7 @@ export const citySeoIntros: CitySeoIntros = {
   "taipei": "Discover the best tours in Taipei, from food walks to historical explorations led by local guides.",
   "kaohsiung": "Discover the best tours in Kaohsiung, from food walks to historical explorations led by local guides.",
   "auckland": "Discover the best tours in Auckland, from food walks to historical explorations led by local guides.",
+  "queenstown": "Discover the best tours in Queenstown, from food walks to historical explorations led by local guides.",
 };
 
 export function getCitySeoIntro(citySlug: string, cityName: string): string {
