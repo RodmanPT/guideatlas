@@ -626,6 +626,16 @@ export const CITY_IMAGE_MAP: Record<string, CityImageRecord> = {
     image_author: "Sung Jin Cho",
     image_source: "unsplash",
   },
+  "melbourne": {
+    city_image_url: "https://images.unsplash.com/photo-1595434971780-79d5c20c5090?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4OTczNTh8MHwxfHNlYXJjaHwxfHxNZWxib3VybmUlMjBza3lsaW5lfGVufDB8MHx8fDE3NzcyNjY1OTN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+    image_author: "Urlaubstracker",
+    image_source: "unsplash",
+  },
+  "brisbane": {
+    city_image_url: "https://images.unsplash.com/photo-1548661625-a30d197ce439?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4OTczNTh8MHwxfHNlYXJjaHwxfHxCcmlzYmFuZSUyMHNreWxpbmV8ZW58MHwwfHx8MTc3NzI2NjU5M3ww&ixlib=rb-4.1.0&q=80&w=1080",
+    image_author: "Brisbane Local Marketing",
+    image_source: "unsplash",
+  },
 };
 
 export function getCityImage(citySlug: string): CityImageRecord | undefined {

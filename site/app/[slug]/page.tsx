@@ -536,13 +536,14 @@ export default async function CityToursPage({ params }: PageProps) {
         <section className="section" aria-label={`Explore tours in other cities from ${city!.name}`}>
           <h2>Explore tours in other cities</h2>
           <div className="destinationGrid">
-            {relatedCities.map((relatedCity) => (
+            {relatedCities.map((relatedCity, index) => (
               <DestinationCard
                 key={relatedCity.slug}
                 href={getCityToursUrl(relatedCity.slug)}
                 citySlug={relatedCity.slug}
                 cityName={relatedCity.name}
                 country={relatedCity.country}
+                priority={index < 4}
               />
             ))}
           </div>

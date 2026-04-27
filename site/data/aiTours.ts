@@ -2737,6 +2737,55 @@ export const aiTours: CityToursMap = {
       description: "Walk through key landmarks and historical moments that shaped Queenstown.",
     },
   ],
+  "melbourne": [
+    {
+      title: "Melbourne History Highlights",
+      duration: "2 hours",
+      description: "Walk through key landmarks and historical moments that shaped Melbourne.",
+    },
+    {
+      title: "Melbourne Sunset Viewpoints",
+      duration: "2 hours",
+      description: "Visit scenic viewpoints and photogenic routes around Melbourne at golden hour.",
+    },
+    {
+      title: "Hidden Corners of Melbourne",
+      duration: "2.5 hours",
+      description: "Explore lesser-known neighborhoods and stories that show the local side of Melbourne.",
+    },
+    {
+      title: "Melbourne Food and Markets Walk",
+      duration: "3 hours",
+      description: "Discover local flavors and market culture in Melbourne with curated tasting stops.",
+    },
+  ],
+  "brisbane": [
+    {
+      title: "Brisbane Sunset Viewpoints",
+      duration: "2 hours",
+      description: "Visit scenic viewpoints and photogenic routes around Brisbane at golden hour.",
+    },
+    {
+      title: "Hidden Corners of Brisbane",
+      duration: "2.5 hours",
+      description: "Explore lesser-known neighborhoods and stories that show the local side of Brisbane.",
+    },
+    {
+      title: "Brisbane Food and Markets Walk",
+      duration: "3 hours",
+      description: "Discover local flavors and market culture in Brisbane with curated tasting stops.",
+    },
+    {
+      title: "Brisbane Private Discovery Route",
+      duration: "3 hours",
+      description: "A curated route through signature areas and hidden gems in Brisbane.",
+    },
+    {
+      title: "Brisbane History Highlights",
+      duration: "2 hours",
+      description: "Walk through key landmarks and historical moments that shaped Brisbane.",
+    },
+  ],
 };
 
 export function getAiToursByCity(citySlug: string): CuratedTour[] {
