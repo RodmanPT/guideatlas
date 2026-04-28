@@ -636,6 +636,11 @@ export const CITY_IMAGE_MAP: Record<string, CityImageRecord> = {
     image_author: "Brisbane Local Marketing",
     image_source: "unsplash",
   },
+  "perth": {
+    city_image_url: "https://images.unsplash.com/photo-1662673053425-924b45c185d0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4OTczNTh8MHwxfHNlYXJjaHwxfHxQZXJ0aCUyMHNreWxpbmV8ZW58MHwwfHx8MTc3NzM1NDA5MXww&ixlib=rb-4.1.0&q=80&w=1080",
+    image_author: "Eddie Mark Blair",
+    image_source: "unsplash",
+  },
 };
 
 export function getCityImage(citySlug: string): CityImageRecord | undefined {

@@ -129,6 +129,7 @@ export const citySeoIntros: CitySeoIntros = {
   "queenstown": "Discover the best tours in Queenstown, from food walks to historical explorations led by local guides.",
   "melbourne": "Discover the best tours in Melbourne, from food walks to historical explorations led by local guides.",
   "brisbane": "Discover the best tours in Brisbane, from food walks to historical explorations led by local guides.",
+  "perth": "Discover the best tours in Perth, from food walks to historical explorations led by local guides.",
 };
 
 export function getCitySeoIntro(citySlug: string, cityName: string): string {

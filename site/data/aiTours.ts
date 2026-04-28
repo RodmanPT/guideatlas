@@ -2786,6 +2786,23 @@ export const aiTours: CityToursMap = {
       description: "Walk through key landmarks and historical moments that shaped Brisbane.",
     },
   ],
+  "perth": [
+    {
+      title: "Perth Sunset Viewpoints",
+      duration: "2 hours",
+      description: "Visit scenic viewpoints and photogenic routes around Perth at golden hour.",
+    },
+    {
+      title: "Perth Private Discovery Route",
+      duration: "3 hours",
+      description: "A curated route through signature areas and hidden gems in Perth.",
+    },
+    {
+      title: "Hidden Corners of Perth",
+      duration: "2.5 hours",
+      description: "Explore lesser-known neighborhoods and stories that show the local side of Perth.",
+    },
+  ],
 };
 
 export function getAiToursByCity(citySlug: string): CuratedTour[] {
