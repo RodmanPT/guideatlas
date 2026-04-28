@@ -129,6 +129,7 @@ export const CITIES: City[] = [
   { slug: "queenstown", name: "Queenstown", country: "New Zealand", latitude: -45.0312, longitude: 168.6626 },
   { slug: "melbourne", name: "Melbourne", country: "Australia", latitude: -37.8136, longitude: 144.9631 },
   { slug: "brisbane", name: "Brisbane", country: "Australia", latitude: -27.4698, longitude: 153.0251 },
+  { slug: "perth", name: "Perth", country: "Australia", latitude: -31.9505, longitude: 115.8605 },
 ];
 
 export function getCityBySlug(slug: string): City | undefined {
