@@ -641,6 +641,16 @@ export const CITY_IMAGE_MAP: Record<string, CityImageRecord> = {
     image_author: "Eddie Mark Blair",
     image_source: "unsplash",
   },
+  "honolulu": {
+    city_image_url: "https://images.unsplash.com/photo-1574502757458-57c806e33780?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4OTczNTh8MHwxfHNlYXJjaHwxfHxIb25vbHVsdSUyMHNreWxpbmV8ZW58MHwwfHx8MTc3NzQzOTMwMXww&ixlib=rb-4.1.0&q=80&w=1080",
+    image_author: "Kharl Anthony Paica",
+    image_source: "unsplash",
+  },
+  "los-angeles": {
+    city_image_url: "https://images.unsplash.com/flagged/photo-1575555201693-7cd442b8023f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4OTczNTh8MHwxfHNlYXJjaHwxfHxMb3MlMjBBbmdlbGVzJTIwc2t5bGluZXxlbnwwfDB8fHwxNzc3NDM5MzAxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+    image_author: "Cedric Letsch",
+    image_source: "unsplash",
+  },
 };
 
 export function getCityImage(citySlug: string): CityImageRecord | undefined {
