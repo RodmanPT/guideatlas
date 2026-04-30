@@ -2847,6 +2847,28 @@ export const aiTours: CityToursMap = {
       description: "Visit scenic viewpoints and photogenic routes around Los Angeles at golden hour.",
     },
   ],
+  "san-francisco": [
+    {
+      title: "San Francisco Culture and Street Life",
+      duration: "3.5 hours",
+      description: "Experience neighborhood rhythms, architecture, and local culture in San Francisco.",
+    },
+    {
+      title: "Hidden Corners of San Francisco",
+      duration: "2.5 hours",
+      description: "Explore lesser-known neighborhoods and stories that show the local side of San Francisco.",
+    },
+    {
+      title: "San Francisco Private Discovery Route",
+      duration: "3 hours",
+      description: "A curated route through signature areas and hidden gems in San Francisco.",
+    },
+    {
+      title: "San Francisco Food and Markets Walk",
+      duration: "3 hours",
+      description: "Discover local flavors and market culture in San Francisco with curated tasting stops.",
+    },
+  ],
 };
 
 export function getAiToursByCity(citySlug: string): CuratedTour[] {
