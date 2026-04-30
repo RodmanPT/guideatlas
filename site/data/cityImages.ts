@@ -651,6 +651,16 @@ export const CITY_IMAGE_MAP: Record<string, CityImageRecord> = {
     image_author: "Cedric Letsch",
     image_source: "unsplash",
   },
+  "san-francisco": {
+    city_image_url: "https://images.unsplash.com/photo-1625726411847-8cbb60cc71e6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4OTczNTh8MHwxfHNlYXJjaHwxfHxTYW4lMjBGcmFuY2lzY28lMjBza3lsaW5lfGVufDB8MHx8fDE3Nzc1MjYzOTl8MA&ixlib=rb-4.1.0&q=80&w=1080",
+    image_author: "Andrew Whitmore",
+    image_source: "unsplash",
+  },
+  "las-vegas": {
+    city_image_url: "https://images.unsplash.com/photo-1668261929011-4ade8c225292?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4OTczNTh8MHwxfHNlYXJjaHwxfHxMYXMlMjBWZWdhcyUyMHNreWxpbmV8ZW58MHwwfHx8MTc3NzUyNjUzNXww&ixlib=rb-4.1.0&q=80&w=1080",
+    image_author: "Yves Scheuber",
+    image_source: "unsplash",
+  },
 };
 
 export function getCityImage(citySlug: string): CityImageRecord | undefined {
