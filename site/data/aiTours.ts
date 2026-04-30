@@ -2869,6 +2869,23 @@ export const aiTours: CityToursMap = {
       description: "Discover local flavors and market culture in San Francisco with curated tasting stops.",
     },
   ],
+  "las-vegas": [
+    {
+      title: "Las Vegas History Highlights",
+      duration: "2 hours",
+      description: "Walk through key landmarks and historical moments that shaped Las Vegas.",
+    },
+    {
+      title: "Las Vegas Private Discovery Route",
+      duration: "3 hours",
+      description: "A curated route through signature areas and hidden gems in Las Vegas.",
+    },
+    {
+      title: "Las Vegas Sunset Viewpoints",
+      duration: "2 hours",
+      description: "Visit scenic viewpoints and photogenic routes around Las Vegas at golden hour.",
+    },
+  ],
 };
 
 export function getAiToursByCity(citySlug: string): CuratedTour[] {
