@@ -2886,6 +2886,33 @@ export const aiTours: CityToursMap = {
       description: "Visit scenic viewpoints and photogenic routes around Las Vegas at golden hour.",
     },
   ],
+  "miami": [
+    {
+      title: "Miami Culture and Street Life",
+      duration: "3.5 hours",
+      description: "Experience neighborhood rhythms, architecture, and local culture in Miami.",
+    },
+    {
+      title: "Miami Private Discovery Route",
+      duration: "3 hours",
+      description: "A curated route through signature areas and hidden gems in Miami.",
+    },
+    {
+      title: "Miami History Highlights",
+      duration: "2 hours",
+      description: "Walk through key landmarks and historical moments that shaped Miami.",
+    },
+    {
+      title: "Hidden Corners of Miami",
+      duration: "2.5 hours",
+      description: "Explore lesser-known neighborhoods and stories that show the local side of Miami.",
+    },
+    {
+      title: "Miami Sunset Viewpoints",
+      duration: "2 hours",
+      description: "Visit scenic viewpoints and photogenic routes around Miami at golden hour.",
+    },
+  ],
 };
 
 export function getAiToursByCity(citySlug: string): CuratedTour[] {
