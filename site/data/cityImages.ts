@@ -661,6 +661,11 @@ export const CITY_IMAGE_MAP: Record<string, CityImageRecord> = {
     image_author: "Yves Scheuber",
     image_source: "unsplash",
   },
+  "miami": {
+    city_image_url: "https://images.unsplash.com/photo-1670861643063-0892c6fab1ce?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4OTczNTh8MHwxfHNlYXJjaHwxfHxNaWFtaSUyMHNreWxpbmV8ZW58MHwwfHx8MTc3NzYxMjc0MXww&ixlib=rb-4.1.0&q=80&w=1080",
+    image_author: "Rolando Yera",
+    image_source: "unsplash",
+  },
 };
 
 export function getCityImage(citySlug: string): CityImageRecord | undefined {
