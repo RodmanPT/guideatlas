@@ -676,6 +676,11 @@ export const CITY_IMAGE_MAP: Record<string, CityImageRecord> = {
     image_author: "Kool C",
     image_source: "unsplash",
   },
+  "chicago": {
+    city_image_url: "https://images.unsplash.com/photo-1575380591643-b2c92368dc6d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4OTczNTh8MHwxfHNlYXJjaHwxfHxDaGljYWdvJTIwc2t5bGluZXxlbnwwfDB8fHwxNzc3Njk4MzQzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+    image_author: "Rohan Gangopadhyay",
+    image_source: "unsplash",
+  },
 };
 
 export function getCityImage(citySlug: string): CityImageRecord | undefined {

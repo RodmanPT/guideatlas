@@ -2957,6 +2957,28 @@ export const aiTours: CityToursMap = {
       description: "Visit scenic viewpoints and photogenic routes around New Orleans at golden hour.",
     },
   ],
+  "chicago": [
+    {
+      title: "Chicago History Highlights",
+      duration: "2 hours",
+      description: "Walk through key landmarks and historical moments that shaped Chicago.",
+    },
+    {
+      title: "Chicago Food and Markets Walk",
+      duration: "3 hours",
+      description: "Discover local flavors and market culture in Chicago with curated tasting stops.",
+    },
+    {
+      title: "Chicago Culture and Street Life",
+      duration: "3.5 hours",
+      description: "Experience neighborhood rhythms, architecture, and local culture in Chicago.",
+    },
+    {
+      title: "Chicago Sunset Viewpoints",
+      duration: "2 hours",
+      description: "Visit scenic viewpoints and photogenic routes around Chicago at golden hour.",
+    },
+  ],
 };
 
 export function getAiToursByCity(citySlug: string): CuratedTour[] {
