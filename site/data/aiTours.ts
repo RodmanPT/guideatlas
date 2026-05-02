@@ -2913,6 +2913,72 @@ export const aiTours: CityToursMap = {
       description: "Visit scenic viewpoints and photogenic routes around Miami at golden hour.",
     },
   ],
+  "orlando": [
+    {
+      title: "Orlando Private Discovery Route",
+      duration: "3 hours",
+      description: "A curated route through signature areas and hidden gems in Orlando.",
+    },
+    {
+      title: "Orlando Sunset Viewpoints",
+      duration: "2 hours",
+      description: "Visit scenic viewpoints and photogenic routes around Orlando at golden hour.",
+    },
+    {
+      title: "Hidden Corners of Orlando",
+      duration: "2.5 hours",
+      description: "Explore lesser-known neighborhoods and stories that show the local side of Orlando.",
+    },
+    {
+      title: "Orlando History Highlights",
+      duration: "2 hours",
+      description: "Walk through key landmarks and historical moments that shaped Orlando.",
+    },
+    {
+      title: "Orlando Food and Markets Walk",
+      duration: "3 hours",
+      description: "Discover local flavors and market culture in Orlando with curated tasting stops.",
+    },
+  ],
+  "new-orleans": [
+    {
+      title: "New Orleans Private Discovery Route",
+      duration: "3 hours",
+      description: "A curated route through signature areas and hidden gems in New Orleans.",
+    },
+    {
+      title: "Hidden Corners of New Orleans",
+      duration: "2.5 hours",
+      description: "Explore lesser-known neighborhoods and stories that show the local side of New Orleans.",
+    },
+    {
+      title: "New Orleans Sunset Viewpoints",
+      duration: "2 hours",
+      description: "Visit scenic viewpoints and photogenic routes around New Orleans at golden hour.",
+    },
+  ],
+  "chicago": [
+    {
+      title: "Chicago History Highlights",
+      duration: "2 hours",
+      description: "Walk through key landmarks and historical moments that shaped Chicago.",
+    },
+    {
+      title: "Chicago Food and Markets Walk",
+      duration: "3 hours",
+      description: "Discover local flavors and market culture in Chicago with curated tasting stops.",
+    },
+    {
+      title: "Chicago Culture and Street Life",
+      duration: "3.5 hours",
+      description: "Experience neighborhood rhythms, architecture, and local culture in Chicago.",
+    },
+    {
+      title: "Chicago Sunset Viewpoints",
+      duration: "2 hours",
+      description: "Visit scenic viewpoints and photogenic routes around Chicago at golden hour.",
+    },
+  ],
 };
 
 export function getAiToursByCity(citySlug: string): CuratedTour[] {
