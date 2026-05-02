@@ -666,6 +666,16 @@ export const CITY_IMAGE_MAP: Record<string, CityImageRecord> = {
     image_author: "Rolando Yera",
     image_source: "unsplash",
   },
+  "orlando": {
+    city_image_url: "https://images.unsplash.com/photo-1609184889233-eff6dd93def4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4OTczNTh8MHwxfHNlYXJjaHwxfHxPcmxhbmRvJTIwc2t5bGluZXxlbnwwfDB8fHwxNzc3Njk4MjkwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+    image_author: "Mick Haupt",
+    image_source: "unsplash",
+  },
+  "new-orleans": {
+    city_image_url: "https://images.unsplash.com/photo-1586974325246-05d48d665f24?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4OTczNTh8MHwxfHNlYXJjaHwxfHxOZXclMjBPcmxlYW5zJTIwc2t5bGluZXxlbnwwfDB8fHwxNzc3Njk4MjkwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+    image_author: "Kool C",
+    image_source: "unsplash",
+  },
 };
 
 export function getCityImage(citySlug: string): CityImageRecord | undefined {
