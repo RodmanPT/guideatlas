@@ -2979,6 +2979,33 @@ export const aiTours: CityToursMap = {
       description: "Visit scenic viewpoints and photogenic routes around Chicago at golden hour.",
     },
   ],
+  "washington-dc": [
+    {
+      title: "Washington DC History Highlights",
+      duration: "2 hours",
+      description: "Walk through key landmarks and historical moments that shaped Washington DC.",
+    },
+    {
+      title: "Washington DC Private Discovery Route",
+      duration: "3 hours",
+      description: "A curated route through signature areas and hidden gems in Washington DC.",
+    },
+    {
+      title: "Hidden Corners of Washington DC",
+      duration: "2.5 hours",
+      description: "Explore lesser-known neighborhoods and stories that show the local side of Washington DC.",
+    },
+    {
+      title: "Washington DC Culture and Street Life",
+      duration: "3.5 hours",
+      description: "Experience neighborhood rhythms, architecture, and local culture in Washington DC.",
+    },
+    {
+      title: "Washington DC Food and Markets Walk",
+      duration: "3 hours",
+      description: "Discover local flavors and market culture in Washington DC with curated tasting stops.",
+    },
+  ],
 };
 
 export function getAiToursByCity(citySlug: string): CuratedTour[] {
