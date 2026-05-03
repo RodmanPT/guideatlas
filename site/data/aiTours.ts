@@ -3006,6 +3006,40 @@ export const aiTours: CityToursMap = {
       description: "Discover local flavors and market culture in Washington DC with curated tasting stops.",
     },
   ],
+  "boston": [
+    {
+      title: "Hidden Corners of Boston",
+      duration: "2.5 hours",
+      description: "Explore lesser-known neighborhoods and stories that show the local side of Boston.",
+    },
+    {
+      title: "Boston Private Discovery Route",
+      duration: "3 hours",
+      description: "A curated route through signature areas and hidden gems in Boston.",
+    },
+    {
+      title: "Boston Culture and Street Life",
+      duration: "3.5 hours",
+      description: "Experience neighborhood rhythms, architecture, and local culture in Boston.",
+    },
+  ],
+  "seattle": [
+    {
+      title: "Seattle Culture and Street Life",
+      duration: "3.5 hours",
+      description: "Experience neighborhood rhythms, architecture, and local culture in Seattle.",
+    },
+    {
+      title: "Seattle Food and Markets Walk",
+      duration: "3 hours",
+      description: "Discover local flavors and market culture in Seattle with curated tasting stops.",
+    },
+    {
+      title: "Seattle History Highlights",
+      duration: "2 hours",
+      description: "Walk through key landmarks and historical moments that shaped Seattle.",
+    },
+  ],
 };
 
 export function getAiToursByCity(citySlug: string): CuratedTour[] {
