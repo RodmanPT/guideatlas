@@ -3040,6 +3040,50 @@ export const aiTours: CityToursMap = {
       description: "Walk through key landmarks and historical moments that shaped Seattle.",
     },
   ],
+  "vancouver": [
+    {
+      title: "Vancouver Sunset Viewpoints",
+      duration: "2 hours",
+      description: "Visit scenic viewpoints and photogenic routes around Vancouver at golden hour.",
+    },
+    {
+      title: "Vancouver Culture and Street Life",
+      duration: "3.5 hours",
+      description: "Experience neighborhood rhythms, architecture, and local culture in Vancouver.",
+    },
+    {
+      title: "Vancouver Private Discovery Route",
+      duration: "3 hours",
+      description: "A curated route through signature areas and hidden gems in Vancouver.",
+    },
+    {
+      title: "Vancouver Food and Markets Walk",
+      duration: "3 hours",
+      description: "Discover local flavors and market culture in Vancouver with curated tasting stops.",
+    },
+  ],
+  "toronto": [
+    {
+      title: "Toronto History Highlights",
+      duration: "2 hours",
+      description: "Walk through key landmarks and historical moments that shaped Toronto.",
+    },
+    {
+      title: "Hidden Corners of Toronto",
+      duration: "2.5 hours",
+      description: "Explore lesser-known neighborhoods and stories that show the local side of Toronto.",
+    },
+    {
+      title: "Toronto Culture and Street Life",
+      duration: "3.5 hours",
+      description: "Experience neighborhood rhythms, architecture, and local culture in Toronto.",
+    },
+    {
+      title: "Toronto Sunset Viewpoints",
+      duration: "2 hours",
+      description: "Visit scenic viewpoints and photogenic routes around Toronto at golden hour.",
+    },
+  ],
 };
 
 export function getAiToursByCity(citySlug: string): CuratedTour[] {

@@ -696,6 +696,16 @@ export const CITY_IMAGE_MAP: Record<string, CityImageRecord> = {
     image_author: "Thom Milkovic",
     image_source: "unsplash",
   },
+  "vancouver": {
+    city_image_url: "https://images.unsplash.com/photo-1647655806923-e8202f4f2b8c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4OTczNTh8MHwxfHNlYXJjaHwxfHxWYW5jb3V2ZXIlMjBza3lsaW5lfGVufDB8MHx8fDE3Nzc4NzE1MDl8MA&ixlib=rb-4.1.0&q=80&w=1080",
+    image_author: "Adrian Yu",
+    image_source: "unsplash",
+  },
+  "toronto": {
+    city_image_url: "https://images.unsplash.com/photo-1559869824-929df9dab35e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4OTczNTh8MHwxfHNlYXJjaHwxfHxUb3JvbnRvJTIwc2t5bGluZXxlbnwwfDB8fHwxNzc3ODcxNTA5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+    image_author: "Mathew Schwartz",
+    image_source: "unsplash",
+  },
 };
 
 export function getCityImage(citySlug: string): CityImageRecord | undefined {
