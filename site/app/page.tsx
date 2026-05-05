@@ -127,13 +127,14 @@ export default function HomePage() {
           <p>Explore city pages and upcoming local experiences.</p>
         </div>
         <div className="destinationGrid">
-          {featuredCities.map((city) => (
+          {featuredCities.map((city, index) => (
             <DestinationCard
               key={city.slug}
               href={getCityToursUrl(city.slug)}
               citySlug={city.slug}
               cityName={city.name}
               country={city.country}
+              priority={index < 4}
             />
           ))}
         </div>
@@ -145,7 +146,7 @@ export default function HomePage() {
           <p>Reusable tour cards designed for future guide-published experiences.</p>
         </div>
         <div className="tourGrid">
-          {FEATURED_TOURS.map((tour) => (
+          {FEATURED_TOURS.map((tour, index) => (
             <TourCard
               key={tour.title}
               title={tour.title}
@@ -154,6 +155,7 @@ export default function HomePage() {
               groupLabel="Small group"
               description={`${tour.city} · Editorial preview card`}
               imageSrc={getCityImageUrl(tour.citySlug)}
+              priority={index < 4}
             />
           ))}
         </div>

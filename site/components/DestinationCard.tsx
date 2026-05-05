@@ -13,6 +13,7 @@ type DestinationCardProps = {
   cityName: string;
   country: string;
   subtitle?: string;
+  priority?: boolean;
 };
 
 export default function DestinationCard({
@@ -21,6 +22,7 @@ export default function DestinationCard({
   cityName,
   country,
   subtitle,
+  priority,
 }: DestinationCardProps) {
   const [hasImageError, setHasImageError] = useState(false);
   const imageUrl = getCityImageUrl(citySlug);
@@ -47,6 +49,7 @@ export default function DestinationCard({
             fill
             sizes="(max-width: 760px) 100vw, (max-width: 1200px) 50vw, 33vw"
             className="destinationCardImage"
+            priority={priority}
             onError={() => setHasImageError(true)}
           />
         ) : (
