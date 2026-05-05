@@ -706,6 +706,11 @@ export const CITY_IMAGE_MAP: Record<string, CityImageRecord> = {
     image_author: "Mathew Schwartz",
     image_source: "unsplash",
   },
+  "montreal": {
+    city_image_url: "https://images.unsplash.com/photo-1659482513037-950fea76794c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4OTczNTh8MHwxfHNlYXJjaHwxfHxNb250cmVhbCUyMHNreWxpbmV8ZW58MHwwfHx8MTc3Nzk1ODQ4Mnww&ixlib=rb-4.1.0&q=80&w=1080",
+    image_author: "Grant Van Cleemput",
+    image_source: "unsplash",
+  },
 };
 
 export function getCityImage(citySlug: string): CityImageRecord | undefined {

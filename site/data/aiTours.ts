@@ -3084,6 +3084,23 @@ export const aiTours: CityToursMap = {
       description: "Visit scenic viewpoints and photogenic routes around Toronto at golden hour.",
     },
   ],
+  "montreal": [
+    {
+      title: "Montreal History Highlights",
+      duration: "2 hours",
+      description: "Walk through key landmarks and historical moments that shaped Montreal.",
+    },
+    {
+      title: "Montreal Culture and Street Life",
+      duration: "3.5 hours",
+      description: "Experience neighborhood rhythms, architecture, and local culture in Montreal.",
+    },
+    {
+      title: "Montreal Sunset Viewpoints",
+      duration: "2 hours",
+      description: "Visit scenic viewpoints and photogenic routes around Montreal at golden hour.",
+    },
+  ],
 };
 
 export function getAiToursByCity(citySlug: string): CuratedTour[] {
