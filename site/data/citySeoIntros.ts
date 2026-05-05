@@ -143,6 +143,7 @@ export const citySeoIntros: CitySeoIntros = {
   "seattle": "Discover the best tours in Seattle, from food walks to historical explorations led by local guides.",
   "vancouver": "Discover the best tours in Vancouver, from food walks to historical explorations led by local guides.",
   "toronto": "Discover the best tours in Toronto, from food walks to historical explorations led by local guides.",
+  "montreal": "Discover the best tours in Montreal, from food walks to historical explorations led by local guides.",
 };
 
 export function getCitySeoIntro(citySlug: string, cityName: string): string {
