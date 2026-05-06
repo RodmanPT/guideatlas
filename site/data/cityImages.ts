@@ -711,6 +711,11 @@ export const CITY_IMAGE_MAP: Record<string, CityImageRecord> = {
     image_author: "Grant Van Cleemput",
     image_source: "unsplash",
   },
+  "quebec-city": {
+    city_image_url: "https://images.unsplash.com/photo-1660426252696-fbf984cb4d6e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4OTczNTh8MHwxfHNlYXJjaHwxfHxRdWViZWMlMjBDaXR5JTIwc2t5bGluZXxlbnwwfDB8fHwxNzc4MDQ0NjI4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+    image_author: "Asif Ali",
+    image_source: "unsplash",
+  },
 };
 
 export function getCityImage(citySlug: string): CityImageRecord | undefined {
