@@ -716,6 +716,16 @@ export const CITY_IMAGE_MAP: Record<string, CityImageRecord> = {
     image_author: "Asif Ali",
     image_source: "unsplash",
   },
+  "cancun": {
+    city_image_url: "https://images.unsplash.com/photo-1745874699783-b54f3ce5c46b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4OTczNTh8MHwxfHNlYXJjaHwxfHxDYW5jdW4lMjBza3lsaW5lfGVufDB8MHx8fDE3NzgwNDQ2ODl8MA&ixlib=rb-4.1.0&q=80&w=1080",
+    image_author: "Henrique Ferreira",
+    image_source: "unsplash",
+  },
+  "playa-del-carmen": {
+    city_image_url: "https://images.unsplash.com/photo-1767326388163-f48c8f77498d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4OTczNTh8MHwxfHNlYXJjaHwxfHxQbGF5YSUyMGRlbCUyMENhcm1lbiUyMGNpdHlzY2FwZXxlbnwwfDB8fHwxNzc4MDQ0NjkwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+    image_author: "Juan Pablo",
+    image_source: "unsplash",
+  },
 };
 
 export function getCityImage(citySlug: string): CityImageRecord | undefined {
