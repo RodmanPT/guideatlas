@@ -726,6 +726,11 @@ export const CITY_IMAGE_MAP: Record<string, CityImageRecord> = {
     image_author: "Juan Pablo",
     image_source: "unsplash",
   },
+  "guadalajara": {
+    city_image_url: "https://images.unsplash.com/photo-1709006596325-ec84d78954a8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4OTczNTh8MHwxfHNlYXJjaHwxfHxHdWFkYWxhamFyYSUyMHNreWxpbmV8ZW58MHwwfHx8MTc3ODEzMTM2NHww&ixlib=rb-4.1.0&q=80&w=1080",
+    image_author: "Sergio Rodríguez",
+    image_source: "unsplash",
+  },
 };
 
 export function getCityImage(citySlug: string): CityImageRecord | undefined {
