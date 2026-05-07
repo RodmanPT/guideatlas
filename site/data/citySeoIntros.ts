@@ -147,6 +147,7 @@ export const citySeoIntros: CitySeoIntros = {
   "quebec-city": "Discover the best tours in Quebec City, from food walks to historical explorations led by local guides.",
   "cancun": "Discover the best tours in Cancun, from food walks to historical explorations led by local guides.",
   "playa-del-carmen": "Discover the best tours in Playa del Carmen, from food walks to historical explorations led by local guides.",
+  "guadalajara": "Discover the best tours in Guadalajara, from food walks to historical explorations led by local guides.",
 };
 
 export function getCitySeoIntro(citySlug: string, cityName: string): string {
