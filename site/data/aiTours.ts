@@ -3184,6 +3184,23 @@ export const aiTours: CityToursMap = {
       description: "Explore lesser-known neighborhoods and stories that show the local side of Guadalajara.",
     },
   ],
+  "bogota": [
+    {
+      title: "Bogota Private Discovery Route",
+      duration: "3 hours",
+      description: "A curated route through signature areas and hidden gems in Bogota.",
+    },
+    {
+      title: "Bogota History Highlights",
+      duration: "2 hours",
+      description: "Walk through key landmarks and historical moments that shaped Bogota.",
+    },
+    {
+      title: "Bogota Culture and Street Life",
+      duration: "3.5 hours",
+      description: "Experience neighborhood rhythms, architecture, and local culture in Bogota.",
+    },
+  ],
 };
 
 export function getAiToursByCity(citySlug: string): CuratedTour[] {

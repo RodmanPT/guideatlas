@@ -731,6 +731,11 @@ export const CITY_IMAGE_MAP: Record<string, CityImageRecord> = {
     image_author: "Sergio Rodríguez",
     image_source: "unsplash",
   },
+  "bogota": {
+    city_image_url: "https://images.unsplash.com/photo-1719537224742-dacf2e0e8b36?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4OTczNTh8MHwxfHNlYXJjaHwxfHxCb2dvdGElMjBza3lsaW5lfGVufDB8MHx8fDE3NzgyMTY4ODZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+    image_author: "WILLIAN REIS",
+    image_source: "unsplash",
+  },
 };
 
 export function getCityImage(citySlug: string): CityImageRecord | undefined {
