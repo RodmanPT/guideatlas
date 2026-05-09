@@ -736,6 +736,11 @@ export const CITY_IMAGE_MAP: Record<string, CityImageRecord> = {
     image_author: "WILLIAN REIS",
     image_source: "unsplash",
   },
+  "medellin": {
+    city_image_url: "https://images.unsplash.com/photo-1680209082240-1abf11585936?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4OTczNTh8MHwxfHNlYXJjaHwxfHxNZWRlbGxpbiUyMHNreWxpbmV8ZW58MHwwfHx8MTc3ODMwNDU5OXww&ixlib=rb-4.1.0&q=80&w=1080",
+    image_author: "Juliana Morales Ramírez",
+    image_source: "unsplash",
+  },
 };
 
 export function getCityImage(citySlug: string): CityImageRecord | undefined {
