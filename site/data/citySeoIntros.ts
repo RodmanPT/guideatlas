@@ -149,6 +149,7 @@ export const citySeoIntros: CitySeoIntros = {
   "playa-del-carmen": "Discover the best tours in Playa del Carmen, from food walks to historical explorations led by local guides.",
   "guadalajara": "Discover the best tours in Guadalajara, from food walks to historical explorations led by local guides.",
   "bogota": "Discover the best tours in Bogota, from food walks to historical explorations led by local guides.",
+  "medellin": "Discover the best tours in Medellin, from food walks to historical explorations led by local guides.",
 };
 
 export function getCitySeoIntro(citySlug: string, cityName: string): string {
