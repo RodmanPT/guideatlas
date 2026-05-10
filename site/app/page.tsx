@@ -127,13 +127,14 @@ export default function HomePage() {
           <p>Explore city pages and upcoming local experiences.</p>
         </div>
         <div className="destinationGrid">
-          {featuredCities.map((city) => (
+          {featuredCities.map((city, index) => (
             <DestinationCard
               key={city.slug}
               href={getCityToursUrl(city.slug)}
               citySlug={city.slug}
               cityName={city.name}
               country={city.country}
+              priority={index < 4}
             />
           ))}
         </div>
