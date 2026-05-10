@@ -741,6 +741,11 @@ export const CITY_IMAGE_MAP: Record<string, CityImageRecord> = {
     image_author: "Juliana Morales Ramírez",
     image_source: "unsplash",
   },
+  "cartagena": {
+    city_image_url: "https://images.unsplash.com/photo-1707504223852-73216fc08c28?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4OTczNTh8MHwxfHNlYXJjaHwxfHxDYXJ0YWdlbmElMjBza3lsaW5lfGVufDB8MHx8fDE3NzgzOTAzNDN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+    image_author: "Lucas Chizzali",
+    image_source: "unsplash",
+  },
 };
 
 export function getCityImage(citySlug: string): CityImageRecord | undefined {

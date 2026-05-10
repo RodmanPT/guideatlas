@@ -3218,6 +3218,28 @@ export const aiTours: CityToursMap = {
       description: "Experience neighborhood rhythms, architecture, and local culture in Medellin.",
     },
   ],
+  "cartagena": [
+    {
+      title: "Cartagena History Highlights",
+      duration: "2 hours",
+      description: "Walk through key landmarks and historical moments that shaped Cartagena.",
+    },
+    {
+      title: "Cartagena Private Discovery Route",
+      duration: "3 hours",
+      description: "A curated route through signature areas and hidden gems in Cartagena.",
+    },
+    {
+      title: "Cartagena Sunset Viewpoints",
+      duration: "2 hours",
+      description: "Visit scenic viewpoints and photogenic routes around Cartagena at golden hour.",
+    },
+    {
+      title: "Cartagena Culture and Street Life",
+      duration: "3.5 hours",
+      description: "Experience neighborhood rhythms, architecture, and local culture in Cartagena.",
+    },
+  ],
 };
 
 export function getAiToursByCity(citySlug: string): CuratedTour[] {
