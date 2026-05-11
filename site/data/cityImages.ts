@@ -751,6 +751,16 @@ export const CITY_IMAGE_MAP: Record<string, CityImageRecord> = {
     image_author: "Marc Wieland",
     image_source: "unsplash",
   },
+  "cusco": {
+    city_image_url: "https://images.unsplash.com/photo-1775352014386-4a1bfa631b86?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4OTczNTh8MHwxfHNlYXJjaHwxfHxDdXNjbyUyMHNreWxpbmV8ZW58MHwwfHx8MTc3ODQ3NjA3Mnww&ixlib=rb-4.1.0&q=80&w=1080",
+    image_author: "Sheila C",
+    image_source: "unsplash",
+  },
+  "santiago": {
+    city_image_url: "https://images.unsplash.com/photo-1574450123591-d8aead67fff0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4OTczNTh8MHwxfHNlYXJjaHwxfHxTYW50aWFnbyUyMHNreWxpbmV8ZW58MHwwfHx8MTc3ODQ3NjA3Mnww&ixlib=rb-4.1.0&q=80&w=1080",
+    image_author: "Guillermo Cádiz Pizarro",
+    image_source: "unsplash",
+  },
 };
 
 export function getCityImage(citySlug: string): CityImageRecord | undefined {

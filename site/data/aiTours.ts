@@ -3267,6 +3267,50 @@ export const aiTours: CityToursMap = {
       description: "Explore lesser-known neighborhoods and stories that show the local side of Lima.",
     },
   ],
+  "cusco": [
+    {
+      title: "Hidden Corners of Cusco",
+      duration: "2.5 hours",
+      description: "Explore lesser-known neighborhoods and stories that show the local side of Cusco.",
+    },
+    {
+      title: "Cusco History Highlights",
+      duration: "2 hours",
+      description: "Walk through key landmarks and historical moments that shaped Cusco.",
+    },
+    {
+      title: "Cusco Private Discovery Route",
+      duration: "3 hours",
+      description: "A curated route through signature areas and hidden gems in Cusco.",
+    },
+    {
+      title: "Cusco Culture and Street Life",
+      duration: "3.5 hours",
+      description: "Experience neighborhood rhythms, architecture, and local culture in Cusco.",
+    },
+  ],
+  "santiago": [
+    {
+      title: "Hidden Corners of Santiago",
+      duration: "2.5 hours",
+      description: "Explore lesser-known neighborhoods and stories that show the local side of Santiago.",
+    },
+    {
+      title: "Santiago Food and Markets Walk",
+      duration: "3 hours",
+      description: "Discover local flavors and market culture in Santiago with curated tasting stops.",
+    },
+    {
+      title: "Santiago Private Discovery Route",
+      duration: "3 hours",
+      description: "A curated route through signature areas and hidden gems in Santiago.",
+    },
+    {
+      title: "Santiago Sunset Viewpoints",
+      duration: "2 hours",
+      description: "Visit scenic viewpoints and photogenic routes around Santiago at golden hour.",
+    },
+  ],
 };
 
 export function getAiToursByCity(citySlug: string): CuratedTour[] {
