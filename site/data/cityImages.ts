@@ -746,6 +746,11 @@ export const CITY_IMAGE_MAP: Record<string, CityImageRecord> = {
     image_author: "Lucas Chizzali",
     image_source: "unsplash",
   },
+  "lima": {
+    city_image_url: "https://images.unsplash.com/photo-1777198498621-d949c8fe4873?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4OTczNTh8MHwxfHNlYXJjaHwxfHxMaW1hJTIwY2l0eXNjYXBlfGVufDB8MHx8fDE3Nzg0NzU3MzB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+    image_author: "Marc Wieland",
+    image_source: "unsplash",
+  },
 };
 
 export function getCityImage(citySlug: string): CityImageRecord | undefined {
