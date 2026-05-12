@@ -761,6 +761,11 @@ export const CITY_IMAGE_MAP: Record<string, CityImageRecord> = {
     image_author: "Guillermo Cádiz Pizarro",
     image_source: "unsplash",
   },
+  "buenos-aires": {
+    city_image_url: "https://images.unsplash.com/photo-1611865422861-391cf5f3ba49?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4OTczNTh8MHwxfHNlYXJjaHwxfHxCdWVub3MlMjBBaXJlcyUyMHNreWxpbmV8ZW58MHwwfHx8MTc3ODU2MzY3OHww&ixlib=rb-4.1.0&q=80&w=1080",
+    image_author: "Sebastian Cyrman",
+    image_source: "unsplash",
+  },
 };
 
 export function getCityImage(citySlug: string): CityImageRecord | undefined {

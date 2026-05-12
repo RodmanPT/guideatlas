@@ -3311,6 +3311,23 @@ export const aiTours: CityToursMap = {
       description: "Visit scenic viewpoints and photogenic routes around Santiago at golden hour.",
     },
   ],
+  "buenos-aires": [
+    {
+      title: "Buenos Aires Private Discovery Route",
+      duration: "3 hours",
+      description: "A curated route through signature areas and hidden gems in Buenos Aires.",
+    },
+    {
+      title: "Buenos Aires History Highlights",
+      duration: "2 hours",
+      description: "Walk through key landmarks and historical moments that shaped Buenos Aires.",
+    },
+    {
+      title: "Hidden Corners of Buenos Aires",
+      duration: "2.5 hours",
+      description: "Explore lesser-known neighborhoods and stories that show the local side of Buenos Aires.",
+    },
+  ],
 };
 
 export function getAiToursByCity(citySlug: string): CuratedTour[] {
