@@ -3367,6 +3367,40 @@ export const aiTours: CityToursMap = {
       description: "Explore lesser-known neighborhoods and stories that show the local side of Sao Paulo.",
     },
   ],
+  "salvador": [
+    {
+      title: "Salvador Sunset Viewpoints",
+      duration: "2 hours",
+      description: "Visit scenic viewpoints and photogenic routes around Salvador at golden hour.",
+    },
+    {
+      title: "Salvador Private Discovery Route",
+      duration: "3 hours",
+      description: "A curated route through signature areas and hidden gems in Salvador.",
+    },
+    {
+      title: "Salvador History Highlights",
+      duration: "2 hours",
+      description: "Walk through key landmarks and historical moments that shaped Salvador.",
+    },
+  ],
+  "panama-city": [
+    {
+      title: "Panama City Sunset Viewpoints",
+      duration: "2 hours",
+      description: "Visit scenic viewpoints and photogenic routes around Panama City at golden hour.",
+    },
+    {
+      title: "Panama City Food and Markets Walk",
+      duration: "3 hours",
+      description: "Discover local flavors and market culture in Panama City with curated tasting stops.",
+    },
+    {
+      title: "Hidden Corners of Panama City",
+      duration: "2.5 hours",
+      description: "Explore lesser-known neighborhoods and stories that show the local side of Panama City.",
+    },
+  ],
 };
 
 export function getAiToursByCity(citySlug: string): CuratedTour[] {

@@ -776,6 +776,16 @@ export const CITY_IMAGE_MAP: Record<string, CityImageRecord> = {
     image_author: "Renan",
     image_source: "unsplash",
   },
+  "salvador": {
+    city_image_url: "https://images.unsplash.com/photo-1689489609164-400f31c5c6b7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4OTczNTh8MHwxfHNlYXJjaHwxfHxTYWx2YWRvciUyMGNpdHlzY2FwZXxlbnwwfDB8fHwxNzc4NjUxNzM4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+    image_author: "Kylli Kittus",
+    image_source: "unsplash",
+  },
+  "panama-city": {
+    city_image_url: "https://images.unsplash.com/photo-1598041543955-0d88c390f3b5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4OTczNTh8MHwxfHNlYXJjaHwxfHxQYW5hbWElMjBDaXR5JTIwc2t5bGluZXxlbnwwfDB8fHwxNzc4NjUxNzM4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+    image_author: "JACQUELINE BRANDWAYN",
+    image_source: "unsplash",
+  },
 };
 
 export function getCityImage(citySlug: string): CityImageRecord | undefined {

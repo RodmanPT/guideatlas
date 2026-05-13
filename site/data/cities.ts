@@ -157,6 +157,8 @@ export const CITIES: City[] = [
   { slug: "buenos-aires", name: "Buenos Aires", country: "Argentina", latitude: -34.6037, longitude: -58.3816 },
   { slug: "rio-de-janeiro", name: "Rio de Janeiro", country: "Brazil", latitude: -22.9068, longitude: -43.1729 },
   { slug: "sao-paulo", name: "Sao Paulo", country: "Brazil", latitude: -23.5558, longitude: -46.6396 },
+  { slug: "salvador", name: "Salvador", country: "Brazil", latitude: -12.9777, longitude: -38.5016 },
+  { slug: "panama-city", name: "Panama City", country: "Panama", latitude: 8.9824, longitude: -79.5199 },
 ];
 
 export function getCityBySlug(slug: string): City | undefined {
