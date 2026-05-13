@@ -766,6 +766,11 @@ export const CITY_IMAGE_MAP: Record<string, CityImageRecord> = {
     image_author: "Sebastian Cyrman",
     image_source: "unsplash",
   },
+  "rio-de-janeiro": {
+    city_image_url: "https://images.unsplash.com/photo-1551140804-0754d4b9652c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4OTczNTh8MHwxfHNlYXJjaHwxfHxSaW8lMjBkZSUyMEphbmVpcm8lMjBza3lsaW5lfGVufDB8MHx8fDE3Nzg2NDg5Mzd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+    image_author: "Alessandro Queiroz",
+    image_source: "unsplash",
+  },
 };
 
 export function getCityImage(citySlug: string): CityImageRecord | undefined {

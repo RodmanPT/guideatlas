@@ -3328,6 +3328,28 @@ export const aiTours: CityToursMap = {
       description: "Explore lesser-known neighborhoods and stories that show the local side of Buenos Aires.",
     },
   ],
+  "rio-de-janeiro": [
+    {
+      title: "Rio de Janeiro Food and Markets Walk",
+      duration: "3 hours",
+      description: "Discover local flavors and market culture in Rio de Janeiro with curated tasting stops.",
+    },
+    {
+      title: "Hidden Corners of Rio de Janeiro",
+      duration: "2.5 hours",
+      description: "Explore lesser-known neighborhoods and stories that show the local side of Rio de Janeiro.",
+    },
+    {
+      title: "Rio de Janeiro Culture and Street Life",
+      duration: "3.5 hours",
+      description: "Experience neighborhood rhythms, architecture, and local culture in Rio de Janeiro.",
+    },
+    {
+      title: "Rio de Janeiro Private Discovery Route",
+      duration: "3 hours",
+      description: "A curated route through signature areas and hidden gems in Rio de Janeiro.",
+    },
+  ],
 };
 
 export function getAiToursByCity(citySlug: string): CuratedTour[] {
