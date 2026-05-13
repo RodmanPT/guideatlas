@@ -3350,6 +3350,23 @@ export const aiTours: CityToursMap = {
       description: "A curated route through signature areas and hidden gems in Rio de Janeiro.",
     },
   ],
+  "sao-paulo": [
+    {
+      title: "Sao Paulo Private Discovery Route",
+      duration: "3 hours",
+      description: "A curated route through signature areas and hidden gems in Sao Paulo.",
+    },
+    {
+      title: "Sao Paulo Culture and Street Life",
+      duration: "3.5 hours",
+      description: "Experience neighborhood rhythms, architecture, and local culture in Sao Paulo.",
+    },
+    {
+      title: "Hidden Corners of Sao Paulo",
+      duration: "2.5 hours",
+      description: "Explore lesser-known neighborhoods and stories that show the local side of Sao Paulo.",
+    },
+  ],
 };
 
 export function getAiToursByCity(citySlug: string): CuratedTour[] {

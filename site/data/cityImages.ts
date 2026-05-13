@@ -771,6 +771,11 @@ export const CITY_IMAGE_MAP: Record<string, CityImageRecord> = {
     image_author: "Alessandro Queiroz",
     image_source: "unsplash",
   },
+  "sao-paulo": {
+    city_image_url: "https://images.unsplash.com/photo-1554168848-228452c09d60?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4OTczNTh8MHwxfHNlYXJjaHwxfHxTYW8lMjBQYXVsbyUyMHNreWxpbmV8ZW58MHwwfHx8MTc3ODY0OTAyM3ww&ixlib=rb-4.1.0&q=80&w=1080",
+    image_author: "Renan",
+    image_source: "unsplash",
+  },
 };
 
 export function getCityImage(citySlug: string): CityImageRecord | undefined {
