@@ -786,6 +786,11 @@ export const CITY_IMAGE_MAP: Record<string, CityImageRecord> = {
     image_author: "JACQUELINE BRANDWAYN",
     image_source: "unsplash",
   },
+  "san-jose-cr": {
+    city_image_url: "https://images.unsplash.com/photo-1682963847132-1923d1e7928a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4OTczNTh8MHwxfHNlYXJjaHwxfHxTYW4lMjBKb3NlJTIwY2l0eXNjYXBlfGVufDB8MHx8fDE3Nzg2NTIyNDh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+    image_author: "César Badilla Miranda",
+    image_source: "unsplash",
+  },
 };
 
 export function getCityImage(citySlug: string): CityImageRecord | undefined {

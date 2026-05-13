@@ -3401,6 +3401,28 @@ export const aiTours: CityToursMap = {
       description: "Explore lesser-known neighborhoods and stories that show the local side of Panama City.",
     },
   ],
+  "san-jose-cr": [
+    {
+      title: "San Jose History Highlights",
+      duration: "2 hours",
+      description: "Walk through key landmarks and historical moments that shaped San Jose.",
+    },
+    {
+      title: "San Jose Sunset Viewpoints",
+      duration: "2 hours",
+      description: "Visit scenic viewpoints and photogenic routes around San Jose at golden hour.",
+    },
+    {
+      title: "San Jose Food and Markets Walk",
+      duration: "3 hours",
+      description: "Discover local flavors and market culture in San Jose with curated tasting stops.",
+    },
+    {
+      title: "San Jose Private Discovery Route",
+      duration: "3 hours",
+      description: "A curated route through signature areas and hidden gems in San Jose.",
+    },
+  ],
 };
 
 export function getAiToursByCity(citySlug: string): CuratedTour[] {
