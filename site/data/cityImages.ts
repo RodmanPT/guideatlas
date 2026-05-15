@@ -791,6 +791,11 @@ export const CITY_IMAGE_MAP: Record<string, CityImageRecord> = {
     image_author: "César Badilla Miranda",
     image_source: "unsplash",
   },
+  "fake-city-123": {
+    city_image_url: "https://images.unsplash.com/photo-1517511620798-cec17d428bc0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4OTczNTh8MHwxfHNlYXJjaHwxfHxGYWtlJTIwQ2l0eSUyMDEyMyUyMGNpdHlzY2FwZXxlbnwwfDB8fHwxNzc4ODIzMDE5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+    image_author: "Devin Avery",
+    image_source: "unsplash",
+  },
 };
 
 export function getCityImage(citySlug: string): CityImageRecord | undefined {

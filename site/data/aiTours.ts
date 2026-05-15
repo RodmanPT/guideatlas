@@ -3423,6 +3423,33 @@ export const aiTours: CityToursMap = {
       description: "A curated route through signature areas and hidden gems in San Jose.",
     },
   ],
+  "fake-city-123": [
+    {
+      title: "Fake City 123 Food and Markets Walk",
+      duration: "3 hours",
+      description: "Discover local flavors and market culture in Fake City 123 with curated tasting stops.",
+    },
+    {
+      title: "Fake City 123 History Highlights",
+      duration: "2 hours",
+      description: "Walk through key landmarks and historical moments that shaped Fake City 123.",
+    },
+    {
+      title: "Hidden Corners of Fake City 123",
+      duration: "2.5 hours",
+      description: "Explore lesser-known neighborhoods and stories that show the local side of Fake City 123.",
+    },
+    {
+      title: "Fake City 123 Sunset Viewpoints",
+      duration: "2 hours",
+      description: "Visit scenic viewpoints and photogenic routes around Fake City 123 at golden hour.",
+    },
+    {
+      title: "Fake City 123 Culture and Street Life",
+      duration: "3.5 hours",
+      description: "Experience neighborhood rhythms, architecture, and local culture in Fake City 123.",
+    },
+  ],
 };
 
 export function getAiToursByCity(citySlug: string): CuratedTour[] {
