@@ -796,6 +796,11 @@ export const CITY_IMAGE_MAP: Record<string, CityImageRecord> = {
     image_author: "Devin Avery",
     image_source: "unsplash",
   },
+  "glasgow": {
+    city_image_url: "https://images.unsplash.com/photo-1567066275230-43936874f489?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4OTczNTh8MHwxfHNlYXJjaHwxfHxHbGFzZ293JTIwY2l0eXNjYXBlfGVufDB8MHx8fDE3Nzg5MDg1NTR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+    image_author: "Eilis Garvey",
+    image_source: "unsplash",
+  },
 };
 
 export function getCityImage(citySlug: string): CityImageRecord | undefined {
