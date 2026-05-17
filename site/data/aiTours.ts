@@ -3472,6 +3472,45 @@ export const aiTours: CityToursMap = {
       description: "A curated route through signature areas and hidden gems in Glasgow.",
     },
   ],
+  "birmingham": [
+    {
+      title: "Birmingham History Highlights",
+      duration: "2 hours",
+      description: "Walk through key landmarks and historical moments that shaped Birmingham.",
+    },
+    {
+      title: "Birmingham Sunset Viewpoints",
+      duration: "2 hours",
+      description: "Visit scenic viewpoints and photogenic routes around Birmingham at golden hour.",
+    },
+    {
+      title: "Birmingham Private Discovery Route",
+      duration: "3 hours",
+      description: "A curated route through signature areas and hidden gems in Birmingham.",
+    },
+  ],
+  "cardiff": [
+    {
+      title: "Cardiff Culture and Street Life",
+      duration: "3.5 hours",
+      description: "Experience neighborhood rhythms, architecture, and local culture in Cardiff.",
+    },
+    {
+      title: "Cardiff Sunset Viewpoints",
+      duration: "2 hours",
+      description: "Visit scenic viewpoints and photogenic routes around Cardiff at golden hour.",
+    },
+    {
+      title: "Cardiff History Highlights",
+      duration: "2 hours",
+      description: "Walk through key landmarks and historical moments that shaped Cardiff.",
+    },
+    {
+      title: "Hidden Corners of Cardiff",
+      duration: "2.5 hours",
+      description: "Explore lesser-known neighborhoods and stories that show the local side of Cardiff.",
+    },
+  ],
 };
 
 export function getAiToursByCity(citySlug: string): CuratedTour[] {

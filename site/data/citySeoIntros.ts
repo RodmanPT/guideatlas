@@ -162,6 +162,8 @@ export const citySeoIntros: CitySeoIntros = {
   "san-jose-cr": "Discover the best tours in San Jose, from food walks to historical explorations led by local guides.",
   "fake-city-123": "Discover the best tours in Fake City 123, from food walks to historical explorations led by local guides.",
   "glasgow": "Discover the best tours in Glasgow, from food walks to historical explorations led by local guides.",
+  "birmingham": "Discover the best tours in Birmingham, from food walks to historical explorations led by local guides.",
+  "cardiff": "Discover the best tours in Cardiff, from food walks to historical explorations led by local guides.",
 };
 
 export function getCitySeoIntro(citySlug: string, cityName: string): string {

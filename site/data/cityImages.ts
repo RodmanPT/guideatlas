@@ -801,6 +801,16 @@ export const CITY_IMAGE_MAP: Record<string, CityImageRecord> = {
     image_author: "Eilis Garvey",
     image_source: "unsplash",
   },
+  "birmingham": {
+    city_image_url: "https://images.unsplash.com/photo-1499958060387-dbdb8d0994fb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4OTczNTh8MHwxfHNlYXJjaHwxfHxCaXJtaW5naGFtJTIwc2t5bGluZXxlbnwwfDB8fHwxNzc4OTk0MDQ2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+    image_author: "Luke Matthews",
+    image_source: "unsplash",
+  },
+  "cardiff": {
+    city_image_url: "https://images.unsplash.com/photo-1595273647789-54432cefc8e1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4OTczNTh8MHwxfHNlYXJjaHwxfHxDYXJkaWZmJTIwc2t5bGluZXxlbnwwfDB8fHwxNzc4OTk0MDQ2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+    image_author: "Mike Erskine",
+    image_source: "unsplash",
+  },
 };
 
 export function getCityImage(citySlug: string): CityImageRecord | undefined {
