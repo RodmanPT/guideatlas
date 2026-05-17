@@ -801,6 +801,26 @@ export const CITY_IMAGE_MAP: Record<string, CityImageRecord> = {
     image_author: "Eilis Garvey",
     image_source: "unsplash",
   },
+  "birmingham": {
+    city_image_url: "https://images.unsplash.com/photo-1499958060387-dbdb8d0994fb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4OTczNTh8MHwxfHNlYXJjaHwxfHxCaXJtaW5naGFtJTIwc2t5bGluZXxlbnwwfDB8fHwxNzc4OTk0MDQ2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+    image_author: "Luke Matthews",
+    image_source: "unsplash",
+  },
+  "cardiff": {
+    city_image_url: "https://images.unsplash.com/photo-1595273647789-54432cefc8e1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4OTczNTh8MHwxfHNlYXJjaHwxfHxDYXJkaWZmJTIwc2t5bGluZXxlbnwwfDB8fHwxNzc4OTk0MDQ2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+    image_author: "Mike Erskine",
+    image_source: "unsplash",
+  },
+  "belfast": {
+    city_image_url: "https://images.unsplash.com/photo-1651759660232-8c58ea8c0a77?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4OTczNTh8MHwxfHNlYXJjaHwxfHxCZWxmYXN0JTIwc2t5bGluZXxlbnwwfDB8fHwxNzc4OTk0MTA3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+    image_author: "Jack White",
+    image_source: "unsplash",
+  },
+  "austin": {
+    city_image_url: "https://images.unsplash.com/photo-1557335200-a65f7f032602?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4OTczNTh8MHwxfHNlYXJjaHwxfHxBdXN0aW4lMjBza3lsaW5lfGVufDB8MHx8fDE3Nzg5OTQ0NzV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+    image_author: "MJ Tangonan",
+    image_source: "unsplash",
+  },
 };
 
 export function getCityImage(citySlug: string): CityImageRecord | undefined {
