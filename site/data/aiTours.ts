@@ -3511,6 +3511,23 @@ export const aiTours: CityToursMap = {
       description: "Explore lesser-known neighborhoods and stories that show the local side of Cardiff.",
     },
   ],
+  "belfast": [
+    {
+      title: "Belfast Private Discovery Route",
+      duration: "3 hours",
+      description: "A curated route through signature areas and hidden gems in Belfast.",
+    },
+    {
+      title: "Belfast History Highlights",
+      duration: "2 hours",
+      description: "Walk through key landmarks and historical moments that shaped Belfast.",
+    },
+    {
+      title: "Belfast Sunset Viewpoints",
+      duration: "2 hours",
+      description: "Visit scenic viewpoints and photogenic routes around Belfast at golden hour.",
+    },
+  ],
 };
 
 export function getAiToursByCity(citySlug: string): CuratedTour[] {
