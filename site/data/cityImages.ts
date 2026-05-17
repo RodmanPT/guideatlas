@@ -816,6 +816,11 @@ export const CITY_IMAGE_MAP: Record<string, CityImageRecord> = {
     image_author: "Jack White",
     image_source: "unsplash",
   },
+  "austin": {
+    city_image_url: "https://images.unsplash.com/photo-1557335200-a65f7f032602?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4OTczNTh8MHwxfHNlYXJjaHwxfHxBdXN0aW4lMjBza3lsaW5lfGVufDB8MHx8fDE3Nzg5OTQ0NzV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+    image_author: "MJ Tangonan",
+    image_source: "unsplash",
+  },
 };
 
 export function getCityImage(citySlug: string): CityImageRecord | undefined {

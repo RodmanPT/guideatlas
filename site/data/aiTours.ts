@@ -3528,6 +3528,23 @@ export const aiTours: CityToursMap = {
       description: "Visit scenic viewpoints and photogenic routes around Belfast at golden hour.",
     },
   ],
+  "austin": [
+    {
+      title: "Hidden Corners of Austin",
+      duration: "2.5 hours",
+      description: "Explore lesser-known neighborhoods and stories that show the local side of Austin.",
+    },
+    {
+      title: "Austin Culture and Street Life",
+      duration: "3.5 hours",
+      description: "Experience neighborhood rhythms, architecture, and local culture in Austin.",
+    },
+    {
+      title: "Austin Food and Markets Walk",
+      duration: "3 hours",
+      description: "Discover local flavors and market culture in Austin with curated tasting stops.",
+    },
+  ],
 };
 
 export function getAiToursByCity(citySlug: string): CuratedTour[] {

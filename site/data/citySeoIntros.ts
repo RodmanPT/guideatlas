@@ -165,6 +165,7 @@ export const citySeoIntros: CitySeoIntros = {
   "birmingham": "Discover the best tours in Birmingham, from food walks to historical explorations led by local guides.",
   "cardiff": "Discover the best tours in Cardiff, from food walks to historical explorations led by local guides.",
   "belfast": "Discover the best tours in Belfast, from food walks to historical explorations led by local guides.",
+  "austin": "Discover the best tours in Austin, from food walks to historical explorations led by local guides.",
 };
 
 export function getCitySeoIntro(citySlug: string, cityName: string): string {
