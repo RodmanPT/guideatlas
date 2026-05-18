@@ -3545,6 +3545,28 @@ export const aiTours: CityToursMap = {
       description: "Discover local flavors and market culture in Austin with curated tasting stops.",
     },
   ],
+  "denver": [
+    {
+      title: "Denver Culture and Street Life",
+      duration: "3.5 hours",
+      description: "Experience neighborhood rhythms, architecture, and local culture in Denver.",
+    },
+    {
+      title: "Hidden Corners of Denver",
+      duration: "2.5 hours",
+      description: "Explore lesser-known neighborhoods and stories that show the local side of Denver.",
+    },
+    {
+      title: "Denver Private Discovery Route",
+      duration: "3 hours",
+      description: "A curated route through signature areas and hidden gems in Denver.",
+    },
+    {
+      title: "Denver Food and Markets Walk",
+      duration: "3 hours",
+      description: "Discover local flavors and market culture in Denver with curated tasting stops.",
+    },
+  ],
 };
 
 export function getAiToursByCity(citySlug: string): CuratedTour[] {
