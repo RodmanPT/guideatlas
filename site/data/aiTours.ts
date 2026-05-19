@@ -3567,6 +3567,28 @@ export const aiTours: CityToursMap = {
       description: "Discover local flavors and market culture in Denver with curated tasting stops.",
     },
   ],
+  "houston": [
+    {
+      title: "Houston Sunset Viewpoints",
+      duration: "2 hours",
+      description: "Visit scenic viewpoints and photogenic routes around Houston at golden hour.",
+    },
+    {
+      title: "Hidden Corners of Houston",
+      duration: "2.5 hours",
+      description: "Explore lesser-known neighborhoods and stories that show the local side of Houston.",
+    },
+    {
+      title: "Houston Private Discovery Route",
+      duration: "3 hours",
+      description: "A curated route through signature areas and hidden gems in Houston.",
+    },
+    {
+      title: "Houston History Highlights",
+      duration: "2 hours",
+      description: "Walk through key landmarks and historical moments that shaped Houston.",
+    },
+  ],
 };
 
 export function getAiToursByCity(citySlug: string): CuratedTour[] {
