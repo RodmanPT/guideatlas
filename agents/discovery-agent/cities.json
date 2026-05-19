@@ -1062,5 +1062,19 @@
     "country": "United States",
     "latitude": 30.2711,
     "longitude": -97.7436
+  },
+  {
+    "slug": "denver",
+    "name": "Denver",
+    "country": "United States",
+    "latitude": 39.7392364,
+    "longitude": -104.984862
+  },
+  {
+    "slug": "houston",
+    "name": "Houston",
+    "country": "United States",
+    "latitude": 29.7589382,
+    "longitude": -95.3676974
   }
 ]
