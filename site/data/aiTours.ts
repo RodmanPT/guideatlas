@@ -3589,6 +3589,55 @@ export const aiTours: CityToursMap = {
       description: "Walk through key landmarks and historical moments that shaped Houston.",
     },
   ],
+  "dallas": [
+    {
+      title: "Dallas Sunset Viewpoints",
+      duration: "2 hours",
+      description: "Visit scenic viewpoints and photogenic routes around Dallas at golden hour.",
+    },
+    {
+      title: "Dallas Private Discovery Route",
+      duration: "3 hours",
+      description: "A curated route through signature areas and hidden gems in Dallas.",
+    },
+    {
+      title: "Hidden Corners of Dallas",
+      duration: "2.5 hours",
+      description: "Explore lesser-known neighborhoods and stories that show the local side of Dallas.",
+    },
+    {
+      title: "Dallas Food and Markets Walk",
+      duration: "3 hours",
+      description: "Discover local flavors and market culture in Dallas with curated tasting stops.",
+    },
+  ],
+  "phoenix": [
+    {
+      title: "Hidden Corners of Phoenix",
+      duration: "2.5 hours",
+      description: "Explore lesser-known neighborhoods and stories that show the local side of Phoenix.",
+    },
+    {
+      title: "Phoenix History Highlights",
+      duration: "2 hours",
+      description: "Walk through key landmarks and historical moments that shaped Phoenix.",
+    },
+    {
+      title: "Phoenix Culture and Street Life",
+      duration: "3.5 hours",
+      description: "Experience neighborhood rhythms, architecture, and local culture in Phoenix.",
+    },
+    {
+      title: "Phoenix Private Discovery Route",
+      duration: "3 hours",
+      description: "A curated route through signature areas and hidden gems in Phoenix.",
+    },
+    {
+      title: "Phoenix Sunset Viewpoints",
+      duration: "2 hours",
+      description: "Visit scenic viewpoints and photogenic routes around Phoenix at golden hour.",
+    },
+  ],
 };
 
 export function getAiToursByCity(citySlug: string): CuratedTour[] {
