@@ -841,6 +841,11 @@ export const CITY_IMAGE_MAP: Record<string, CityImageRecord> = {
     image_author: "Nils Huenerfuerst",
     image_source: "unsplash",
   },
+  "philadelphia": {
+    city_image_url: "https://images.unsplash.com/photo-1569761316261-9a8696fa2ca3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4OTczNTh8MHwxfHNlYXJjaHwxfHxQaGlsYWRlbHBoaWElMjBza3lsaW5lfGVufDB8MHx8fDE3NzkzNDEzMjJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+    image_author: "ActionVance",
+    image_source: "unsplash",
+  },
 };
 
 export function getCityImage(citySlug: string): CityImageRecord | undefined {

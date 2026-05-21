@@ -3638,6 +3638,33 @@ export const aiTours: CityToursMap = {
       description: "Visit scenic viewpoints and photogenic routes around Phoenix at golden hour.",
     },
   ],
+  "philadelphia": [
+    {
+      title: "Philadelphia Culture and Street Life",
+      duration: "3.5 hours",
+      description: "Experience neighborhood rhythms, architecture, and local culture in Philadelphia.",
+    },
+    {
+      title: "Philadelphia History Highlights",
+      duration: "2 hours",
+      description: "Walk through key landmarks and historical moments that shaped Philadelphia.",
+    },
+    {
+      title: "Philadelphia Food and Markets Walk",
+      duration: "3 hours",
+      description: "Discover local flavors and market culture in Philadelphia with curated tasting stops.",
+    },
+    {
+      title: "Philadelphia Sunset Viewpoints",
+      duration: "2 hours",
+      description: "Visit scenic viewpoints and photogenic routes around Philadelphia at golden hour.",
+    },
+    {
+      title: "Philadelphia Private Discovery Route",
+      duration: "3 hours",
+      description: "A curated route through signature areas and hidden gems in Philadelphia.",
+    },
+  ],
 };
 
 export function getAiToursByCity(citySlug: string): CuratedTour[] {
