@@ -3665,6 +3665,28 @@ export const aiTours: CityToursMap = {
       description: "A curated route through signature areas and hidden gems in Philadelphia.",
     },
   ],
+  "san-diego": [
+    {
+      title: "San Diego History Highlights",
+      duration: "2 hours",
+      description: "Walk through key landmarks and historical moments that shaped San Diego.",
+    },
+    {
+      title: "San Diego Culture and Street Life",
+      duration: "3.5 hours",
+      description: "Experience neighborhood rhythms, architecture, and local culture in San Diego.",
+    },
+    {
+      title: "San Diego Food and Markets Walk",
+      duration: "3 hours",
+      description: "Discover local flavors and market culture in San Diego with curated tasting stops.",
+    },
+    {
+      title: "Hidden Corners of San Diego",
+      duration: "2.5 hours",
+      description: "Explore lesser-known neighborhoods and stories that show the local side of San Diego.",
+    },
+  ],
 };
 
 export function getAiToursByCity(citySlug: string): CuratedTour[] {

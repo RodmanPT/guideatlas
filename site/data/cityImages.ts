@@ -846,6 +846,11 @@ export const CITY_IMAGE_MAP: Record<string, CityImageRecord> = {
     image_author: "ActionVance",
     image_source: "unsplash",
   },
+  "san-diego": {
+    city_image_url: "https://images.unsplash.com/photo-1514939775307-d44e7f10cabd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4OTczNTh8MHwxfHNlYXJjaHwxfHxTYW4lMjBEaWVnbyUyMHNreWxpbmV8ZW58MHwwfHx8MTc3OTQyNzYxNHww&ixlib=rb-4.1.0&q=80&w=1080",
+    image_author: "Lucas Davies",
+    image_source: "unsplash",
+  },
 };
 
 export function getCityImage(citySlug: string): CityImageRecord | undefined {
