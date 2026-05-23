@@ -3687,6 +3687,50 @@ export const aiTours: CityToursMap = {
       description: "Explore lesser-known neighborhoods and stories that show the local side of San Diego.",
     },
   ],
+  "san-antonio": [
+    {
+      title: "San Antonio Culture and Street Life",
+      duration: "3.5 hours",
+      description: "Experience neighborhood rhythms, architecture, and local culture in San Antonio.",
+    },
+    {
+      title: "San Antonio Private Discovery Route",
+      duration: "3 hours",
+      description: "A curated route through signature areas and hidden gems in San Antonio.",
+    },
+    {
+      title: "San Antonio Sunset Viewpoints",
+      duration: "2 hours",
+      description: "Visit scenic viewpoints and photogenic routes around San Antonio at golden hour.",
+    },
+    {
+      title: "San Antonio Food and Markets Walk",
+      duration: "3 hours",
+      description: "Discover local flavors and market culture in San Antonio with curated tasting stops.",
+    },
+  ],
+  "omaha": [
+    {
+      title: "Omaha Food and Markets Walk",
+      duration: "3 hours",
+      description: "Discover local flavors and market culture in Omaha with curated tasting stops.",
+    },
+    {
+      title: "Hidden Corners of Omaha",
+      duration: "2.5 hours",
+      description: "Explore lesser-known neighborhoods and stories that show the local side of Omaha.",
+    },
+    {
+      title: "Omaha Sunset Viewpoints",
+      duration: "2 hours",
+      description: "Visit scenic viewpoints and photogenic routes around Omaha at golden hour.",
+    },
+    {
+      title: "Omaha Private Discovery Route",
+      duration: "3 hours",
+      description: "A curated route through signature areas and hidden gems in Omaha.",
+    },
+  ],
 };
 
 export function getAiToursByCity(citySlug: string): CuratedTour[] {

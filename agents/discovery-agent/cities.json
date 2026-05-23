@@ -1083,5 +1083,26 @@
     "country": "United States",
     "latitude": 39.9527237,
     "longitude": -75.1635262
+  },
+  {
+    "slug": "san-antonio",
+    "name": "San Antonio",
+    "country": "United States",
+    "latitude": 29.4246002,
+    "longitude": -98.4951405
+  },
+  {
+    "slug": "omaha",
+    "name": "Omaha",
+    "country": "United States",
+    "latitude": 41.2587459,
+    "longitude": -95.9383758
+  },
+  {
+    "slug": "atlanta",
+    "name": "Atlanta",
+    "country": "United States",
+    "latitude": 33.7544657,
+    "longitude": -84.3898151
   }
 ]

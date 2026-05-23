@@ -851,6 +851,16 @@ export const CITY_IMAGE_MAP: Record<string, CityImageRecord> = {
     image_author: "Lucas Davies",
     image_source: "unsplash",
   },
+  "san-antonio": {
+    city_image_url: "https://images.unsplash.com/photo-1514510249063-e0faf6c6ec0c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4OTczNTh8MHwxfHNlYXJjaHwxfHxTYW4lMjBBbnRvbmlvJTIwc2t5bGluZXxlbnwwfDB8fHwxNzc5NDI3NjU0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+    image_author: "Matthew LeJune",
+    image_source: "unsplash",
+  },
+  "omaha": {
+    city_image_url: "https://images.unsplash.com/photo-1601780998888-0bfe1f4ca675?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4OTczNTh8MHwxfHNlYXJjaHwxfHxPbWFoYSUyMHNreWxpbmV8ZW58MHwwfHx8MTc3OTUxMjYyM3ww&ixlib=rb-4.1.0&q=80&w=1080",
+    image_author: "Tim Umphreys",
+    image_source: "unsplash",
+  },
 };
 
 export function getCityImage(citySlug: string): CityImageRecord | undefined {

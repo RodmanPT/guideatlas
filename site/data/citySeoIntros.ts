@@ -172,6 +172,8 @@ export const citySeoIntros: CitySeoIntros = {
   "phoenix": "Discover the best tours in Phoenix, from food walks to historical explorations led by local guides.",
   "philadelphia": "Discover the best tours in Philadelphia, from food walks to historical explorations led by local guides.",
   "san-diego": "Discover the best tours in San Diego, from food walks to historical explorations led by local guides.",
+  "san-antonio": "Discover the best tours in San Antonio, from food walks to historical explorations led by local guides.",
+  "omaha": "Discover the best tours in Omaha, from food walks to historical explorations led by local guides.",
 };
 
 export function getCitySeoIntro(citySlug: string, cityName: string): string {
