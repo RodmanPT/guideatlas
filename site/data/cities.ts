@@ -174,6 +174,7 @@ export const CITIES: City[] = [
   { slug: "san-diego", name: "San Diego", country: "United States", latitude: 32.7174202, longitude: -117.162772 },
   { slug: "san-antonio", name: "San Antonio", country: "United States", latitude: 29.4246002, longitude: -98.4951405 },
   { slug: "omaha", name: "Omaha", country: "United States", latitude: 41.2587459, longitude: -95.9383758 },
+  { slug: "atlanta", name: "Atlanta", country: "United States", latitude: 33.7544657, longitude: -84.3898151 },
 ];
 
 export function getCityBySlug(slug: string): City | undefined {
