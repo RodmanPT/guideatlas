@@ -3748,6 +3748,23 @@ export const aiTours: CityToursMap = {
       description: "Explore lesser-known neighborhoods and stories that show the local side of Atlanta.",
     },
   ],
+  "kyiv": [
+    {
+      title: "Kyiv Food and Markets Walk",
+      duration: "3 hours",
+      description: "Discover local flavors and market culture in Kyiv with curated tasting stops.",
+    },
+    {
+      title: "Kyiv Private Discovery Route",
+      duration: "3 hours",
+      description: "A curated route through signature areas and hidden gems in Kyiv.",
+    },
+    {
+      title: "Kyiv History Highlights",
+      duration: "2 hours",
+      description: "Walk through key landmarks and historical moments that shaped Kyiv.",
+    },
+  ],
 };
 
 export function getAiToursByCity(citySlug: string): CuratedTour[] {

@@ -866,6 +866,11 @@ export const CITY_IMAGE_MAP: Record<string, CityImageRecord> = {
     image_author: "Lance Asper",
     image_source: "unsplash",
   },
+  "kyiv": {
+    city_image_url: "https://images.unsplash.com/photo-1773369366068-aa5d7b7bee8e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4OTczNTh8MHwxfHNlYXJjaHwxfHxLeWl2JTIwc2t5bGluZXxlbnwwfDB8fHwxNzc5Njg2NTAxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+    image_author: "Nadin Nandin",
+    image_source: "unsplash",
+  },
 };
 
 export function getCityImage(citySlug: string): CityImageRecord | undefined {
