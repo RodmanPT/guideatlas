@@ -469,8 +469,9 @@ def main() -> int:
             added_names.append(destination["name"])
 
     changed = list(changed_set)
+    changed.append(candidates_path)
 
-    if not changed or not added_names:
+    if not changed_set or not added_names:
         print("Nothing changed. Exiting.")
         return 0
 
