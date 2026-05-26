@@ -3787,6 +3787,33 @@ export const aiTours: CityToursMap = {
       description: "A curated route through signature areas and hidden gems in Test Mock City.",
     },
   ],
+  "test-city-2": [
+    {
+      title: "Test City 2 Food and Markets Walk",
+      duration: "3 hours",
+      description: "Discover local flavors and market culture in Test City 2 with curated tasting stops.",
+    },
+    {
+      title: "Test City 2 Sunset Viewpoints",
+      duration: "2 hours",
+      description: "Visit scenic viewpoints and photogenic routes around Test City 2 at golden hour.",
+    },
+    {
+      title: "Test City 2 Private Discovery Route",
+      duration: "3 hours",
+      description: "A curated route through signature areas and hidden gems in Test City 2.",
+    },
+    {
+      title: "Hidden Corners of Test City 2",
+      duration: "2.5 hours",
+      description: "Explore lesser-known neighborhoods and stories that show the local side of Test City 2.",
+    },
+    {
+      title: "Test City 2 Culture and Street Life",
+      duration: "3.5 hours",
+      description: "Experience neighborhood rhythms, architecture, and local culture in Test City 2.",
+    },
+  ],
 };
 
 export function getAiToursByCity(citySlug: string): CuratedTour[] {
