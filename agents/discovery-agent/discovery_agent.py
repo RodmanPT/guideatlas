@@ -468,6 +468,7 @@ def main() -> int:
         if was_added:
             added_names.append(destination["name"])
 
+    changed_set.add(candidates_path)
     changed = list(changed_set)
 
     if not changed or not added_names:
