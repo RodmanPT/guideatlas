@@ -3765,6 +3765,28 @@ export const aiTours: CityToursMap = {
       description: "Walk through key landmarks and historical moments that shaped Kyiv.",
     },
   ],
+  "test-mock-city": [
+    {
+      title: "Test Mock City Sunset Viewpoints",
+      duration: "2 hours",
+      description: "Visit scenic viewpoints and photogenic routes around Test Mock City at golden hour.",
+    },
+    {
+      title: "Test Mock City History Highlights",
+      duration: "2 hours",
+      description: "Walk through key landmarks and historical moments that shaped Test Mock City.",
+    },
+    {
+      title: "Test Mock City Food and Markets Walk",
+      duration: "3 hours",
+      description: "Discover local flavors and market culture in Test Mock City with curated tasting stops.",
+    },
+    {
+      title: "Test Mock City Private Discovery Route",
+      duration: "3 hours",
+      description: "A curated route through signature areas and hidden gems in Test Mock City.",
+    },
+  ],
 };
 
 export function getAiToursByCity(citySlug: string): CuratedTour[] {
