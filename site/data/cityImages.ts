@@ -891,6 +891,11 @@ export const CITY_IMAGE_MAP: Record<string, CityImageRecord> = {
     image_author: "William Duggan",
     image_source: "unsplash",
   },
+  "minneapolis": {
+    city_image_url: "https://images.unsplash.com/photo-1535082049017-5a7b43f3bcef?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4OTczNTh8MHwxfHNlYXJjaHwxfHxNaW5uZWFwb2xpcyUyMHNreWxpbmV8ZW58MHwwfHx8MTc3OTg1OTI1OXww&ixlib=rb-4.1.0&q=80&w=1080",
+    image_author: "Nicole Geri",
+    image_source: "unsplash",
+  },
 };
 
 export function getCityImage(citySlug: string): CityImageRecord | undefined {
