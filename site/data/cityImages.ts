@@ -881,6 +881,16 @@ export const CITY_IMAGE_MAP: Record<string, CityImageRecord> = {
     image_author: "Sara Melo Gago",
     image_source: "unsplash",
   },
+  "portland": {
+    city_image_url: "https://images.unsplash.com/photo-1603312504738-3dd0fdaff23b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4OTczNTh8MHwxfHNlYXJjaHwxfHxQb3J0bGFuZCUyMHNreWxpbmV8ZW58MHwwfHx8MTc3OTg1ODkyMnww&ixlib=rb-4.1.0&q=80&w=1080",
+    image_author: "Trang Nguyen",
+    image_source: "unsplash",
+  },
+  "detroit": {
+    city_image_url: "https://images.unsplash.com/photo-1568267938179-f50e67de5ffc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4OTczNTh8MHwxfHNlYXJjaHwxfHxEZXRyb2l0JTIwc2t5bGluZXxlbnwwfDB8fHwxNzc5ODU4OTM2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+    image_author: "William Duggan",
+    image_source: "unsplash",
+  },
 };
 
 export function getCityImage(citySlug: string): CityImageRecord | undefined {

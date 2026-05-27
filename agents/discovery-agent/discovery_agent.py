@@ -474,6 +474,7 @@ def main() -> int:
         print("Nothing changed. Exiting.")
         return 0
 
+    changed.append(candidates_path)
     git_commit_and_push(repo_root, changed, added_names)
     print(f"Added cities: {', '.join(added_names)}")
     return 0
