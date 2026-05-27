@@ -3814,6 +3814,28 @@ export const aiTours: CityToursMap = {
       description: "Experience neighborhood rhythms, architecture, and local culture in Test City 2.",
     },
   ],
+  "portland": [
+    {
+      title: "Portland Private Discovery Route",
+      duration: "3 hours",
+      description: "A curated route through signature areas and hidden gems in Portland.",
+    },
+    {
+      title: "Portland Culture and Street Life",
+      duration: "3.5 hours",
+      description: "Experience neighborhood rhythms, architecture, and local culture in Portland.",
+    },
+    {
+      title: "Portland Sunset Viewpoints",
+      duration: "2 hours",
+      description: "Visit scenic viewpoints and photogenic routes around Portland at golden hour.",
+    },
+    {
+      title: "Portland Food and Markets Walk",
+      duration: "3 hours",
+      description: "Discover local flavors and market culture in Portland with curated tasting stops.",
+    },
+  ],
 };
 
 export function getAiToursByCity(citySlug: string): CuratedTour[] {
