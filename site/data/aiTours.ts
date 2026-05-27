@@ -3836,6 +3836,33 @@ export const aiTours: CityToursMap = {
       description: "Discover local flavors and market culture in Portland with curated tasting stops.",
     },
   ],
+  "detroit": [
+    {
+      title: "Hidden Corners of Detroit",
+      duration: "2.5 hours",
+      description: "Explore lesser-known neighborhoods and stories that show the local side of Detroit.",
+    },
+    {
+      title: "Detroit History Highlights",
+      duration: "2 hours",
+      description: "Walk through key landmarks and historical moments that shaped Detroit.",
+    },
+    {
+      title: "Detroit Culture and Street Life",
+      duration: "3.5 hours",
+      description: "Experience neighborhood rhythms, architecture, and local culture in Detroit.",
+    },
+    {
+      title: "Detroit Private Discovery Route",
+      duration: "3 hours",
+      description: "A curated route through signature areas and hidden gems in Detroit.",
+    },
+    {
+      title: "Detroit Sunset Viewpoints",
+      duration: "2 hours",
+      description: "Visit scenic viewpoints and photogenic routes around Detroit at golden hour.",
+    },
+  ],
 };
 
 export function getAiToursByCity(citySlug: string): CuratedTour[] {
