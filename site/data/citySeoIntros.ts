@@ -182,6 +182,7 @@ export const citySeoIntros: CitySeoIntros = {
   "detroit": "Discover the best tours in Detroit, from food walks to historical explorations led by local guides.",
   "minneapolis": "Discover the best tours in Minneapolis, from food walks to historical explorations led by local guides.",
   "tampa": "Discover the best tours in Tampa, from food walks to historical explorations led by local guides.",
+  "baltimore": "Discover the best tours in Baltimore, from food walks to historical explorations led by local guides.",
 };
 
 export function getCitySeoIntro(citySlug: string, cityName: string): string {

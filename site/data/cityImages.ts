@@ -901,6 +901,11 @@ export const CITY_IMAGE_MAP: Record<string, CityImageRecord> = {
     image_author: "Kody Cheyne",
     image_source: "unsplash",
   },
+  "baltimore": {
+    city_image_url: "https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4OTczNTh8MHwxfHNlYXJjaHwxfHxCYWx0aW1vcmUlMjBza3lsaW5lfGVufDB8MHx8fDE3Nzk5NDY0OTl8MA&ixlib=rb-4.1.0&q=80&w=1080",
+    image_author: "Pedro Lastra",
+    image_source: "unsplash",
+  },
 };
 
 export function getCityImage(citySlug: string): CityImageRecord | undefined {
