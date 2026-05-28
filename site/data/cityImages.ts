@@ -911,6 +911,11 @@ export const CITY_IMAGE_MAP: Record<string, CityImageRecord> = {
     image_author: "Daniel Weiss",
     image_source: "unsplash",
   },
+  "indianapolis": {
+    city_image_url: "https://images.unsplash.com/photo-1584385971010-71c147ba5dbd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4OTczNTh8MHwxfHNlYXJjaHwxfHxJbmRpYW5hcG9saXMlMjBza3lsaW5lfGVufDB8MHx8fDE3Nzk5NDY4NTJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+    image_author: "Ryan De Hamer",
+    image_source: "unsplash",
+  },
 };
 
 export function getCityImage(citySlug: string): CityImageRecord | undefined {

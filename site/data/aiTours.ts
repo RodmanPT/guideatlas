@@ -3951,6 +3951,33 @@ export const aiTours: CityToursMap = {
       description: "Explore lesser-known neighborhoods and stories that show the local side of Charlotte.",
     },
   ],
+  "indianapolis": [
+    {
+      title: "Indianapolis Food and Markets Walk",
+      duration: "3 hours",
+      description: "Discover local flavors and market culture in Indianapolis with curated tasting stops.",
+    },
+    {
+      title: "Hidden Corners of Indianapolis",
+      duration: "2.5 hours",
+      description: "Explore lesser-known neighborhoods and stories that show the local side of Indianapolis.",
+    },
+    {
+      title: "Indianapolis Sunset Viewpoints",
+      duration: "2 hours",
+      description: "Visit scenic viewpoints and photogenic routes around Indianapolis at golden hour.",
+    },
+    {
+      title: "Indianapolis History Highlights",
+      duration: "2 hours",
+      description: "Walk through key landmarks and historical moments that shaped Indianapolis.",
+    },
+    {
+      title: "Indianapolis Culture and Street Life",
+      duration: "3.5 hours",
+      description: "Experience neighborhood rhythms, architecture, and local culture in Indianapolis.",
+    },
+  ],
 };
 
 export function getAiToursByCity(citySlug: string): CuratedTour[] {

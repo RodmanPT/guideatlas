@@ -184,6 +184,7 @@ export const CITIES: City[] = [
   { slug: "tampa", name: "Tampa", country: "United States", latitude: 27.9449854, longitude: -82.4583107 },
   { slug: "baltimore", name: "Baltimore", country: "United States", latitude: 39.2908816, longitude: -76.610759 },
   { slug: "charlotte", name: "Charlotte", country: "United States", latitude: 35.2272086, longitude: -80.8430827 },
+  { slug: "indianapolis", name: "Indianapolis", country: "United States", latitude: 39.7683331, longitude: -86.1583502 },
 ];
 
 export function getCityBySlug(slug: string): City | undefined {
