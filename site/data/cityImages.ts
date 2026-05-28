@@ -896,6 +896,11 @@ export const CITY_IMAGE_MAP: Record<string, CityImageRecord> = {
     image_author: "Nicole Geri",
     image_source: "unsplash",
   },
+  "tampa": {
+    city_image_url: "https://images.unsplash.com/photo-1561063139-e183e66909c4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4OTczNTh8MHwxfHNlYXJjaHwxfHxUYW1wYSUyMHNreWxpbmV8ZW58MHwwfHx8MTc3OTk0NTgwOHww&ixlib=rb-4.1.0&q=80&w=1080",
+    image_author: "Kody Cheyne",
+    image_source: "unsplash",
+  },
 };
 
 export function getCityImage(citySlug: string): CityImageRecord | undefined {

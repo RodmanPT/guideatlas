@@ -3885,6 +3885,33 @@ export const aiTours: CityToursMap = {
       description: "Visit scenic viewpoints and photogenic routes around Minneapolis at golden hour.",
     },
   ],
+  "tampa": [
+    {
+      title: "Tampa Food and Markets Walk",
+      duration: "3 hours",
+      description: "Discover local flavors and market culture in Tampa with curated tasting stops.",
+    },
+    {
+      title: "Tampa Culture and Street Life",
+      duration: "3.5 hours",
+      description: "Experience neighborhood rhythms, architecture, and local culture in Tampa.",
+    },
+    {
+      title: "Tampa History Highlights",
+      duration: "2 hours",
+      description: "Walk through key landmarks and historical moments that shaped Tampa.",
+    },
+    {
+      title: "Tampa Sunset Viewpoints",
+      duration: "2 hours",
+      description: "Visit scenic viewpoints and photogenic routes around Tampa at golden hour.",
+    },
+    {
+      title: "Hidden Corners of Tampa",
+      duration: "2.5 hours",
+      description: "Explore lesser-known neighborhoods and stories that show the local side of Tampa.",
+    },
+  ],
 };
 
 export function getAiToursByCity(citySlug: string): CuratedTour[] {
