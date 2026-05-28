@@ -916,6 +916,16 @@ export const CITY_IMAGE_MAP: Record<string, CityImageRecord> = {
     image_author: "Ryan De Hamer",
     image_source: "unsplash",
   },
+  "columbus": {
+    city_image_url: "https://images.unsplash.com/photo-1494303110424-f25a258d2e4b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4OTczNTh8MHwxfHNlYXJjaHwxfHxDb2x1bWJ1cyUyMHNreWxpbmV8ZW58MHwwfHx8MTc3OTk0NzU1MHww&ixlib=rb-4.1.0&q=80&w=1080",
+    image_author: "Tim Trad",
+    image_source: "unsplash",
+  },
+  "fort-worth": {
+    city_image_url: "https://images.unsplash.com/photo-1641084700013-f6483d4035f9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4OTczNTh8MHwxfHNlYXJjaHwxfHxGb3J0JTIwV29ydGglMjBza3lsaW5lfGVufDB8MHx8fDE3Nzk5NDc1NTB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+    image_author: "Fallon Michael",
+    image_source: "unsplash",
+  },
 };
 
 export function getCityImage(citySlug: string): CityImageRecord | undefined {

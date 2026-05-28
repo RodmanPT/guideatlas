@@ -3978,6 +3978,50 @@ export const aiTours: CityToursMap = {
       description: "Experience neighborhood rhythms, architecture, and local culture in Indianapolis.",
     },
   ],
+  "columbus": [
+    {
+      title: "Columbus Private Discovery Route",
+      duration: "3 hours",
+      description: "A curated route through signature areas and hidden gems in Columbus.",
+    },
+    {
+      title: "Columbus Sunset Viewpoints",
+      duration: "2 hours",
+      description: "Visit scenic viewpoints and photogenic routes around Columbus at golden hour.",
+    },
+    {
+      title: "Columbus Food and Markets Walk",
+      duration: "3 hours",
+      description: "Discover local flavors and market culture in Columbus with curated tasting stops.",
+    },
+    {
+      title: "Columbus Culture and Street Life",
+      duration: "3.5 hours",
+      description: "Experience neighborhood rhythms, architecture, and local culture in Columbus.",
+    },
+    {
+      title: "Columbus History Highlights",
+      duration: "2 hours",
+      description: "Walk through key landmarks and historical moments that shaped Columbus.",
+    },
+  ],
+  "fort-worth": [
+    {
+      title: "Fort Worth Sunset Viewpoints",
+      duration: "2 hours",
+      description: "Visit scenic viewpoints and photogenic routes around Fort Worth at golden hour.",
+    },
+    {
+      title: "Hidden Corners of Fort Worth",
+      duration: "2.5 hours",
+      description: "Explore lesser-known neighborhoods and stories that show the local side of Fort Worth.",
+    },
+    {
+      title: "Fort Worth Culture and Street Life",
+      duration: "3.5 hours",
+      description: "Experience neighborhood rhythms, architecture, and local culture in Fort Worth.",
+    },
+  ],
 };
 
 export function getAiToursByCity(citySlug: string): CuratedTour[] {

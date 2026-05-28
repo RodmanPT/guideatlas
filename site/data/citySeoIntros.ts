@@ -185,6 +185,8 @@ export const citySeoIntros: CitySeoIntros = {
   "baltimore": "Discover the best tours in Baltimore, from food walks to historical explorations led by local guides.",
   "charlotte": "Discover the best tours in Charlotte, from food walks to historical explorations led by local guides.",
   "indianapolis": "Discover the best tours in Indianapolis, from food walks to historical explorations led by local guides.",
+  "columbus": "Discover the best tours in Columbus, from food walks to historical explorations led by local guides.",
+  "fort-worth": "Discover the best tours in Fort Worth, from food walks to historical explorations led by local guides.",
 };
 
 export function getCitySeoIntro(citySlug: string, cityName: string): string {
