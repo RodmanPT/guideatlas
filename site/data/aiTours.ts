@@ -4022,6 +4022,33 @@ export const aiTours: CityToursMap = {
       description: "Experience neighborhood rhythms, architecture, and local culture in Fort Worth.",
     },
   ],
+  "san-jose": [
+    {
+      title: "San Jose Private Discovery Route",
+      duration: "3 hours",
+      description: "A curated route through signature areas and hidden gems in San Jose.",
+    },
+    {
+      title: "San Jose History Highlights",
+      duration: "2 hours",
+      description: "Walk through key landmarks and historical moments that shaped San Jose.",
+    },
+    {
+      title: "Hidden Corners of San Jose",
+      duration: "2.5 hours",
+      description: "Explore lesser-known neighborhoods and stories that show the local side of San Jose.",
+    },
+    {
+      title: "San Jose Food and Markets Walk",
+      duration: "3 hours",
+      description: "Discover local flavors and market culture in San Jose with curated tasting stops.",
+    },
+    {
+      title: "San Jose Culture and Street Life",
+      duration: "3.5 hours",
+      description: "Experience neighborhood rhythms, architecture, and local culture in San Jose.",
+    },
+  ],
 };
 
 export function getAiToursByCity(citySlug: string): CuratedTour[] {
