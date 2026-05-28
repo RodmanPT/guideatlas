@@ -3934,6 +3934,23 @@ export const aiTours: CityToursMap = {
       description: "Visit scenic viewpoints and photogenic routes around Baltimore at golden hour.",
     },
   ],
+  "charlotte": [
+    {
+      title: "Charlotte Food and Markets Walk",
+      duration: "3 hours",
+      description: "Discover local flavors and market culture in Charlotte with curated tasting stops.",
+    },
+    {
+      title: "Charlotte Private Discovery Route",
+      duration: "3 hours",
+      description: "A curated route through signature areas and hidden gems in Charlotte.",
+    },
+    {
+      title: "Hidden Corners of Charlotte",
+      duration: "2.5 hours",
+      description: "Explore lesser-known neighborhoods and stories that show the local side of Charlotte.",
+    },
+  ],
 };
 
 export function getAiToursByCity(citySlug: string): CuratedTour[] {

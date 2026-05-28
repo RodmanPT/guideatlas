@@ -906,6 +906,11 @@ export const CITY_IMAGE_MAP: Record<string, CityImageRecord> = {
     image_author: "Pedro Lastra",
     image_source: "unsplash",
   },
+  "charlotte": {
+    city_image_url: "https://images.unsplash.com/photo-1507810670121-b08efd787765?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4OTczNTh8MHwxfHNlYXJjaHwxfHxDaGFybG90dGUlMjBza3lsaW5lfGVufDB8MHx8fDE3Nzk5NDY4NDR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+    image_author: "Daniel Weiss",
+    image_source: "unsplash",
+  },
 };
 
 export function getCityImage(citySlug: string): CityImageRecord | undefined {
