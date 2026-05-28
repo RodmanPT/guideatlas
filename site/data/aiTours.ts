@@ -4049,6 +4049,28 @@ export const aiTours: CityToursMap = {
       description: "Experience neighborhood rhythms, architecture, and local culture in San Jose.",
     },
   ],
+  "jacksonville": [
+    {
+      title: "Jacksonville Culture and Street Life",
+      duration: "3.5 hours",
+      description: "Experience neighborhood rhythms, architecture, and local culture in Jacksonville.",
+    },
+    {
+      title: "Jacksonville History Highlights",
+      duration: "2 hours",
+      description: "Walk through key landmarks and historical moments that shaped Jacksonville.",
+    },
+    {
+      title: "Jacksonville Food and Markets Walk",
+      duration: "3 hours",
+      description: "Discover local flavors and market culture in Jacksonville with curated tasting stops.",
+    },
+    {
+      title: "Hidden Corners of Jacksonville",
+      duration: "2.5 hours",
+      description: "Explore lesser-known neighborhoods and stories that show the local side of Jacksonville.",
+    },
+  ],
 };
 
 export function getAiToursByCity(citySlug: string): CuratedTour[] {

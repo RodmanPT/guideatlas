@@ -1209,5 +1209,47 @@
     "country": "United States",
     "latitude": 37.3361663,
     "longitude": -121.890591
+  },
+  {
+    "slug": "jacksonville",
+    "name": "Jacksonville",
+    "country": "United States",
+    "latitude": 30.3262247,
+    "longitude": -81.6579179
+  },
+  {
+    "slug": "san-francisco",
+    "name": "San Francisco",
+    "country": "United States",
+    "latitude": 37.7879363,
+    "longitude": -122.4075201
+  },
+  {
+    "slug": "austin",
+    "name": "Austin",
+    "country": "United States",
+    "latitude": 30.2711286,
+    "longitude": -97.7436995
+  },
+  {
+    "slug": "denver",
+    "name": "Denver",
+    "country": "United States",
+    "latitude": 39.7392364,
+    "longitude": -104.984862
+  },
+  {
+    "slug": "seattle",
+    "name": "Seattle",
+    "country": "United States",
+    "latitude": 47.6038321,
+    "longitude": -122.330062
+  },
+  {
+    "slug": "boston",
+    "name": "Boston",
+    "country": "United States",
+    "latitude": 42.3588336,
+    "longitude": -71.0578303
   }
 ]
