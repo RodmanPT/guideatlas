@@ -189,6 +189,11 @@ export const citySeoIntros: CitySeoIntros = {
   "fort-worth": "Discover the best tours in Fort Worth, from food walks to historical explorations led by local guides.",
   "san-jose": "Discover the best tours in San Jose, from food walks to historical explorations led by local guides.",
   "jacksonville": "Discover the best tours in Jacksonville, from food walks to historical explorations led by local guides.",
+  "salt-lake-city": "Discover the best tours in Salt Lake City, from food walks to historical explorations led by local guides.",
+  "raleigh": "Discover the best tours in Raleigh, from food walks to historical explorations led by local guides.",
+  "memphis": "Discover the best tours in Memphis, from food walks to historical explorations led by local guides.",
+  "nashville": "Discover the best tours in Nashville, from food walks to historical explorations led by local guides.",
+  "louisville": "Discover the best tours in Louisville, from food walks to historical explorations led by local guides.",
 };
 
 export function getCitySeoIntro(citySlug: string, cityName: string): string {

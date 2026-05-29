@@ -4071,6 +4071,131 @@ export const aiTours: CityToursMap = {
       description: "Explore lesser-known neighborhoods and stories that show the local side of Jacksonville.",
     },
   ],
+  "salt-lake-city": [
+    {
+      title: "Hidden Corners of Salt Lake City",
+      duration: "2.5 hours",
+      description: "Explore lesser-known neighborhoods and stories that show the local side of Salt Lake City.",
+    },
+    {
+      title: "Salt Lake City History Highlights",
+      duration: "2 hours",
+      description: "Walk through key landmarks and historical moments that shaped Salt Lake City.",
+    },
+    {
+      title: "Salt Lake City Food and Markets Walk",
+      duration: "3 hours",
+      description: "Discover local flavors and market culture in Salt Lake City with curated tasting stops.",
+    },
+    {
+      title: "Salt Lake City Sunset Viewpoints",
+      duration: "2 hours",
+      description: "Visit scenic viewpoints and photogenic routes around Salt Lake City at golden hour.",
+    },
+    {
+      title: "Salt Lake City Private Discovery Route",
+      duration: "3 hours",
+      description: "A curated route through signature areas and hidden gems in Salt Lake City.",
+    },
+  ],
+  "raleigh": [
+    {
+      title: "Raleigh Culture and Street Life",
+      duration: "3.5 hours",
+      description: "Experience neighborhood rhythms, architecture, and local culture in Raleigh.",
+    },
+    {
+      title: "Raleigh History Highlights",
+      duration: "2 hours",
+      description: "Walk through key landmarks and historical moments that shaped Raleigh.",
+    },
+    {
+      title: "Raleigh Private Discovery Route",
+      duration: "3 hours",
+      description: "A curated route through signature areas and hidden gems in Raleigh.",
+    },
+    {
+      title: "Hidden Corners of Raleigh",
+      duration: "2.5 hours",
+      description: "Explore lesser-known neighborhoods and stories that show the local side of Raleigh.",
+    },
+    {
+      title: "Raleigh Sunset Viewpoints",
+      duration: "2 hours",
+      description: "Visit scenic viewpoints and photogenic routes around Raleigh at golden hour.",
+    },
+  ],
+  "memphis": [
+    {
+      title: "Memphis Private Discovery Route",
+      duration: "3 hours",
+      description: "A curated route through signature areas and hidden gems in Memphis.",
+    },
+    {
+      title: "Hidden Corners of Memphis",
+      duration: "2.5 hours",
+      description: "Explore lesser-known neighborhoods and stories that show the local side of Memphis.",
+    },
+    {
+      title: "Memphis Food and Markets Walk",
+      duration: "3 hours",
+      description: "Discover local flavors and market culture in Memphis with curated tasting stops.",
+    },
+    {
+      title: "Memphis Culture and Street Life",
+      duration: "3.5 hours",
+      description: "Experience neighborhood rhythms, architecture, and local culture in Memphis.",
+    },
+    {
+      title: "Memphis History Highlights",
+      duration: "2 hours",
+      description: "Walk through key landmarks and historical moments that shaped Memphis.",
+    },
+  ],
+  "nashville": [
+    {
+      title: "Nashville Food and Markets Walk",
+      duration: "3 hours",
+      description: "Discover local flavors and market culture in Nashville with curated tasting stops.",
+    },
+    {
+      title: "Nashville Private Discovery Route",
+      duration: "3 hours",
+      description: "A curated route through signature areas and hidden gems in Nashville.",
+    },
+    {
+      title: "Hidden Corners of Nashville",
+      duration: "2.5 hours",
+      description: "Explore lesser-known neighborhoods and stories that show the local side of Nashville.",
+    },
+  ],
+  "louisville": [
+    {
+      title: "Louisville History Highlights",
+      duration: "2 hours",
+      description: "Walk through key landmarks and historical moments that shaped Louisville.",
+    },
+    {
+      title: "Louisville Culture and Street Life",
+      duration: "3.5 hours",
+      description: "Experience neighborhood rhythms, architecture, and local culture in Louisville.",
+    },
+    {
+      title: "Hidden Corners of Louisville",
+      duration: "2.5 hours",
+      description: "Explore lesser-known neighborhoods and stories that show the local side of Louisville.",
+    },
+    {
+      title: "Louisville Private Discovery Route",
+      duration: "3 hours",
+      description: "A curated route through signature areas and hidden gems in Louisville.",
+    },
+    {
+      title: "Louisville Food and Markets Walk",
+      duration: "3 hours",
+      description: "Discover local flavors and market culture in Louisville with curated tasting stops.",
+    },
+  ],
 };
 
 export function getAiToursByCity(citySlug: string): CuratedTour[] {

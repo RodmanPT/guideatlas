@@ -936,6 +936,31 @@ export const CITY_IMAGE_MAP: Record<string, CityImageRecord> = {
     image_author: "Sean Burgess",
     image_source: "unsplash",
   },
+  "salt-lake-city": {
+    city_image_url: "https://images.unsplash.com/photo-1621603933126-6c216db10045?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4OTczNTh8MHwxfHNlYXJjaHwxfHxTYWx0JTIwTGFrZSUyMENpdHklMjBza3lsaW5lfGVufDB8MHx8fDE3ODAwMzI2NDZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+    image_author: "Brent Pace",
+    image_source: "unsplash",
+  },
+  "raleigh": {
+    city_image_url: "https://images.unsplash.com/photo-1676934556859-624fa21e2588?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4OTczNTh8MHwxfHNlYXJjaHwxfHxSYWxlaWdoJTIwc2t5bGluZXxlbnwwfDB8fHwxNzgwMDMyNjQ3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+    image_author: "Reba Spike",
+    image_source: "unsplash",
+  },
+  "memphis": {
+    city_image_url: "https://images.unsplash.com/photo-1771901027957-11c515d50a3c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4OTczNTh8MHwxfHNlYXJjaHwxfHxNZW1waGlzJTIwc2t5bGluZXxlbnwwfDB8fHwxNzgwMDMyNjQ4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+    image_author: "Gary Ballard",
+    image_source: "unsplash",
+  },
+  "nashville": {
+    city_image_url: "https://images.unsplash.com/photo-1556033681-83abea291a96?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4OTczNTh8MHwxfHNlYXJjaHwxfHxOYXNodmlsbGUlMjBza3lsaW5lfGVufDB8MHx8fDE3ODAwMzI2NDh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+    image_author: "Tanner Boriack",
+    image_source: "unsplash",
+  },
+  "louisville": {
+    city_image_url: "https://images.unsplash.com/photo-1763518186257-e679dc84976e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4OTczNTh8MHwxfHNlYXJjaHwxfHxMb3Vpc3ZpbGxlJTIwc2t5bGluZXxlbnwwfDB8fHwxNzgwMDMyNjQ5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+    image_author: "Chris Marlin",
+    image_source: "unsplash",
+  },
 };
 
 export function getCityImage(citySlug: string): CityImageRecord | undefined {
