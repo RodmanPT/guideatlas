@@ -961,6 +961,11 @@ export const CITY_IMAGE_MAP: Record<string, CityImageRecord> = {
     image_author: "Chris Marlin",
     image_source: "unsplash",
   },
+  "milan-test": {
+    city_image_url: "https://images.unsplash.com/photo-1620030537215-9ef4d9c0d3ab?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4OTczNTh8MHwxfHNlYXJjaHwxfHxNaWxhbiUyMFRlc3QlMjBjaXR5c2NhcGV8ZW58MHwwfHx8MTc4MDExODIyOHww&ixlib=rb-4.1.0&q=80&w=1080",
+    image_author: "Ouael Ben Salah",
+    image_source: "unsplash",
+  },
 };
 
 export function getCityImage(citySlug: string): CityImageRecord | undefined {

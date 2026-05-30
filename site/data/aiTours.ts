@@ -4196,6 +4196,23 @@ export const aiTours: CityToursMap = {
       description: "Discover local flavors and market culture in Louisville with curated tasting stops.",
     },
   ],
+  "milan-test": [
+    {
+      title: "Milan Test Private Discovery Route",
+      duration: "3 hours",
+      description: "A curated route through signature areas and hidden gems in Milan Test.",
+    },
+    {
+      title: "Hidden Corners of Milan Test",
+      duration: "2.5 hours",
+      description: "Explore lesser-known neighborhoods and stories that show the local side of Milan Test.",
+    },
+    {
+      title: "Milan Test Food and Markets Walk",
+      duration: "3 hours",
+      description: "Discover local flavors and market culture in Milan Test with curated tasting stops.",
+    },
+  ],
 };
 
 export function getAiToursByCity(citySlug: string): CuratedTour[] {

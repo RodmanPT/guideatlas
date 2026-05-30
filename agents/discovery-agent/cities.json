@@ -1148,13 +1148,6 @@
     "longitude": -95.3676974
   },
   {
-    "slug": "miami",
-    "name": "Miami",
-    "country": "United States",
-    "latitude": 25.7741566,
-    "longitude": -80.1935973
-  },
-  {
     "slug": "san-diego",
     "name": "San Diego",
     "country": "United States",
@@ -1167,13 +1160,6 @@
     "country": "United States",
     "latitude": 39.7392364,
     "longitude": -104.984862
-  },
-  {
-    "slug": "seattle",
-    "name": "Seattle",
-    "country": "United States",
-    "latitude": 47.6038321,
-    "longitude": -122.330062
   },
   {
     "slug": "charlotte",
@@ -1218,41 +1204,6 @@
     "longitude": -81.6579179
   },
   {
-    "slug": "san-francisco",
-    "name": "San Francisco",
-    "country": "United States",
-    "latitude": 37.7879363,
-    "longitude": -122.4075201
-  },
-  {
-    "slug": "austin",
-    "name": "Austin",
-    "country": "United States",
-    "latitude": 30.2711286,
-    "longitude": -97.7436995
-  },
-  {
-    "slug": "denver",
-    "name": "Denver",
-    "country": "United States",
-    "latitude": 39.7392364,
-    "longitude": -104.984862
-  },
-  {
-    "slug": "seattle",
-    "name": "Seattle",
-    "country": "United States",
-    "latitude": 47.6038321,
-    "longitude": -122.330062
-  },
-  {
-    "slug": "boston",
-    "name": "Boston",
-    "country": "United States",
-    "latitude": 42.3588336,
-    "longitude": -71.0578303
-  },
-  {
     "slug": "salt-lake-city",
     "name": "Salt Lake City",
     "country": "United States",
@@ -1286,5 +1237,19 @@
     "country": "United States",
     "latitude": 38.2542376,
     "longitude": -85.759407
+  },
+  {
+    "slug": "milan-test",
+    "name": "Milan Test",
+    "country": "Italy",
+    "latitude": 45.4642,
+    "longitude": 9.19
+  },
+  {
+    "slug": "test-new-city",
+    "name": "Test New City",
+    "country": "Test Country",
+    "latitude": 0,
+    "longitude": 0
   }
 ]
