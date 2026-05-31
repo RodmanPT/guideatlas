@@ -417,6 +417,7 @@ def git_commit_and_push(repo_root: Path, changed_files: List[Path], city_names: 
 
     safe_token = quote(github_token, safe="")
     remote_url = f"https://x-access-token:{safe_token}@github.com/{github_repo}.git"
+    run_cmd(["git", "-C", str(repo_root), "pull", "--rebase", remote_url, github_branch], cwd=repo_root)
     run_cmd(["git", "-C", str(repo_root), "push", remote_url, f"HEAD:{github_branch}"], cwd=repo_root)
 
 

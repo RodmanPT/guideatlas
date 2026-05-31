@@ -971,6 +971,16 @@ export const CITY_IMAGE_MAP: Record<string, CityImageRecord> = {
     image_author: "Jonathan Roger",
     image_source: "unsplash",
   },
+  "test-clean-state": {
+    city_image_url: "https://images.unsplash.com/photo-1625726411847-8cbb60cc71e6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4OTczNTh8MHwxfHNlYXJjaHwxfHxUZXN0JTIwQ2xlYW4lMjBTdGF0ZSUyMHNreWxpbmV8ZW58MHwwfHx8MTc4MDIwNTY5OHww&ixlib=rb-4.1.0&q=80&w=1080",
+    image_author: "Andrew Whitmore",
+    image_source: "unsplash",
+  },
+  "test-pull-rebase-city": {
+    city_image_url: "https://images.unsplash.com/photo-1625726411847-8cbb60cc71e6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4OTczNTh8MHwxfHNlYXJjaHwxfHxUZXN0JTIwUHVsbCUyMFJlYmFzZSUyMENpdHklMjBza3lsaW5lfGVufDB8MHx8fDE3ODAyMDU0OTN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+    image_author: "Andrew Whitmore",
+    image_source: "unsplash",
+  },
 };
 
 export function getCityImage(citySlug: string): CityImageRecord | undefined {

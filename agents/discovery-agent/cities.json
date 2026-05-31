@@ -1258,5 +1258,12 @@
     "country": "Test Country",
     "latitude": 0,
     "longitude": 0
+  },
+  {
+    "slug": "test-pull-rebase-city",
+    "name": "Test Pull Rebase City",
+    "country": "Test Country",
+    "latitude": 0,
+    "longitude": 0
   }
 ]
