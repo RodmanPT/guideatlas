@@ -1251,5 +1251,12 @@
     "country": "Test Country",
     "latitude": 0,
     "longitude": 0
+  },
+  {
+    "slug": "test-clean-state",
+    "name": "Test Clean State",
+    "country": "Test Country",
+    "latitude": 0,
+    "longitude": 0
   }
 ]
