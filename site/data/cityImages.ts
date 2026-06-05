@@ -981,6 +981,16 @@ export const CITY_IMAGE_MAP: Record<string, CityImageRecord> = {
     image_author: "Andrew Whitmore",
     image_source: "unsplash",
   },
+  "monaco": {
+    city_image_url: "https://images.unsplash.com/photo-1687092186618-a402efeee39e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4OTczNTh8MHwxfHNlYXJjaHwxfHxNb25hY28lMjBza3lsaW5lfGVufDB8MHx8fDE3ODA2MzczMTJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+    image_author: "Amy W.",
+    image_source: "unsplash",
+  },
+  "andorra-la-vella": {
+    city_image_url: "https://images.unsplash.com/photo-1547810172-f72f825c6e6a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4OTczNTh8MHwxfHNlYXJjaHwxfHxBbmRvcnJhJTIwbGElMjBWZWxsYSUyMHNreWxpbmV8ZW58MHwwfHx8MTc4MDYzNzMxMnww&ixlib=rb-4.1.0&q=80&w=1080",
+    image_author: "Kira Laktionov",
+    image_source: "unsplash",
+  },
 };
 
 export function getCityImage(citySlug: string): CityImageRecord | undefined {

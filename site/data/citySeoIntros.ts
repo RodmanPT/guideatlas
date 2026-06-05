@@ -198,6 +198,8 @@ export const citySeoIntros: CitySeoIntros = {
   "test-new-city": "Discover the best tours in Test New City, from food walks to historical explorations led by local guides.",
   "test-clean-state": "Discover the best tours in Test Clean State, from food walks to historical explorations led by local guides.",
   "test-pull-rebase-city": "Discover the best tours in Test Pull Rebase City, from food walks to historical explorations led by local guides.",
+  "monaco": "Discover the best tours in Monaco, from food walks to historical explorations led by local guides.",
+  "andorra-la-vella": "Discover the best tours in Andorra la Vella, from food walks to historical explorations led by local guides.",
 };
 
 export function getCitySeoIntro(citySlug: string, cityName: string): string {

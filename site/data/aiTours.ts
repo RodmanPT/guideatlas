@@ -4284,6 +4284,45 @@ export const aiTours: CityToursMap = {
       description: "Visit scenic viewpoints and photogenic routes around Test Pull Rebase City at golden hour.",
     },
   ],
+  "monaco": [
+    {
+      title: "Monaco Culture and Street Life",
+      duration: "3.5 hours",
+      description: "Experience neighborhood rhythms, architecture, and local culture in Monaco.",
+    },
+    {
+      title: "Monaco Sunset Viewpoints",
+      duration: "2 hours",
+      description: "Visit scenic viewpoints and photogenic routes around Monaco at golden hour.",
+    },
+    {
+      title: "Monaco Food and Markets Walk",
+      duration: "3 hours",
+      description: "Discover local flavors and market culture in Monaco with curated tasting stops.",
+    },
+    {
+      title: "Monaco Private Discovery Route",
+      duration: "3 hours",
+      description: "A curated route through signature areas and hidden gems in Monaco.",
+    },
+  ],
+  "andorra-la-vella": [
+    {
+      title: "Andorra la Vella History Highlights",
+      duration: "2 hours",
+      description: "Walk through key landmarks and historical moments that shaped Andorra la Vella.",
+    },
+    {
+      title: "Andorra la Vella Private Discovery Route",
+      duration: "3 hours",
+      description: "A curated route through signature areas and hidden gems in Andorra la Vella.",
+    },
+    {
+      title: "Andorra la Vella Sunset Viewpoints",
+      duration: "2 hours",
+      description: "Visit scenic viewpoints and photogenic routes around Andorra la Vella at golden hour.",
+    },
+  ],
 };
 
 export function getAiToursByCity(citySlug: string): CuratedTour[] {
