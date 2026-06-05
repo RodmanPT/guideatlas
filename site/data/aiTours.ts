@@ -4323,6 +4323,28 @@ export const aiTours: CityToursMap = {
       description: "Visit scenic viewpoints and photogenic routes around Andorra la Vella at golden hour.",
     },
   ],
+  "san-marino": [
+    {
+      title: "San Marino Private Discovery Route",
+      duration: "3 hours",
+      description: "A curated route through signature areas and hidden gems in San Marino.",
+    },
+    {
+      title: "San Marino Sunset Viewpoints",
+      duration: "2 hours",
+      description: "Visit scenic viewpoints and photogenic routes around San Marino at golden hour.",
+    },
+    {
+      title: "San Marino Culture and Street Life",
+      duration: "3.5 hours",
+      description: "Experience neighborhood rhythms, architecture, and local culture in San Marino.",
+    },
+    {
+      title: "San Marino Food and Markets Walk",
+      duration: "3 hours",
+      description: "Discover local flavors and market culture in San Marino with curated tasting stops.",
+    },
+  ],
 };
 
 export function getAiToursByCity(citySlug: string): CuratedTour[] {

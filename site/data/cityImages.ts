@@ -991,6 +991,11 @@ export const CITY_IMAGE_MAP: Record<string, CityImageRecord> = {
     image_author: "Kira Laktionov",
     image_source: "unsplash",
   },
+  "san-marino": {
+    city_image_url: "https://images.unsplash.com/photo-1552751118-2080c52c63c4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4OTczNTh8MHwxfHNlYXJjaHwxfHxTYW4lMjBNYXJpbm8lMjBza3lsaW5lfGVufDB8MHx8fDE3ODA2Mzc0MzV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+    image_author: "Thomas Haas",
+    image_source: "unsplash",
+  },
 };
 
 export function getCityImage(citySlug: string): CityImageRecord | undefined {

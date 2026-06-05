@@ -200,6 +200,7 @@ export const citySeoIntros: CitySeoIntros = {
   "test-pull-rebase-city": "Discover the best tours in Test Pull Rebase City, from food walks to historical explorations led by local guides.",
   "monaco": "Discover the best tours in Monaco, from food walks to historical explorations led by local guides.",
   "andorra-la-vella": "Discover the best tours in Andorra la Vella, from food walks to historical explorations led by local guides.",
+  "san-marino": "Discover the best tours in San Marino, from food walks to historical explorations led by local guides.",
 };
 
 export function getCitySeoIntro(citySlug: string, cityName: string): string {

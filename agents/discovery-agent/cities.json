@@ -1279,5 +1279,12 @@
     "country": "Andorra",
     "latitude": 42.506317,
     "longitude": 1.521835
+  },
+  {
+    "slug": "san-marino",
+    "name": "San Marino",
+    "country": "San Marino",
+    "latitude": 43.94236,
+    "longitude": 12.457777
   }
 ]

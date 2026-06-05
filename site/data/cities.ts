@@ -200,6 +200,7 @@ export const CITIES: City[] = [
   { slug: "test-pull-rebase-city", name: "Test Pull Rebase City", country: "Test Country", latitude: 0, longitude: 0 },
   { slug: "monaco", name: "Monaco", country: "Monaco", latitude: 43.7309697, longitude: 7.4248152 },
   { slug: "andorra-la-vella", name: "Andorra la Vella", country: "Andorra", latitude: 42.506317, longitude: 1.521835 },
+  { slug: "san-marino", name: "San Marino", country: "San Marino", latitude: 43.94236, longitude: 12.457777 },
 ];
 
 export function getCityBySlug(slug: string): City | undefined {
