@@ -1286,5 +1286,12 @@
     "country": "San Marino",
     "latitude": 43.94236,
     "longitude": 12.457777
+  },
+  {
+    "slug": "liechtenstein",
+    "name": "Liechtenstein",
+    "country": "Liechtenstein",
+    "latitude": 47.141,
+    "longitude": 9.5215
   }
 ]

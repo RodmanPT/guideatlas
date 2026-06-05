@@ -4345,6 +4345,23 @@ export const aiTours: CityToursMap = {
       description: "Discover local flavors and market culture in San Marino with curated tasting stops.",
     },
   ],
+  "liechtenstein": [
+    {
+      title: "Hidden Corners of Liechtenstein",
+      duration: "2.5 hours",
+      description: "Explore lesser-known neighborhoods and stories that show the local side of Liechtenstein.",
+    },
+    {
+      title: "Liechtenstein Food and Markets Walk",
+      duration: "3 hours",
+      description: "Discover local flavors and market culture in Liechtenstein with curated tasting stops.",
+    },
+    {
+      title: "Liechtenstein Sunset Viewpoints",
+      duration: "2 hours",
+      description: "Visit scenic viewpoints and photogenic routes around Liechtenstein at golden hour.",
+    },
+  ],
 };
 
 export function getAiToursByCity(citySlug: string): CuratedTour[] {

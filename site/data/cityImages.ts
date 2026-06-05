@@ -996,6 +996,11 @@ export const CITY_IMAGE_MAP: Record<string, CityImageRecord> = {
     image_author: "Thomas Haas",
     image_source: "unsplash",
   },
+  "liechtenstein": {
+    city_image_url: "https://images.unsplash.com/photo-1699831698393-520e2d9c4bce?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4OTczNTh8MHwxfHNlYXJjaHwxfHxMaWVjaHRlbnN0ZWluJTIwY2l0eXNjYXBlfGVufDB8MHx8fDE3ODA2MzgwNzl8MA&ixlib=rb-4.1.0&q=80&w=1080",
+    image_author: "Himmel S",
+    image_source: "unsplash",
+  },
 };
 
 export function getCityImage(citySlug: string): CityImageRecord | undefined {
