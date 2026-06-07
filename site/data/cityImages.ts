@@ -1001,6 +1001,11 @@ export const CITY_IMAGE_MAP: Record<string, CityImageRecord> = {
     image_author: "Himmel S",
     image_source: "unsplash",
   },
+  "auckland-8125": {
+    city_image_url: "https://images.unsplash.com/photo-1595125990323-885cec5217ff?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4OTczNTh8MHwxfHNlYXJjaHwxfHxBdWNrbGFuZCUyMHNreWxpbmV8ZW58MHwwfHx8MTc4MDgwOTEyNHww&ixlib=rb-4.1.0&q=80&w=1080",
+    image_author: "Sulthan Auliya",
+    image_source: "unsplash",
+  },
 };
 
 export function getCityImage(citySlug: string): CityImageRecord | undefined {

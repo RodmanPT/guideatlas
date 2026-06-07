@@ -202,6 +202,7 @@ export const citySeoIntros: CitySeoIntros = {
   "andorra-la-vella": "Discover the best tours in Andorra la Vella, from food walks to historical explorations led by local guides.",
   "san-marino": "Discover the best tours in San Marino, from food walks to historical explorations led by local guides.",
   "liechtenstein": "Discover the best tours in Liechtenstein, from food walks to historical explorations led by local guides.",
+  "auckland-8125": "Discover the best tours in Auckland, from food walks to historical explorations led by local guides.",
 };
 
 export function getCitySeoIntro(citySlug: string, cityName: string): string {
