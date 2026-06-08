@@ -203,6 +203,7 @@ export const CITIES: City[] = [
   { slug: "san-marino", name: "San Marino", country: "San Marino", latitude: 43.94236, longitude: 12.457777 },
   { slug: "liechtenstein", name: "Liechtenstein", country: "Liechtenstein", latitude: 47.141, longitude: 9.5215 },
   { slug: "auckland-8125", name: "Auckland", country: "New Zealand", latitude: -36.852095, longitude: 174.7631803 },
+  { slug: "osaka-6929", name: "Osaka", country: "Japan", latitude: 34.6937569, longitude: 135.5014539 },
 ];
 
 export function getCityBySlug(slug: string): City | undefined {

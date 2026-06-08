@@ -4389,6 +4389,33 @@ export const aiTours: CityToursMap = {
       description: "Experience neighborhood rhythms, architecture, and local culture in Auckland.",
     },
   ],
+  "osaka-6929": [
+    {
+      title: "Hidden Corners of Osaka",
+      duration: "2.5 hours",
+      description: "Explore lesser-known neighborhoods and stories that show the local side of Osaka.",
+    },
+    {
+      title: "Osaka Food and Markets Walk",
+      duration: "3 hours",
+      description: "Discover local flavors and market culture in Osaka with curated tasting stops.",
+    },
+    {
+      title: "Osaka Culture and Street Life",
+      duration: "3.5 hours",
+      description: "Experience neighborhood rhythms, architecture, and local culture in Osaka.",
+    },
+    {
+      title: "Osaka Sunset Viewpoints",
+      duration: "2 hours",
+      description: "Visit scenic viewpoints and photogenic routes around Osaka at golden hour.",
+    },
+    {
+      title: "Osaka History Highlights",
+      duration: "2 hours",
+      description: "Walk through key landmarks and historical moments that shaped Osaka.",
+    },
+  ],
 };
 
 export function getAiToursByCity(citySlug: string): CuratedTour[] {
