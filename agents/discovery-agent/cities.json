@@ -1307,5 +1307,12 @@
     "country": "Japan",
     "latitude": 34.6937569,
     "longitude": 135.5014539
+  },
+  {
+    "slug": "test-pull-rebase-city",
+    "name": "Test Pull Rebase City",
+    "country": "Test Country",
+    "latitude": 0,
+    "longitude": 0
   }
 ]
