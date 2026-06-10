@@ -1011,6 +1011,11 @@ export const CITY_IMAGE_MAP: Record<string, CityImageRecord> = {
     image_author: "Tsuyoshi Kozu",
     image_source: "unsplash",
   },
+  "bratislava": {
+    city_image_url: "https://images.unsplash.com/photo-1605434896361-a65fc3cfd831?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4OTczNTh8MHwxfHNlYXJjaHwxfHxCcmF0aXNsYXZhJTIwc2t5bGluZXxlbnwwfDB8fHwxNzgxMDY5NDkwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+    image_author: "Elimende Inagella",
+    image_source: "unsplash",
+  },
 };
 
 export function getCityImage(citySlug: string): CityImageRecord | undefined {

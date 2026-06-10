@@ -4416,6 +4416,33 @@ export const aiTours: CityToursMap = {
       description: "Walk through key landmarks and historical moments that shaped Osaka.",
     },
   ],
+  "bratislava": [
+    {
+      title: "Bratislava Sunset Viewpoints",
+      duration: "2 hours",
+      description: "Visit scenic viewpoints and photogenic routes around Bratislava at golden hour.",
+    },
+    {
+      title: "Bratislava Private Discovery Route",
+      duration: "3 hours",
+      description: "A curated route through signature areas and hidden gems in Bratislava.",
+    },
+    {
+      title: "Bratislava Culture and Street Life",
+      duration: "3.5 hours",
+      description: "Experience neighborhood rhythms, architecture, and local culture in Bratislava.",
+    },
+    {
+      title: "Hidden Corners of Bratislava",
+      duration: "2.5 hours",
+      description: "Explore lesser-known neighborhoods and stories that show the local side of Bratislava.",
+    },
+    {
+      title: "Bratislava History Highlights",
+      duration: "2 hours",
+      description: "Walk through key landmarks and historical moments that shaped Bratislava.",
+    },
+  ],
 };
 
 export function getAiToursByCity(citySlug: string): CuratedTour[] {

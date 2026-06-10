@@ -1307,5 +1307,19 @@
     "country": "Japan",
     "latitude": 34.6937569,
     "longitude": 135.5014539
+  },
+  {
+    "slug": "kyiv",
+    "name": "Kyiv",
+    "country": "Ukraine",
+    "latitude": 50.4500336,
+    "longitude": 30.5241361
+  },
+  {
+    "slug": "bratislava",
+    "name": "Bratislava",
+    "country": "Slovakia",
+    "latitude": 48.1516988,
+    "longitude": 17.1093063
   }
 ]
