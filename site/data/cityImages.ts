@@ -1021,6 +1021,11 @@ export const CITY_IMAGE_MAP: Record<string, CityImageRecord> = {
     image_author: "Diane Picchiottino",
     image_source: "unsplash",
   },
+  "helsinki-test": {
+    city_image_url: "https://images.unsplash.com/photo-1573586233663-f9d6868251bf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4OTczNTh8MHwxfHNlYXJjaHwxfHxIZWxzaW5raSUyMFRlc3QlMjBjaXR5c2NhcGV8ZW58MHwwfHx8MTc4MTE1NTk4M3ww&ixlib=rb-4.1.0&q=80&w=1080",
+    image_author: "Harrison Fitts",
+    image_source: "unsplash",
+  },
 };
 
 export function getCityImage(citySlug: string): CityImageRecord | undefined {

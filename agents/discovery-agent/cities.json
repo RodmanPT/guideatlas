@@ -1328,5 +1328,12 @@
     "country": "Fake Country",
     "latitude": 0,
     "longitude": 0
+  },
+  {
+    "slug": "helsinki-test",
+    "name": "Helsinki Test",
+    "country": "Finland",
+    "latitude": 60.1699,
+    "longitude": 24.9384
   }
 ]

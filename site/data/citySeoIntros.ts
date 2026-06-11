@@ -206,6 +206,7 @@ export const citySeoIntros: CitySeoIntros = {
   "osaka-6929": "Discover the best tours in Osaka, from food walks to historical explorations led by local guides.",
   "bratislava": "Discover the best tours in Bratislava, from food walks to historical explorations led by local guides.",
   "fake-city-999": "Discover the best tours in Fake City 999, from food walks to historical explorations led by local guides.",
+  "helsinki-test": "Discover the best tours in Helsinki Test, from food walks to historical explorations led by local guides.",
 };
 
 export function getCitySeoIntro(citySlug: string, cityName: string): string {

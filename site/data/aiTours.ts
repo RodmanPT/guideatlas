@@ -4465,6 +4465,28 @@ export const aiTours: CityToursMap = {
       description: "A curated route through signature areas and hidden gems in Fake City 999.",
     },
   ],
+  "helsinki-test": [
+    {
+      title: "Helsinki Test Culture and Street Life",
+      duration: "3.5 hours",
+      description: "Experience neighborhood rhythms, architecture, and local culture in Helsinki Test.",
+    },
+    {
+      title: "Helsinki Test History Highlights",
+      duration: "2 hours",
+      description: "Walk through key landmarks and historical moments that shaped Helsinki Test.",
+    },
+    {
+      title: "Helsinki Test Food and Markets Walk",
+      duration: "3 hours",
+      description: "Discover local flavors and market culture in Helsinki Test with curated tasting stops.",
+    },
+    {
+      title: "Helsinki Test Sunset Viewpoints",
+      duration: "2 hours",
+      description: "Visit scenic viewpoints and photogenic routes around Helsinki Test at golden hour.",
+    },
+  ],
 };
 
 export function getAiToursByCity(citySlug: string): CuratedTour[] {

@@ -206,6 +206,7 @@ export const CITIES: City[] = [
   { slug: "osaka-6929", name: "Osaka", country: "Japan", latitude: 34.6937569, longitude: 135.5014539 },
   { slug: "bratislava", name: "Bratislava", country: "Slovakia", latitude: 48.1516988, longitude: 17.1093063 },
   { slug: "fake-city-999", name: "Fake City 999", country: "Fake Country", latitude: 0, longitude: 0 },
+  { slug: "helsinki-test", name: "Helsinki Test", country: "Finland", latitude: 60.1699, longitude: 24.9384 },
 ];
 
 export function getCityBySlug(slug: string): City | undefined {
