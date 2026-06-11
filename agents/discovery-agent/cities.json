@@ -1321,5 +1321,12 @@
     "country": "Slovakia",
     "latitude": 48.1516988,
     "longitude": 17.1093063
+  },
+  {
+    "slug": "fake-city-999",
+    "name": "Fake City 999",
+    "country": "Fake Country",
+    "latitude": 0,
+    "longitude": 0
   }
 ]

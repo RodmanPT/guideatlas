@@ -4443,6 +4443,28 @@ export const aiTours: CityToursMap = {
       description: "Walk through key landmarks and historical moments that shaped Bratislava.",
     },
   ],
+  "fake-city-999": [
+    {
+      title: "Hidden Corners of Fake City 999",
+      duration: "2.5 hours",
+      description: "Explore lesser-known neighborhoods and stories that show the local side of Fake City 999.",
+    },
+    {
+      title: "Fake City 999 Culture and Street Life",
+      duration: "3.5 hours",
+      description: "Experience neighborhood rhythms, architecture, and local culture in Fake City 999.",
+    },
+    {
+      title: "Fake City 999 History Highlights",
+      duration: "2 hours",
+      description: "Walk through key landmarks and historical moments that shaped Fake City 999.",
+    },
+    {
+      title: "Fake City 999 Private Discovery Route",
+      duration: "3 hours",
+      description: "A curated route through signature areas and hidden gems in Fake City 999.",
+    },
+  ],
 };
 
 export function getAiToursByCity(citySlug: string): CuratedTour[] {

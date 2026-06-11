@@ -1016,6 +1016,11 @@ export const CITY_IMAGE_MAP: Record<string, CityImageRecord> = {
     image_author: "Elimende Inagella",
     image_source: "unsplash",
   },
+  "fake-city-999": {
+    city_image_url: "https://images.unsplash.com/photo-1664353655151-9d94a9170eb0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4OTczNTh8MHwxfHNlYXJjaHwxfHxGYWtlJTIwQ2l0eSUyMDk5OSUyMHNreWxpbmV8ZW58MHwwfHx8MTc4MTE1NTczM3ww&ixlib=rb-4.1.0&q=80&w=1080",
+    image_author: "Diane Picchiottino",
+    image_source: "unsplash",
+  },
 };
 
 export function getCityImage(citySlug: string): CityImageRecord | undefined {
