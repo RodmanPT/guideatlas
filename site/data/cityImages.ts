@@ -1026,6 +1026,16 @@ export const CITY_IMAGE_MAP: Record<string, CityImageRecord> = {
     image_author: "Harrison Fitts",
     image_source: "unsplash",
   },
+  "minsk": {
+    city_image_url: "https://images.unsplash.com/photo-1660136337267-cbd303aef650?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4OTczNTh8MHwxfHNlYXJjaHwxfHxNaW5zayUyMHNreWxpbmV8ZW58MHwwfHx8MTc4MTI0MTUwN3ww&ixlib=rb-4.1.0&q=80&w=1080",
+    image_author: "Vitali Adutskevich",
+    image_source: "unsplash",
+  },
+  "tbilisi": {
+    city_image_url: "https://images.unsplash.com/photo-1739278176347-76124fc9da69?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4OTczNTh8MHwxfHNlYXJjaHwxfHxUYmlsaXNpJTIwc2t5bGluZXxlbnwwfDB8fHwxNzgxMjQxNTA4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+    image_author: "Inna Nasonova",
+    image_source: "unsplash",
+  },
 };
 
 export function getCityImage(citySlug: string): CityImageRecord | undefined {

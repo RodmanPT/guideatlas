@@ -207,6 +207,8 @@ export const CITIES: City[] = [
   { slug: "bratislava", name: "Bratislava", country: "Slovakia", latitude: 48.1516988, longitude: 17.1093063 },
   { slug: "fake-city-999", name: "Fake City 999", country: "Fake Country", latitude: 0, longitude: 0 },
   { slug: "helsinki-test", name: "Helsinki Test", country: "Finland", latitude: 60.1699, longitude: 24.9384 },
+  { slug: "minsk", name: "Minsk", country: "Belarus", latitude: 53.9024716, longitude: 27.5618225 },
+  { slug: "tbilisi", name: "Tbilisi", country: "Georgia", latitude: 41.6934591, longitude: 44.8014495 },
 ];
 
 export function getCityBySlug(slug: string): City | undefined {

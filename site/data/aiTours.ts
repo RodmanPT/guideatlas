@@ -4487,6 +4487,50 @@ export const aiTours: CityToursMap = {
       description: "Visit scenic viewpoints and photogenic routes around Helsinki Test at golden hour.",
     },
   ],
+  "minsk": [
+    {
+      title: "Minsk Private Discovery Route",
+      duration: "3 hours",
+      description: "A curated route through signature areas and hidden gems in Minsk.",
+    },
+    {
+      title: "Hidden Corners of Minsk",
+      duration: "2.5 hours",
+      description: "Explore lesser-known neighborhoods and stories that show the local side of Minsk.",
+    },
+    {
+      title: "Minsk Food and Markets Walk",
+      duration: "3 hours",
+      description: "Discover local flavors and market culture in Minsk with curated tasting stops.",
+    },
+  ],
+  "tbilisi": [
+    {
+      title: "Tbilisi Sunset Viewpoints",
+      duration: "2 hours",
+      description: "Visit scenic viewpoints and photogenic routes around Tbilisi at golden hour.",
+    },
+    {
+      title: "Tbilisi Culture and Street Life",
+      duration: "3.5 hours",
+      description: "Experience neighborhood rhythms, architecture, and local culture in Tbilisi.",
+    },
+    {
+      title: "Hidden Corners of Tbilisi",
+      duration: "2.5 hours",
+      description: "Explore lesser-known neighborhoods and stories that show the local side of Tbilisi.",
+    },
+    {
+      title: "Tbilisi History Highlights",
+      duration: "2 hours",
+      description: "Walk through key landmarks and historical moments that shaped Tbilisi.",
+    },
+    {
+      title: "Tbilisi Food and Markets Walk",
+      duration: "3 hours",
+      description: "Discover local flavors and market culture in Tbilisi with curated tasting stops.",
+    },
+  ],
 };
 
 export function getAiToursByCity(citySlug: string): CuratedTour[] {

@@ -1335,5 +1335,82 @@
     "country": "Finland",
     "latitude": 60.1699,
     "longitude": 24.9384
+  },
+  {
+    "slug": "jacksonville",
+    "name": "Jacksonville",
+    "country": "United States",
+    "latitude": 30.3262247,
+    "longitude": -81.6579179
+  },
+  {
+    "slug": "san-francisco",
+    "name": "San Francisco",
+    "country": "United States",
+    "latitude": 37.7879363,
+    "longitude": -122.4075201
+  },
+  {
+    "slug": "austin",
+    "name": "Austin",
+    "country": "United States",
+    "latitude": 30.2711286,
+    "longitude": -97.7436995
+  },
+  {
+    "slug": "denver",
+    "name": "Denver",
+    "country": "United States",
+    "latitude": 39.7392364,
+    "longitude": -104.984862
+  },
+  {
+    "slug": "seattle",
+    "name": "Seattle",
+    "country": "United States",
+    "latitude": 47.6038321,
+    "longitude": -122.330062
+  },
+  {
+    "slug": "boston",
+    "name": "Boston",
+    "country": "United States",
+    "latitude": 42.3588336,
+    "longitude": -71.0578303
+  },
+  {
+    "slug": "kyiv",
+    "name": "Kyiv",
+    "country": "Ukraine",
+    "latitude": 50.4500336,
+    "longitude": 30.5241361
+  },
+  {
+    "slug": "minsk",
+    "name": "Minsk",
+    "country": "Belarus",
+    "latitude": 53.9024716,
+    "longitude": 27.5618225
+  },
+  {
+    "slug": "tbilisi",
+    "name": "Tbilisi",
+    "country": "Georgia",
+    "latitude": 41.6934591,
+    "longitude": 44.8014495
+  },
+  {
+    "slug": "yerevan",
+    "name": "Yerevan",
+    "country": "Armenia",
+    "latitude": 40.1777112,
+    "longitude": 44.5126233
+  },
+  {
+    "slug": "baku",
+    "name": "Baku",
+    "country": "Azerbaijan",
+    "latitude": 40.3755885,
+    "longitude": 49.8328009
   }
 ]
