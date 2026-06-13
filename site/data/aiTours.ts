@@ -4585,6 +4585,28 @@ export const aiTours: CityToursMap = {
       description: "Explore lesser-known neighborhoods and stories that show the local side of Baku.",
     },
   ],
+  "test-city-bug": [
+    {
+      title: "Test City Bug Food and Markets Walk",
+      duration: "3 hours",
+      description: "Discover local flavors and market culture in Test City Bug with curated tasting stops.",
+    },
+    {
+      title: "Test City Bug Culture and Street Life",
+      duration: "3.5 hours",
+      description: "Experience neighborhood rhythms, architecture, and local culture in Test City Bug.",
+    },
+    {
+      title: "Test City Bug Private Discovery Route",
+      duration: "3 hours",
+      description: "A curated route through signature areas and hidden gems in Test City Bug.",
+    },
+    {
+      title: "Hidden Corners of Test City Bug",
+      duration: "2.5 hours",
+      description: "Explore lesser-known neighborhoods and stories that show the local side of Test City Bug.",
+    },
+  ],
 };
 
 export function getAiToursByCity(citySlug: string): CuratedTour[] {
