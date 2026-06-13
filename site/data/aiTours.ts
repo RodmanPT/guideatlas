@@ -4531,6 +4531,60 @@ export const aiTours: CityToursMap = {
       description: "Discover local flavors and market culture in Tbilisi with curated tasting stops.",
     },
   ],
+  "yerevan": [
+    {
+      title: "Yerevan Culture and Street Life",
+      duration: "3.5 hours",
+      description: "Experience neighborhood rhythms, architecture, and local culture in Yerevan.",
+    },
+    {
+      title: "Yerevan Private Discovery Route",
+      duration: "3 hours",
+      description: "A curated route through signature areas and hidden gems in Yerevan.",
+    },
+    {
+      title: "Yerevan Food and Markets Walk",
+      duration: "3 hours",
+      description: "Discover local flavors and market culture in Yerevan with curated tasting stops.",
+    },
+    {
+      title: "Yerevan Sunset Viewpoints",
+      duration: "2 hours",
+      description: "Visit scenic viewpoints and photogenic routes around Yerevan at golden hour.",
+    },
+    {
+      title: "Hidden Corners of Yerevan",
+      duration: "2.5 hours",
+      description: "Explore lesser-known neighborhoods and stories that show the local side of Yerevan.",
+    },
+  ],
+  "baku": [
+    {
+      title: "Baku Food and Markets Walk",
+      duration: "3 hours",
+      description: "Discover local flavors and market culture in Baku with curated tasting stops.",
+    },
+    {
+      title: "Baku History Highlights",
+      duration: "2 hours",
+      description: "Walk through key landmarks and historical moments that shaped Baku.",
+    },
+    {
+      title: "Baku Sunset Viewpoints",
+      duration: "2 hours",
+      description: "Visit scenic viewpoints and photogenic routes around Baku at golden hour.",
+    },
+    {
+      title: "Baku Culture and Street Life",
+      duration: "3.5 hours",
+      description: "Experience neighborhood rhythms, architecture, and local culture in Baku.",
+    },
+    {
+      title: "Hidden Corners of Baku",
+      duration: "2.5 hours",
+      description: "Explore lesser-known neighborhoods and stories that show the local side of Baku.",
+    },
+  ],
 };
 
 export function getAiToursByCity(citySlug: string): CuratedTour[] {

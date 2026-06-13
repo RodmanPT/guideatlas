@@ -1036,6 +1036,16 @@ export const CITY_IMAGE_MAP: Record<string, CityImageRecord> = {
     image_author: "Inna Nasonova",
     image_source: "unsplash",
   },
+  "yerevan": {
+    city_image_url: "https://images.unsplash.com/photo-1663065476774-42789cbc3a74?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4OTczNTh8MHwxfHNlYXJjaHwxfHxZZXJldmFuJTIwc2t5bGluZXxlbnwwfDB8fHwxNzgxMzI3OTMyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+    image_author: "Alexander Gerken",
+    image_source: "unsplash",
+  },
+  "baku": {
+    city_image_url: "https://images.unsplash.com/photo-1708610644999-c3fb5fdfc8b8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4OTczNTh8MHwxfHNlYXJjaHwxfHxCYWt1JTIwc2t5bGluZXxlbnwwfDB8fHwxNzgxMzI3OTMyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+    image_author: "Daniel Silva",
+    image_source: "unsplash",
+  },
 };
 
 export function getCityImage(citySlug: string): CityImageRecord | undefined {

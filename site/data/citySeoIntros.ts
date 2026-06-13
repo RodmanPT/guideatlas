@@ -209,6 +209,8 @@ export const citySeoIntros: CitySeoIntros = {
   "helsinki-test": "Discover the best tours in Helsinki Test, from food walks to historical explorations led by local guides.",
   "minsk": "Discover the best tours in Minsk, from food walks to historical explorations led by local guides.",
   "tbilisi": "Discover the best tours in Tbilisi, from food walks to historical explorations led by local guides.",
+  "yerevan": "Discover the best tours in Yerevan, from food walks to historical explorations led by local guides.",
+  "baku": "Discover the best tours in Baku, from food walks to historical explorations led by local guides.",
 };
 
 export function getCitySeoIntro(citySlug: string, cityName: string): string {
