@@ -1051,6 +1051,11 @@ export const CITY_IMAGE_MAP: Record<string, CityImageRecord> = {
     image_author: "Daniel Lugardo",
     image_source: "unsplash",
   },
+  "test-agent-trigger-city": {
+    city_image_url: "https://images.unsplash.com/photo-1625726411847-8cbb60cc71e6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4OTczNTh8MHwxfHNlYXJjaHwxfHxUZXN0JTIwQWdlbnQlMjBUcmlnZ2VyJTIwQ2l0eSUyMHNreWxpbmV8ZW58MHwwfHx8MTc4MTU4NzQxMXww&ixlib=rb-4.1.0&q=80&w=1080",
+    image_author: "Andrew Whitmore",
+    image_source: "unsplash",
+  },
 };
 
 export function getCityImage(citySlug: string): CityImageRecord | undefined {

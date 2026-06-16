@@ -212,6 +212,7 @@ export const citySeoIntros: CitySeoIntros = {
   "yerevan": "Discover the best tours in Yerevan, from food walks to historical explorations led by local guides.",
   "baku": "Discover the best tours in Baku, from food walks to historical explorations led by local guides.",
   "test-city-bug": "Discover the best tours in Test City Bug, from food walks to historical explorations led by local guides.",
+  "test-agent-trigger-city": "Discover the best tours in Test Agent Trigger City, from food walks to historical explorations led by local guides.",
 };
 
 export function getCitySeoIntro(citySlug: string, cityName: string): string {

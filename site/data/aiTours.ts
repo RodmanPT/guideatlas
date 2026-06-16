@@ -4607,6 +4607,28 @@ export const aiTours: CityToursMap = {
       description: "Explore lesser-known neighborhoods and stories that show the local side of Test City Bug.",
     },
   ],
+  "test-agent-trigger-city": [
+    {
+      title: "Test Agent Trigger City Food and Markets Walk",
+      duration: "3 hours",
+      description: "Discover local flavors and market culture in Test Agent Trigger City with curated tasting stops.",
+    },
+    {
+      title: "Test Agent Trigger City Private Discovery Route",
+      duration: "3 hours",
+      description: "A curated route through signature areas and hidden gems in Test Agent Trigger City.",
+    },
+    {
+      title: "Hidden Corners of Test Agent Trigger City",
+      duration: "2.5 hours",
+      description: "Explore lesser-known neighborhoods and stories that show the local side of Test Agent Trigger City.",
+    },
+    {
+      title: "Test Agent Trigger City History Highlights",
+      duration: "2 hours",
+      description: "Walk through key landmarks and historical moments that shaped Test Agent Trigger City.",
+    },
+  ],
 };
 
 export function getAiToursByCity(citySlug: string): CuratedTour[] {

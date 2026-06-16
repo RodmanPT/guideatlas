@@ -212,6 +212,7 @@ export const CITIES: City[] = [
   { slug: "yerevan", name: "Yerevan", country: "Armenia", latitude: 40.1777112, longitude: 44.5126233 },
   { slug: "baku", name: "Baku", country: "Azerbaijan", latitude: 40.3755885, longitude: 49.8328009 },
   { slug: "test-city-bug", name: "Test City Bug", country: "Bug Country", latitude: 10.0, longitude: 20.0 },
+  { slug: "test-agent-trigger-city", name: "Test Agent Trigger City", country: "Test Country", latitude: 0, longitude: 0 },
 ];
 
 export function getCityBySlug(slug: string): City | undefined {
