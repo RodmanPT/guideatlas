@@ -1440,5 +1440,12 @@
     "country": "Bulgaria",
     "latitude": 42.6977,
     "longitude": 23.3219
+  },
+  {
+    "slug": "berlin-test-456",
+    "name": "Berlin Test 456",
+    "country": "Germany",
+    "latitude": 52.52,
+    "longitude": 13.405
   }
 ]

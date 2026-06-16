@@ -1066,6 +1066,11 @@ export const CITY_IMAGE_MAP: Record<string, CityImageRecord> = {
     image_author: "Gabriel Zainescu",
     image_source: "unsplash",
   },
+  "berlin-test-456": {
+    city_image_url: "https://images.unsplash.com/photo-1599946347371-68eb71b16afc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4OTczNTh8MHwxfHNlYXJjaHwxfHxCZXJsaW4lMjBUZXN0JTIwNDU2JTIwc2t5bGluZXxlbnwwfDB8fHwxNzgxNTg3ODcxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+    image_author: "Florian Wehde",
+    image_source: "unsplash",
+  },
 };
 
 export function getCityImage(citySlug: string): CityImageRecord | undefined {
