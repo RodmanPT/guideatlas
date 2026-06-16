@@ -4629,6 +4629,55 @@ export const aiTours: CityToursMap = {
       description: "Walk through key landmarks and historical moments that shaped Test Agent Trigger City.",
     },
   ],
+  "bucharest-test": [
+    {
+      title: "Bucharest Test Sunset Viewpoints",
+      duration: "2 hours",
+      description: "Visit scenic viewpoints and photogenic routes around Bucharest Test at golden hour.",
+    },
+    {
+      title: "Bucharest Test Food and Markets Walk",
+      duration: "3 hours",
+      description: "Discover local flavors and market culture in Bucharest Test with curated tasting stops.",
+    },
+    {
+      title: "Bucharest Test Private Discovery Route",
+      duration: "3 hours",
+      description: "A curated route through signature areas and hidden gems in Bucharest Test.",
+    },
+    {
+      title: "Hidden Corners of Bucharest Test",
+      duration: "2.5 hours",
+      description: "Explore lesser-known neighborhoods and stories that show the local side of Bucharest Test.",
+    },
+    {
+      title: "Bucharest Test Culture and Street Life",
+      duration: "3.5 hours",
+      description: "Experience neighborhood rhythms, architecture, and local culture in Bucharest Test.",
+    },
+  ],
+  "sofia-test": [
+    {
+      title: "Sofia Test History Highlights",
+      duration: "2 hours",
+      description: "Walk through key landmarks and historical moments that shaped Sofia Test.",
+    },
+    {
+      title: "Hidden Corners of Sofia Test",
+      duration: "2.5 hours",
+      description: "Explore lesser-known neighborhoods and stories that show the local side of Sofia Test.",
+    },
+    {
+      title: "Sofia Test Food and Markets Walk",
+      duration: "3 hours",
+      description: "Discover local flavors and market culture in Sofia Test with curated tasting stops.",
+    },
+    {
+      title: "Sofia Test Culture and Street Life",
+      duration: "3.5 hours",
+      description: "Experience neighborhood rhythms, architecture, and local culture in Sofia Test.",
+    },
+  ],
 };
 
 export function getAiToursByCity(citySlug: string): CuratedTour[] {

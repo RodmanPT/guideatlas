@@ -1056,6 +1056,16 @@ export const CITY_IMAGE_MAP: Record<string, CityImageRecord> = {
     image_author: "Andrew Whitmore",
     image_source: "unsplash",
   },
+  "bucharest-test": {
+    city_image_url: "https://images.unsplash.com/photo-1723096111835-b3a2bc9e6b53?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4OTczNTh8MHwxfHNlYXJjaHwxfHxCdWNoYXJlc3QlMjBUZXN0JTIwY2l0eXNjYXBlfGVufDB8MHx8fDE3ODE1ODc0NzB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+    image_author: "Jakub Żerdzicki",
+    image_source: "unsplash",
+  },
+  "sofia-test": {
+    city_image_url: "https://images.unsplash.com/photo-1435738623530-c32d3631932f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4OTczNTh8MHwxfHNlYXJjaHwxfHxTb2ZpYSUyMFRlc3QlMjBjaXR5c2NhcGV8ZW58MHwwfHx8MTc4MTU4NzQ3MXww&ixlib=rb-4.1.0&q=80&w=1080",
+    image_author: "Gabriel Zainescu",
+    image_source: "unsplash",
+  },
 };
 
 export function getCityImage(citySlug: string): CityImageRecord | undefined {

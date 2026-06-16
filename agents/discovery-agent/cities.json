@@ -1426,5 +1426,19 @@
     "country": "Test Country",
     "latitude": 0,
     "longitude": 0
+  },
+  {
+    "slug": "bucharest-test",
+    "name": "Bucharest Test",
+    "country": "Romania",
+    "latitude": 44.4268,
+    "longitude": 26.1025
+  },
+  {
+    "slug": "sofia-test",
+    "name": "Sofia Test",
+    "country": "Bulgaria",
+    "latitude": 42.6977,
+    "longitude": 23.3219
   }
 ]
