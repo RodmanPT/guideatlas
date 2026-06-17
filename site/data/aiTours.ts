@@ -4700,6 +4700,28 @@ export const aiTours: CityToursMap = {
       description: "Explore lesser-known neighborhoods and stories that show the local side of Berlin Test 456.",
     },
   ],
+  "miami-beach": [
+    {
+      title: "Miami Beach Culture and Street Life",
+      duration: "3.5 hours",
+      description: "Experience neighborhood rhythms, architecture, and local culture in Miami Beach.",
+    },
+    {
+      title: "Miami Beach History Highlights",
+      duration: "2 hours",
+      description: "Walk through key landmarks and historical moments that shaped Miami Beach.",
+    },
+    {
+      title: "Miami Beach Food and Markets Walk",
+      duration: "3 hours",
+      description: "Discover local flavors and market culture in Miami Beach with curated tasting stops.",
+    },
+    {
+      title: "Miami Beach Sunset Viewpoints",
+      duration: "2 hours",
+      description: "Visit scenic viewpoints and photogenic routes around Miami Beach at golden hour.",
+    },
+  ],
 };
 
 export function getAiToursByCity(citySlug: string): CuratedTour[] {
