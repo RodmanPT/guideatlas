@@ -1447,5 +1447,12 @@
     "country": "Germany",
     "latitude": 52.52,
     "longitude": 13.405
+  },
+  {
+    "slug": "miami-beach",
+    "name": "Miami Beach",
+    "country": "United States",
+    "latitude": 25.7929198,
+    "longitude": -80.1353006
   }
 ]
