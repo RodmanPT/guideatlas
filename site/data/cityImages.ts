@@ -1076,6 +1076,11 @@ export const CITY_IMAGE_MAP: Record<string, CityImageRecord> = {
     image_author: "Cody Nottingham",
     image_source: "unsplash",
   },
+  "mock-city-xyz": {
+    city_image_url: "https://images.unsplash.com/photo-1499092346589-b9b6be3e94b2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4OTczNTh8MHwxfHNlYXJjaHwxfHxNb2NrJTIwQ2l0eSUyMFhZWiUyMHNreWxpbmV8ZW58MHwwfHx8MTc4MjAxODI5MHww&ixlib=rb-4.1.0&q=80&w=1080",
+    image_author: "Patrick Tomasso",
+    image_source: "unsplash",
+  },
 };
 
 export function getCityImage(citySlug: string): CityImageRecord | undefined {

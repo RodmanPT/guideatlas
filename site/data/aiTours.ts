@@ -4722,6 +4722,23 @@ export const aiTours: CityToursMap = {
       description: "Visit scenic viewpoints and photogenic routes around Miami Beach at golden hour.",
     },
   ],
+  "mock-city-xyz": [
+    {
+      title: "Mock City XYZ Food and Markets Walk",
+      duration: "3 hours",
+      description: "Discover local flavors and market culture in Mock City XYZ with curated tasting stops.",
+    },
+    {
+      title: "Mock City XYZ Sunset Viewpoints",
+      duration: "2 hours",
+      description: "Visit scenic viewpoints and photogenic routes around Mock City XYZ at golden hour.",
+    },
+    {
+      title: "Mock City XYZ History Highlights",
+      duration: "2 hours",
+      description: "Walk through key landmarks and historical moments that shaped Mock City XYZ.",
+    },
+  ],
 };
 
 export function getAiToursByCity(citySlug: string): CuratedTour[] {
