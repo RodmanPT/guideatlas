@@ -417,7 +417,12 @@ def git_commit_and_push(repo_root: Path, changed_files: List[Path], city_names: 
 
     safe_token = quote(github_token, safe="")
     remote_url = f"https://x-access-token:{safe_token}@github.com/{github_repo}.git"
-    run_cmd(["git", "-C", str(repo_root), "pull", "--rebase", "--autostash", remote_url, github_branch], cwd=repo_root)
+    try:
+        run_cmd(["git", "-C", str(repo_root), "pull", "--rebase", "--autostash", remote_url, github_branch], cwd=repo_root)
+    except RuntimeError:
+        # Abort the rebase if it fails to avoid leaving the repository in a broken state
+        run_cmd(["git", "-C", str(repo_root), "rebase", "--abort"], cwd=repo_root, check=False)
+        raise
     run_cmd(["git", "-C", str(repo_root), "push", remote_url, f"HEAD:{github_branch}"], cwd=repo_root)
 
 
